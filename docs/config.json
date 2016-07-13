@@ -1,0 +1,33 @@
+{
+    "title": "Volumio Documentation",
+    "tagline": "The Audiophile Music Player",
+    "author": "Michelangelo Guarise",
+    "image": "Volumio_logo.jpg",
+    "ignore": {
+            "files": ["Work_In_Progress.md"],
+            "folders": ["99_Not_Ready"]
+    },
+    "live": {
+        "inherit_index": true,
+        "clean_urls": true
+    },
+    "html": {
+        "theme": "volumio-blue",
+        "breadcrumbs": false,
+        "breadcrumb_separator": "Chevrons",
+        "toggle_code": true,
+        "date_modified": true,
+        "float": true,
+
+        "repo": "https://github.com/volumio",
+        "twitter": ["volumio"],
+        "google_analytics": "UA-46374275-1",
+        "links": {
+            "Home": "https://volumio.org",
+            "Download": "https://volumio.org/get-started",
+            "Forum": "https://volumio.org/forum",
+            "Live Chat": "https://gitter.im/volumio/Volumio2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge",
+            "GitHub Repo": "https://github.com/volumio"
+        }
+    }
+}
