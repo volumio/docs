@@ -13,11 +13,13 @@
     },
     "html": {
         "theme": "volumio-blue",
+        "template":"default",
         "breadcrumbs": false,
         "breadcrumb_separator": "Chevrons",
         "toggle_code": true,
         "date_modified": true,
         "float": true,
+         "auto_landing": true,
 
         "repo": "https://github.com/volumio",
         "twitter": ["volumio"],

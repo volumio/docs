@@ -1,7 +1,6 @@
 {
     "docs_directory": "docs",
     "themes_directory": "themes",
-
     "title": "My Project",
     "tagline": "My Stylish Documentation",
     "author": "I, Me & Myself",
@@ -29,7 +28,7 @@
         "toggle_code": false,
         "date_modified": false,
         "float": false,
-        "auto_landing": true,
+        "auto_landing": false,
         "search": true,
         "auto_toc": false,
 
