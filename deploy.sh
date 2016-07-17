@@ -6,7 +6,7 @@ rm -rf out || exit 0;
 mkdir out;
 
 # Compile
-./compile.sh
+./daux.phar
 #php generate.php global.json out
 
 # go to the out directory and create a *new* Git repo
