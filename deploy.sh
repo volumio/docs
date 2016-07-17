@@ -1,16 +1,11 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
-# clear and re-create the out directory
-rm -rf out || exit 0;
-mkdir out;
-
-# Compile
+# Compile the static docs
 ./daux.phar
-#php generate.php global.json out
 
 # go to the out directory and create a *new* Git repo
-cd out
+cd static
 git init
 
 # inside this git repo we'll pretend to be a new user
