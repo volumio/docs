@@ -12,7 +12,7 @@
         "clean_urls": true
     },
     "html": {
-        "theme": "volumio-blue",
+        "theme": "daux-blue",
         "template":"default",
         "breadcrumbs": false,
         "breadcrumb_separator": "Chevrons",
