@@ -17,7 +17,7 @@
         "breadcrumbs": false,
         "breadcrumb_separator": "Chevrons",
         "toggle_code": true,
-        "date_modified": true,
+        "date_modified": false,
         "float": false,
          "auto_landing": true,
 
