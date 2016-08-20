@@ -19,7 +19,8 @@ Here you will find more details for each files listed above, what they contain, 
 
 #### Install.sh
 This file allows download and installation of dependencies for the plugin. It’s a executable file written in BASH.
-```
+
+```bash
 #!/bin/bash
 
 echo "Installing Spop Dependencies"
@@ -59,12 +60,12 @@ IMPORTANT THINGS  TO NOTICE
 #### Index.js
 
 Index.js
-This file is the main file of the plugin. It is written in javascript. Please refer to index.js part for a detailed explanation.
+This file is the main file of the plugin. It is written in javascript. Please refer to [index.js section](../Plugin_System/Index.js)  for a detailed explanation.
 
 ##### config.json
 File in which is saved default parameters, and the way saved parameters will be saved.
 
-```
+```json
 {
   "enabled": {
     "type": "boolean",
@@ -87,7 +88,8 @@ File in which is saved default parameters, and the way saved parameters will be 
 
 #### package.json
 This file contains package description and dependencies
-```
+```json
+{
   "name": "spop",
   "version": "1.0.0",
   "description": "Spotify plugin for Volumio2",
@@ -100,7 +102,8 @@ This file contains package description and dependencies
   "volumio_info": {
     "prettyName": "Spotify",
     "icon": "fa-spotify",
-    "plugin_type": "music_service"
+    "plugin_type": "music_service",
+    "boot_priority":1
   },
   "dependencies": {
     "fast.js": "^0.1.1",
@@ -122,6 +125,8 @@ The relevant parts are:
 * licence: use any licence, you're not bound to GPL here
 * dependencies: indicate the node modules this plugin requres, to avoid yourself the extra hassle of 2 different zip files for x86 and ARM, try to choose node modules that don't need to be compiled or rely on external dependencies
 * make sure to indicate propery the pretty name, icon and plugin type. The more straightforward, the better
+* version, this is used to keep track of version and request for updates if new versions are found
+* boot priority, accepts a numerical value from 1 to 10. Useful if you need to start your plugin after one another. 1 means it is started first, 10 means it will be started at last. 
 
 #### Uninstall.sh
 Bash file. As install file MUST be executable. Here you will basically revert what you did in the install.sh file .
@@ -152,7 +157,7 @@ The file naming is “strings_en.json” for english.
 Of course replace “en” by the language to be translated “it”, “fr”, “es”.
 
 This is a json file.
-```
+```json
 {
   "spotify_username":"Spotify username",
   "spotify_password":"Spotify password",

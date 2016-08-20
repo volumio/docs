@@ -414,7 +414,7 @@ EXPECTED RESULTS:
 
 * Local folders
 
-```
+```json
 {
   "navigation": {
     "prev": {
@@ -439,7 +439,7 @@ EXPECTED RESULTS:
 ```
 
 * Local files
-```
+```json
 {
   "navigation": {
     "prev": {
@@ -470,7 +470,7 @@ EXPECTED RESULTS:
 ```
 
 * Webradios
-```
+```json
 {
   "navigation": {
     "prev": {
@@ -501,7 +501,7 @@ EXPECTED RESULTS:
 ```
 
 * Spotify Categories (similar to local folders)
-```
+```json
 {
   "navigation": {
     "prev": {
@@ -532,7 +532,7 @@ EXPECTED RESULTS:
 ```
 
 * Spotify Songs (streaming plugins)
-```
+```json
 {
   "navigation": {
     "prev": {
