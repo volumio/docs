@@ -21,7 +21,7 @@
         "float": false,
          "auto_landing": true,
 
-        "repo": "https://github.com/volumio",
+        
         "twitter": ["volumio"],
         "google_analytics": "UA-46374275-1",
         "links": {

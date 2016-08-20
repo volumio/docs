@@ -24,7 +24,7 @@ This file allows download and installation of dependencies for the plugin. It’
 
 echo "Installing Spop Dependencies"
 sudo apt-get update
-sudo apt-get -y install libao-dev libglib2.0-dev libjson-glib-1.0-0 libjson-glib-dev libao-common libasound2-dev libreadline-dev libsox-dev libsoup2.4-dev libsoup2.4-1 libdbus-glib-1-dev libnotify-dev --no-install-recommends
+sudo apt-get -y install libasound2-dev libreadline-dev libsox-dev libsoup2.4-dev libsoup2.4-1 libdbus-glib-1-dev libnotify-dev --no-install-recommends
 
 
 
@@ -53,6 +53,7 @@ IMPORTANT THINGS  TO NOTICE
 * For security reasons dpkg is not allowed, so if you need to install binaries, tar them and download the tar accordingly
 * We have no environment variable set, so make sure you cd in the desired folder
 * Ensure to give proper permissions to file you'll need to edit later on (node runs with user volumio)
+* To avoid installing unwanted stuff, make sure to place `--no-install-recommends` after your to-install list
 * `echo "plugininstallend"` must be placed at the end of the install script to signal that installation has ended.
 
 #### Index.js
