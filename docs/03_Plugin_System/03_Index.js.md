@@ -6,7 +6,7 @@ The index.js file of every plugin is where the magic goes on. It has some predef
 
 The first part is about module dependencies, we'll need to list all the node modules our plugin depends on (example taken from Spotify plugin).
 
-```
+```javascript
 'use strict';
 
 var libQ = require('kew');
@@ -26,7 +26,7 @@ IMPORTANT TIPS:
 
 Then we will define the plugin class and reference to other core Volumio's internals:
 
-```
+```javascript
 module.exports = ControllerSpop;
 function ControllerSpop(context) {
 	// This fixed variable will let us refer to 'this' object at deeper scopes
@@ -51,7 +51,7 @@ Then we add all the required functions for a generic plugin:
 
 This is the code that gets executed when Volumio starts and triggers the plugin start. Typically, what you do is load the plugin configuration.
 
-```
+```javascript
 ControllerSpop.prototype.onVolumioStart = function()
 {
 	var configFile=this.commandRouter.pluginManager.getConfigurationFile(this.context,'config.json');
@@ -65,7 +65,7 @@ ControllerSpop.prototype.onVolumioStart = function()
 
 This instead is what happens when the Plugin starts. It's different from On Volumio Start since this function is triggered only if the plugin is enabled. In this case we're starting the spop daemon (responsible for Spotify Playback).
 
-```
+```javascript
 ControllerSpop.prototype.onStart = function() {
 	var self = this;
 
@@ -97,7 +97,7 @@ IMPORTANT:
 
 When a plugin is stopped, this function gets executed. What we're doing here is killing the spop daemon.
 
-```
+```javascript
 ControllerSpop.prototype.onStop = function() {
 	var self = this;
 
@@ -114,7 +114,7 @@ ControllerSpop.prototype.onStop = function() {
 
 Very straightforwarding, we load the .json configuration file for this plugin.
 
-```
+```javascript
 ControllerSpop.prototype.getConfigurationFiles = function()
 {
 	return ['config.json'];
@@ -125,7 +125,7 @@ ControllerSpop.prototype.getConfigurationFiles = function()
 
 This function is triggered when we want to access the plugin configuration. For a better understanding of the configuration pages see [Configuration Pages ](../Plugin_System/UI_Configuration_Pages)
 
-```
+```javascript
 ControllerSpop.prototype.getUIConfig = function() {
 	var defer = libQ.defer();
 	var self = this;
@@ -171,7 +171,8 @@ There are cases where we want to get configuration parameters from other plugins
 * DATA (the configuration parameter we want to get)
 
 Please note that the function to get config parameters is not always `getConfigParam` but could be also just `getConf`. Check the individual plugin to see which is the correct function.
-```
+
+```javascript
 ControllerAlsa.prototype.getAdditionalConf = function (type, controller, data) {
 	var self = this;
 	return self.commandRouter.executeOnPlugin(type, controller, 'getConfigParam', data);
@@ -181,7 +182,8 @@ ControllerAlsa.prototype.getAdditionalConf = function (type, controller, data) {
 #### Set configuration from other plugins
 
 Same as above, also here `setConfigParam`could be also `setConf` or `setUiConfig`. Check the individual plugin to see which is the correct function.
-```
+
+```javascript
 UpnpInterface.prototype.setAdditionalConf = function () {
 	var self = this;
 
@@ -193,7 +195,7 @@ UpnpInterface.prototype.setAdditionalConf = function () {
 
 Sometimes it might be useful to have a function to restart the plugin. Here's an example for upnp interface in Volumio.
 
-```
+```javascript
 UpnpInterface.prototype.onRestart = function () {
 	var self = this;
 
@@ -214,7 +216,7 @@ Those are:
 * addToBrowseSources
 * handleBrowseUri
 * explodeUri
-* search 
+* search
 
 #### Add to Browse sources
 
@@ -224,7 +226,7 @@ Rules to Follow:
 * Invoke this function ONLY when the plugin starts properly, and if you're relying on a daemon only when successful connection has been established with the daemon and the service.
 * Every call to the `uri` specified here, will be handled by this plugin. Basically, when clicking "Spotify", we'll handle the request in this plugin via the function and return the sub-categories available. Those will be handled by the `handleBrowseUri` function later on.
 
-```
+```javascript
 ControllerSpop.prototype.addToBrowseSources = function () {
 	var data = {name: 'Spotify', uri: 'spotify',plugin_type:'music_service',plugin_name:'spop'};
 	this.commandRouter.volumioAddToBrowseSources(data);
@@ -235,7 +237,8 @@ ControllerSpop.prototype.addToBrowseSources = function () {
 This function is responsible to interpret the desired URI (basically the browse point requested) and return the available items. Some examples:
 
 * Webradios browsing:
-```
+
+```javascript
 ControllerWebradio.prototype.handleBrowseUri=function(curUri)
 {
     var self=this;
@@ -274,7 +277,8 @@ ControllerWebradio.prototype.handleBrowseUri=function(curUri)
 }
 ```
 * Music Library and playlist browsing:
-```
+
+```javascript
 ControllerMpd.prototype.handleBrowseUri = function (curUri) {
     var self = this;
 
@@ -294,7 +298,8 @@ ControllerMpd.prototype.handleBrowseUri = function (curUri) {
 ```
 
 * Spotify browsing
-```
+
+```javascript
 ControllerSpop.prototype.handleBrowseUri=function(curUri)
 
 {
@@ -408,6 +413,7 @@ BEST PRACTICES:
 EXPECTED RESULTS:
 
 * Local folders
+
 ```
 {
   "navigation": {
@@ -563,7 +569,8 @@ This function takes care of retrieving all informations related to a particular 
 
 
 * Local files (MPD)
-```
+
+```javascript
 ControllerMpd.prototype.explodeUri = function(uri) {
     var self = this;
 
@@ -734,7 +741,7 @@ ControllerMpd.prototype.explodeUri = function(uri) {
 
 * Webradio
 
-```
+```javascript
 ControllerWebradio.prototype.explodeUri = function(uri) {
     var self = this;
 
@@ -754,7 +761,8 @@ ControllerWebradio.prototype.explodeUri = function(uri) {
 #### Search
 
 Every Music Service should provide a search function, but that's not mandatory. A typical search function MUST use promises and return objects formatted exactly like the above browse results. This is what a search backbone look like, where all search results are pushed into a list array and then resolved.
-```
+
+```javascript
 ControllerSpop.prototype.search = function (query) {
 
 	var self=this;
