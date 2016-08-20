@@ -30,7 +30,7 @@
             "Forum": "https://volumio.org/forum",
             "Live Chat": "https://gitter.im/volumio/Volumio2?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge",
             "GitHub Repo": "https://github.com/volumio",
-            "Improve this documentation": "../Good_to_Knows/Contribute_to_this_Doc"
+            "Improve this documentation": "https://volumio.github.io/docs/Good_to_Knows/Contribute_to_this_Doc.html"
         }
     }
 }
