@@ -95,18 +95,20 @@ IMPORTANT:
 
 #### On stop
 
-When a plugin is stopped, this function gets executed. What we're doing here is killing the spop daemon.
+When a plugin is stopped, this function gets executed. What we're doing here is killing the spop daemon. We must resolve the promise to signal everything was ok
 
 ```javascript
 ControllerSpop.prototype.onStop = function() {
 	var self = this;
 
 	self.logger.info("Killing SpopD daemon");
-	exec("killall spopd", function (error, stdout, stderr) {
-
+	exec("/usr/bin/sudo /usr/bin/killall spopd", function (error, stdout, stderr) {
+		if(error){
+			self.logger.info('Cannot kill spop Daemon')
+		}
 	});
 
-	return libQ.defer();
+	return libQ.resolve();
 };
 ```
 
