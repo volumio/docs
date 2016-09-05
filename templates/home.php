@@ -73,9 +73,7 @@
     <div class="container">
 
             <div class="col-sm-8 col-sm-offset-1">
-                <?php if ($params['image']) {
-                    echo '<img class="homepage-image img-responsive" src="' . $params['image'] . '" alt="' . $params['title'] . '">';
-                } ?>
+                
             </div>
         </div>
     </div>

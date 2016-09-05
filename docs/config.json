@@ -19,7 +19,7 @@
         "toggle_code": true,
         "date_modified": false,
         "float": false,
-         "auto_landing": true,
+         "auto_landing": false,
 
 
         "twitter": ["volumio"],
