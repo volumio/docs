@@ -77,3 +77,31 @@ While first start, Volumio will create a folder that contains saved parameter in
 ```
 /data/configuration/mycategory/myplugins
 ```
+
+### The plugins.json file
+
+The plugins.json file stores the status of core (found in /volumio/app/plugins/plugins.json folder) and extra (found in /data/plugins/plugins.json ) plugins.
+
+**IMPORTANT** : If you create a new plugin MANUALLY, you MUST add a plugin reference to plugins.json files (in /data/plugins/plugins.json). If such reference is not found, volumio will automatically delete your plugin folder. 
+
+The plugins json contains informations on plugins status:
+- Enabled, which can be true or false
+- Started, which can be true or false
+
+Add your information under your plugin relevant category. For example, if I'm adding a music_service plugin called "google_music", the relevant section will look like
+
+```
+{
+  "music_service": {
+    "google_music": {
+      "enabled": {
+        "type": "boolean",
+        "value": true
+      },
+      "status": {
+        "type": "string",
+        "value": "STARTED"
+      }
+    },
+    ...
+```
