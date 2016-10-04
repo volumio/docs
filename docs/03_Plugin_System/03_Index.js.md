@@ -318,7 +318,12 @@ ControllerSpop.prototype.handleBrowseUri=function(curUri)
 					prev: {
 						uri: 'spotify'
 					},
-					list: [
+					lists: [
+                    { 
+                    "title": "Spotify Folders",
+                    "icon": "fa fa-folder-open-o",
+                    "availableListViews": ["list","grid"],
+                    "items": [
 						{
 							service: 'spop',
 							type: 'folder',
@@ -357,6 +362,8 @@ ControllerSpop.prototype.handleBrowseUri=function(curUri)
 						}
 					]
 				}
+                ]
+                }
 			});
 		}
 		else if(curUri.startsWith('spotify/playlists'))
@@ -411,8 +418,69 @@ BEST PRACTICES:
 * You can display an icon by using `icon` and using a  [font-awesome icon](http://fontawesome.io/icons/)
 * You can display an image by using `albumart`, you can then pass a direct url or use the Albumart Server
 * The albumart API is: `/albumart?web=artist/album/large&path=path` all encoded which becomes `/albumart?web=Alabama%20Shakes/Sound%20%26%20Color/large&path=%2FUSB%2FALABAMA%20SHAKES%20S%20%26%20C`
+* The `title` and `icon` attributes are used to divide sections with different content in it, like showing albums and songs for a particular artists. They become separators.
+* The `availableListViews` attribute is used to indicate the visualizations options available for this particular list of items. Generally folders, albums and artists have both list and grid views available, while tracks and genres are visualized only in list mode. 
 
-EXPECTED RESULTS:
+
+GENERIC OUTPUT EXAMPLE:
+
+```json
+{
+  "navigation": {
+    "lists": [
+      {
+        "title": "Artists",
+        "icon": "fa icon",
+        "availableListViews": [
+          "list",
+          "grid"
+        ],
+        "items": [
+          {
+            "service": "mpd",
+            "type": "song",
+            "title": "Led Zeppelin",
+            "icon": "fa fa-music",
+            "uri": "search://artist/Led Zeppelin"
+          }
+        ]
+      },
+      {
+        "title": "Webradios",
+        "icon": "",
+        "availableListViews": [
+          "list"
+        ],
+        "items": [
+          {
+            "service": "webradio",
+            "type": "webradio",
+            "title": "ledjam",
+            "artist": "",
+            "album": "",
+            "icon": "fa fa-microphone",
+            "uri": "http://yp.shoutcast.com/sbin/tunein-station.m3u?id=492072"
+          },
+          {
+            "service": "webradio",
+            "type": "webradio",
+            "title": "NAXI 80-e RADIO (NAXI,Belgrade,Serbia, NAXI,Beograd,Srbija) - 128k",
+            "artist": "",
+            "album": "",
+            "icon": "fa fa-microphone",
+            "uri": "http://yp.shoutcast.com/sbin/tunein-station.m3u?id=68544"
+          }
+        ]
+      }
+    ],
+    "prev": {
+      "uri": "/"
+    }
+  }
+}
+```
+
+EXPECTED RESULTS EXAMPLES:
 
 * Local folders
 
@@ -422,7 +490,10 @@ EXPECTED RESULTS:
     "prev": {
       "uri": "music-library"
     },
-    "list": [
+    "lists": [
+      { 
+      "availableListViews": ["list","grid"],
+      "items": [ 
       {
         "type": "folder",
         "title": "Calibro 35 (2008)",
@@ -436,6 +507,8 @@ EXPECTED RESULTS:
         "uri": "music-library/USB/In Sight"
       }
     ]
+    }
+    ]
   }
 }
 ```
@@ -447,7 +520,10 @@ EXPECTED RESULTS:
     "prev": {
       "uri": "music-library/USB"
     },
-    "list": [
+    "lists": [
+      { 
+      "availableListViews": ["list"],
+      "items": [ 
       {
         "service": "mpd",
         "type": "song",
@@ -467,6 +543,8 @@ EXPECTED RESULTS:
         "uri": "music-library/USB/ALABAMA SHAKES S & C/02 Don't Wanna Fight.mp3"
       }
     ]
+    }
+    ]
   }
 }
 ```
@@ -478,7 +556,10 @@ EXPECTED RESULTS:
     "prev": {
       "uri": "radio/byGenre"
     },
-    "list": [
+    "lists": [
+    { 
+      "availableListViews": ["list"],
+      "items": [ 
       {
         "service": "webradio",
         "type": "webradio",
@@ -498,6 +579,8 @@ EXPECTED RESULTS:
         "uri": "http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1087995"
       }
     ]
+    }
+    ]
   }
 }
 ```
@@ -509,7 +592,10 @@ EXPECTED RESULTS:
     "prev": {
       "uri": "spotify"
     },
-    "list": [
+    "lists": [
+    { 
+      "availableListViews": ["list","grid"],
+      "items": [ 
       {
         "service": "spop",
         "type": "folder",
@@ -529,6 +615,8 @@ EXPECTED RESULTS:
         "uri": "spotify/featuredplaylists"
       }
     ]
+    }
+    ]
   }
 }
 ```
@@ -540,7 +628,10 @@ EXPECTED RESULTS:
     "prev": {
       "uri": "spotify"
     },
-    "list": [
+    "lists": [
+    { 
+      "availableListViews": ["list"],
+      "items": [ 
       {
         "service": "spop",
         "type": "song",
@@ -560,6 +651,8 @@ EXPECTED RESULTS:
         "uri": "spotify:track:2r6oZ0GBqJaCnqqR72yiFc"
       }
     ]
+    }
+    ]
   }
 }
 
@@ -567,7 +660,6 @@ EXPECTED RESULTS:
 #### Explode uri
 
 This function takes care of retrieving all informations related to a particular URI, it's needed both by queue and state machine. Some examples:
-
 
 
 * Local files (MPD)
@@ -760,9 +852,10 @@ ControllerWebradio.prototype.explodeUri = function(uri) {
 };
 ```
 
+
 #### Search
 
-Every Music Service should provide a search function, but that's not mandatory. A typical search function MUST use promises and return objects formatted exactly like the above browse results. This is what a search backbone look like, where all search results are pushed into a list array and then resolved.
+Every Music Service should provide a search function, but that's not mandatory. A typical search function MUST use promises and return objects formatted exactly like the above browse results. This is what a search backbone look like, where all search results are pushed into a list array and then resolved. Remember to divide search results (like artist, folders etc) with the APIs detailed above (title and icon) and to respect visualization types. 
 
 ```javascript
 ControllerSpop.prototype.search = function (query) {
