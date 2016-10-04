@@ -10,6 +10,13 @@
 - Install some packages and configure the system
 - Generate new thumbnails for the default backgrounds
 
+#### Network connection
+
+* Volumio works best when its connected to your Network, since it's meant to be used in an headless state: no monitor connected, and controlled via another device (PC, smartphone, tablet etc)
+* To connect Volumio to your network, simply attach an ethernet cable to it before starting it up
+* If no ethernet is available, you can connect to its hotstpot (see below) and connect to your Wi-fi Network. To do so, go to settings -> Network and connect it from there
+* *IMPORTANT* Do not configure your network manually via SSH, this can lead to issues and malfunctions
+
 #### Volumio Hotspot
 
 * If your device has wireless capabilities (and a supported Wireless card) Volumio will create a Wireless Network called **Volumio**, the default password is **volumio2**
