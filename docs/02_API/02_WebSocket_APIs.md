@@ -35,7 +35,7 @@ A good policy for sending data on emits is to configure them as objects: they're
 So our message can be:
 
 ```js
-io.emit('setVolume',{volume:30,mute=false}
+io.emit('addToPlaylist', {"name": "Music", "service": "mpd", "uri": "music-library/..."});
 ```
 ## Events Documentation
 
