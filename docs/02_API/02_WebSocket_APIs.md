@@ -115,7 +115,7 @@ Data:
 * *-*
 
 **Example**
-```
+```js
 io.emit('volume', 90);
 io.emit('volume', '+');
 ```
@@ -124,7 +124,7 @@ io.emit('volume', '+');
 Message: *mute*
 
 **Example**
-```
+```js
 io.emit('mute', '');
 ```
 
@@ -132,7 +132,7 @@ io.emit('mute', '');
 Message: *unmute*
 
 **Example**
-```
+```js
 io.emit('unmute', '');
 ```
 
