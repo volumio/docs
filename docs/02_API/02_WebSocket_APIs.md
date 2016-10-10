@@ -116,8 +116,8 @@ Data:
 
 **Example**
 ```
-socket.emit('volume', 90);
-socket.emit('volume', '+');
+io.emit('volume', 90);
+io.emit('volume', '+');
 ```
 
 ### Mute
@@ -125,7 +125,7 @@ Message: *mute*
 
 **Example**
 ```
-socket.emit('mute', '');
+io.emit('mute', '');
 ```
 
 ### Unmute
@@ -133,7 +133,7 @@ Message: *unmute*
 
 **Example**
 ```
-socket.emit('unmute', '');
+io.emit('unmute', '');
 ```
 
 ### Multiroom
