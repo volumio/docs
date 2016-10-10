@@ -405,6 +405,7 @@ Input:
 ```json
    {
     "name":"my playlist",
+    "service":"mpd",
     "uri":"USB/..."
    }
 ```
