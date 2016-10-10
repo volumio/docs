@@ -109,10 +109,10 @@ Message: *volume*
 Data:
 
 * numeric value between 0 and 100
-* 'mute'
-* 'umute'
-* '+'
-* '-'
+* *mute*
+* *umute*
+* *+*
+* *-*
 
 **Example**
 ```
