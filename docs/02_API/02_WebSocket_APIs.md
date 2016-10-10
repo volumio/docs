@@ -101,16 +101,40 @@ search {value:'query'}
 
 Where query is my search query. (note that for using live search, DO NOT send queries with less than 3 characters, they will dramatically slow search operations).
 
-### Set the Volume
+### Volume
+Set to percentage, raise or lower, mute or unmute.
 
+Message: *volume*
+
+Data:
+
+* numeric value between 0 and 100
+* 'mute'
+* 'umute'
+* '+'
+* '-'
+
+**Example**
 ```
-volume {vol:90,mute:false}
+socket.emit('volume', 90);
+socket.emit('volume', '+');
 ```
 
-Where `vol` is a numeric (0-100) volume level, and mute is a boolean
+### Mute
+Message: *mute*
 
+**Example**
+```
+socket.emit('mute', '');
+```
 
-When Volume is already muted, sending another "mute" emit will result in Volume being unmuted
+### Unmute
+Message: *unmute*
+
+**Example**
+```
+socket.emit('unmute', '');
+```
 
 ### Multiroom
 ```
