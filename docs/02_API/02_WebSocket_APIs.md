@@ -35,7 +35,7 @@ A good policy for sending data on emits is to configure them as objects: they're
 So our message can be:
 
 ```js
-io.emit('setVolume',{volume:30,mute=false}
+io.emit('addToPlaylist', {"name": "Music", "service": "mpd", "uri": "music-library/..."});
 ```
 ## Events Documentation
 
@@ -101,16 +101,40 @@ search {value:'query'}
 
 Where query is my search query. (note that for using live search, DO NOT send queries with less than 3 characters, they will dramatically slow search operations).
 
-### Set the Volume
+### Volume
+Set to percentage, raise or lower, mute or unmute.
 
+Message: *volume*
+
+Data:
+
+* numeric value between 0 and 100
+* *mute*
+* *umute*
+* *+*
+* *-*
+
+**Example**
+```js
+io.emit('volume', 90);
+io.emit('volume', '+');
 ```
-volume {vol:90,mute:false}
+
+### Mute
+Message: *mute*
+
+**Example**
+```js
+io.emit('mute', '');
 ```
 
-Where `vol` is a numeric (0-100) volume level, and mute is a boolean
+### Unmute
+Message: *unmute*
 
-
-When Volume is already muted, sending another "mute" emit will result in Volume being unmuted
+**Example**
+```js
+io.emit('unmute', '');
+```
 
 ### Multiroom
 ```
@@ -405,6 +429,7 @@ Input:
 ```json
    {
     "name":"my playlist",
+    "service":"mpd",
     "uri":"USB/..."
    }
 ```
