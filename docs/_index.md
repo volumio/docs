@@ -11,7 +11,7 @@ Volumio is a GNU\Linux Based Audiophile Music Player Operating system. designed 
 &nbsp;
 
 * Volumio uses Websockets to receive commands, see how it works in the [WebSocket API Section](/docs/API/WebSocket_APIs)
-* Learn how to write plugins to add new functionalities to Volumio in the [Plugin Section](/docs/Plugin_System)
+* Learn how to write plugins to add new functionalities to Volumio in the [Plugin Section](/docs/Plugin_System/Plugin_System_Overview)
 * Want to contribute to this guide? See the [Contribute to this doc Section](/docs/Good_to_Knows/Contribute_to_this_Doc)
 * Troubles mounting an NFS Share? See how to [Mount a NFS Share](/docs/Good_to_Knows/Mounting_an_NFS_Share)
 * Did you know that Volumio has a command line client? Here's how to use the  [Command Line Client](/docs/Good_to_Knows/Command_Line_Client)
