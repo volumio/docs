@@ -129,3 +129,27 @@ Reply:
         }
       }
 ```
+
+This is the generic command to restore a playlist:
+```
+volumio.local/api/v1/restore/playlists
+```
+You have to specify, as POST fields:
+* type:
+  * playlist
+  * songs
+  * radios
+  * myRadios
+* path:
+  * favourites
+  * radio-favourites
+  * my-web-radio
+* data
+Type is the kind of data you're sending, path is required for default playlists, to name the correspondent file (since for custom playlists the file will be named after the name found in data), data is a json containing informations properly formatted.
+
+This is the generic command to restore configuration files:
+
+```
+volumio.local/api/v1/restore/config
+```
+You have to specify a POST field named *config*, that has to contain an array of JSON object with plugins and correspondent configurations, sorted by category.
