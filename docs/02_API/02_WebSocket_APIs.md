@@ -44,7 +44,7 @@ io.emit('addToPlaylist', {"name": "Music", "service": "mpd", "uri": "music-libra
 **Play:** play
 **Pause:** pause
 **Stop:** stop
-**Previous:** previous
+**Previous:** prev
 **Next:** next
 **Seek** seek N (N is the time in seconds that the playback will keep)
 **Random** setRandom(true|false)
