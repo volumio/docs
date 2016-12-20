@@ -21,7 +21,7 @@ killall node
 or
 
 ```shell
-systemctl volumio restart
+systemctl restart volumio
 ```
 
 You can see all logs, generated both by the system and Volumio with
