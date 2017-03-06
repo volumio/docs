@@ -61,7 +61,7 @@ volumio.local/api/v1/listplaylists
 
 * Play a Playlist
 ```
-volumio.local/api/v1/?cmd=playplaylist&name=Rock
+volumio.local/api/v1/commands/?cmd=playplaylist&name=Rock
 ```
 
 where name is the name of the playlist to play
