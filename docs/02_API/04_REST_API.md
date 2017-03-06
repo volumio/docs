@@ -1,3 +1,71 @@
+### Playback commands
+
+All API calls will look like:
+
+```
+volumio.local/api/v1/commands/?cmd=
+```
+
+example:
+
+```
+volumio.local/api/v1/commands/?cmd=play
+```
+
+Available commands:
+
+* Play 
+```
+volumio.local/api/v1/commands/?cmd=play&N=2
+```
+where N is optional and is the ordinal number of the track in the queue you wish to start to play from. The above call will play the third track in the queue. 
+
+* Stop 
+```
+volumio.local/api/v1/commands/?cmd=stop
+```
+
+* Pause
+```
+volumio.local/api/v1/commands/?cmd=pause
+```
+
+* Previous
+```
+volumio.local/api/v1/commands/?cmd=prev
+```
+
+* Next
+```
+volumio.local/api/v1/commands/?cmd=next
+```
+
+* Volume
+```
+volumio.local/api/v1/commands/?cmd=volume&volume=80
+```
+where volume can be: mute, unmute, plus, minus (plus and minus will increase\decrease as per parameter one click volume steps)
+
+
+### Music Library
+
+* Clear the queue
+```
+volumio.local/api/v1/commands/?cmd=clearQueue
+```
+
+* List Playlists
+```
+volumio.local/api/v1/listplaylists
+```
+
+* Play a Playlist
+```
+volumio.local/api/v1/?cmd=playplaylist&name=Rock
+```
+
+where name is the name of the playlist to play
+
 ### Backup
 
 This is the generic command to retrieve a json with the playlist selected in type.
