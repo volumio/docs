@@ -7,7 +7,7 @@ Volumio usually uses music it founds locally (internal memory, USB disk, ...) or
 * IMPORTANT: on the source (your Android phone or your PC), it's necessary to use the WAV format
 
 ### Airplay
-* AirPlay is an equivalent protocol to DLNA, but proprietary and developped by Apple. It is used by default by iTunes, and on iPhone, iPad, ...
+* AirPlay is an equivalent protocol to DLNA, but proprietary and developed by Apple. It is used by default by iTunes, and on iPhone, iPad, ...
 * This protocol is now available on other non-Apple sources (see below)
 * This is implemented by default, and nothing needs to be configured on Volumio side
 
@@ -19,7 +19,7 @@ Volumio usually uses music it founds locally (internal memory, USB disk, ...) or
 
 ### From Android
 * In this case too, all the sound going to your usual speakers will be redirected to a DLNA or AirPlay stream
-* Uusually, your device must be rooted in order to allow the app to capture the audio from the Android system
+* Usually, your device must be rooted in order to allow the app to capture the audio from the Android system
 * Several apps are compatible, including [AllConnect](https://play.google.com/store/apps/details?id=com.tuxera.streambels), [AirAudio](https://play.google.com/store/apps/details?id=eu.airaudio), [AllStream](https://play.google.com/store/apps/details?id=com.kineticgamestudios.airtunes.android) or [BubbleUPnP+Xposed](https://play.google.com/store/apps/details?id=com.bubblesoft.android.bubbleupnp).
 
 ## Trouble Shooting
