@@ -4,7 +4,7 @@ Volumio usually uses music it founds locally (internal memory, USB disk, ...) or
 ### UPnP - DLNA
 * Volumio is a UPnP Media Renderer front-end for MPD (the Music Player Daemonlistening used in Volumio), thanks to [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/)
 * This is implemented by default, and nothing needs to be configured on Volumio side
-* IMPORTANT: on the source (your Android phone or your PC), it's necessary to use the WAV format
+
 
 ### Airplay
 * AirPlay is an equivalent protocol to DLNA, but proprietary and developed by Apple. It is used by default by iTunes, and on iPhone, iPad, ...
