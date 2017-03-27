@@ -295,30 +295,43 @@ This can be useful when creating a new plugin, to inject custom views in the bro
   ]}
 ```
 
+## Play Queue Controls
+
+
 ### Get Current Play Queue
 
 ```
 GetQueue
 ```
 
-The queue is a json object:
+Response:
+```
+pushQueue
+```
+
 ```js
-[ { uri: 'NAS/Flac/Paolo Conte - 1984 - Paolo Conte [1995 Reissue]/10 - Macaco.flac',
+[ { uri: 'http://yp.shoutcast.com/sbin/tunein-station.m3u?id=830692',
+    title: 'ANTENA1 - 94 7 FM',
+    service: 'webradio',
+    name: 'ANTENA1 - 94 7 FM',
+    albumart: '/albumart',
+    samplerate: '',
+    bitdepth: '',
+    channels: 0,
+    trackType: 'webradio' },
+  { uri: 'mnt/NAS/FLAC/Muse - Black Holes And Revelations - FLAC - HellraiserRG/02 - Starlight.flac',
     service: 'mpd',
-    name: 'Macaco',
-    artist: 'Paolo Conte',
-    album: 'Paolo Conte',
+    name: 'Starlight',
+    artist: 'Muse',
+    album: 'Black Holes And Revelations',
     type: 'track',
-    tracknumber: '0',
-    albumart: 'http://img2-ak.lst.fm/i/u/300x300/1b82dd5e54554209bf2326ffb76f6814.png' },
-  { uri: 'NAS/Flac/Paolo Conte - 1984 - Paolo Conte [1995 Reissue]/01 - Sparring Partner.flac',
-    service: 'mpd',
-    name: 'Sparring partner',
-    artist: 'Paolo Conte',
-    album: 'Paolo Conte',
-    type: 'track',
-    tracknumber: '1',
-    albumart: 'http://img2-ak.lst.fm/i/u/300x300/1b82dd5e54554209bf2326ffb76f6814.png' }]
+    tracknumber: 0,
+    albumart: '/albumart?web=Muse/Black%20Holes%20And%20Revelations/extralarge&path=%2FNAS%2FFLAC%2FMuse%20-%20Black%20Holes%20And%20Revelations%20-%20FLAC%20-%20HellraiserRG',
+    duration: 240,
+    samplerate: '44.1 KHz',
+    bitdepth: '16 bit',
+    trackType: 'flac',
+    channels: 2 }]
 ```
 
 
@@ -330,6 +343,11 @@ removeFromQueue N
 
 where `N` is the track number in the queue, 0 for the first, 9 for the tenth and so on
 
+Response:
+```
+pushQueue
+```
+
 ### Add Item to Queue
 
 ```
@@ -338,7 +356,17 @@ addToQueue {'uri:uri'}
 
 where `uri` is the uri of the item we want to add
 
+### Move a queue item
+```
+moveQueue {from:N,to:N2}
+```
+
+Where N is the track number we want to move, and N2 is its new position
+
 If we want to add an individual track from a .cue file:
+
+
+
 
 ```
 addPlayCue {uri:'uriofsong',number:3}
