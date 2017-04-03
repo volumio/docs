@@ -35,5 +35,9 @@
 - **iOS** [Net Analyzer](https://play.google.com/store/apps/details?id=net.techet.netanalyzerlite.an&hl=it)
 - **Chrome** [mDNS Browser](https://chrome.google.com/webstore/detail/mdns-browser/kipighjpklofchgbdgclfaoccdlghidp)
 
+Alternatively, the Volumio Official Android App offers a convenient way to access your Volumio device, without the need to know the IP address, thanks to auto discovery of Volumio.
+**[VOLUMIO OFFICIAL APP](https://play.google.com/store/apps/details?id=volumio.browser.Volumio)**
+
+
 * Volumio UI can also be accessed by typing [http://volumio.local](http://volumio.local), or if you renamed your Volumio device http://VOLUMIONAME.local .
 - Please note that this function is not available on Android devices, just on Mac and iOs or in Windows (if that does not work, install [Bonjour](http://www.raspyfi.com/wp-content/uploads/BonjourSetup.exe) )
