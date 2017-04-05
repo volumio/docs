@@ -4,7 +4,7 @@ Everyone knows how tedious is to write documentation. But this is extremely impo
 
  #### How this doc works
 
- This DOC is powered by [DAUX.IO](http://daux.io/) and the source is hosted on the [Gitghub Volumio docs repository](https://github.com/volumio/docs). To edit it, simply clone it, edit the
+ This DOC is powered by [DAUX.IO](http://daux.io/) and the source is hosted on the [Github Volumio docs repository](https://github.com/volumio/docs). To edit it, simply clone it, edit the
  pages located under /docs and issue a pull request. You can do either via command line or with a graphical tool, I personally suggest  [GitKraken](https://www.gitkraken.com/).
 
 
