@@ -47,32 +47,44 @@ io.emit('addToPlaylist', {"name": "Music", "service": "mpd", "uri": "music-libra
 **Previous:** prev
 **Next:** next
 **Seek** seek N (N is the time in seconds that the playback will keep)
-**Random** setRandom(true|false)
-**repeat** setRepeat(true|false)
+**Random** setRandom({"value":true|false})
+**repeat** setRepeat({"value":true|false})
 ```
 
 ### Get Player State
 
 ```
-GetState
+getState
 ```
 
 Reply:
+
+```
+pushState
+```
+
 ```json
-{"status":"play",
-"position":"0",
-"title":"Macaco",
-"artist":"Paolo Conte",
-"album":"Paolo Conte",
-"albumart":"http://img2-ak.lst.fm/i/u/300x300/1b82dd5e54554209bf2326ffb76f6814.png",
-"seek":"25390",
-"duration":"146",
-"samplerate":"44100",
-"bitdepth":"16",
-"channels":"2",
-"volume":"100",
-"mute":"false",
-"service":"mpd"}
+{
+  "status": "stop",
+  "position": 0,
+  "title": "Matilda Mother",
+  "artist": "Pink Floyd",
+  "album": "The Piper At The Gates Of Dawn",
+  "albumart": "/albumart?web=Pink%20Floyd/The%20Piper%20At%20The%20Gates%20Of%20Dawn/extralarge&path=%2FNAS%2FHi_Res_Music%2FPINK%20FLOYD%20Discovery%20Studio%20Album%20Box%20Set%20(2011)%20FLAC%2F1967%20The%20Piper%20At%20The%20Gates%20Of%20Dawn",
+  "uri": "mnt/NAS/Hi_Res_Music/PINK FLOYD Discovery Studio Album Box Set (2011) FLAC/1967 The Piper At The Gates Of Dawn/03 - Matilda Mother.flac",
+  "trackType": "flac",
+  "seek": 0,
+  "duration": 189,
+  "random": false,
+  "repeat": false,
+  "repeatSingle": false,
+  "volume": 39,
+  "mute": false,
+  "stream": false,
+  "updatedb": false,
+  "volatile": false,
+  "service": "mpd"
+}
 
 ```
 
@@ -84,13 +96,21 @@ Where
 * **artist** is the item's artist
 * **album** is the item's album
 * **albumart** the URL of AlbumArt (via last.fm APIs)
+* **uri** it's the track's unique uri
+* **trackType** The track's type: e.g. mp3, flac, spotify etc
 * **seek** is the item's current elapsed time
 * **duration** is the item's duration, if any
+* **random** if true, random mode is enabled
+* **repeat** if true, repeat mode is enabled
+* **repeatSingle** if true, repeat single mode is enabled (song is replayed in a cycle)
+* **volume** current Volume
+* **mute** if true, Volumio is muted
+* **stream** if true, Volumio is playing a stream (webradio)
+* **updatedb** if true, Volumio is updating its internal music database
+* **volatile** if true, Volumio is in Volatile mode (analog input)
 * **samplerate** current samplerate
 * **bitdepth** bitdepth
 * **channels** mono or stereo
-* **volume** current Volume
-* **mute** if true, Volumio is muted
 * **service** current playback service (mpd, spop...)
 
 ### Search
