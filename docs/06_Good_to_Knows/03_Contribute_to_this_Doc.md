@@ -1,11 +1,11 @@
 
-Everyone knows how tedious is to write documentation. But this is extremely important for every project, especially for Volumio. So if you find something incomplete, missing or
+Everyone knows how tedious it is to write documentation. But it is extremely important for every project, especially for Volumio. So if you find something incomplete, missing or
  wrong feel free to edit this doc and improve it.
 
  #### How this doc works
 
  This DOC is powered by [DAUX.IO](http://daux.io/) and the source is hosted on the [Github Volumio docs repository](https://github.com/volumio/docs). To edit it, simply clone it, edit the
- pages located under /docs and issue a pull request. You can do either via command line or with a graphical tool, I personally suggest  [GitKraken](https://www.gitkraken.com/).
+ pages located under /docs and issue a pull request. You can do so either via command line or with a graphical tool, I personally suggest  [GitKraken](https://www.gitkraken.com/).
 
 
  #### Cloning and issing a Pull request
