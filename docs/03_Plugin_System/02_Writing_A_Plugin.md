@@ -142,8 +142,8 @@ Bash file. As install file MUST be executable. Here you will basically revert wh
 Details and examples of optional files
 Depending on the plugin, other file may be nedeed.
 
-#### Uiconfig.json
-This file describes the user interface for the plugin configuration, that will appear while clicking on the cog.
+#### UIConfig.json
+This file describes the user interface for the plugin configuration, that will appear while clicking on the cog. Please note that the filename is case sensitive.
 
 Please refer to UI Configuration Pages for reference.
 
