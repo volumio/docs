@@ -107,7 +107,7 @@ Those are the sections descriptors. A section is typically a block of options wh
 * icon: the icon showed, it's a  [font-awesome icon](http://fontawesome.io/icons/)
 * onSave: it's the function invoked in the plugin index.js file, the payload will be a json object (see saveButton data item)
 * saveButton label : pretty self-explanatory
-* saveButton data : this will be the payload sent along, taking data from the elements into the array. In the case above the payload will be {"username":usernameset,"password":passwordset,"bitrate":bitratedata}
+* saveButton data : this will be the payload sent along, taking data from the elements into the array. In the case above the payload will be {"username":usernameset,"password":passwordset,"bitrate":bitratedata}. Failing to add elements to the array will not result in a crash, the info/settings will just be omitted from the payload.
 
 
 ```
@@ -126,8 +126,8 @@ Content defines all the elements available in a section. It needs the following 
 
 * id : the id, this one is the one referred in saveButton data
 * type : type of the element, for a comprehensive list of examples see later
-* doc : an explanation of what the field does
-* label: label
+* doc : an explanation of what the field does, please try to use translations as opposed to static text, that way anyone can translate it into their own language.
+* label: label, please try to use translations as opposed to static text, that way anyone can translate it into their own language. 
 * value: this is the current value of the element, can be manipulated in the `getUIConfig` function. It can be either a boolean (true | false), a string or a number.
 * Optionally, you can also require a confirmation popup by adding the entry `'askForConfirm': {'title': 'Confirm', 'message': 'Do you want to save this values?'}`
 * If you want to hide or show an element dynamically based on the state on another option (in the same section), you can use `'visibleIf': {'field': 'spotify_service', 'value': true}`
@@ -286,3 +286,35 @@ Content defines all the elements available in a section. It needs the following 
                     tooltip: 'show'      
                   }
  ```
+
+### Translating text
+
+In order to allow people to translate the plugin into their own languages it is advised to use translations as opposed to static lines of text. It only takes up a little more time, but saves time in the long run.
+
+Requirements:
+* i18n module (it needs to be places in the node_modules directory)
+* a i18n directory with at least one (preferably (also) English) language file e.g.: strings_en.json
+
+You can translate strings by calling the TRANSLATE command in the text field followed by any number of nodes, you can make it as complex as you want, but keep it readable please.
+
+Example of a UIConfig element
+```
+               'id': 'docs',
+               'element': 'input',
+               'doc': 'TRANSLATE.DOCS.WHYSHOULDITRANSLATE',
+               'label': 'TRANSLATE.DOCS.EXAMPLE',
+               'description': 'TRANSLATE.DOCS.DESC',
+               'value': true             
+```
+
+The following is an example of a translation snippet.
+```
+{
+	"DOCS":{
+	    "WHYSHOULDITRANSLATE":"Translation allow for neater integration into systems with other languages",
+	    "EXAMPLE":"Please translate this to your own language",
+	    "DESC":"You can fill in any translation here",
+        ...
+```
+
+You don't need to use all caps if you don't want to, I use those because they stand out like that.
