@@ -319,7 +319,7 @@ ControllerSpop.prototype.handleBrowseUri=function(curUri)
 						uri: 'spotify'
 					},
 					lists: [
-                    { 
+                    {
                     "title": "Spotify Folders",
                     "icon": "fa fa-folder-open-o",
                     "availableListViews": ["list","grid"],
@@ -419,7 +419,7 @@ BEST PRACTICES:
 * You can display an image by using `albumart`, you can then pass a direct url or use the Albumart Server
 * The albumart API is: `/albumart?web=artist/album/large&path=path` all encoded which becomes `/albumart?web=Alabama%20Shakes/Sound%20%26%20Color/large&path=%2FUSB%2FALABAMA%20SHAKES%20S%20%26%20C`
 * The `title` and `icon` attributes are used to divide sections with different content in it, like showing albums and songs for a particular artists. They become separators.
-* The `availableListViews` attribute is used to indicate the visualizations options available for this particular list of items. Generally folders, albums and artists have both list and grid views available, while tracks and genres are visualized only in list mode. 
+* The `availableListViews` attribute is used to indicate the visualizations options available for this particular list of items. Generally folders, albums and artists have both list and grid views available, while tracks and genres are visualized only in list mode.
 
 
 GENERIC OUTPUT EXAMPLE:
@@ -491,9 +491,9 @@ EXPECTED RESULTS EXAMPLES:
       "uri": "music-library"
     },
     "lists": [
-      { 
+      {
       "availableListViews": ["list","grid"],
-      "items": [ 
+      "items": [
       {
         "type": "folder",
         "title": "Calibro 35 (2008)",
@@ -521,9 +521,9 @@ EXPECTED RESULTS EXAMPLES:
       "uri": "music-library/USB"
     },
     "lists": [
-      { 
+      {
       "availableListViews": ["list"],
-      "items": [ 
+      "items": [
       {
         "service": "mpd",
         "type": "song",
@@ -557,9 +557,9 @@ EXPECTED RESULTS EXAMPLES:
       "uri": "radio/byGenre"
     },
     "lists": [
-    { 
+    {
       "availableListViews": ["list"],
-      "items": [ 
+      "items": [
       {
         "service": "webradio",
         "type": "webradio",
@@ -593,9 +593,9 @@ EXPECTED RESULTS EXAMPLES:
       "uri": "spotify"
     },
     "lists": [
-    { 
+    {
       "availableListViews": ["list","grid"],
-      "items": [ 
+      "items": [
       {
         "service": "spop",
         "type": "folder",
@@ -629,9 +629,9 @@ EXPECTED RESULTS EXAMPLES:
       "uri": "spotify"
     },
     "lists": [
-    { 
+    {
       "availableListViews": ["list"],
-      "items": [ 
+      "items": [
       {
         "service": "spop",
         "type": "song",
@@ -855,7 +855,7 @@ ControllerWebradio.prototype.explodeUri = function(uri) {
 
 #### Search
 
-Every Music Service should provide a search function, but that's not mandatory. A typical search function MUST use promises and return objects formatted exactly like the above browse results. This is what a search backbone look like, where all search results are pushed into a list array and then resolved. Remember to divide search results (like artist, folders etc) with the APIs detailed above (title and icon) and to respect visualization types. 
+Every Music Service should provide a search function, but that's not mandatory. A typical search function MUST use promises and return objects formatted exactly like the above browse results. This is what a search backbone look like, where all search results are pushed into a list array and then resolved. Remember to divide search results (like artist, folders etc) with the APIs detailed above (title and icon) and to respect visualization types.
 
 ```javascript
 ControllerSpop.prototype.search = function (query) {
@@ -873,4 +873,36 @@ ControllerSpop.prototype.search = function (query) {
   		});
 
   	return defer.promise;
+```
+
+As result the following structure is expected:
+
+```json
+{
+  "title": "Spotify result",
+  "icon": "fa fa-music",
+  "availableListViews": [
+    "list", "grid"
+  ],
+  "items": [
+		{
+			"service": "spop",
+			"type": "song",
+			"title": "Vienna",
+			"artist": "Thom Sonny Green",
+			"album": "High Anxiety",
+			"albumart": "https://i.scdn.co/image/dac9ef993de0a5758cc6e655080306d40814edc9",
+			"uri": "spotify:track:5cgSWdlxIelg5N9OjfkRow"
+		},
+		{
+			"service": "spop",
+			"type": "song",
+			"title": "40 Beers",
+			"artist": "Thom Sonny Green",
+			"album": "High Anxiety",
+			"albumart": "https://i.scdn.co/image/dac9ef993de0a5758cc6e655080306d40814edc9",
+			"uri": "spotify:track:2r6oZ0GBqJaCnqqR72yiFc"
+		}
+  ]
+}
 ```
