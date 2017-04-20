@@ -14,6 +14,10 @@ The  plugin zip file will be created as the last step of the plugin creation and
 | Package.json  | json  | 	this file contains description of the plugin and the list of required node dependencies
 | Uninstall.sh  | Bash script  | this file contains the script to remove the plugin.    
 
+<p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
+  CAREFUL: The zip must contain the files in the plugins root folder, NOT the root folder itself!
+</p>
+
 Details and examples of mandatories files.
 Here you will find more details for each files listed above, what they contain, how to write a working plugin. Examples based on Spop plugin.
 
