@@ -126,7 +126,7 @@ The relevant parts are:
 * dependencies: indicate the node modules this plugin requres, to avoid yourself the extra hassle of 2 different zip files for x86 and ARM, try to choose node modules that don't need to be compiled or rely on external dependencies
 * make sure to indicate propery the pretty name, icon and plugin type. The more straightforward, the better
 * version, this is used to keep track of version and request for updates if new versions are found
-* boot priority, accepts a numerical value from 1 to 10. Useful if you need to start your plugin after one another. 1 means it is started first, 10 means it will be started at last. 
+* boot priority, accepts a numerical value from 1 to 10. Useful if you need to start your plugin after one another. 1 means it is started first, 10 means it will be started at last.
 
 #### Uninstall.sh
 Bash file. As install file MUST be executable. Here you will basically revert what you did in the install.sh file .
@@ -175,3 +175,6 @@ This is a json file.
 
 #### Other
 Your plugin may require other files such as image, sound, executable, configuration files etc… You have to include these files in the ZIP file and ensure proper permissions if they'll need to be edited.
+
+## Publish your plugin
+When you want to provide your plugin to other people it is best practice to start development by forking the [volumio-plugins repository](https://github.com/volumio/volumio-plugins). Start developing directly in the master branch and create a pull request when you are done.
