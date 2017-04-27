@@ -49,6 +49,16 @@ where volume can be: mute, unmute, plus, minus (plus and minus will increase\dec
 
 ### Music Library
 
+* Get the current state of the player
+```
+volumio.local/api/v1/commands/getstate
+```
+
+Response
+```json
+{"status":"play","position":0,"title":"La guerra è finita","artist":"Baustelle","album":"La malavita","albumart":"/albumart?web=Baustelle/La%20malavita/extralarge&path=%2FNAS%2FMusic%2FBaustelle%20-%20La%20Malavita","uri":"mnt/NAS/Music/Baustelle - La Malavita/02 la guerra è finita.mp3","trackType":"mp3","seek":4224,"duration":262,"samplerate":"44.1 KHz","bitdepth":"24 bit","channels":2,"random":null,"repeat":null,"repeatSingle":false,"consume":false,"volume":41,"mute":false,"stream":"mp3","updatedb":false,"volatile":false,"service":"mpd"}
+```
+
 * Clear the queue
 ```
 volumio.local/api/v1/commands/?cmd=clearQueue
