@@ -51,7 +51,7 @@ where volume can be: mute, unmute, plus, minus (plus and minus will increase\dec
 
 * Get the current state of the player
 ```
-volumio.local/api/v1/commands/getstate
+volumio.local/api/v1/getstate
 ```
 
 Response
