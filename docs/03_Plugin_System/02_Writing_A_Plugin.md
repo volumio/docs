@@ -1,4 +1,4 @@
-## Create your plugin
+# Create your plugin
 
 The plugin helper utility allows you to easily create your own plugin, by providing tools for the main steps.
 Its functions are:
@@ -41,6 +41,10 @@ of all it will copy the repository, then create the appropriate folder as
 specified by the user and prepare all the basic files, finally it will install
 your plugin locally. Here a step by step example:
 
+<p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
+  ATTENTION: The first step is cloning the <a href="https://github.com/volumio/volumio-plugins">volumio-plugins repository</a>, just head there and click "fork" on top right corner
+</p>
+
 ```bash
 
 volumio@volumio:~$ volumio plugin init
@@ -75,9 +79,7 @@ the Plugin Category
   Answer: 1
 
 ```
-<p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
-  ATTENTION: remember to fork the repository on git first
-</p>
+
 
 ```bash
 Creating a new plugin
@@ -190,9 +192,11 @@ plugin, as follow:
 }
 
 ```
+<p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
+  ATTENTION: Your plugin is not published yet. All you need to do is <a href="https://help.github.com/articles/creating-a-pull-request/">create a pull request</a>, this will initiate the review process by Volumio Team. If everything looks good, your plugin will be published in the Volumio plugins store.
+</p>
 
-ATTENTION: your plugin still need a pull request, before being available for
-download.
+# Volumio plugin files description
 
 ## The Plugin Zip File
 
