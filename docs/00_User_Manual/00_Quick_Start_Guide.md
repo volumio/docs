@@ -10,6 +10,11 @@
 - Install some packages and configure the system
 - Generate new thumbnails for the default backgrounds
 
+<p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
+For security reasons, SSH is disabled by default on all versions after 2.199. It can be however enabled very easily. <a href="https://volumio.github.io/docs/User_Manual/Quick_Start_Guide.html">INSTRUCTION HERE</a>
+</p>
+
+
 #### Network connection
 
 * Volumio works best when its connected to your Network, since it's meant to be used in an headless state: no monitor connected, and controlled via another device (PC, smartphone, tablet etc)
