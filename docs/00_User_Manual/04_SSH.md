@@ -1,6 +1,6 @@
 ## SSH access on volumio
 
-For security reasons, SSH is disabled by default on all versions after 2.199. It can be however enabled very easily.
+For security reasons, SSH is disabled by default on all versions after 2.199 (except first boot). It can be however enabled very easily.
 
 ### First method: file
 
