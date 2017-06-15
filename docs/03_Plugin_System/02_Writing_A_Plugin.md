@@ -1,3 +1,203 @@
+# Create your plugin
+
+The plugin helper utility allows you to easily create your own plugin, by providing tools for the main steps.
+Its functions are:
+
+```bash
+
+volumio plugin
+
+volumio plugin init
+
+volumio plugin refresh
+
+volumio plugin package
+
+volumio plugin publish
+
+```
+
+### volumio plugin
+
+This command will simply show you a review of the usage of the utility, as follows:
+
+```bash
+
+---- VOLUMIO PLUGIN HELPER ----
+
+This utility helps you creating new plugins for Volumio.
+Options:
+init      creates a new plugin
+refresh   copies the plugin in the system
+package   compresses the plugin
+publish   publishes the plugin on git
+
+```
+
+### volumio plugin init
+
+Call the utility with this command to create a new plugin from scratch. First
+of all it will copy the repository, then create the appropriate folder as
+specified by the user and prepare all the basic files, finally it will install
+your plugin locally. Here a step by step example:
+
+<p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
+  ATTENTION: The first step is cloning the <a href="https://github.com/volumio/volumio-plugins">volumio-plugins repository</a>, just head there and click "fork" on top right corner
+</p>
+
+```bash
+
+volumio@volumio:~$ volumio plugin init
+
+Welcome to the Volumio Plugin Creator!
+You have to decide which category your plugin belongs to, then you have to select
+a name for it, leave us the rest
+Warning: make meaningful choices, you cannot change them later!
+
+Creating a new plugin
+? volumio plugins folder non existent, please type your github username Ghembs
+cloning repo:
+git clone https://github.com/Ghembs/volumio-plugins.git
+Cloning into '/home/volumio/volumio-plugins'...
+Done, please run command again
+
+volumio@volumio:~$ volumio plugin init
+
+Welcome to the Volumio Plugin Creator!
+You have to decide which category your plugin belongs to, then you have to select
+a name for it, leave us the rest ;)
+Warning: make meaningful choices, you cannot change them later!
+
+Creating a new plugin
+? Please select
+the Plugin Category
+  1) audio_interface
+  2) miscellanea
+  3) music_service
+  4) system_controller
+  5) user_interface
+  Answer: 1
+
+```
+
+
+```bash
+Creating a new plugin
+? Please select
+the Plugin Category audio_interface
+? Please insert a name for your plugin test
+NAME: test CATEGORY: audio_interface
+Copying sample files
+? Please insert your name (Volumio Team)
+? Insert a brief description of your plugin (100 chars) test plugin
+Installing dependencies locally
+npm WARN test@1.0.0 No repository field.
+
+Congratulation, your plugin has been succesfully created!
+You can find it in: /home/volumio/volumio-plugins/plugins/audio_interface/test
+
+```
+After you selected a category and a name for the plugin, it will ask for yours,
+(Volumio team is the default name), then for a description and finally it will
+create it and install it locally (/data/plugins/...).
+
+### volumio plugin refresh
+
+Call the utility with this command if you worked on the source and you want a
+ plugin to be updated locally (/data/plugins/...). You have to call it from an
+appropriate plugin folder, in the path of `volumio-plugins`.
+
+```bash
+volumio@volumio:~/volumio-plugins/plugins/audio_interface/test$ volumio plugin refresh
+
+This command will copy all your plugin\'s file in the correspondent folder in data
+
+Updating the plugin in Data
+Plugin succesfully refreshed
+
+```
+
+### volumio plugin package
+
+Call the utility with this command if you want to create a package with the
+content of a plugin's folder. It will take care of npm dependencies and put the
+zip in the same folder.
+
+```bash
+volumio@volumio:~/volumio-plugins/plugins/audio_interface/test$ volumio plugin package
+
+This command will create a package with your plugin
+
+Compressing the plugin
+No modules found, running "npm install"
+npm WARN test@1.0.0 No repository field.
+Plugin succesfully compressed
+
+```
+You can find more details below about the zip file and the contents you must
+have in your plugin's folder
+
+### volumio plugin publish
+
+Call the utility with this command if you want to upload your plugin on github.
+It will automatically call the package function if no `.zip` has been found,
+after asking for a last change in versioning, then it will change branch and,
+depending on if the plugin and/or category has been found on the `plugins.json`
+file, it will ask for additional details or both details and description.
+Finally it will commit them and push them on your repo.
+
+```bash
+volumio@volumio:~/volumio-plugins/plugins/audio_interface/test$ volumio plugin publish
+
+This command will publish the plugin on volumio plugins store
+
+Publishing the plugin
+? do you want to change your version? (leave blank for default) 1.0.0
+Switched to branch 'gh-pages'
+? Insert some details about your plugin (e.g. features, requirements, notes, etc
+... max 1000 chars) plugin for documentation purposes
+updating plugin sources:
+
+/usr/bin/git push origin master
+updating plugin packages:
+
+/usr/bin/git push origin gh-pages
+Congratulations, your package has been correctly uploaded and is ready for merging!
+```
+The `plugins.json` file should now contain all the informations about your
+plugin, as follow:
+
+```json
+{
+    "prettyName":"audiointerface",
+    "name":"audio_interface",
+    "id":"cat5",
+    "description":"",
+    "plugins":
+    [
+        {
+            "prettyName":"test",
+            "icon":"fa-lightbulb-o",
+            "name":"test",
+            "version":"1.0.0",
+            "url":"http://volumio.github.io/volumio-plugins/plugins/volumio/armhf/audio_interface/test/test.zip",
+            "license":"ISC",
+            "description":"test plugin",
+            "details":"plugin for documentation purposes",
+            "author":"Volumio Team",
+            "screenshots":[{"image":"","thumb":""}],
+            "updated":"2-6-2017"
+        }
+    ]
+}
+
+```
+<p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
+  ATTENTION: Your plugin is not published yet. All you need to do is <a href="https://help.github.com/articles/creating-a-pull-request/">create a pull request</a>, this will initiate the review process by Volumio Team. If everything looks good, your plugin will be published in the Volumio plugins store.
+</p>
+
+# Volumio plugin files description
+
 ## The Plugin Zip File
 
 The  plugin zip file will be created as the last step of the plugin creation and it must contains :

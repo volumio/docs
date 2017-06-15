@@ -12,31 +12,6 @@ In this scenario, we will develop direclty on the Volumio device, but editing th
 * Mount the /volumio directory of your device to a Folder on your system via sftp (volumio:volumio)
 * Use an IDE that allows remote deplyoment (like [Atom](https://atom.io/) or [Webstorm](https://www.jetbrains.com/webstorm/) which we suggest since its simply awesome!)
 
-When you make changes to any file of Volumio, you can restart the service with
-
-```shell
-killall node
-```
-
-or
-
-```shell
-systemctl restart volumio
-```
-
-You can see all logs, generated both by the system and Volumio with
-
-```shell
-sudo journalctl -f
-```
-
-So, ideally, you'll want to:
-
-* Edit the files from your editor of choice
-* Upload changes to the Volumio device
-* Restart NODE Services
-* See the effects via an SSH connection, with sudo journalctl -f
-
 *IMPORTANT*: If you want to develop on the latest version, you can simply launch this command to obtain the latest code on master branch:
 
 ```shell
