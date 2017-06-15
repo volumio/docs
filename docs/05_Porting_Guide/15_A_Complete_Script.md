@@ -1,9 +1,10 @@
 ## Creating a complete Script for compiling U-Boot and Kernel ##
 
+
     #!/bin/sh
-    KERNELDIR=$HOME/sources/linux-rockchip/miqi/release-4.4
-    UBOOTDIR=$HOME/u-boot
-    DEST=/media/nas/asus/tinkerboard
+    DESTDIR=$HOME/asus-build/platform-asus/tinkerboard  
+    KERNELDIR=$HOME/linux-asus  
+    UBOOTDIR=$HOME/u-boot  
     TARDIR=/media/nas/asus
 
     echo "Compiling u-boot..."
@@ -14,8 +15,8 @@
     make -j8
 
     echo "Create u-boot image..."
-    mkimage -n rk3288 -T rksd -d spl/u-boot-spl-dtb.bin $DEST/u-boot/u-boot.img
-    cat u-boot-dtb.bin >> $DEST/u-boot/u-boot.img
+    mkimage -n rk3288 -T rksd -d spl/u-boot-spl-dtb.bin $DESTDIR/u-boot/u-boot.img
+    cat u-boot-dtb.bin >> $DESTDIR/u-boot/u-boot.img
 
     cd $KERNELDIR
     echo "Cleaning kernel folder..."
@@ -23,28 +24,31 @@
     make clean
 
     echo "Configuring options..."
-    make linux-rockchip-tinker_defconfig
+    make tinker-rockchip_defconfig
     make menuconfig
-    cp .config.old arch/arm/configs/linux-rockchip-tinker_defconfig.old
-    cp .config arch/arm/configs/linux-rockchip-tinker_defconfig
+    cp .config.old arch/arm/configs/tinker-rockchip_defconfig.old
+    cp .config arch/arm/configs/tinker-rockchip_defconfig
 
     echo "Compiling the kernel..."
     make -j12
 
     echo "Saving configuration..."
     kver=`make kernelrelease`-`date +%Y.%d.%m-%H.%M`
-    rm $DEST/boot/config*
-    cp .config $DEST/boot/config-${kver}
-    cp .config $DEST/config-${kver}
+    rm $DESTDIR/boot/config*
+    cp .config $DESTDIR/boot/config-${kver}
+    cp .config $DESTDIR/config-${kver}
 
     echo "Saving kernel and dtb's..."
-    cp arch/arm/boot/zImage $DEST/boot
-    cp arch/arm/boot/dts/\*.dtb $DEST/boot/dtb
+    cp arch/arm/boot/zImage $DESTDIR/boot
+    cp arch/arm/boot/dts/*.dtb $DESTDIR/boot/dtb
 
     echo "Saving modules and firmware..."
-    rm -r $DEST/lib
-    make modules_install ARCH=arm INSTALL_MOD_PATH=$DEST
-    make firmware_install ARCH=arm INSTALL_FW_PATH=$DEST/lib/firmware
+    rm -r $DESTDIR/lib
+    make modules_install ARCH=arm INSTALL_MOD_PATH=$DESTDIR
+    make firmware_install ARCH=arm INSTALL_FW_PATH=$DESTDIR/lib/firmware
+
+    echo "Saving Volumio kernel patches"
+    git diff > $DESTDIR/tinkerboard/patches/Volumio-Kernel.patches
 
     echo "Backup platform files..."
     cd $TARDIR
