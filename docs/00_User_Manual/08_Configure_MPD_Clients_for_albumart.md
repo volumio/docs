@@ -1,7 +1,7 @@
 
 
 When starting the MPod app for the first time:
-* Select "Add payer manually" and fill in the following information:
+* Select "Add player manually" and fill in the following information:
 - Connection - Name: Volumio
 - MPD - Server: ip address of your volumio device (or volumio.local , or in case you renamed it volumioname.local)
 - Local Cover Art - URL: volumio.local/cover-art
