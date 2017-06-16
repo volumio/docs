@@ -6,22 +6,22 @@ Here's an example:
 
 ```javascript
 var modalData = {
-                      title: 'Modal',
-                      message: 'Something occured, you may react, or close this window',
-                      size: 'lg',
-                      buttons: [
-                        {
-                          name: 'Close',
-                          class: 'btn btn-warning'
-                        },
-                        {
-                          name: 'React',
-                          class: 'btn btn-info',
-                          emit:'react',
-                          payload:''
-                         }  
-                      ]
-                    }
+                  title: 'Modal',
+                  message: 'Something occured, you may react, or close this window',
+                  size: 'lg',
+                  buttons: [
+                    {
+                      name: 'Close',
+                      class: 'btn btn-warning'
+                    },
+                    {
+                      name: 'React',
+                      class: 'btn btn-info',
+                      emit:'react',
+                      payload:''
+                     }  
+                  ]
+                }
 
 self.commandRouter.broadcastMessage("openModal", modalData);
 ```
