@@ -1,4 +1,4 @@
-##User Modal
+## User Modal
 
 It is possible to interact with your plugin's user in real time using modals.
 
