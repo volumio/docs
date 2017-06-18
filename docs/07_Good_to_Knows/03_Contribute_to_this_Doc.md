@@ -37,3 +37,16 @@ git commit -m "Hey I changed this and that"
 
 To see your changes live, just download and launch any  [XAMMP environment](https://www.apachefriends.org/it/index.html) to expose a php-capable local web server, and clone the docs
 under your htdocs folder. Docs will update in realtime and will be available under `http://localhost/docs`
+
+#### Compiling to static HTML
+
+There is another method to preview your changes that does not need a webserver.
+This has a slower edit/view turnaround time but works fine.
+
+First, compile to static html
+```bash
+sh compile.sh
+```
+
+Then, navigate your browser to the top of the output tree: ```compile.sh``` will print the exact location for you.
+
