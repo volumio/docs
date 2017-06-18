@@ -1,3 +1,3 @@
 #/bin/sh
 
-php generate.php global.json out
+php generate.php -c global.json -d out
