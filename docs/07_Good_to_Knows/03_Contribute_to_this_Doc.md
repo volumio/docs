@@ -18,9 +18,9 @@ If you don't feel like editing this doc yourself, you can at least tell us what 
 ```
 
 2. Edit it
-⋅⋅* I suggest [Atom.io IDE](https://atom.io/) together with  [Markdown Preview](https://atom.io/packages/markdown-preview) but any text editor will do
-⋅⋅* Make sure you comply with   [DAUX rules](http://daux.io/Getting_Started) (if you create a new page, don't use spaces but _ and make sure the name ends with .md)
-⋅⋅* This doc is written in Markdown language, and automatically converted to html. See the [Markdown Cheatsheet](../Good_to_Knows/Markdown_Cheatsheet) to get used to it
+  * I suggest [Atom.io IDE](https://atom.io/) together with  [Markdown Preview](https://atom.io/packages/markdown-preview) but any text editor will do
+  * Make sure you comply with   [DAUX rules](http://daux.io/Getting_Started) (if you create a new page, don't use spaces but _ and make sure the name ends with .md)
+  * This doc is written in Markdown language, and automatically converted to html. See the [Markdown Cheatsheet](../Good_to_Knows/Markdown_Cheatsheet) to get used to it
 
 3. Commit it
 
