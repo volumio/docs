@@ -2,7 +2,7 @@
 
 ### Note ###
 This is work in progress and will be updated the coming couple of days
-Last change: 26.04.2017/ gkkpch
+Last change: 18.06.2017/ gkkpch
 
 ### What does it cover ###
 This is a __guideline__ for porting Volumio to new ARM platforms, not a step-by-step instruction or cookbook.
@@ -16,7 +16,7 @@ It covers most of the steps needed:
 As arm devices can differ regarding kernel version, supported u-boot version, boot parameters, and partition layout, board-specific properties have to be taken into account.  
 Example: some board images use uEnv.txt or boot.ini to describe the boot parameters, others use a compiled boot.scr.  
 Or, as we will see in our build example, a combination of a compiled boot.scr and a text file to override certain defined parameters.  
-As for u-boot, some can be compiled directly from http://git.denx.de (mostly newer boards with a mainline kernel), some need additional blobs.  
+As for u-boot, some can be compiled directly from __<http://git.denx.de>__ (mostly newer boards with a mainline kernel), some need additional blobs.  
 For some boards, blobs, SPL and u-boot are written to a device in separate steps, for others an image from u-boot and spl binary must be prepared and written to the device.  
 The purpose of this guide is to offer help in finding the information you need to cover all these different issues.
 Again, the guide is not a cookbook, but it will use the Asus Tinkerboard as an example from chapter 4 onwards, describing in detail how it was done for that particular device.
