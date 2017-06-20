@@ -1,6 +1,8 @@
 #!/bin/bash
 set -e # exit with nonzero exit code if anything fails
 
+DEPLOY_BRANCH="master:gh-pages"
+
 # Compile the static docs
 ./daux.phar
 
@@ -22,5 +24,5 @@ git commit -m "Deploy to GitHub Pages"
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 echo "Deploying"
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages > /dev/null 2>&1
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" '$DEPLOY_BRANCH" > /dev/null 2>&1
 #git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
