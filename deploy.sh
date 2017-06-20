@@ -24,5 +24,15 @@ git commit -m "Deploy to GitHub Pages"
 # will be lost, since we are overwriting it.) We redirect any output to
 # /dev/null to hide any sensitive credential data that might otherwise be exposed.
 echo "Deploying"
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" '$DEPLOY_BRANCH" > /dev/null 2>&1
-#git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" master:gh-pages
+
+LOG=./log.$$
+exitcode=0
+git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" $DEPLOY_BRANCH 1> $LOG 2>&1 || exitcode=$?
+
+if [ "0" != "$exitcode" ]; then
+    echo "git push to $DEPLOY_BRANCH failed!"
+    cat "$LOG"
+    rm "$LOG"
+    exit $exitcode
+fi
+rm "$LOG"
