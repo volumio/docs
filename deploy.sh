@@ -27,7 +27,7 @@ echo "Deploying"
 
 LOG=./log.$$
 exitcode=0
-git push --force --quiet "https://${GH_TOKEN}@${GH_REF}" $DEPLOY_BRANCH 1> $LOG 2>&1 || exitcode=$?
+git push --force "https://${GH_TOKEN}@${GH_REF}" $DEPLOY_BRANCH 1> $LOG 2>&1 || exitcode=$?
 
 if [ "0" != "$exitcode" ]; then
     echo "git push to $DEPLOY_BRANCH failed!"
