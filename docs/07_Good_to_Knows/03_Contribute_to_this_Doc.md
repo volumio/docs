@@ -18,9 +18,9 @@ If you don't feel like editing this doc yourself, you can at least tell us what 
 ```
 
 2. Edit it
-⋅⋅* I suggest [Atom.io IDE](https://atom.io/) together with  [Markdown Preview](https://atom.io/packages/markdown-preview) but any text editor will do
-⋅⋅* Make sure you comply with   [DAUX rules](http://daux.io/Getting_Started) (if you create a new page, don't use spaces but _ and make sure the name ends with .md)
-⋅⋅* This doc is written in Markdown language, and automatically converted to html. See the [Markdown Cheatsheet](../Good_to_Knows/Markdown_Cheatsheet) to get used to it
+  * I suggest [Atom.io IDE](https://atom.io/) together with  [Markdown Preview](https://atom.io/packages/markdown-preview) but any text editor will do
+  * Make sure you comply with   [DAUX rules](http://daux.io/Getting_Started) (if you create a new page, don't use spaces but _ and make sure the name ends with .md)
+  * This doc is written in Markdown language, and automatically converted to html. See the [Markdown Cheatsheet](../Good_to_Knows/Markdown_Cheatsheet) to get used to it
 
 3. Commit it
 
@@ -37,3 +37,16 @@ git commit -m "Hey I changed this and that"
 
 To see your changes live, just download and launch any  [XAMMP environment](https://www.apachefriends.org/it/index.html) to expose a php-capable local web server, and clone the docs
 under your htdocs folder. Docs will update in realtime and will be available under `http://localhost/docs`
+
+#### Compiling to static HTML
+
+There is another method to preview your changes that does not need a webserver.
+This has a slower edit/view turnaround time but works fine.
+
+First, compile to static html
+```bash
+sh compile.sh
+```
+
+Then, navigate your browser to the top of the output tree: ```compile.sh``` will print the exact location for you.
+
