@@ -18,19 +18,17 @@ In this scenario, we will develop direclty on the Volumio device, but editing th
 volumio pull
 ```
 
-If you want to develop or test a certain branch you can use the following command, replacing *<branch>* with the real name of the branch:
+If you want to develop or test a certain branch you can use the following command, replacing `<branch>` with the real name of the branch:
 
-```shell
+```
 volumio pull -b <branch>
 ```
 
-If you want to develop or test a certain branch of a forked repository you can use the following command, replacing *<branch>* with the real name of the branch and *<repository>* with the real name of the repository URL, e.g. something like https://github.com/user_who_forked_volumio/Volumio2.git
+If you want to develop or test a certain branch of a forked repository you can use the following command, replacing `<branch>` with the real name of the branch and `<repository>` with the real name of the repository URL, e.g. something like https://github.com/user_who_forked_volumio/Volumio2.git
 
-```shell
+```
 volumio pull -b <branch> <repository>
 ```
-
-
 
 ### Setting up a development environment for Volumio2 UI
 
