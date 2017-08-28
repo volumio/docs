@@ -24,7 +24,7 @@ If you want to develop or test a certain branch you can use the following comman
 volumio pull -b <branch>
 ```
 
-If you want to develop or test a certain branch of a forked repository you can use the following command, replacing `<branch>` with the real name of the branch and `<repository>` with the real name of the repository URL, e.g. something like https://github.com/user_who_forked_volumio/Volumio2.git
+If you want to develop or test a certain branch of a forked repository you can use the following command, replacing `<branch>` with the real name of the branch and `<repository>` with the real name of the repository URL, e.g. something like `https://github.com/user_who_forked_volumio/Volumio2.git`
 
 ```
 volumio pull -b <branch> <repository>
