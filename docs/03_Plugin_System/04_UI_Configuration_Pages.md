@@ -183,7 +183,7 @@ Content defines all the elements available in a section. It needs the following 
                ]
 ```
 
-#### button
+#### button 1: Open a modal to ask for confirmation before emitting data and message
 ```
 'id': 'update',
               'element': 'button',
@@ -194,6 +194,25 @@ Content defines all the elements available in a section. It needs the following 
                 'data': 'search-for-upgrade',
                 'message': 'updateCheck',
                 'askForConfirm': {'title': 'Confirm', 'message': 'are you sure?'}
+```
+
+
+#### button 2: Directly emit data and message
+```
+		  'id':'albumartcache',
+		  'element': 'button',
+		  'label': 'TRANSLATE.APPEARANCE.ALBUMART_RESET_CACHE',
+		  'doc': 'TRANSLATE.APPEARANCE.ALBUMART_RESET_CACHE_DOC',
+		  'onClick': {'type':"emit', 'message':'callMethod', 'data':{'endpoint':'miscellanea/albumart','method':'clearAlbumartCache','data':''}}
+```
+
+#### button 3: Open a URL in a new page
+```
+            'id':'volumiolink',
+              'element': 'button',
+              'label': 'Go To Volumio Website',
+              'description": 'Open Volumio Website',
+              'onClick': {'type':'openUrl', 'url':'https://volumio.org'}       
 ```
 
 #### Equalizer
