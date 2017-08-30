@@ -2,7 +2,7 @@
     "title": "Volumio Documentation",
     "tagline": "The Audiophile Music Player",
     "author": "Michelangelo Guarise",
-    "image": "Volumio_logo.jpg",
+    "image": "images/Volumio_logo.jpg",
     "ignore": {
             "files": ["Work_In_Progress.md"],
             "folders": ["99_Not_Ready"]
