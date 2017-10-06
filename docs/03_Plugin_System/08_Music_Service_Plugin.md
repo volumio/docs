@@ -17,15 +17,15 @@ Optional functions are:
 
 In your plugin you may want to show folders and songs. Volmuio knows several different types that offer different functionalities to the user.
 
-Those types offer the user the opportunity to add it to its favorites or to a playlist:
+Those types offer the user the opportunity to add it to its favorites or to a playlist by clicking on the burger mneu:
 
 * folder
 * song
 * playlist
 
-Those types are simply for browsing without additional functionality - the burger menu item isn't shown either. These are used by the webradio plugin:
+Those types are simply for browsing without additional functionality - the burger menu isn't shown either.
 
-* radio-category
+* item-no-menu
 
 Use the type property on the object you are returning the the required and optional functions:
 
