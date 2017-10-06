@@ -9,6 +9,10 @@ Those are:
 * explodeUri
 * search
 
+Optional functions are:
+
+* getTrackInfo
+
 ### Folders and Structures
 
 In your plugin you may want to show folders and songs. Volmuio knows several different types that offer different functionalities to the user.
@@ -741,5 +745,58 @@ As result the following structure is expected:
 			"uri": "spotify:track:2r6oZ0GBqJaCnqqR72yiFc"
 		}
   ]
+}
+```
+
+### Optional Functions
+
+#### Get Track Info
+
+This method is called by volumio when the user adds e.g. a song to a playlist or to the favorites. The example code is shown from the YouTube plugin:
+
+```javascript
+Youtube.prototype.getTrackInfo = function (uri) {
+  var self = this;
+  var deferred = libQ.defer();
+
+  if (uri.startsWith('youtube')) {
+    var uriParts = uri.split('/');
+    var id = uriParts.pop();
+    var kind = uriParts.pop();
+
+    switch (kind) {
+      case 'playlist':
+        self.getPlaylistItems(id).then(function (playlistItems) {
+          if (playlistItems.navigation.lists.length > 0
+            && playlistItems.navigation.lists[0].items.length > 0) {
+            console.log(playlistItems.navigation.lists[0].items)
+            deferred.resolve(playlistItems.navigation.lists[0].items);
+          } else {
+            deferred.reject(new Error('Failed to load playlist info.'));
+          }
+        });
+        break;
+      case 'video':
+        self.getVideo(id).then(function (videoItems) {
+          console.log(JSON.stringify(videoItems));
+          if (videoItems.items.length > 0) {
+            deferred.resolve(videoItems.items);
+          } else {
+            deferred.reject(new Error('Failed to load video info.'));
+          }
+        });
+        break;
+      default:
+        self.logger.error("Youtube::getTrackInfo unknown uri kind: " + kind);
+        deferred.reject(new Error('Unknown uri kind ' + kind));
+        break;
+    }
+
+  } else {
+    self.logger.info("Youtube::getTrackInfo unknown uri: " + uri);
+    deferred.reject(new Error('Unknown uri ' + uri));
+  }
+
+  return deferred.promise;
 }
 ```
