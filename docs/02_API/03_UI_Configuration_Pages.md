@@ -168,7 +168,7 @@ As a mere example, let's see how Wireless Configuration Page will look like (thi
 
 
 
-##Linking items in a hierarchy
+## Linking items in a hierarchy
 Items can be linked in a tree hierarchy. To do this the attribute children is specified. Its value is an object containig subitems. Below an example:
 
     "main":{
