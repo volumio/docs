@@ -377,6 +377,7 @@ addToQueue {'uri:uri'}
 where `uri` is the uri of the item we want to add
 
 ### Move a queue item
+
 ```
 moveQueue {from:N,to:N2}
 ```
@@ -385,24 +386,77 @@ Where N is the track number we want to move, and N2 is its new position
 
 If we want to add an individual track from a .cue file:
 
-
-
-
 ```
 addPlayCue {uri:'uriofsong',number:3}
 ```
 
+### Favourites handling
+
+Available functionality:
+
+- addToFavourites
+- removeFromFavourites
+
+#### addToFavourites
+
+This method adds a song to the favourites
+
+Input:
+
+```json
+   {
+    "uri":"my_uri/...",
+    "title":"my song",
+    "service":"my_service"
+   }
+```
+
+Output:
+
+```json
+   {
+    "success":true|false
+    "reason":"failure details"
+   }
+```
+
+The reason field is set only if success is false
+
+#### removeFromFavourites
+
+This method removes all occurrences of a song from the favourites
+
+Input:
+
+```json
+   {
+    "uri":"my_uri/...",
+    "service":"my_service"
+   }
+```
+
+Output:
+
+```json
+   {
+    "success":true|false
+    "reason":"failure details"
+   }
+```
+
+The reason field is set only if success is false
+
 ### Playlist handling
 
-```
-createPlaylist
-deletePlaylist {value:playlistname}
-listPlaylist
-addToPlaylist
-removeFromPlaylist
-playPlaylist
-enqueue
-```
+Available functionality:
+
+- createPlaylist
+- deletePlaylist
+- listPlaylist
+- addToPlaylist
+- removeFromPlaylist
+- playPlaylist
+- enqueue
 
 #### createPlaylist
 
