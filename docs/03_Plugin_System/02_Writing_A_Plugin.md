@@ -15,6 +15,10 @@ volumio plugin package
 
 volumio plugin publish
 
+volumio plugin install
+
+volumio plugin update
+
 ```
 
 ### volumio plugin
@@ -195,6 +199,76 @@ plugin, as follow:
 <p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
   ATTENTION: Your plugin is not published yet. All you need to do is <a href="https://help.github.com/articles/creating-a-pull-request/">create a pull request</a>, this will initiate the review process by Volumio Team. If everything looks good, your plugin will be published in the Volumio plugins store.
 </p>
+
+### volumio plugin install
+
+Call the utility with this command if you just downloaded a plugin and wish to install
+it. You should be in the plugin folder, containing a proper `package.json` file.
+
+```bash
+volumio@volumio:~/volumio-plugins/plugins/accessory/ir_controller$ volumio plugin install
+
+This command will install the plugin on your device
+
+Compressing the plugin
+Plugin succesfully compressed
+Progress: 10
+Status :Downloading plugin
+Progress: 30
+Status :Creating folder on disk
+Progress: 40
+Status :Unpacking plugin
+Progress: 50
+Status :Checking for duplicate plugin
+Progress: 60
+Status :Copying Plugin into location
+Progress: 70
+Status :Installing dependencies
+Progress: 70
+Status :Installing dependencies
+Progress: 70
+Status :Installing dependencies
+Progress: 90
+Status :Adding plugin to registry
+Progress: 100
+Status :Plugin Successfully Installed
+Done!
+```
+
+### volumio plugin update
+
+Call the utility with this command if you just downloaded a more recent version of a plugin
+you've already installed and activated, to update it. You should be in the plugin folder, containing a proper `package.json` file.
+
+```bash
+volumio@volumio:~/volumio-plugins/plugins/accessory/ir_controller$ volumio plugin update 
+
+This command will update the plugin on your device
+
+Compressing the plugin
+Plugin succesfully compressed
+Progress: 10
+Status :Downloading plugin
+Progress: 20
+Status :Plugin stopped
+Progress: 30
+Status :Creating folder on disk
+Progress: 40
+Status :Unpacking plugin
+Progress: 60
+Status :Updating Plugin Files
+Progress: 70
+Status :Installing dependencies
+Progress: 70
+Status :Installing dependencies
+Progress: 70
+Status :Installing dependencies
+Progress: 90
+Status :Adding plugin to registry
+Progress: 100
+Status :Plugin Successfully Installed
+Done!
+```
 
 # Volumio plugin files description
 
