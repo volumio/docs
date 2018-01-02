@@ -27,9 +27,9 @@ previous
 
 [[VOLUMIO SERVICE CONTROL]]
 
-start                               Starts Volumio Service
-stop                                Stops Volumio Service
-restart                             Restarts Volumio Service
+vstart                               Starts Volumio Service
+vstop                                Stops Volumio Service
+vrestart                             Restarts Volumio Service
 ```
 
 
