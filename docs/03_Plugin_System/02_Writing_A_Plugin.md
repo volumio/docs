@@ -105,6 +105,17 @@ After you selected a category and a name for the plugin, it will ask for yours,
 (Volumio team is the default name), then for a description and finally it will
 create it and install it locally (/data/plugins/...).
 
+#### downloading/installing dependencies
+
+If you need npm packages for your plugin you might want to install the build-essential package to be able to download and compile packages using the node package manager (npm).
+
+```bash
+
+volumio@volumio:~$ sudo apt-get install build-essential
+
+```
+You can now install package from npm by using the simple command npm install {package name}, e.g. npm install epoll
+
 ### volumio plugin refresh
 
 Call the utility with this command if you worked on the source and you want a
