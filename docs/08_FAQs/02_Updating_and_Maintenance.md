@@ -10,7 +10,7 @@ Caution: do not try to update your system by using 'sudo apt-get upgrade' ... th
 
 #### How do I do a 'factory reset?'
 
-System settings may be returned to the last stable version that you installed by carrying out a 'factory reset' under 'System Settings.'  Note that you will lose all of your settings by applying this option.
+System settings may be returned to the first version that you installed by carrying out a 'factory reset' under 'System Settings.'  Note that you will lose all of your settings by applying this option.
 
 #### How can I backup my settings?
 
