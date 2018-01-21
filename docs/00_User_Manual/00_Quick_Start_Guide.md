@@ -25,7 +25,7 @@ For security reasons, SSH is disabled by default on all versions after 2.199. It
 ### VOLUMIO HOTSPOT
 
 * If your device has wireless capabilities (and a supported Wireless card) Volumio will create a Wireless Network called **Volumio**, the default password is **volumio2**
-* The Hotspot mode will allow you to connect to your Wireless Network without the need to a wired connection, just connect to Volumio Hotspot and configure your network on network options
+* The Hotspot mode will allow you to connect to your Wireless Network without the need for a wired connection, just connect to Volumio Hotspot and configure your network on network options
 * Once your Wireless network has been configured, the Hotspot will no longer be visible
 * If, for whatever reason, your configured Wireless network is not available, Volumio will automatically re-enable the Hotspot
 * You can change the Hotspot options in the Network options, such as its name, password and channel (useful if you experience poor Hotspot performances)
@@ -33,7 +33,7 @@ For security reasons, SSH is disabled by default on all versions after 2.199. It
 
 ### CONTROL VOLUMIO WITH THE OFFICIAL APPS
 
-* The most convenient way to control your Volumio system is trough the official apps. The advantage is that they will automatically find your Volumio device on your Network.
+* The most convenient way to control your Volumio system is through the official apps. The advantage is that they will automatically find your Volumio device on your Network.
 Not to mention that by getting the apps, you will help the project with a little contribution.
 
 <div class="container">
@@ -53,7 +53,7 @@ Not to mention that by getting the apps, you will help the project with a little
 ### WEB-UI CONNECTION
 
 * The UI can be accessed from any device with a browser: Tablets, PC, Mac, Android Phones, iPhones, Smart TVs, Ebook readers etc. Make sure you have the latest versions of their respective browsers. For an optimal experience, Google Chrome is suggested.
-* The UI can be accessed by typing Volumio's IP address on your browser. To find the IP address you can use:
+* The UI can be accessed by typing Volumio's IP address in your browser. To find the IP address you can use:
 - **ANDROID** [FING](https://play.google.com/store/apps/details?id=com.overlook.android.fing&hl=it)
 - **iOS** [Net Analyzer](https://play.google.com/store/apps/details?id=net.techet.netanalyzerlite.an&hl=it)
 - **Chrome** [mDNS Browser](https://chrome.google.com/webstore/detail/mdns-browser/kipighjpklofchgbdgclfaoccdlghidp)
