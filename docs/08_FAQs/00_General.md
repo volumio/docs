@@ -1,4 +1,4 @@
-# General
+## General
 
 #### What is Volumio?
 
