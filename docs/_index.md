@@ -8,7 +8,7 @@ By flashing (installing) Volumio on any of these platforms, it will become a hea
 
 This is made possible by Volumio’s UI: a web application that runs on any device with a web browser, that allows an easy and intuitive control of your playback sessions. All communications between the webapp and Volumio will happen through your home network.
 To learn more about Volumio, see the <a href="https://volumio.org/discover/" target="_blank">Discover Page</a> or  <a href="https://volumio.org/technical-overview/" target="_blank">Technical Overview Page</a> on the Volumio website
-and the <a href="https://docs.volumio.org/" target="_blank">documentation site</a>.
+and the <a href="http://docs.volumio.org/" target="_blank">documentation site</a>.
 
 This documentation is aimed to help both users and developers, [any contribution is welcome](/docs/Good_to_Knows/Contribute_to_this_Doc) to make it better.
 
