@@ -3,10 +3,17 @@ to the external IP rather than the LAN's IP.
 
  #### Tell the UI to bind to new IP
 
- If you want to achieve this, hardcode your public IP in [https://github.com/volumio/Volumio2/blob/master/http/restapi.js](https://github.com/volumio/Volumio2/blob/master/http/restapi.js line 49
+ If you want to achieve this, hardcode your public IP in [https://github.com/volumio/Volumio2/blob/master/http/restapi.js](https://github.com/volumio/Volumio2/blob/master/http/restapi.js line 7
+
+Change:
 
 ```
-res.json({ host: 'http://'+self.host});
+var primaryhost = undefined;
+```
+To:
+
+```
+var primaryhost = 'http://[YOUR_PUBLIC_IP]:3000';
 ```
 
 your public ip instead of self.host
