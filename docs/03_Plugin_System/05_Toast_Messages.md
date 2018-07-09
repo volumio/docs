@@ -7,9 +7,9 @@ For easier usage make sure you assign the coreCommand instance in the consturcto
 ```javascript
 module.exports = ExamplePlugin;
 function ExamplePlugin(context) {
-	var self = this;
-    self.context = context;
-	self.commandRouter = this.context.coreCommand;
+  var self = this;
+  self.context = context;
+  self.commandRouter = this.context.coreCommand;
 }
 ```
 
