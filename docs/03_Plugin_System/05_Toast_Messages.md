@@ -5,9 +5,10 @@
 For easier usage make sure you assign the coreCommand instance in the consturctor of your plugin:
 
 ```javascript
-module.exports = ControllerSpop;
-function ControllerSpop(context) {
+module.exports = ExamplePlugin;
+function ExamplePlugin(context) {
 	var self = this;
+    self.context = context;
 	self.commandRouter = this.context.coreCommand;
 }
 ```
@@ -20,7 +21,7 @@ At any place in your code you can then call the `commandRouter.pushToastMessage`
 self.commandRouter.pushToastMessage('success', "Account Login", "Login was successful");
 ```
 
-There are three kinds of toast messages: `info`, `success`, `alert` and `error`:
+There are four kinds of toast messages: `info`, `success`, `alert` and `error`:
 
 ```javascript
 self.commandRouter.pushToastMessage('info', "Account Login", "Login pending....");
