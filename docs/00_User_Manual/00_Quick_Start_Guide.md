@@ -1,5 +1,8 @@
 ## Quick start guide
 
+### DOWNLOAD AND INSTALLATION
+
+* Please have look here to download a version for your device and instructions to flash it : <a href="https://volumio.org/get-started/">DOWNLOAD AND FLASH</a>
 
 ### FIRST BOOT
 
