@@ -13,3 +13,4 @@ Just create or copy a file called ssh in /boot . You can do it right after flash
 ### Second method: DEV UI
 
 Navigate to the DEV ui by pointing your browser to VOLUMIOIP/DEV or volumio.local/DEV . Find the SSH section, and click enable. From now on your SSH will be permanently enabled.
+Note : You'll see no change when clicking on the button, but it will be ok.
