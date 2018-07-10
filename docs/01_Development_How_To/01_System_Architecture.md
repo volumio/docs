@@ -5,7 +5,7 @@ There are two halves of this project on the server side: Volumio OS and the Volu
 
 ## Architecture Overview
 
-<img src="http://lightflo.ws/volumio/VolumioArchitecture8.png" width="600">
+<img src="https://github.com/volumio/docs/blob/master/docs/01_Development_How_To/architecture-overview-volumio-for-raspberrypi.jpg" width="600">
 
 Volumio Core has an MVC-like architecture which breaks the player functionality into modules. The modules are organized by function: clients, interfaces, core, controllers, services, and output.
 
