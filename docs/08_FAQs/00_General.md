@@ -6,7 +6,9 @@ Volumio is a free and Open Source Linux Distribution, which runs on a variety of
 
 #### What devices are supported?
 
-There are recent images available for the Raspberry Pi (all variants), x86/x64 (PC/MAC), Odroid C1/C2, Allo Sparky, Pine64, & Asus Tinkerboard. There are also older images for Cubox-I, Beaglebone Black, Udoo Dual/Quad, Udoo Neo.
+There are recent images available for the Raspberry Pi (all variants : Raspberry Pi 3 Model B, Raspberry Pi 3 Model B+, Raspberry Pi Zero, Raspberry Pi Zero W.), x86/x64 (PC/MAC), Odroid C1/C2, Allo Sparky, Asus Tinkerboard.
+
+In the community portings page of the forum, you'll find image for other devices : Pine64, Rock64, Sopine and other system : <a href="https://volumio.org/forum/community-portings-f26.html">Communuty portings thread on the forum</a> 
 
 #### What are the device RAM (memory) requirements for Volumio?
 
