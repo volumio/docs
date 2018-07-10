@@ -2,7 +2,7 @@
 
 ### DOWNLOAD AND INSTALLATION
 
-* Please have look here to download a version for your device and instructionsto flash it . <a href="https://volumio.org/get-started/"></a>
+* Please have look here to download a version for your device and instructions to flash it : <a href="https://volumio.org/get-started/">DONWLOAD AND FLASH</a>
 
 ### FIRST BOOT
 
