@@ -14,4 +14,7 @@ Not all DACs include a hardware volume control (check with your device manufactu
 
 Volumio does allow the control of devices in different rooms from a single Volumio UI (if you have more than one device, then they will be visible in the UI).
 
+<img src="multiroom.png" width="624">
+
+
 Multiroom synchronised play is also possible through the use of a 'Snapcast' plugin.
