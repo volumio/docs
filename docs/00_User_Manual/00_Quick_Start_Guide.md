@@ -72,3 +72,27 @@ Not to mention that by getting the apps, you will help the project with a little
 * This feature can however be easily achieved on those platforms as well (Raspberry PI, UDOO, Odroid, Pine64 ecc) by installing the "Touchscreen plugin"
 * To install it, navigate to "Plugins" menu entry, click on "Miscellanea" category and install the Touchscreen Plugin. On some devices this might take up to 10 minutes.
 * After the plugin has successfully installed, enable it and you will see the UI on the HDMI connected display (or the official Rasperry PI display, if present)
+
+
+### FIRST CONNECTION TO THE WEBUI
+
+* Once the sytem is on and you connected to it through your network or via the hotspot, you reach Volumio's webUI.
+The first time, an helper is assisting you to configure Volumio. Don't worry if you missed it, you can still configure it later !
+
+* The helper first screen :
+<img src="helper-first-screen.png" width="624">
+
+* The helper second screen :
+<img src="helper-second-screen.png" width="624">
+
+* The helper third screen :
+<img src="helper-third-screen.png" width="624">
+
+* The helper fourth screen :
+<img src="helper-fourth-screen.png" width="624">
+
+* The helper fifth screen with a configured NAS drive
+<img src="helper-fifth-screen.png" width="624">
+
+* The helper sixth screen : Don't forget to donate ! It will help Volumio to be improved !
+<img src="helper-sixth-screen.png" width="624">
