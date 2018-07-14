@@ -6,15 +6,17 @@
 * Depending on the device you use to connect to Volumio, you'll see the desktop page or the mobile page.
 * Both provide same features, but ergonomic is different to best fit with the use (mobile or desktop)
 
-* Mobile Main page of Volumio
-<img src="./img/mobile-main-page.png" width="624">
+_Mobile Main page of Volumio :_
 
-* Desktop Main page of Volumio
+<img src="./img/mobile-main-page.png" width="350">
+
+_Desktop Main page of Volumio :_
+
 <img src="./img/desktop-main-page.png" width="624">
 
 ### Main page description
 
-* Desktop version
+_Desktop version_
 
 <img src="./img/main-page-descr.png">
 
@@ -35,8 +37,8 @@
  * __Network__ : Set your wifi, ethernet, dns
  * __System__ : Name your device, have version number and update if available, reset your system, and see credits for Volumio
  * __Plugins__ : To add features to Volumio such Streaming service (Spotify...), gpio management; equalizer, Internet radio ...
- * __Alarm__ : You love to wake up with your favorite music ? It's here !
- * __Sleep__ : You love listening music before sleeping ? It's Here
+ * __Alarm__ : You love to wake up with your favorite music ? It's here!
+ * __Sleep__ : You love listening music before sleeping ? It's Here!
  * __Shutdown__ : To stop or reboot your device properly
  * __Volumio Shop__ : A link to the Volumio shop where you'll find compatible and well sounding hardware
 
@@ -60,7 +62,11 @@
 * __Third line__ : Total duration
 * __Fourth line__ : Track source
 
-#### 6 - Favorite
+#### 6 - Track management
+
+* __Left__ : Add to favorite
+* __Middle__ : Add to playlist
+* __Right__ : Go to - Artist/Album - Tweeter
 
 #### 7 - Album art Display
 
@@ -68,17 +74,17 @@
 
 #### 8 - Volume control
 
-* __First__ : Lower volume
-* __Second__ : Mute
-* __Third__ : Higher volume
+* __Left__ : Lower volume
+* __Middle__ : Mute
+* __Right__ : Higher volume
 
 #### 9 - Multiroom zone
 
-* Here appears all available Volumio devices on your network. In the picture, the device called VOLUMIO-RPI2 is the current remoted device. To remote an other, clic on it.
+* Here appear all available Volumio devices on your network. In the picture, the device called VOLUMIO-RPI2 is the current remoted device. To remote an other, clic on it.
 
 #### 10 - Browse page
 
-* Clicking here, you access to all available music on your system (nas, usb disk, radio, Spotify, Youtube etc depending on plugins/options installed)
+* Clicking here, you access to all available music on your system (Nas, Usb disk, radio, Spotify, Youtube etc depending on plugins/options installed)
 
 #### 11- Playback
 
