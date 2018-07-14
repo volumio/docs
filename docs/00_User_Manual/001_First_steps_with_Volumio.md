@@ -16,44 +16,49 @@
 
 * Desktop version
 
-<img src="./img/main-page-desc.png">
+<img src="./img/main-page-descr.png">
 
-#### Command buttons
+#### 1 - Command buttons
 
-* Play/Stop : obvious...
-* Previous : jump to previous track
-* Next : jump to next track
+* __Play/Stop__ : obvious...
+* __Previous__ : jump to previous track
+* __Next__ : jump to next track
 
-#### Settings gears
+#### 2 - Settings gears
 
 * Here you'll find all settings for Volumio such as :
 
-    * My Music : Music sources (nas usb, and album art management)
+ * __My Volumio__ : Here you access to your account
+ * __My Music__ : Music sources (nas usb, and album art management)
+ * __Playback__ : Output device settings (dac, mixer, resampling)
+ * __Appearance__ : To select your language, image background or color
+ * __Network__ : Set your wifi, ethernet, dns
+ * __System__ : Name your device, have version number and update if available, reset your system, and see credits for Volumio
+ * __Plugins__ : To add features to Volumio such Streaming service (Spotify...), gpio management; equalizer, Internet radio ...
+ * __Alarm__ : You love to wake up with your favorite music ? It's here !
+ * __Sleep__ : You love listening music before sleeping ? It's Here
+ * __Shutdown__ : To stop or reboot your device properly
+ * __Volumio Shop__ : A link to the Volumio shop where you'll find compatible and well sounding hardware
 
-    * Playback : Output device settings (dac, mixer, resampling)
+#### 3 - Track text information
 
-    * Appearance : To select your language, image background or color
+* __Firts line__ : Album name
+* __Second line__ : Track title
+* __Third line__ : Artist name
 
-    * Network : Set your wifi, ethernet, dns
+#### 4 - Volume Settings
 
-    * System : Name your device, have version number and update if available, reset your system, and see credits for Volumio
+* __Inside value__ : Current volume level
+* __External circle__ : Graphic volume level. Change the volume by moving it.
 
-    * Plugins : To add features to Volumio such Streaming service (Spotify...), gpio management; equalizer, Internet radio ...
+#### 5 - Timer zone
 
-    * Alarm : You love to wake up with your favorite music ? It's here !
+  * Miscellaneous info about the played track
 
-    * Sleep : You love listening music before sleeping ? It's Here
 
-    * Shutdown : To stop or reboot your device properly
-
-    * Volumio Shop : A link to the Volumio shop where you'll find compatible and well sounding hardware
-
-  #### Album art
+#### 7 - Album art
 
   * Display album art for the played track or radio if available
 
-  #### Timer zone
-
-  * Miscellaneous info about the played track (format, sample rate, duration...)
 
   ## to be continued....
