@@ -80,21 +80,21 @@ Not to mention that by getting the apps, you will help the project with a little
 The first time, an helper is assisting you to configure Volumio. Don't worry if you missed it, you can still configure it later !
 
 * The helper first screen : Choose your LANGUAGE
-<img src="helper-first-screen.png" width="624">
+<img src="./img/helper-first-screen.png" width="624">
 
 * The helper second screen : Choose the NAME for your device
-<img src="helper-second-screen.png" width="624">
+<img src="./img/helper-second-screen.png" width="624">
 
 * The helper third screen : Configure your DAC
-<img src="helper-third-screen.png" width="624">
+<img src="./img/helper-third-screen.png" width="624">
 
 * The helper fourth screen : Configure your NETWORK
-<img src="helper-fourth-screen.png" width="624">
+<img src="./img/helper-fourth-screen.png" width="624">
 
 * The helper fifth screen with a configured NAS drive
-<img src="helper-fifth-screen.png" width="624">
+<img src="./img/helper-fifth-screen.png" width="624">
 
 * The helper sixth screen : Don't forget to donate ! It will help Volumio to be improved !
-<img src="helper-sixth-screen.png" width="624">
+<img src="./img/helper-sixth-screen.png" width="624">
 
 * Once it is done, you should have a working system,ready to play music! Let's discover it !

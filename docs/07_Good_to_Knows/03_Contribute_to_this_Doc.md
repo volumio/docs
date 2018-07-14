@@ -1,7 +1,7 @@
 
 Everyone knows how tedious it is to write documentation. But it is extremely important for every project, especially for Volumio. So if you find something incomplete, missing or
  wrong feel free to edit this doc and improve it.
- 
+
 If you don't feel like editing this doc yourself, you can at least tell us what you would change [here](https://volumio.org/forum/documentation-feedback-t6425.html)!
 
  #### How this doc works
@@ -35,5 +35,5 @@ git commit -m "Hey I changed this and that"
 
 #### See changes live
 
-To see your changes live, just download and launch any  [XAMMP environment](https://www.apachefriends.org/it/index.html) to expose a php-capable local web server, and clone the docs
+To see your changes live, just download and launch any  [XAMMP environment](https://www.apachefriends.org/en/index.html) to expose a php-capable local web server, and clone the docs
 under your htdocs folder. Docs will update in realtime and will be available under `http://localhost/docs`
