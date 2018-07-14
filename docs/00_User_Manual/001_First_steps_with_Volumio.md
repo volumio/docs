@@ -42,7 +42,7 @@
 
 #### 3 - Track text information
 
-* __Firts line__ : Album name
+* __First line__ : Album name
 * __Second line__ : Track title
 * __Third line__ : Artist name
 
@@ -55,10 +55,38 @@
 
   * Miscellaneous info about the played track
 
+* __First line__ : Sample rate / bit resolution
+* __Second line__ : Ellapsed time
+* __Third line__ : Total duration
+* __Fourth line__ : Track source
 
-#### 7 - Album art
+#### 6 - Favorite
 
-  * Display album art for the played track or radio if available
+#### 7 - Album art Display
+
+* Display album art for the played track or radio if available
+
+#### 8 - Volume control
+
+* __First__ : Lower volume
+* __Second__ : Mute
+* __Third__ : Higher volume
+
+#### 9 - Multiroom zone
+
+* Here appears all available Volumio devices on your network. In the picture, the device called VOLUMIO-RPI2 is the current remoted device. To remote an other, clic on it.
+
+#### 10 - Browse page
+
+* Clicking here, you access to all available music on your system (nas, usb disk, radio, Spotify, Youtube etc depending on plugins/options installed)
+
+#### 11- Playback
+
+* The current page
+
+#### 12 - Queue
+
+* Here you access to the current queue with all tracks in it.
 
 
   ## to be continued....
