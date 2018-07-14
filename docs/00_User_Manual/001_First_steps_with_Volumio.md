@@ -70,7 +70,7 @@ _Desktop version_
 
 #### 7 - Album art Display
 
-* Display album art for the played track or radio if available
+* Display album art for the played track or radio if available.
 
 #### 8 - Volume control
 
@@ -84,7 +84,7 @@ _Desktop version_
 
 #### 10 - Browse page
 
-* Clicking here, you access to all available music on your system (Nas, Usb disk, radio, Spotify, Youtube etc depending on plugins/options installed)
+* Clicking here, you access to all available music on your system (Nas, Usb disk, radio, Spotify, Youtube etc depending on plugins/options installed).
 
 #### 11- Playback
 
