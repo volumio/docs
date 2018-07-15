@@ -13,7 +13,7 @@ There is two kinds of plugin :
 * __Official plugin__ : Plugin approved by the Volumio team and available through the webUI plugins page.
 * __Unofficial plugin__ : Not (yet) approved plugin. Most of the time from the community. For advanced users only and for testing. Requires some command line to be installed. It's better to wait for it to be approved...
 
-### How to install a official plugin ?
+### How to install an official plugin ?
 
 Plugins can be installed via Volumio's UI, by selecting the "Plugins" menu entry :
 
@@ -29,7 +29,46 @@ Once installed, you have to click on __Installed plugins__ tab and enable it :
 
 <img src="./img/plugin_enable.png">
 
-Depending on the plugin, you may have to go in __Settings__ for the plugin to enter credentals (Spotify), set the GPIO or Equalizer.
+Depending on the plugin, you may have to go in __Settings__ for the plugin to enter credentials (Spotify), set the GPIO or Equalizer.
+
+### How to install an unoffical plugin ?
+
+__Warning__: Even if installing an unofficial plugin won't burn your house or kill your dog, it can result as an unstable system, or non functionnal and you may have to reset or reflash your SD card and loose your settings. So it is reserved to advanced user, to test or help the dev.
+
+Once it is said, this is how to proceed. In the example, we are going to install [volprametriceq](https://github.com/balbuze/volumio-plugins/tree/master/plugins/audio_interface/volparametriceq), a Parametric Equalizer.  Of course, for another plugin, you have to adapt the path and the name of the plugin:
+
+* __1)__ Activate SSH on your system : [SSH](https://volumio.github.io/docs/User_Manual/SSH.html)
+
+* __2)__ Connect to your device via your console (linux) or Putty (Windows)
+
+* __3)__ Download the plugin:
+
+ `wget https://github.com/balbuze/volumio-plugins/raw/master/plugins/audio_interface/volparametriceq/volparametriceq.zip`.
+
+
+ * __4)__ Now create a temporary folder
+ `mkdir ./volparametriceq`
+
+ * __5)__ Unzip the previously downloaded file
+ `miniunzip volparametriceq.zip -d ./volparametriceq`
+
+ * __6)__ Go to this folder
+ `cd ./volparametriceq`
+
+ * __7)__ Install the plugins
+ `volumio plugin install` and __wait__. It can last several minutes if a lot of packages need to be download. Then :
+
+ * __8)__ Remove all temporary files :
+ `cd ..`
+ `rm -Rf volparametriceq`
+
+ * __9)__ In the webUI, go to installed plugins section and enable the plugin.
+
+ * __10)__ If required, go in the plugin settings.
+
+
+ __Enjoy !__
+
 
 ### Technical overview of a plugin
 
