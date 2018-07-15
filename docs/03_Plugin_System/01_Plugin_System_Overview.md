@@ -98,6 +98,7 @@ This typically collects plugins that add an audio interface, aka an external and
 * Airplay
 * UpNp
 * Bluetooth
+* Equalizer, DSP...
 
 ##### music_service
 

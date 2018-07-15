@@ -8,7 +8,7 @@ Volumio is a free and Open Source Linux Distribution, which runs on a variety of
 
 There are recent images available for the Raspberry Pi (all variants : Raspberry Pi 3 Model B, Raspberry Pi 3 Model B+, Raspberry Pi Zero, Raspberry Pi Zero W.), x86/x64 (PC/MAC), Odroid C1/C2, Allo Sparky, Asus Tinkerboard.
 
-In the community portings page of the forum, you'll find image for other devices : Pine64, Rock64, Sopine and other system : <a href="https://volumio.org/forum/community-portings-f26.html">Community portings on the forum</a> 
+In the community portings page of the forum, you'll find image for other devices : Pine64, Rock64, Sopine and other system : <a href="https://volumio.org/forum/community-portings-f26.html">Community portings on the forum</a>
 
 #### What are the device RAM (memory) requirements for Volumio?
 
@@ -16,11 +16,15 @@ Volumio will work much more smoothly and quickly in devices with more RAM.  The 
 
 #### How do I enable ssh?
 
-ssh is disabled by default, except on the first boot, for security reasons.  It is a simple procedure to <a href="https://volumio.github.io/docs/User_Manual/SSH.html">enable it</a> if required. 
+ssh is disabled by default, except on the first boot, for security reasons.  It is a simple procedure to <a href="https://volumio.github.io/docs/User_Manual/SSH.html">enable it</a> if required.
 
 #### What is a plugin?
 
-The concept of a plugin is to expand the functionality of Volumio in a particular way, for example backup of data files. Most of these are written by the Volumio Community, and can be installed from the 'Plugins' section of the Volumio UI.  Officially approved plugins may be installed directly from within the UI, whereas others are required to be downloaded as a zip file first.  There is a list of the currently available plugins <a href="https://volumio.org/forum/volumio-plugins-collection-t6251.html">here.</a>
+The concept of a plugin is to expand the functionality of Volumio in a particular way, for example backup of data files. Most of these are written by the Volumio Community, and can be installed from the 'Plugins' section of the Volumio UI.  Officially approved plugins may be installed directly from within the UI, whereas others are required to be downloaded as a zip file first.
+
+For more details, have look here : [Plugins System Overview](https://volumio.github.io/docs/Plugin_System/Plugin_System_Overview.html)
+
+There is a list of the currently available plugins <a href="https://volumio.org/forum/volumio-plugins-collection-t6251.html">here.</a>
 
 #### Is there an app for Volumio?
 
