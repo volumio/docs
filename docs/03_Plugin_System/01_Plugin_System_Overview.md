@@ -5,8 +5,35 @@ Volumio2 introduces the concept of plugins to expand its functionality, and allo
 [https://github.com/volumio/volumio-plugins](https://github.com/volumio/volumio-plugins)
 
 ### What is plugin ?
-A plugin is meant to add one specific functionality. It is provided as zip file which contains all needed files for it to work, either directly included in the zip file or available via a an install script that will download them autoatically.
-Plugins can be installed via Volumio's UI, by selecting the "Plugins" menu entry. From there you will be able to browse the Online Plugin Repository, or upload a plugin .zip file from your disk if not in the list.
+
+A plugin is meant to add one specific functionality.
+It could be music_service, system features, audio interface add on and almost everything developers (Volumio and community) can imagine.
+
+There is two kinds of plugin :
+* __Official plugin__ : Plugin approved by the Volumio team and available through the webUI plugins page.
+* __Unofficial plugin__ : Not (yet) approved plugin. Most of the time from the community. For advanced users only and for testing. Requires some command line to be installed. It's better to wait for it to be approved...
+
+### How to install a official plugin ?
+
+Plugins can be installed via Volumio's UI, by selecting the "Plugins" menu entry :
+
+<img src="./img/plugin_menu.png">
+
+From there you will be able to browse the Online Plugin Repository :
+
+<img src="./img/plugin_list.png">
+
+Select the plugin you want to install by clicking __install__ on the right side.
+
+Once installed, you have to click on __Installed plugins__ tab and enable it :
+
+<img src="./img/plugin_enable.png">
+
+Depending on the plugin, you may have to go in __Settings__ for the plugin to enter credentals (Spotify), set the GPIO or Equalizer.
+
+### Technical overview of a plugin
+
+It is provided as zip file which contains all needed files for it to work, either directly included in the zip file or available via a an install script that will download them automatically.
 
 Plugins are located under
 
@@ -82,7 +109,7 @@ While first start, Volumio will create a folder that contains saved parameter in
 
 The plugins.json file stores the status of core (found in /volumio/app/plugins/plugins.json folder) and extra (found in /data/plugins/plugins.json ) plugins.
 
-**IMPORTANT** : If you create a new plugin MANUALLY, you MUST add a plugin reference to plugins.json files (in /data/plugins/plugins.json). If such reference is not found, volumio will automatically delete your plugin folder. 
+**IMPORTANT** : If you create a new plugin MANUALLY, you MUST add a plugin reference to plugins.json files (in /data/plugins/plugins.json). If such reference is not found, volumio will automatically delete your plugin folder.
 
 The plugins json contains informations on plugins status:
 - Enabled, which can be true or false
