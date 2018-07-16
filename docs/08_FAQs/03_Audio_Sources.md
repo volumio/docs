@@ -10,6 +10,10 @@ Navigate to 'Settings' ("cog" icon at the top right), 'My Music' and click on 'A
 
 Please ensure that the permissions on the NAS files are set correctly for CIFS in order for Volumio to be able to access them.  In the case of NFS, file permissions are not so important, BUT you must allow access to the NAS from the IP address of your Volumio device (set in NAS GUI).
 
+#### I'm getting an error adding a CIFS network drive on my NAS
+
+Some users are experiencing problems adding shares from Synology and other NAS manufacturers in recent versions of Volumio. The current fix is to add a **vers=2.0** entry to the "Options" field under the Network Drive's Advanced Options. Depending on the configuration of your NAS, you may require vers=1.0 or vers=3.0. vers=2.0 seems to be a well-accepted default.
+
 #### Does Volumio support Airplay & UPnP/DLNA?
 
 Yes, these are enabled by default, and Volumio will act as a renderer for such streams.
