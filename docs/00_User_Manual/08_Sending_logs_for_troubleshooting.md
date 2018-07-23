@@ -7,7 +7,7 @@ what is broken on your system.
 
 ### How to send a bug report
 
-* Navigate to http://volumio.local/dev or http://yourvolumioip/dev 
+* Navigate to http://volumio.local/dev or http://yourvolumioip/dev, where 'yourvolumioip' is the actual IP addess of your device eg. 192.168.1.200
 * This will open the "DEV" page
 * Scroll until you see a section called "Send logs of bug report"
 * Fill the text field with a clear, but short description of your problem
