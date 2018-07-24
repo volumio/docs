@@ -1,9 +1,11 @@
 <div class="homelogo" style="display: block;margin: 0 auto;max-width:44%;"><img src ="https://cdn.volumio.org/wp-content/uploads/2016/09/volumio-header.png" /></div>
 
 &nbsp;
-## Welcome to Volumio's documentation (update July 24th 2018)
+## Welcome to Volumio's documentation
+#### _(update July 24th 2018)_
 
-Volumio is a free and Open Source Linux Distribution, designed and fine-tuned exclusively for music playback. It runs on a variety of devices, typically small and cheap computers like the Raspberry PI, but also on low power PCs, notebooks or thin clients.
+
+__Volumio__ is a free and Open Source Linux Distribution, designed and fine-tuned exclusively for music playback. It runs on a variety of devices, typically small and cheap computers like the Raspberry PI, but also on low power PCs, notebooks or thin clients.
 By flashing (installing) Volumio on any of these platforms, it will become a headless Audiophile Music Player. Headless means that the only  way to control it will be with another device - a mobile phone, computer or tablet.
 
 This is made possible by Volumio’s UI: a web application that runs on any device with a web browser, that allows an easy and intuitive control of your playback sessions. All communications between the webapp and Volumio will happen through your home network.
