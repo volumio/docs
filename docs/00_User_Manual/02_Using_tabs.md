@@ -8,7 +8,7 @@
  We already discovered the Playback tab in the previous <a href="https://volumio.github.io/docs/User_Manual/First_steps_with_Volumio.html">page</a>
  </p>
 
- Let's see now the content of the __browse__ tab
+ Let's see now the content of the __Browse__ tab and the __Queue__ tab
 
 ### Browse tab
 
@@ -82,9 +82,31 @@ Now your radio is available in My Web Radios
 
 * Clicking on Queue tab will allow to access to the queue of the tracks that are going to be played.
 
-
 <img src="./img/queue_tab.png">
 
+#### 1 - Random
+
+* __Randomize__ the order tracks are played
+
+#### 2 - Repeat
+
+* __Repeat__ the track
+
+#### 3 - Save
+
+* __Save__ the current queue as a playlist. A name is asked for this Playlist
+
+#### 4 - Clear queue
+
+* __Clear__ the current queue
+
+#### 5 - __Remove__ track
+
+* __Remove__ track from the queue
+
+__More features__
+
+You can change the order of each track by clicking and moving it up or down.
 
 
 
