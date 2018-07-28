@@ -2,7 +2,7 @@
 
 #### What is Volumio?
 
-Volumio is a free and Open Source Linux Distribution, which runs on a variety of devices, typically small and cheap computers like the Raspberry Pi, but also on low power PCs, notebooks or thin clients. It is designed and finely-tuned exclusively for bit-perfect music playback, transforming your device into a headless Audiophile Music Player, that is controlled via your mobile phone, computer or tablet.
+__Volumio__ is a free and Open Source Linux Distribution, which runs on a variety of devices, typically small and cheap computers like the Raspberry Pi, but also on low power PCs, notebooks or thin clients. It is designed and finely-tuned exclusively for bit-perfect music playback, transforming your device into a headless Audiophile Music Player, that is controlled via your mobile phone, computer or tablet.
 
 #### What devices are supported?
 

@@ -1,6 +1,16 @@
- ## Using bottom tabs
+ ## Using tabs
 
-### Browse page
+ Volumio main page provides 3 tabs.
+ * Browse
+ * Playback
+ * Queue
+
+ We already discovered the Playback tab in the previous <a href="https://volumio.github.io/docs/User_Manual/First_steps_with_Volumio.html">page</a>
+ </p>
+
+ Let's see now the content of the __browse__ tab
+
+### Browse tab
 
 * Clicking on Browse tab will allow to access all available music sources on your system.
 
@@ -68,8 +78,12 @@ Now your radio is available in My Web Radios
 
 * __Other__ : Depending on plugins/options you have installed, you may have other tab such Spotify, Qobuz...
 
+### Queue tab
+
+* Clicking on Queue tab will allow to access to the queue of the tracks that are going to be played.
 
 
+<img src="./img/queue_tab.png">
 
 
 
