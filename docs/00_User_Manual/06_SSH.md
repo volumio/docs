@@ -6,7 +6,7 @@ password: volumio
 
 For security reasons, SSH is disabled by default on all versions after 2.199 (except first boot). It can be however enabled very easily.
 
-### First method: file (easy)
+### First method: DEV UI (easy)
 
 Navigate to the DEV ui by pointing your browser to VOLUMIOIP/DEV or volumio.local/DEV . Find the SSH section, and click enable. From now on your SSH will be permanently enabled.
 
@@ -16,7 +16,7 @@ Navigate to the DEV ui by pointing your browser to VOLUMIOIP/DEV or volumio.loca
 __Note__ : You'll see no change when clicking on the button, but it will be ok.
 
 
-### Second method: DEV UI (more advanced)
+### Second method: file (more advanced)
 
 Mount your SD card on your computer.
 
