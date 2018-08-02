@@ -21,6 +21,9 @@ Volumio features an OTA (Over The Air) updater, meant to allow seamless and reli
 * Once Update has finished, you'll be asked to reboot. Do it
 * The system will now restart, and the new version will be applied
 
+<img src="./img/update_ota.png">
+
+
 ### Use the system updater to test Beta-Releases
 
 * Volumio can be updated to Beta Releases via OTA Updater. Beta-releases are test builds of the system with undisclosed functionalities
@@ -29,6 +32,10 @@ Volumio features an OTA (Over The Air) updater, meant to allow seamless and reli
 * To receive beta-releases, the system has to be put in "TEST MODE". To do so, navigate to http://volumio.local/dev or http://yourvolumioip/dev
 * Once in the /dev page, click on  "TRUE" on "TEST MODE" Section. Your device is now in TEST MODE, and will receive test updates from now on
 * Follow the above instructions to update your system normally, the only difference is that you'll see the test releases in spite of ordinary releases
+
+<img src="./img/test_mode_enable.png">
+
+__Note__ You'll see no change when clicking, but it's ok!
 
 ### Disable TEST MODE
 

@@ -4,7 +4,7 @@
 
 Select 'Settings', 'Playback Options', and choose your 'Output Device' from the drop down menu. If you are are NOT using an i2s device (for example a USB DAC), then ensure that the 'i2s' switch is in the 'Off' position. Choose the correct DAC model (note that some DAC models use a common driver), and save your settings.  Reboot & check that the settings are retained.
 
-<img src="audio-output.jpg" width="624">
+<img src="./img/audio-output.jpg" width="624">
 
 #### Why can't I control the volume from the Volumio UI?
 
@@ -14,7 +14,7 @@ Not all DACs include a hardware volume control (check with your device manufactu
 
 Volumio does allow the control of devices in different rooms from a single Volumio UI (if you have more than one device, then they will be visible in the UI).
 
-<img src="multiroom.png" width="624">
+<img src="./img/multiroom.png" width="624">
 
 
 Multiroom synchronised play is also possible through the use of a 'Snapcast' plugin.
