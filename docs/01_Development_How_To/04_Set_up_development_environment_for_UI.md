@@ -7,7 +7,7 @@ To set up a development environment on your PC\MAC do:
 
 ### Install dependencies (only first time)
 * Download and install [Node.js](https://nodejs.org/it/download/)
-** Volumio2-UI currently requires Node.js 6.*. [6.9.5](https://nodejs.org/dist/v6.9.5/)
+** Volumio2-UI currently requires '''Node.js 6.*'''. [6.9.5](https://nodejs.org/dist/v6.9.5/)
 * Download and install [Bower](https://bower.io/#install-bower)
 * Download and install [Gulp](https://github.com/gulpjs/gulp/blob/master/docs/getting-started/1-quick-start.md)
 
