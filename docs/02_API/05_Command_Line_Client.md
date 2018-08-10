@@ -28,13 +28,12 @@ random                             Toggles randomization of queue
 
 [[PLAYBACK CONTROL]]
 
-play
-pause
-next
-previous
-stop
-clear
-
+play                               Play
+pause                              Pause
+next                               Next track
+previous                           Previous track
+stop                               Stop
+clear                              Clear current queue
 
 
 [[VOLUMIO SERVICE CONTROL]]
