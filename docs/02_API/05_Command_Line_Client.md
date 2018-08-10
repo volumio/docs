@@ -59,7 +59,7 @@ plugin install                     installs the plugin locally
 plugin update                      updates the plugin
 logdump <description>              dump logs to $LOGDUMP instead of uploading
 
-
+```
 #### Command Line Client Development
 
 The command line client is located at

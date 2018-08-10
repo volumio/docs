@@ -45,6 +45,3 @@ This documentation is aimed to help both users and developers, [any contribution
 * Want to contribute to this guide? See the [Contribute to this doc Section](/docs/Good_to_Knows/Contribute_to_this_Doc)
 * Did you know that Volumio has a command line client? Here's how to use the  [Command Line Client](/docs/Good_to_Knows/Command_Line_Client)
 * <a href="https://volumio.org/forum/contribute-translating-volumio-your-language-t4289.html" target="_blank">Help by translating Volumio to your language</a>
-
-<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
-<!-- ALL-CONTRIBUTORS-LIST:END -->
