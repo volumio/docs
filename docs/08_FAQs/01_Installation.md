@@ -6,7 +6,9 @@ Follow the guide <a href="https://volumio.org/get-started/">here (scroll down)</
 
 * __Important__
 If you use Windows to write your SD card, it will probably ask you to format the SD card at the end of the writing.
-### DO NOT FORMAT THE SD CARD NOW! IT WILL ERASE WHAT YOU HAVE DONE JUST BEFORE
+<p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
+DO NOT FORMAT THE SD CARD NOW! IT WILL ERASE WHAT YOU HAVE DONE JUST BEFORE
+</p>
 
 Just eject your SD card and insert it in your device!
 
