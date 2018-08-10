@@ -2,7 +2,7 @@
 
 &nbsp;
 ## Welcome to Volumio's documentation
-#### _(update August 2nd 2018)_
+#### _(update August 10th 2018)_
 
 
 __Volumio__ is a free and Open Source Linux Distribution, designed and fine-tuned exclusively for music playback. It runs on a variety of devices, typically small and cheap computers like the Raspberry PI, but also on low power PCs, notebooks or thin clients.
@@ -45,3 +45,6 @@ This documentation is aimed to help both users and developers, [any contribution
 * Want to contribute to this guide? See the [Contribute to this doc Section](/docs/Good_to_Knows/Contribute_to_this_Doc)
 * Did you know that Volumio has a command line client? Here's how to use the  [Command Line Client](/docs/Good_to_Knows/Command_Line_Client)
 * <a href="https://volumio.org/forum/contribute-translating-volumio-your-language-t4289.html" target="_blank">Help by translating Volumio to your language</a>
+
+<!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
+<!-- ALL-CONTRIBUTORS-LIST:END -->
