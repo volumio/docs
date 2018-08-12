@@ -47,6 +47,6 @@ It saves a lot of time and frustration being able to see the complete boot proce
 Some devices have a proprietary interface, like the uart interface Hardkernel uses for all their devices.  
 A very popular device is the __adafruit USB to TTL Serial Cable - Debug / Console Cable for Raspberry Pi__, we also use it.  
 
-![Alt](/docs/05_Porting_Guide/uart-intfc.jpg)
+<img src="./img/uart-intfc.jpg">
 
 You only need three wires: TX(white), RX(green) and GND(black).
