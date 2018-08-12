@@ -1,4 +1,4 @@
-### Allo Sparky-build
+## Allo Sparky-build
 Scripts to help build an Allo Sparky image
 
 #### Prerequisites
