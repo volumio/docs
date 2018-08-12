@@ -14,13 +14,19 @@ volumio.local/api/v1/commands/?cmd=play
 
 Available commands:
 
-* Play 
+* Play
 ```
 volumio.local/api/v1/commands/?cmd=play&N=2
 ```
-where N is optional and is the ordinal number of the track in the queue you wish to start to play from. The above call will play the third track in the queue. 
+where N is optional and is the ordinal number of the track in the queue you wish to start to play from. The above call will play the third track in the queue.
 
-* Stop 
+* Toggle
+```
+volumio.local/api/v1/commands/?cmd=toggle
+```
+Toggle between play and pause
+
+* Stop
 ```
 volumio.local/api/v1/commands/?cmd=stop
 ```
@@ -45,7 +51,6 @@ volumio.local/api/v1/commands/?cmd=next
 volumio.local/api/v1/commands/?cmd=volume&volume=80
 ```
 where volume can be: mute, unmute, plus, minus (plus and minus will increase\decrease as per parameter one click volume steps)
-
 
 ### Music Library
 
@@ -73,8 +78,13 @@ volumio.local/api/v1/listplaylists
 ```
 volumio.local/api/v1/commands/?cmd=playplaylist&name=Rock
 ```
+Where name is the name of the playlist to play
 
-where name is the name of the playlist to play
+* Repeat a track
+```
+volumio.local/api/v1/commands/?cmd=repeat&key
+```
+Where key is _true_ or _false_
 
 ### Backup
 
