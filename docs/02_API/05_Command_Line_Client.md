@@ -19,6 +19,7 @@ volume mute                        Mutes
 volume unmute                      Unmutes
 volume plus                        Increases Volume of one step
 volume minus                       Decreases Volume of one step
+volume toggle                      Toggles between mute and unmute
 seek plus                          Forwards 10 seconds in the song
 seek minus                         Backwards 10 seconds in the song
 seek <seconds>                     Plays song from selected time
@@ -34,6 +35,7 @@ next                               Next track
 previous                           Previous track
 stop                               Stop
 clear                              Clear current queue
+toggle                             Toggles between play and pause
 
 
 [[VOLUMIO SERVICE CONTROL]]
