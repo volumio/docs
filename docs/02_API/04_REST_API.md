@@ -20,12 +20,10 @@ volumio.local/api/v1/commands/?cmd=play&N=2
 ```
 where N is optional and is the ordinal number of the track in the queue you wish to start to play from. The above call will play the third track in the queue.
 
-* Toggle
+* Toggle between play and pause
 ```
 volumio.local/api/v1/commands/?cmd=toggle
 ```
-Toggle between play and pause
-
 * Stop
 ```
 volumio.local/api/v1/commands/?cmd=stop
@@ -73,7 +71,6 @@ volumio.local/api/v1/commands/?cmd=clearQueue
 ```
 volumio.local/api/v1/listplaylists
 ```
-
 * Play a Playlist
 ```
 volumio.local/api/v1/commands/?cmd=playplaylist&name=Rock
@@ -83,6 +80,12 @@ Where name is the name of the playlist to play
 * Repeat a track
 ```
 volumio.local/api/v1/commands/?cmd=repeat&key
+```
+Where key is _true_ or _false_
+
+* Random Makes the order in which tracks are played random
+```
+volumio.local/api/v1/commands/?cmd=random&key
 ```
 Where key is _true_ or _false_
 
