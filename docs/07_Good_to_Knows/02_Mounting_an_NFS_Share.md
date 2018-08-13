@@ -1,4 +1,5 @@
 # Adding Music from a shared folder on a Synology
+
 `tested on Synology DS412 in combination with Volumio 0.978 for Raspberry Pi 3`
 
 Since both Synology and Volumio for Raspberry PI are Unix based the preference is to use NFS type file sharing.
