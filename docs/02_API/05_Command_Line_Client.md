@@ -1,3 +1,5 @@
+## CLI : command line client
+
 Volumio has a command line client which can be invoked with the command
 
 ```bash

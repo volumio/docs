@@ -4,7 +4,7 @@ To allow an easy development of plugin, we need a structured but still flexible 
 
 [https://github.com/volumio/Volumio2/](https://github.com/volumio/Volumio2/)
 
-## Introduction
+### Introduction
 
 Configurations resides on single .json files, pertaining to a core component or a specific plugin. This file is `UIConfig.json` and it's interpreted by the `getUIConfig` function present in every plugin. The very same system is used by both Volumio core plugins and community developed plugins, the only difference is that for core functions (such as Wi-fi browser, NAS Browser and some others) we developed special controllers in the UI. You can take a look at them in the  [core elements part of Volumio2 UI](https://github.com/volumio/Volumio2-UI/tree/master/src/app/plugin/core-plugin) .
 
@@ -127,7 +127,7 @@ Content defines all the elements available in a section. It needs the following 
 * id : the id, this one is the one referred in saveButton data
 * type : type of the element, for a comprehensive list of examples see later
 * doc : an explanation of what the field does, please try to use translations as opposed to static text, that way anyone can translate it into their own language.
-* label: label, please try to use translations as opposed to static text, that way anyone can translate it into their own language. 
+* label: label, please try to use translations as opposed to static text, that way anyone can translate it into their own language.
 * value: this is the current value of the element, can be manipulated in the `getUIConfig` function. It can be either a boolean (true | false), a string or a number.
 * Optionally, you can also require a confirmation popup by adding the entry `'askForConfirm': {'title': 'Confirm', 'message': 'Do you want to save this values?'}`
 * If you want to hide or show an element dynamically based on the state on another option (in the same section), you can use `'visibleIf': {'field': 'spotify_service', 'value': true}`

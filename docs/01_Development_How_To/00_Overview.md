@@ -1,6 +1,8 @@
+## Overview
+
 Volumio is an headless audiophile music player, designed to play music with the highest possible fidelity. Volumio runs on most embedded devices (Raspberry Pi, UDOO, Odroid, Cubieboard, Beaglebone...) and on any ordinary PC (x86).
 
-## Components
+### Components
 
 Volumio is obtained with 3 main components:
 
@@ -15,7 +17,7 @@ This is Volumio's integrated WebUI. It is deployed in /volumio/http/www folder
 
 This is Volumio's build script: launch it in a Debian or Ubuntu install, to obtain a complete Volumio Image.
 
-## Logins
+### Logins
 
 Logins
 * user : *volumio*
@@ -24,7 +26,7 @@ Logins
 
 Root login has been disabled by default for security reasons , however user volumio can become root.
 
-## Development 101
+### Development 101
 
 To maximize efficiency and reduce code regression we're using [Git Workflow](https://guides.github.com/introduction/flow/). For example, to create a new feature you'll:
 * Create a new branch, named after the feature
@@ -36,7 +38,7 @@ To maximize efficiency and reduce code regression we're using [Git Workflow](htt
 All new improvements and developments are meant to be done on the dev branch, once it's declared stable it will be merged to master and deployed to happy Volumio users.
 
 
-## Development Guidelines
+### Development Guidelines
 
 * [Forum Threads](http://volumio.org/forum/discussion-t2098-10.html) for internal discussion, remember to subscribe topics.
 * Document your work where possible on the [Wiki](https://github.com/volumio/Volumio2/wiki).

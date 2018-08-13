@@ -1,4 +1,5 @@
-# Markdown Cheatsheet
+## Markdown Cheatsheet
+
 This will help you to write a nice documentation !
 
 <pre lang="no-highlight"><code># H1

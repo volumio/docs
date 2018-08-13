@@ -1,3 +1,5 @@
+## Rest API
+
 ### Playback commands
 
 All API calls will look like:

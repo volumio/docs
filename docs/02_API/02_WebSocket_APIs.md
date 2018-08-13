@@ -1,3 +1,5 @@
+## WebSocket APIs
+
 ## Introduction
 
 The most used API transport in Volumio2 is its Websockets API as it allows almost real time communication with multiple clients. Volumio's WebUI gets and sends data (almost) exclusively via WS. Volumio's WS layer is powered by [Socket.io](http://socket.io/).

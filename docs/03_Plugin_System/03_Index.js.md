@@ -1,3 +1,5 @@
+## The index.fs file of a plugin
+
 ### Index.js aka the plugin's core
 
 The index.js file of every plugin is where the magic goes on. It has some predefined and mandatory functions and a standardized layout. Depending on you'r plugin's category, this structure needs to change accordingly. We'll start by detailing a generic plugin structure.

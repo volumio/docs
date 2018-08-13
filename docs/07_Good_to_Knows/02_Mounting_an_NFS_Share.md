@@ -1,4 +1,4 @@
-# Adding Music from a shared folder on a Synology
+## Adding Music from a shared folder on a Synology
 
 `tested on Synology DS412 in combination with Volumio 0.978 for Raspberry Pi 3`
 

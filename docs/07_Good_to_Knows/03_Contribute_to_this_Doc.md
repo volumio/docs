@@ -1,4 +1,4 @@
-# Contribute to this Documentation
+## Contribute to this Documentation
 
 Everyone knows how tedious it is to write documentation. But it is extremely important for every project, especially for Volumio. So if you find something incomplete, missing or
  wrong feel free to edit this doc and improve it.

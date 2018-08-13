@@ -3,7 +3,7 @@
 
 There are two halves of this project on the server side: Volumio OS and the Volumio Core. The Volumio OS is a customized Debian Jessie distribution and ecosystem of software packages which serves as the framework for the system. The Volumio Core is a serverside application (written in Javascript) which runs the music player, music library, and other functions.
 
-## Architecture Overview
+### Architecture Overview
 
 <img src="./img/architecture.png" width="624">
 

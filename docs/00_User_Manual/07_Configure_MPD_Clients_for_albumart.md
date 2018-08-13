@@ -1,4 +1,4 @@
-
+## Configure MPD client for albmart
 
 When starting the MPod app for the first time:
 * Select "Add player manually" and fill in the following information:

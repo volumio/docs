@@ -1,4 +1,6 @@
-# Design Principles
+## UI configuration Pages
+
+## Design Principles
 
 The main idea is to provide a mechanism to describe the configuration section of the UI and the configuration of plugins that is flexible and not bound to code.
 To reach this the whole hs to be described with an higher level language.
@@ -216,4 +218,3 @@ Items can be linked in a tree hierarchy. To do this the attribute children is sp
                         },
                     }
                     }
-     

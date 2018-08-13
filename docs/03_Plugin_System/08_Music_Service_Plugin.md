@@ -1,4 +1,6 @@
-## Index.js aka the plugin's core for Music Sources Plugins
+## Music service plugin
+
+### Index.js aka the plugin's core for Music Sources Plugins
 
 Music sources requires an extra bit of functions to be hooked properly into Volumio. Basically the need to expose their "browsable" structure of data, allow search and provide a translation for their displayed name on Music Sources. Missing any of those will result in a non working plugin, and possibly a broken Volumio.
 
@@ -55,7 +57,7 @@ Use the type property on the object you are returning the the required and optio
 			"albumart": "https://i.scdn.co/image/dac9ef993de0a5758cc6e655080306d40814edc9",
 			"uri": "spotify:track:2r6oZ0GBqJaCnqqR72yiFc"
 		}
-  ] 
+  ]
 }
 ```
 
@@ -752,7 +754,7 @@ As result the following structure is expected:
 
 #### Get Track Info
 
-This method is called by volumio when the user adds e.g. a song to a playlist or to the favorites. 
+This method is called by volumio when the user adds e.g. a song to a playlist or to the favorites.
 You have to return a promise that will resolve as soon as you have collected all details about the URI that is passed in as parameter.
 
 The expected format is an array containing the following information - the more you provide, the more the UI can visualize (e.g. if you are missing an albumart you can also use the icon property).

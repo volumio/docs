@@ -1,10 +1,12 @@
+## Adding Compatibility to your DAC
+
 If you're an hardware Audio manufacturer and you've developed a brand new i2s DAC, making it compatible with  Volumio is very easy.
 
-#### Prerequisites
+### Prerequisites
 
 * The kernel driver must be already present in the Kernel that Volumio uses. If that's not true, please [contact us](https://volumio.org/contact/)
 
-#### The dacs.json file
+### The dacs.json file
 
 Volumio stores all compatibility data for i2s dac in a single file: the  [dacs.json file](https://github.com/volumio/Volumio2/blob/master/app/plugins/system_controller/i2s_dacs/dacs.json),
 here's a brief extract of it (August 2nd 2018):
@@ -68,7 +70,7 @@ here's a brief extract of it (August 2nd 2018):
 ```
 
 
-#### What you need to do
+### What you need to do
 
 Basically edit the dac.json appropriately and send us a pull request. Here's what you need to change:
 

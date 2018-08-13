@@ -1,4 +1,6 @@
-# Create your plugin
+## Writing a Plugin
+
+### Create your plugin
 
 The plugin helper utility allows you to easily create your own plugin, by providing tools for the main steps.
 Its functions are:
@@ -252,7 +254,7 @@ Call the utility with this command if you just downloaded a more recent version 
 you've already installed and activated, to update it. You should be in the plugin folder, containing a proper `package.json` file.
 
 ```bash
-volumio@volumio:~/volumio-plugins/plugins/accessory/ir_controller$ volumio plugin update 
+volumio@volumio:~/volumio-plugins/plugins/accessory/ir_controller$ volumio plugin update
 
 This command will update the plugin on your device
 
@@ -290,14 +292,14 @@ The  plugin zip file will be created as the last step of the plugin creation and
 
 ### Mandatory Files
 
-|Name   | Format  | Content  |
-|---|---|---|
-| install.sh  | Bash script  | this file contains a script of action and dependencies installation needed for the plugin. It’s a BASH script. It MUST be executable.    
-| index.js  |  javascript | 	this is main file, written in node.js  
-| node_modules  |  	folder | folder that contains all node modules needed      
-| config.json  |  json | this file contains all the parameters to be save for the plugin.
-| Package.json  | json  | 	this file contains description of the plugin and the list of required node dependencies
-| Uninstall.sh  | Bash script  | this file contains the script to remove the plugin.    
+| Name         | Format      | Content                                                                                                                               |
+|:-------------|:------------|:--------------------------------------------------------------------------------------------------------------------------------------|
+| install.sh   | Bash script | this file contains a script of action and dependencies installation needed for the plugin. It’s a BASH script. It MUST be executable. |
+| index.js     | javascript  | this is main file, written in node.js                                                                                                 |
+| node_modules | folder      | folder that contains all node modules needed                                                                                          |
+| config.json  | json        | this file contains all the parameters to be save for the plugin.                                                                      |
+| Package.json | json        | this file contains description of the plugin and the list of required node dependencies                                               |
+| Uninstall.sh | Bash script | this file contains the script to remove the plugin.                                                                                   |
 
 <br>
 <p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
@@ -422,12 +424,12 @@ The relevant parts are:
 Bash file. As install file MUST be executable. Here you will basically revert what you did in the install.sh file .
 
 
-|  Name |  Format |  Content |  
-|---|---|---|
-| i18n  | folder  | contains string_en.json and other strings to translate the plugin  
-| Uiconfig.json  | json  | this file describe the UI of the plugin.  
-| Other   | Text, image, sound, script, executable...  | required file / script to use in the plugin such as executable or service,image, sound,  application key...  
-| RequiredConf.json   |  	json | Configuration key or variables mandatory for the plugin to work. Useful to add a new parameter with an update  
+| Name              | Format                                    | Content                                                                                                       |
+|:------------------|:------------------------------------------|:--------------------------------------------------------------------------------------------------------------|
+| i18n              | folder                                    | contains string_en.json and other strings to translate the plugin                                             |
+| Uiconfig.json     | json                                      | this file describe the UI of the plugin.                                                                      |
+| Other             | Text, image, sound, script, executable... | required file / script to use in the plugin such as executable or service,image, sound,  application key...   |
+| RequiredConf.json | json                                      | Configuration key or variables mandatory for the plugin to work. Useful to add a new parameter with an update |
 
 Details and examples of optional files
 Depending on the plugin, other file may be nedeed.
