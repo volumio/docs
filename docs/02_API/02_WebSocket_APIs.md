@@ -1,15 +1,15 @@
 ## WebSocket APIs
 
-## Introduction
+### Introduction
 
 The most used API transport in Volumio2 is its Websockets API as it allows almost real time communication with multiple clients. Volumio's WebUI gets and sends data (almost) exclusively via WS. Volumio's WS layer is powered by [Socket.io](http://socket.io/).
 The WebSocket API interface is located at: https://github.com/volumio/Volumio2/blob/master/app/plugins/user_interfaces/websocket/index.js
 
-## Scenarios
+### Scenarios
 
 Websocket communication in Volumio is identifiable in the most basic server/client architecture. The Server is Volumio itself (aka the host where Volumio is running), the client can be one or more WebUIs or other consumers (Apps and so on). In some cases, Volumio hosts can also act as client, to communicate with other hosts on the same network.
 
-## Events
+### Events
 Socket.io allows to invoke events triggered by other events, emit and receive communications (on its most basic implementation). As an example, defining which event should be invoked on a client connection  looks like:
 
 ```js
@@ -39,7 +39,7 @@ So our message can be:
 ```js
 io.emit('addToPlaylist', {"name": "Music", "service": "mpd", "uri": "music-library/..."});
 ```
-## Events Documentation
+### Events Documentation
 
 ### Basic Playback Commands
 ```
