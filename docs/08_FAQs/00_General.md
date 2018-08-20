@@ -75,5 +75,5 @@ With use of plugins, Volumio can read miscellanious streaming services
 * Spotify (from webUI or Spotify connect)
 * Youtube streams
 * Qobuz (using MyVolumio)
-* Tidal (using MyVolumio) _Not available yet_
+* Tidal (using MyVolumio)
 * Other to come
