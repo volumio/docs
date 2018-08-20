@@ -17,5 +17,8 @@ what is broken on your system.
 * Click on Send
 * Once the logs have been successfully sent, you will see a link like "http://logs.volumio.org/xxxxxx"
 * Press the copy button to copy the link to your logs in your clipboard
+
+<img src="./img/send_log2.png">
+
 * Paste this log wherever you're requesting for help: a forum thread, a githhub issue or a mail
 * If possible, write a very detailed step-to-step guide on how to replicate the problem
