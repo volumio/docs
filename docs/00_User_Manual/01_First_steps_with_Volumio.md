@@ -40,6 +40,7 @@ _Desktop version_
  * __Alarm__ : You love to wake up with your favorite music ? It's here!
  * __Sleep__ : You love listening music before sleeping ? It's Here!
  * __Shutdown__ : To stop or reboot your device properly
+ * __Help__ : Link to the online help (here!)
  * __Volumio Shop__ : A link to the Volumio shop where you'll find compatible and well sounding hardware
 
 #### 3 - Track text information

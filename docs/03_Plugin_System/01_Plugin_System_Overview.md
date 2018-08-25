@@ -35,7 +35,7 @@ Depending on the plugin, you may have to go in __Settings__ for the plugin to en
 
 ### How to install an unoffical plugin ?
 
-__Warning__: Even if installing an unofficial plugin won't burn your house or kill your dog, it can result as an unstable system, or non functionnal and you may have to reset or reflash your SD card and loose your settings. So it is reserved to advanced user, to test or help the dev.
+__Warning__: Even if installing an unofficial plugin won't fire your house or kill your dog, it can result as an unstable system, or non functionnal and you may have to reset or reflash your SD card and loose your settings. So it is reserved to advanced user, to test or help the dev.
 
 Once it is said, this is how to proceed. In the example, we are going to install [volprametriceq](https://github.com/balbuze/volumio-plugins/tree/master/plugins/audio_interface/volparametriceq), a Parametric Equalizer.  Of course, for another plugin, you have to adapt the path and the name of the plugin:
 
