@@ -15,8 +15,7 @@ Please ensure that the permissions on the NAS files are set correctly for CIFS i
 Some users are experiencing problems adding shares from Synology and other NAS manufacturers in recent versions of Volumio. The current fix is to add a **vers=2.0** entry to the "Options" field under the Network Drive's Advanced Options. Depending on the configuration of your NAS, you may require vers=1.0 or vers=3.0. vers=2.0 seems to be a well-accepted default.
 
 __Example__ of a Cifs network drive with options using _vers=1.0_
-<img src="./img/cifs_options.png">
-
+<img src="./img/cifs_options.jpg">
 
 #### Does Volumio support Airplay & UPnP/DLNA?
 
