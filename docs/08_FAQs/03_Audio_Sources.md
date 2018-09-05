@@ -31,4 +31,8 @@ There isn't a maximum number of tracks, but do be aware that indexing of very la
 
 #### Can I use the unused space of my SD card for music?
 
-Yes, free space on the SD card is available as a Samba share "Internal Storage", which can by used as you like.  Music files transferred there then they will be shown in your Volumio music library in a folder called 'INTERNAL.'
+Yes. Volumio has a folder called 'INTERNAL' set aside for this,
+which uses the free space on your SD card.
+The folder is shared on your network as a Samba share called "Internal Storage".
+You can upload music files to that share and they will be shown in your
+Volumio music library, in a folder called 'INTERNAL'. Note that the folder does not appear in the music library if it is empty.
