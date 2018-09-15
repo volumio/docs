@@ -1,10 +1,41 @@
 ## SSH access on volumio
 
-user: volumio
+When SSH is activated on Volumio (see below how to) you can access your device using:
 
-password: volumio
+From __Windows__ : [Putty](https://putty.org/)
 
-For security reasons, SSH is disabled by default on all versions after 2.199 (except first boot). It can be however enabled very easily.
+From __Linux__ : commande ssh from a terminal
+
+From MacOs [openssh](https://www.macupdate.com/app/mac/5675/openssh#)
+
+Once it is ready, use to log in:
+
+* user: volumio
+
+* password: volumio
+
+Example (linux) : `ssh volumio@192.168.1.54`
+
+Type `Enter`. It retruns:
+
+`volumio@192.168.1.54's password:`
+
+Type `volumio` (password, case sensitive) and `Enter`
+
+And here you are !
+
+<img src="./img/log_ssh.png">
+
+From here you can get a full access to your device.
+Some command requires Root privilèges. To do that use `sudo` with password `volumio`
+
+example `sudo nano /etc/samba/smb.conf`
+
+__WARNING!__  You can damage your __Volumio__ with `sudo`. Editing system files may prevent __Volumio__ to be updated over the air (integrity check will fail).
+
+## How to enable SSH
+
+For security reasons, SSH is disabled by default on all versions after 2.199 (except first boot). It can be however enabled very easily. See below!
 
 ### First method: DEV UI (easy)
 
