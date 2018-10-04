@@ -1,4 +1,4 @@
-## The index.fs file of a plugin
+## The index.js file of a plugin
 
 ### Index.js aka the plugin's core
 
