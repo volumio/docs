@@ -1,6 +1,6 @@
 ## Create your own filters
 
-There is 4 important step to that :
+There is 4 important steps to that :
 
 * playing sweep file (with Volumio)
 * Recording signal while playing (with REW)

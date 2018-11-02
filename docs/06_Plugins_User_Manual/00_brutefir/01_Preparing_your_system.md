@@ -24,5 +24,5 @@ and press `Apply` (It can be done while playing)
 You should hear the difference !
 
 
-### Now, let's see how to create your own filter, just design for your hardware and room!
+### Now, let's see how to create your own filter, just designed for your hardware and room!
 Go to next step!
