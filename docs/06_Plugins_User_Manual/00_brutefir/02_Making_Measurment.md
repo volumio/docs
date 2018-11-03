@@ -30,13 +30,31 @@ Launch REW (roomeqwizard)
 
 Before measuring, some adjustement are needed :
 
+* Configure mic calibration as below :
+
+<img src="./img/preferences_micmeter.jpg">
+
+* Then, ajust parameters for input and output :
+
 <img src="./img/rew_preferences.jpg">
 
-And before starting to play :
+* Configure Make a measurement parameters :
 
 <img src="./img/make_a_measurment.jpg">
 
-With these settings and sweep files provided, the time reference signal included in the file will trigger the recording.
+* When ready, hit Start measuring a wait for in the message `Waiting for time reference`
+
+Now, play the first sweep file for the channel you are measuring (Left or Right)
+
+* Once it is done, in REW, in EQ windows under settings (icon in upper right corner) choose 1/48 smoothing
+
+<img src="./img/rew_EQ_window.jpg">
 
 
-### To be continued....
+-        choose File/Export/Export measurement as text (this file will be imported in rePhase)
+
+* Repeat the same for the other channel
+
+
+
+### Now you are ready for the next step : Create your filters !
