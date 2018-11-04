@@ -17,7 +17,7 @@ You can now test with a filter, just fill __Left Filter__ and __Right filter__ i
 (few filters to test are installed by the plugin, they are placed in `/data/INTERNAL/brutefirfilter`)
 * `test4fa`
 
-<img src="./img/first_filter.png" width="624">
+<img src="./img/first_filter.png">
 
 and press `Apply` (It can be done while playing)
 
