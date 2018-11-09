@@ -12,11 +12,15 @@ There is 4 important steps to that :
 
 To make it easy, the plugin can provide these files.
 These wav file contain a 20Hz to 20000kHz signal plus a time reference signal.
-
-In the plugin settings, there is 3 buttons to play these files.
-Before starting, empty the queue of __Volumio__
+In the plugin settings, click on `Download sweep files`
 
 <img src="./img/general_plugin_settings.png">
+
+Wait, and now you have 3 new files on your system!
+TO see them, go in the BROWSE tab of Volumio
+Now go in `Music Library`,`INTERNAL`,`brutefirfilters`,`sweep`
+
+<img src="./img/list_sweep_files.png">
 
 ### Measurment
 

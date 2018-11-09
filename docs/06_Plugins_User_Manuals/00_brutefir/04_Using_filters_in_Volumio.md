@@ -4,7 +4,7 @@ Now it's time to test your filters. To do that :
 
 * Place them in the shared folder of Volumio under `brutefirfilters`
 
-* Then, in the pluign settings, fill left and right filter with the name __without__ extension
+* Then, in the pluign settings, select left and right filter
 
 <img src="./img/using_filter_in_volumio.png">
 

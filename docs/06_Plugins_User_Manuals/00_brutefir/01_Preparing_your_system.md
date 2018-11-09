@@ -13,11 +13,11 @@ and try to change __output format__ . It is a DAC dependant parameter.
 
 When it's ok, try to play a track.
 
-You can now test with a filter, just fill __Left Filter__ and __Right filter__ in plugin settings with one of the provided filter:
+You can now test with a filter, just select __Left Filter__ and __Right filter__ in plugin settings with one of the provided filter:
 (few filters to test are installed by the plugin, they are placed in `/data/INTERNAL/brutefirfilter`)
 * `test4fa`
 
-<img src="./img/first_filter.png">
+<img src="./img/select_filter.png">
 
 and press `Apply` (It can be done while playing)
 
