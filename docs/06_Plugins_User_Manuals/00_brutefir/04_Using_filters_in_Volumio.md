@@ -10,4 +10,4 @@ Now it's time to test your filters. To do that :
 
 * Press apply and play what you want!
 
-__Nota__ : In the true life, making a good filter is not so staright fowrad... You'll have to redo all the procedure many time to get a good result.
+__Nota__ : In the true life, making a good filter is not so straight fowrad... You'll have to redo all the procedure many time to get a good result.

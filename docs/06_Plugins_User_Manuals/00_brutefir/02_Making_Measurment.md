@@ -2,23 +2,51 @@
 
 There is 4 important steps to that :
 
-* playing sweep file (with Volumio)
+* playing sweep file or pink noise using Tools in the plugin.
 * Recording signal while playing (with REW)
 * Modifing the result (with REPHASE) and generating filters.
 * Using this filter in Volumio trough the Brutefir plugin.
 
 
-### Sweep files
+### Tools in Volumio
 
-To make it easy, the plugin can provide these files.
+To help to generate your filter, the plugin can provide some tools.
+
+__Sweep files__
+
 These wav file contain a 20Hz to 20000kHz signal plus a time reference signal.
 
-In the plugin settings, there is 3 buttons to play these files.
-Before starting, empty the queue of __Volumio__
+__Pink noise files__
 
-<img src="./img/general_plugin_settings.png">
+Provide pink noise files.
+
+Tools are not installed by default. If you need to install, press install tools in the plugin and wait the windows to be refreshed.
+
+
+<img src="./img/install_tools.png">
+
+After the page is refreshed, you'll new entries in the page of the plugin.
 
 ### Measurment
+
+We will describe a method called MMM - Moving Mic Measurment.
+
+The idea is to make a multi point measurement and use the average of these measures.
+
+Read more about moving microphone method (implemented via RTA in REW) here:
+<a href="http://www.ohl.to/audio/downloads/MMM-moving-mic-measurement.pdf"> : MMM</a>
+
+Measurment points are defined like in above pictures
+
+<img src="./img/sofa_top.png" width = 500 >
+
+<img src="./img/sofa_front.png" width = 500 >
+
+<img src="./img/sofa_iso.png" width = 500 >
+
+It avoids to have a single optimized listening point
+
+### Let's go ! (to rewrite)
 
 Now, plug your Microphone on your computer, and place it where you should be to listen music. The placement is important, and you're advised to read some howto...
 

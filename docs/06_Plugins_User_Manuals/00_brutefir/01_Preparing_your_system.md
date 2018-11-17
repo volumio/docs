@@ -2,12 +2,14 @@
 
 Once the plugin is installed, enabled it wait about 20 sec.
 Don't try to make any change in Volumio playback.
-If no error :
+
+__If no error__ :
 Try to play a track, if the music is playing, go to the next step.
 
 If an error occurs go in plugin settings
 
-<img src="./img/general_plugin_settings.png" width="624">
+<img src="./img/general_plugin_settings.png">
+_plugin main interface_
 
 and try to change __output format__ . It is a DAC dependant parameter.
 
