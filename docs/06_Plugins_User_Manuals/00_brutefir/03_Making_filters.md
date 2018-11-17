@@ -2,6 +2,23 @@
 
 When measurement(s) is exported you have 2 possibilities. You can create initial EQ filter in REW and import it into rePhase as a starting point or you can directly go in rephase and start creating filter from scratch.
 
+For best results with Volumio and BruteFIR I recommend sampling rate of __96000__ and __65536__ filtersize/taps.
+
+When doing EQ in rePhase try to follow these simple guidelines:
+
+- Avoid high Q corrections as much as you can.
+
+- Remember that dips are not as hearable as rises, so flatten the rise points but avoid to flatten dips unless they are deeper than app -8dB.
+
+- Avoid high gains as much as you can. Don't go over +18dB, even better if you can stay bellow +12dB.
+
+- There is an initial 6dB attenuation in BruteFIR. If your max filter is (for example) set to +16dB then set additional 10dB of attenuation in BruteFIR settings to avoid clipping.
+
+- Measure carefully! your correction will only be good as was your measurement. Repat measurements unless you have good correlation between MMM (RTA) and sweep measurements (make at least 5 of them and average them).
+
+- Remember that Room EQ is not an exact science, so may the Force be with you. ;)
+
+
 ### Variant 1 : Creating initial EQ filter in REW
 
 * On the right side of EQ window under Equaliser choose `rePhase`
