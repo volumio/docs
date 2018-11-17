@@ -20,7 +20,7 @@ __Pink noise files__
 
 Provide pink noise files.
 
-Tools are not installed by default. If you need to install, press install tools in the plugin and wait the windows to be refreshed.
+__Tools__ are not installed by default. If you need to install, press install tools in the plugin and wait the windows to be refreshed.
 
 
 <img src="./img/install_tools.png">
@@ -32,6 +32,10 @@ After the page is refreshed, you'll new entries in the page of the plugin.
 We will describe a method called MMM - Moving Mic Measurment.
 
 The idea is to make a multi point measurement and use the average of these measures.
+
+MMM (or RTA as called in REW) is reliable up to app __600Hz__, and that is anywway the area where most of the problems are.
+
+For the freqs above 600Hz you should use __single point__ (at your listening position) time gated sweep measurement.
 
 Read more about moving microphone method (implemented via RTA in REW) here:
 <a href="http://www.ohl.to/audio/downloads/MMM-moving-mic-measurement.pdf"> : MMM</a>
@@ -46,7 +50,7 @@ Measurment points are defined like in above pictures
 
 It avoids to have a single optimized listening point
 
-### Let's go ! (to rewrite)
+### Let's go !
 
 Now, plug your Microphone on your computer, and place it where you should be to listen music. The placement is important, and you're advised to read some howto...
 
@@ -61,6 +65,8 @@ Before measuring, some adjustement are needed :
 * Then, ajust parameters for input and output :
 
 <img src="./img/rew_preferences.jpg">
+
+### Now let's use sweep files
 
 * Configure Make a measurement parameters :
 
@@ -78,6 +84,26 @@ Now, play the first sweep file for the channel you are measuring (Left or Right)
 -        choose File/Export/Export measurement as text (this file will be imported in rePhase)
 
 * Repeat the same for the other channel
+
+### And then Pink Noise files
+
+In REW, clic on RTA icon. It will open a new windows. Then clic on the gear (right top side corner and set the following parameters
+
+  <img src="./img/rew_rta_settings.png">
+
+When ready, in the plugin press "play left channel" pink noise. In REW, press the record button (top right)
+
+Move your Mic following the scheme above.
+
+These are measurement points as suggested by DiracLive. You can use them as your MMM points - start from central position, move slowly with constant speed (app 20cm/sec) toward next positions as if you were to draw a line between them. Finish at central position.
+
+When moving mic try to cover area around your head (in all 3 directions) starting at your listening position. Set smoothing to 1/12 and export measurement as text so you can work with it in rePhase.
+
+
+
+
+
+
 
 
 
