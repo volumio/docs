@@ -25,6 +25,20 @@ and press `Apply` (It can be done while playing)
 
 You should hear the difference !
 
+__Room settings__
+
+If your speakers are not at equal distance from the listening point (where you use to be to listen music), the stereo image is altered.
+Now you can set left and right distance and the plugin calculates the required delay to get a correct stereo image.
+
+__Note__ If you enter the same value for left and right, no delay is applied.
+You can give the distance for left and right, or just the difference.
+
+Value are in cm.
+
+<img src="./img/room-settings.png">
+
+<img src="./img/room_settings_values.png">
+
 
 ### Now, let's see how to create your own filter, just designed for your hardware and room!
 Go to next step!
