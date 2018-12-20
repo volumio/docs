@@ -63,7 +63,7 @@ Not to mention that by getting the apps, you will help the project with a little
 
 
 * Volumio UI can also be accessed by typing [http://volumio.local](http://volumio.local), or if you renamed your Volumio device http://VOLUMIONAME.local .
- * Please note that this function is not available on Android devices, but should work on Mac and iOs or in Windows. For more details, see <a href="https://volumio.github.io/docs/Good_to_Knows/Finding_Volumio.html">Finding_Volumio</a>.
+  * Please note that this function is not available on Android devices, but should work on Mac and iOs or in Windows. For more details, see <a href="https://volumio.github.io/docs/Good_to_Knows/Finding_Volumio.html">Finding_Volumio</a>.
 
 
 ### WEBUI ON HDMI DISPLAY OR RASPBERRY PI OFFICIAL TOUCH DISPLAY
