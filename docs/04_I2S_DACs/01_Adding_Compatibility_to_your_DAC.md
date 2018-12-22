@@ -9,12 +9,13 @@ If you're an hardware Audio manufacturer and you've developed a brand new i2s DA
 ### The dacs.json file
 
 Volumio stores all compatibility data for i2s dac in a single file: the  [dacs.json file](https://github.com/volumio/Volumio2/blob/master/app/plugins/system_controller/i2s_dacs/dacs.json),
-here's a brief extract of it (August 2nd 2018):
+here's a brief extract of it (December 22th 2018):
 
 ```json
 { "devices":[
   {"name":"Raspberry PI","data":[
     {"id":"adafruit-max98357","name":"Adafruit MAX98357","overlay":"hifiberry-dac","alsanum":"1","mixer":"","modules":"","script":"","needsreboot":"yes"},
+    {"id":"adafruit-uda1334a","name":"Adafruit UDA1334A","overlay":"hifiberry-dac,i2s-mmap","alsanum":"1","mixer":"","modules":"","script":"","needsreboot":"yes"},
     {"id":"allo-boss-dac","name":"Allo BOSS","overlay":"allo-boss-dac-pcm512x-audio","alsanum":"1","mixer":"Digital","modules":"","script":"","needsreboot":"yes"},
     {"id":"allo-digione","name":"Allo DigiOne","overlay":"allo-digione","alsanum":"1","mixer":"","modules":"","script":"","needsreboot":"yes"},
     {"id":"allo-katana-dac","name":"Allo Katana","overlay":"allo-katana-dac-audio","alsanum":"1","mixer":"Master","modules":"","script":"","needsreboot":"yes"},

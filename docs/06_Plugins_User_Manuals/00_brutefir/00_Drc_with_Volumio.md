@@ -15,7 +15,7 @@ To do that, several requirements :
 ### Other softwares on your computer
 
 - REW to makes measurements <a href="https://www.roomeqwizard.com/"> : REW</a>
-- Rephase to generate filters <a href="https://sourceforge.net/projects/rephase/"> : Rephase</a>
+- Rephase to generate filters <a href="https://rephase.org/"> : Rephase</a>
 
 ### Other Hardware
 
