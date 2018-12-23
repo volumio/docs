@@ -21,7 +21,7 @@ For security reasons, SSH is disabled by default on all versions after 2.199. It
 
 ### NETWORK CONNECTION
 
-* Volumio works best when it is connected to your Network, since it is meant to be used in an headless state: no monitor connected, and controlled via another device (PC, smartphone, tablet etc)
+* Volumio works best when it is connected to your Network, since it is meant to be used as a headless device: no monitor connected, and controlled via another device (PC, smartphone, tablet etc)
 * To connect Volumio to your network, simply attach an ethernet cable to it before starting it up
 * If no ethernet is available, you can connect to its hotstpot (see below) and connect to your Wi-fi Network. To do so, go to settings -> Network and connect it from there
 * *IMPORTANT* Do not configure your network manually via SSH, this can lead to issues and malfunctions
