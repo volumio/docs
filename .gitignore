@@ -3,5 +3,6 @@ node_modules
 .idea
 /sftp-config.json
 static
+npm-debug.log
 
 /vendor
