@@ -97,4 +97,4 @@ The first time, an helper is assisting you to configure Volumio. Don't worry if 
 * The helper sixth screen : Don't forget to donate ! It will help Volumio to be improved !
 <img src="./img/helper-sixth-screen.png" width="624">
 
-* Once it is done, you should have a working system,ready to play music! Let's discover it !
+* Once it is done, you should have a working system, ready to play music! Let's discover it !
