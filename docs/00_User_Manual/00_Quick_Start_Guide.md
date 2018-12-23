@@ -6,8 +6,9 @@
 
 ### FIRST BOOT
 
-* Volumio's first boot will take usually longer, up to 6 minutes if you're on a Raspberry PI 1. Therefore, be patient of first boot and wait about 5 minutes before starting to use Volumio.
-* The first time Volumio starts, it will perform some operations:
+Volumio's first boot will take usually longer, up to 6 minutes if you're on a Raspberry PI 1. Therefore, be patient of first boot and wait about 5 minutes before starting to use Volumio.
+
+The first time Volumio starts, it will perform some operations:
 - Extend the filesystem to fill completely your SD Card\ Hard drive
 - Regenerate SSH keys, to make them unique to your device
 - Install some packages and configure the system
