@@ -23,13 +23,13 @@ For security reasons, SSH is disabled by default on all versions after 2.199. It
 
 * Volumio works best when it is connected to your network, since it is meant to be used as a headless device: no monitor connected, and controlled via another device (PC, smartphone, tablet etc)
 * To connect Volumio to your network, simply attach an ethernet cable to it before starting it up
-* If no ethernet is available, you can connect to its hotstpot (see below) and connect to your Wireless network. To do so, go to Settings -> Network and connect it from there
+* If no ethernet is available, you can connect to its Hotspot (see below) and connect to your Wireless network. To do so, go to Settings -> Network and connect it from there
 * *IMPORTANT* Do not configure your network manually via SSH, this can lead to issues and malfunctions
 
 ### VOLUMIO HOTSPOT
 
 * If your device has wireless capabilities (and a supported Wireless card) Volumio will create a Wireless network called **Volumio**, the default password is **volumio2**
-* The Hotspot mode will allow you to connect to your Wireless network without the need for a wired connection, just connect to Volumio Hotspot and configure your network on Network options
+* The Hotspot mode will allow you to connect to your Wireless network without the need for a wired connection, just connect to Volumio Hotspot and configure your network on network options
 * Once your Wireless network has been configured, the Hotspot will no longer be visible
 * If, for whatever reason, your configured Wireless network is not available, Volumio will automatically re-enable the Hotspot
 * You can change the Hotspot options in the Network options, such as its name, password and channel (useful if you experience poor Hotspot performances)
