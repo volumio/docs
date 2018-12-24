@@ -30,7 +30,7 @@ For security reasons, SSH is disabled by default on all versions after 2.199. It
 
 * If your device has wireless capabilities (and a supported Wireless card) Volumio will create a Wireless network called **Volumio**, the default password is **volumio2**
 * The Hotspot mode will allow you to connect to your Wireless network without the need for a wired connection, just connect to Volumio Hotspot and configure your network in the Network options page
-* Once your Wireless network has been configured, the Hotspot will no longer be visible
+* Once your Wireless network has been configured, Valumio will automatically disable the Hotspot
 * If, for whatever reason, your configured Wireless network is not available, Volumio will automatically re-enable the Hotspot
 * You can change the Hotspot options in the Network options, such as its name, password and channel (useful if you experience poor Hotspot performance)
 * Once in Hotspot Mode, Volumio can be reached with IP **192.168.211.1** or via **http://volumio.local** as usual
