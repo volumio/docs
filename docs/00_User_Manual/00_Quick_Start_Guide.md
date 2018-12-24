@@ -67,7 +67,7 @@ Not to mention that by getting the apps, you will help the project with a little
   * Please note that this function is not available on Android devices, but should work on Mac and iOs or in Windows. For more details, see <a href="https://volumio.github.io/docs/Good_to_Knows/Finding_Volumio.html">Finding_Volumio</a>.
 
 
-### WEBUI ON HDMI DISPLAY OR RASPBERRY PI OFFICIAL TOUCH DISPLAY
+### WEB-UI ON HDMI DISPLAY OR RASPBERRY PI OFFICIAL TOUCH DISPLAY
 
 * Volumio will show its UI on any attached HDMI display ONLY on X86 Platform. On any other platform this feature is not enabled by default (for performance concerns): once Volumio has finished booting you will see a login prompt, which is absolutely fine.
 * This feature can however be easily achieved on those platforms as well (Raspberry PI, UDOO, Odroid, Pine64 ecc) by installing the "Touchscreen plugin"
@@ -75,9 +75,9 @@ Not to mention that by getting the apps, you will help the project with a little
 * After the plugin has successfully installed, enable it and you will see the UI on the HDMI connected display (or the official Rasperry PI display, if present)
 
 
-### FIRST CONNECTION TO THE WEBUI
+### FIRST CONNECTION TO THE WEB-UI
 
-* Once the sytem is on and you connected to it through your network or via the hotspot, you reach Volumio's webUI.
+* Once the system is on and you connected to it through your network or via the hotspot, you reach Volumio's web-UI.
 The first time, an helper is assisting you to configure Volumio. Don't worry if you missed it, you can still configure it later !
 
 * The helper first screen : Choose your LANGUAGE

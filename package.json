@@ -4,16 +4,16 @@
   "private": true,
   "devDependencies": {
     "cssnano": "^3.5.2",
-    "grunt": "^0.4.1",
+    "grunt": "^1.0.3",
     "grunt-php": "^1.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-connect-php": "^0.0.7",
-    "gulp-less": "^3.0.3",
+    "gulp-less": "^4.0.1",
     "gulp-plumber": "^1.1.0",
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sourcemaps": "^2.0.0-alpha",
-    "gulp-stylelint": "^2.0.2",
+    "gulp-stylelint": "^8.0.0",
     "stylelint-config-standard": "^6.0.0"
   }
 }
