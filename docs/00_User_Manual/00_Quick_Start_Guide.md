@@ -77,7 +77,7 @@ Not to mention that by getting the apps, you will help the project with a little
 
 ### FIRST CONNECTION TO THE WEB-UI
 
-* Once the system is on and you connected to it through your network or via the hotspot, you reach Volumio's web-UI.
+* Once the system is on and you have connected to it through your network or via the hotspot, you will reach Volumio's web-UI.
 The first time, an helper is assisting you to configure Volumio. Don't worry if you missed it, you can still configure it later !
 
 * The helper first screen : Choose your LANGUAGE
