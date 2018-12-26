@@ -6,9 +6,10 @@
 
 ### FIRST BOOT
 
-* Volumio's first boot will take usually longer, up to 6 minutes if you're on a Raspberry PI 1. Therefore, be patient of first boot and wait about 5 minutes before starting to use Volumio.
-* The first time Volumio starts, it will perform some operations:
-- Extend the filesystem to fill completely your SD Card\ Hard drive
+Volumio's first boot will take usually longer than normal, up to 6 minutes if you're on a Raspberry PI 1. Therefore, be patient on the first boot and wait about 5 minutes before starting to use Volumio.
+
+The first boot takes longer because it is performing these setup steps:
+- Extend the filesystem so it completely fills your SD Card / Hard drive
 - Regenerate SSH keys, to make them unique to your device
 - Install some packages and configure the system
 - Generate new thumbnails for the default backgrounds
@@ -20,23 +21,23 @@ For security reasons, SSH is disabled by default on all versions after 2.199. It
 
 ### NETWORK CONNECTION
 
-* Volumio works best when its connected to your Network, since it's meant to be used in an headless state: no monitor connected, and controlled via another device (PC, smartphone, tablet etc)
+* Volumio works best when it is connected to your network, since it is meant to be used as a headless device: no monitor connected, and controlled via another device (PC, smartphone, tablet etc)
 * To connect Volumio to your network, simply attach an ethernet cable to it before starting it up
-* If no ethernet is available, you can connect to its hotstpot (see below) and connect to your Wi-fi Network. To do so, go to settings -> Network and connect it from there
+* If no ethernet is available, you can connect to its Hotspot (see below) and connect to your Wireless network. To do so, go to Settings -> Network and connect it from there
 * *IMPORTANT* Do not configure your network manually via SSH, this can lead to issues and malfunctions
 
 ### VOLUMIO HOTSPOT
 
-* If your device has wireless capabilities (and a supported Wireless card) Volumio will create a Wireless Network called **Volumio**, the default password is **volumio2**
-* The Hotspot mode will allow you to connect to your Wireless Network without the need for a wired connection, just connect to Volumio Hotspot and configure your network on network options
-* Once your Wireless network has been configured, the Hotspot will no longer be visible
+* If your device has wireless capabilities (and a supported Wireless card) Volumio will create a Wireless network called **Volumio**, the default password is **volumio2**
+* The Hotspot mode will allow you to connect to your Wireless network without the need for a wired connection, just connect to Volumio Hotspot and configure your network in the Network options page
+* Once your Wireless network has been configured, Valumio will automatically disable the Hotspot
 * If, for whatever reason, your configured Wireless network is not available, Volumio will automatically re-enable the Hotspot
-* You can change the Hotspot options in the Network options, such as its name, password and channel (useful if you experience poor Hotspot performances)
+* You can change the Hotspot options in the Network options, such as its name, password and channel (useful if you experience poor Hotspot performance)
 * Once in Hotspot Mode, Volumio can be reached with IP **192.168.211.1** or via **http://volumio.local** as usual
 
 ### CONTROL VOLUMIO WITH THE OFFICIAL APPS
 
-* The most convenient way to control your Volumio system is through the official apps. The advantage is that they will automatically find your Volumio device on your Network.
+* The most convenient way to control your Volumio system is through the official apps. The advantage is that they will automatically find your Volumio device on your network.
 Not to mention that by getting the apps, you will help the project with a little contribution.
 
 <div class="container">
@@ -66,7 +67,7 @@ Not to mention that by getting the apps, you will help the project with a little
   * Please note that this function is not available on Android devices, but should work on Mac and iOs or in Windows. For more details, see <a href="https://volumio.github.io/docs/Good_to_Knows/Finding_Volumio.html">Finding_Volumio</a>.
 
 
-### WEBUI ON HDMI DISPLAY OR RASPBERRY PI OFFICIAL TOUCH DISPLAY
+### WEB-UI ON HDMI DISPLAY OR RASPBERRY PI OFFICIAL TOUCH DISPLAY
 
 * Volumio will show its UI on any attached HDMI display ONLY on X86 Platform. On any other platform this feature is not enabled by default (for performance concerns): once Volumio has finished booting you will see a login prompt, which is absolutely fine.
 * This feature can however be easily achieved on those platforms as well (Raspberry PI, UDOO, Odroid, Pine64 ecc) by installing the "Touchscreen plugin"
@@ -74,10 +75,10 @@ Not to mention that by getting the apps, you will help the project with a little
 * After the plugin has successfully installed, enable it and you will see the UI on the HDMI connected display (or the official Rasperry PI display, if present)
 
 
-### FIRST CONNECTION TO THE WEBUI
+### FIRST CONNECTION TO THE WEB-UI
 
-* Once the sytem is on and you connected to it through your network or via the hotspot, you reach Volumio's webUI.
-The first time, an helper is assisting you to configure Volumio. Don't worry if you missed it, you can still configure it later !
+* Once the system is on and you have connected to it through your network or via the hotspot, you will reach Volumio's web-UI.
+The first time, a helper will assist you to configure Volumio. Don't worry if you missed it, you can still configure it later !
 
 * The helper first screen : Choose your LANGUAGE
 <img src="./img/helper-first-screen.png" width="624">
@@ -97,4 +98,4 @@ The first time, an helper is assisting you to configure Volumio. Don't worry if 
 * The helper sixth screen : Don't forget to donate ! It will help Volumio to be improved !
 <img src="./img/helper-sixth-screen.png" width="624">
 
-* Once it is done, you should have a working system,ready to play music! Let's discover it !
+* Once it is done, you should have a working system, ready to play music! Let's discover it !
