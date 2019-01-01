@@ -71,7 +71,7 @@ Not to mention that by getting the apps, you will help the project with a little
 
 Volumio can display its UI on any attached HDMI display.
 * There is native support on the X86 Platform, just plug in a screen.
-* On other platforms (Raspberry PI, UDOO, Odroid, Pine64 etc) the feature is disabled by default, for performace reasons.
+* On other platforms (Raspberry PI, UDOO, Odroid, Pine64 etc) the feature is disabled by default, for performance reasons.
 * However you can enable it on these platforms by installing the "Touchscreen" plugin
   * To install it, navigate to Settings -> "Plugins", click on the "Miscellanea" category and install the "Touchscreen" plugin. On some devices this might take up to 10 minutes.
   * Please don't plug in any keyboard or mouse when installing the plugin
