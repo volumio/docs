@@ -76,6 +76,7 @@ Volumio can display its UI on any attached HDMI display.
   * Please make sure there are no keyboards or mice connected to your Volumio device before installing the plugin. You can reattach them after installation.
   * To install the plugin, navigate to Settings -> Plugins, click on the "Miscellanea" category and install the "Touch Display" plugin. On some devices this might take up to 10 minutes.
   * After the plugin has successfully installed, enable it and you will see the UI on the HDMI connected display (or the official Rasperry PI display, if present)
+  * After the plugin is installed, the web-UI will continue to work as normal
 * If you choose not to install the plugin, once Volumio has finished booting you will see a login prompt, which is absolutely fine.
 
 
