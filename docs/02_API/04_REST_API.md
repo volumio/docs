@@ -1,5 +1,27 @@
 ## Rest API
 
+Some commands may be invoqued using Rest_api interface.
+
+From a device on the same network, you can use
+
+```
+curl volumio.local/api/v1/commands/mycommand
+
+```
+
+Where _volumio.local_ is the device to be reached. You can also use the IP adress instead.
+
+From the device itself (via a keyboard plugged on it or through [SSH](https://volumio.github.io/docs/User_Manual/SSH.html)), use :
+
+```
+curl localhost:3000/api/v1/commands/mycommand
+
+```
+And of course, _mycommand_ is to be remplaced by the command to be used. (see below)
+
+
+## Available commands
+
 ### Playback commands
 
 All API calls will look like:
