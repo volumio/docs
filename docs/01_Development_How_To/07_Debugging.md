@@ -5,6 +5,8 @@
 <iframe src="https://player.vimeo.com/video/175284169" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 <p><a href="https://vimeo.com/175284169">Debugging Volumio 2 with Webstorm</a> from <a href="https://vimeo.com/skikirkwood">Shaggy Dog</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
+the same approach is possible for other editors like Visual Studio Code and Eclipse for nodejs
+
 ### Debugging with system journal
 
 You can see all logs, generated both by the system and Volumio with
