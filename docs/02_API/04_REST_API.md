@@ -1,6 +1,6 @@
 ## Rest API
 
-Some commands may be invoqued using Rest_api interface.
+Some commands may be invoked using Rest_api interface.
 
 From a device on the same network, you can use
 
@@ -17,7 +17,7 @@ From the device itself (via a keyboard plugged on it or through [SSH](https://vo
 curl localhost:3000/api/v1/commands/mycommand
 
 ```
-And of course, _mycommand_ is to be remplaced by the command to be used. (see below)
+And of course, _mycommand_ is to be replaced by the command to be used. (see below)
 
 
 ## Available commands
