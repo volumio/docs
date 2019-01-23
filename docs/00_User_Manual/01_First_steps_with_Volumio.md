@@ -20,7 +20,7 @@ _Desktop version_
 
 <img src="./img/main-page-descr.png">
 
-#### 1 - Command buttons
+#### 1 - Playback control buttons
 
 * __Play/Stop__ : obvious...
 * __Previous__ : jump to previous track
