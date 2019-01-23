@@ -93,7 +93,7 @@ _Desktop version_
 
 #### 12 - Queue
 
-* Here you access to the current queue with all tracks in it.
+* Shows all the tracks currently queued to be played.
 
 
   ## to be continued....
