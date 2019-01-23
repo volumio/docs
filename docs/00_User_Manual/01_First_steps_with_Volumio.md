@@ -52,7 +52,7 @@ Clicking this opens a menu containing all the settings for Volumio :
 #### 4 - Volume control
 
 * __Inside value__ : Current volume level
-* __External circle__ : Graphic volume level. Change the volume by moving it.
+* __External circle__ : Graphic volume level. Change the volume by clicking on the arc.
 
 #### 5 - Timer zone
 
