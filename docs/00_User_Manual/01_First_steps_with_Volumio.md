@@ -26,7 +26,7 @@ _Desktop version_
 * __Previous__ : jump to previous track
 * __Next__ : jump to next track
 
-#### 2 - Settings gears
+#### 2 - Settings (gear icon)
 
 Here you'll find all settings for Volumio such as :
 
