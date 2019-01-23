@@ -81,19 +81,19 @@ Display album art for the played track or radio if available.
 
 #### 9 - Multiroom zone
 
-* This shows all the available Volumio devices on your network and what they are playing. In the picture, the device called VOLUMIO-RPI2 is the one you are currently connected to (it is highlighted). The VOLUMIO-PINE64 device is silent and the VOLUMIO-SPARKY device is playing something else. To connect to another device, click on it.
+This shows all the available Volumio devices on your network and what they are playing. In the picture, the device called VOLUMIO-RPI2 is the one you are currently connected to (it is highlighted). The VOLUMIO-PINE64 device is silent and the VOLUMIO-SPARKY device is playing something else. To connect to another device, click on it.
 
 #### 10 - Browse
 
-* Clicking here shows all music available on your system (NAS, USB disk, webradio, Spotify, Youtube etc depending on plugins/options installed).
+Clicking here shows all music available on your system (NAS, USB disk, webradio, Spotify, Youtube etc depending on plugins/options installed).
 
 #### 11- Playback
 
-* The current page
+The current page
 
 #### 12 - Queue
 
-* Clicking here shows all the tracks currently queued to be played.
+Clicking here shows all the tracks currently queued to be played.
 
 
   ## to be continued....
