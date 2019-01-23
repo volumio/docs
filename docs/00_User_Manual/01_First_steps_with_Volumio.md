@@ -28,7 +28,7 @@ _Desktop version_
 
 #### 2 - Settings (gear icon)
 
-Here you'll find all settings for Volumio such as :
+Clicking this opens a menu containing all the settings for Volumio :
 
  * __My Volumio__ : Here you can access your MyVolumio account
  * __My Music__ : Music sources (NAS and USB devices) and album art management
