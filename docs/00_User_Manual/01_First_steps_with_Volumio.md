@@ -34,9 +34,9 @@ _Desktop version_
  * __My Music__ : Music sources (NAS and USB devices) and album art management
  * __Playback__ : Output device settings (dac, mixer, resampling)
  * __Appearance__ : To select your language, image background or color
- * __Network__ : Set your wifi, ethernet, dns
- * __System__ : Name your device, have version number and update if available, reset your system, and see credits for Volumio
- * __Plugins__ : To add features to Volumio such Streaming service (Spotify...), gpio management; equalizer, Internet radio ...
+ * __Network__ : Set your WiFi, ethernet, DNS
+ * __System__ : Name your device, check version number and update if available, reset your system, and see credits for Volumio
+ * __Plugins__ : To add features to Volumio such Streaming service (Spotify..., gpio management; equalizer, Internet radio ...)
  * __Alarm__ : You love to wake up with your favorite music ? It's here!
  * __Sleep__ : You love listening music before sleeping ? It's Here!
  * __Shutdown__ : To stop or reboot your device properly
