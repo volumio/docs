@@ -30,7 +30,7 @@ _Desktop version_
 
 * Here you'll find all settings for Volumio such as :
 
- * __My Volumio__ : Here you access to your account
+ * __My Volumio__ : Here you can access your MyVolumio account
  * __My Music__ : Music sources (NAS and USB devices) and album art management
  * __Playback__ : Output device settings (dac, mixer, resampling)
  * __Appearance__ : To select your language, image background or color
