@@ -38,10 +38,10 @@ _Desktop version_
  * __System__ : Name your device, check version number and update if available, reset your system, and see credits for Volumio
  * __Plugins__ : To add features to Volumio such Streaming service (Spotify..., gpio management; equalizer, Internet radio ...)
  * __Alarm__ : You love to wake up with your favorite music ? It's here!
- * __Sleep__ : You love listening music before sleeping ? It's Here!
+ * __Sleep__ : You love listening to music before sleeping ? It's Here!
  * __Shutdown__ : To stop or reboot your device properly
- * __Help__ : Link to the online help (here!)
- * __Volumio Shop__ : A link to the Volumio shop where you'll find compatible and well sounding hardware
+ * __Help__ : Link to the online help
+ * __Volumio Shop__ : A link to the Volumio shop where you'll find compatible and good-sounding hardware
 
 #### 3 - Track text information
 
