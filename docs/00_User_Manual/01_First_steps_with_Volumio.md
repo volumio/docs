@@ -31,7 +31,7 @@ _Desktop version_
 * Here you'll find all settings for Volumio such as :
 
  * __My Volumio__ : Here you access to your account
- * __My Music__ : Music sources (nas usb, and album art management)
+ * __My Music__ : Music sources (NAS and USB devices) and album art management
  * __Playback__ : Output device settings (dac, mixer, resampling)
  * __Appearance__ : To select your language, image background or color
  * __Network__ : Set your wifi, ethernet, dns
@@ -85,7 +85,7 @@ _Desktop version_
 
 #### 10 - Browse page
 
-* Clicking here, you access to all available music on your system (Nas, Usb disk, radio, Spotify, Youtube etc depending on plugins/options installed).
+* Clicking here takes you to a page showing all music available on your system (NAS, USB disk, webradio, Spotify, Youtube etc depending on plugins/options installed).
 
 #### 11- Playback
 
