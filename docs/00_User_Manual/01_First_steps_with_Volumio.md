@@ -43,7 +43,7 @@ Clicking this opens a menu containing all the settings for Volumio :
  * __Help__ : Link to the online help
  * __Volumio Shop__ : Link to the Volumio shop where you'll find compatible and good-sounding hardware
 
-#### 3 - Track text information
+#### 3 - Track info zone
 
 * __First line__ : Album name
 * __Second line__ : Track title
@@ -69,7 +69,7 @@ Clicking this opens a menu containing all the settings for Volumio :
 * __Middle__ : Add to playlist
 * __Right__ : Go to - Artist/Album - Tweeter
 
-#### 7 - Album art Display
+#### 7 - Album art display
 
 * Display album art for the played track or radio if available.
 
