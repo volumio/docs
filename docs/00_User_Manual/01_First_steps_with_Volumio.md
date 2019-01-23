@@ -56,7 +56,7 @@ Clicking this opens a menu containing all the settings for Volumio :
 
 #### 5 - Timer zone
 
-  * Miscellaneous info about the played track
+Miscellaneous info about the played track
 
 * __First line__ : Sample rate / bit resolution
 * __Second line__ : Ellapsed time
