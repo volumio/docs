@@ -83,7 +83,7 @@ _Desktop version_
 
 * Here appear all available Volumio devices on your network. In the picture, the device called VOLUMIO-RPI2 is the current remoted device. To remote an other, clic on it.
 
-#### 10 - Browse page
+#### 10 - Browse
 
 * Clicking here takes you to a page showing all music available on your system (NAS, USB disk, webradio, Spotify, Youtube etc depending on plugins/options installed).
 
