@@ -41,7 +41,7 @@ _Desktop version_
  * __Sleep__ : You love listening to music before sleeping ? It's Here!
  * __Shutdown__ : To stop or reboot your device properly
  * __Help__ : Link to the online help
- * __Volumio Shop__ : A link to the Volumio shop where you'll find compatible and good-sounding hardware
+ * __Volumio Shop__ : Link to the Volumio shop where you'll find compatible and good-sounding hardware
 
 #### 3 - Track text information
 
