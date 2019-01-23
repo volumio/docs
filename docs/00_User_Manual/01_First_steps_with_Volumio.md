@@ -85,7 +85,7 @@ _Desktop version_
 
 #### 10 - Browse
 
-* Clicking here takes you to a page showing all music available on your system (NAS, USB disk, webradio, Spotify, Youtube etc depending on plugins/options installed).
+* Clicking here shows all music available on your system (NAS, USB disk, webradio, Spotify, Youtube etc depending on plugins/options installed).
 
 #### 11- Playback
 
@@ -93,7 +93,7 @@ _Desktop version_
 
 #### 12 - Queue
 
-* Shows all the tracks currently queued to be played.
+* Clicking here shows all the tracks currently queued to be played.
 
 
   ## to be continued....
