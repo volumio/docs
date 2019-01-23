@@ -71,7 +71,7 @@ Miscellaneous info about the played track
 
 #### 7 - Album art display
 
-* Display album art for the played track or radio if available.
+Display album art for the played track or radio if available.
 
 #### 8 - Volume control buttons
 
