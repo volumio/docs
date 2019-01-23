@@ -36,7 +36,7 @@ _Desktop version_
  * __Appearance__ : To select your language, image background or color
  * __Network__ : Set your WiFi, ethernet, DNS and control the Hotspot
  * __System__ : Name your device, check version number and update if available, reset your system, and see credits for Volumio
- * __Plugins__ : To add features to Volumio such Streaming service (Spotify..., gpio management; equalizer, Internet radio ...)
+ * __Plugins__ : To add features to Volumio such as Streaming services (Spotify, etc), gpio management, equalizer, Internet radio ...
  * __Alarm__ : You love to wake up with your favorite music ? It's here!
  * __Sleep__ : You love listening to music before sleeping ? It's Here!
  * __Shutdown__ : To stop or reboot your device properly
