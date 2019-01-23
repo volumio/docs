@@ -95,5 +95,3 @@ The current page
 
 Clicking here shows all the tracks currently queued to be played.
 
-
-  ## to be continued....
