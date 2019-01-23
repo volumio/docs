@@ -49,7 +49,7 @@ Clicking this opens a menu containing all the settings for Volumio :
 * __Second line__ : Track title
 * __Third line__ : Artist name
 
-#### 4 - Volume Settings
+#### 4 - Volume control
 
 * __Inside value__ : Current volume level
 * __External circle__ : Graphic volume level. Change the volume by moving it.
@@ -63,7 +63,7 @@ Miscellaneous info about the played track
 * __Third line__ : Total duration
 * __Fourth line__ : Track source
 
-#### 6 - Track management
+#### 6 - Track management controls
 
 * __Left__ : Add to favorite
 * __Middle__ : Add to playlist
@@ -73,7 +73,7 @@ Miscellaneous info about the played track
 
 * Display album art for the played track or radio if available.
 
-#### 8 - Volume control
+#### 8 - Volume control buttons
 
 * __Left__ : Lower volume
 * __Middle__ : Mute
