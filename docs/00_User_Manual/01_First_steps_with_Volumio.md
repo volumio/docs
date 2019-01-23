@@ -81,7 +81,7 @@ Display album art for the played track or radio if available.
 
 #### 9 - Multiroom zone
 
-* Here appear all available Volumio devices on your network. In the picture, the device called VOLUMIO-RPI2 is the current remoted device. To remote an other, clic on it.
+* This shows all the available Volumio devices on your network and what they are playing. In the picture, the device called VOLUMIO-RPI2 is the one you are currently connected to (it is highlighted). The VOLUMIO-PINE64 device is silent and the VOLUMIO-SPARKY device is playing something else. To connect to another device, click on it.
 
 #### 10 - Browse
 
