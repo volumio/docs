@@ -31,13 +31,13 @@ Now let's see the content of the __Browse__ tab and the __Queue__ tab.
 
 #### 4 - Artists
 
-* __Artists__ : Access your library by artist
+* __Artists__ : Access your library by artist name
 
 <img src="./img/music_library_artists.png">
 
 #### 5 - Albums
 
-* __Albums__ : Access your library by Albums
+* __Albums__ : Access your library by album title
 
 <img src="./img/music_library_albums.png">
 
