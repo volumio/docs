@@ -55,9 +55,9 @@ Now let's see the content of the __Browse__ tab and the __Queue__ tab.
 
 * __Last 100__ : List the last 100 tracks played
 
-#### 9 - Music Library
+#### 9 - Web Radio
 
-* __Radio__ : Access web radio
+* __Web Radio__ : Access web radio
 
 <img src="./img/music_library_radio.png">
 
