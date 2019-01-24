@@ -49,7 +49,7 @@ Now let's see the content of the __Browse__ tab and the __Queue__ tab.
 
 #### 7 - Media server
 
-* __Media server__ : Access your media server if any
+* __Media server__ : Access any media servers (UPNP/DLNA, Airplay) on your network
 
 #### 8 - Last 100
 
