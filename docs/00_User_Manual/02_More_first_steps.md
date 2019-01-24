@@ -74,7 +74,7 @@ Now your radio is available in My Web Radios
 
 #### 10 - Other
 
-* __Other__ : Depending on plugins/options you have installed, you may have other tab such Spotify, Qobuz...
+* __Other__ : Depending on the plugins/options you have installed, you may have other items shown on the Browse page such Spotify, Qobuz...
 
 ### Queue tab
 
