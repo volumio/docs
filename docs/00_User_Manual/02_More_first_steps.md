@@ -25,7 +25,7 @@ Now let's see the content of the __Browse__ tab and the __Queue__ tab.
 
 #### 3 - Music Library
 
-* __Music Library__ : Access your library in files/folder mode
+* __Music Library__ : Access your music collection by device, folder and file
 
 <img src="./img/music_library.png">
 
