@@ -58,7 +58,7 @@ Now let's see the content of the __Browse__ tab and the __Queue__ tab.
 #### 9 - Web Radio
 
 * __Web Radio__ : Access web radio. Volumio provides a large collection to select from,
-* but you may add your own as well.
+  but you may add your own as well.
 
 <img src="./img/music_library_radio.png">
 
