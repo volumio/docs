@@ -78,7 +78,8 @@ Now your radio is available in My Web Radios
 
 ### Queue tab
 
-* Clicking on Queue tab will allow to access to the queue of the tracks that are going to be played.
+* Clicking on the Queue tab will display the queue of the tracks that are going to be played
+  and some queue controls.
 
 <img src="./img/queue_tab.png">
 
@@ -88,11 +89,11 @@ Now your radio is available in My Web Radios
 
 #### 2 - Repeat
 
-* __Repeat__ the track
+* __Repeat__ the current track
 
 #### 3 - Save
 
-* __Save__ the current queue as a playlist. A name is asked for this Playlist
+* __Save__ the current queue as a playlist. Volumio will ask you to name the new Playlist.
 
 #### 4 - Clear queue
 
