@@ -67,7 +67,7 @@ __Adding a radio__
 
 <img src="./img/music_library_add_radio.png">
 
-and fill the fields :
+and fill in the fields :
 
 <img src="./img//music_library_add_url.png">
 
