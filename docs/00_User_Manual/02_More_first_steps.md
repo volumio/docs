@@ -10,14 +10,14 @@ Now let's see the content of the __Browse__ tab and the __Queue__ tab.
 
 ### Browse tab
 
-* Clicking on Browse tab will allow to access all available music sources on your system.
+* Clicking on the Browse tab will display all the music sources available on your system, with several options to browse through them.
 
 
 <img src="./img/browse_page.png">
 
 #### 1 - Favorites
 
-* __Favorites__ : Access your favorites tracks
+* __Favorites__ : Access your favorite tracks
 
 #### 2 - Playlists
 
@@ -31,7 +31,7 @@ Now let's see the content of the __Browse__ tab and the __Queue__ tab.
 
 #### 4 - Artists
 
-* __Artist__ : Access your library by artist
+* __Artists__ : Access your library by artist
 
 <img src="./img/music_library_artists.png">
 
