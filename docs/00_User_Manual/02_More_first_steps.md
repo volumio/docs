@@ -108,10 +108,5 @@ You can change the order of each track by clicking and moving it up or down.
 
 
 
-
-
-
-
-
-
-  ## to be continued....
+This brings us to the end of our first exploration of Volumio.
+Later pages in this guide give details about the more advanced features.
