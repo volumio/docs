@@ -6,7 +6,6 @@ The Volumio main page provides 3 tabs:
  * Queue
 
  We already discovered the Playback tab in the previous <a href="https://volumio.github.io/docs/User_Manual/First_steps_with_Volumio.html">page</a>
- </p>
 
 Let's see now the content of the __Browse__ tab and the __Queue__ tab.
 
