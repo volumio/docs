@@ -1,4 +1,4 @@
- ## Using tabs
+ ## More first steps
 
  Volumio main page provides 3 tabs.
  * Browse
