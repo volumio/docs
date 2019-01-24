@@ -1,6 +1,6 @@
  ## First steps with Volumio
 
-### Main webUI page
+### Main WEB-UI page
 
 * Once your system is configured with the helper, you'll see the main page of Volumio
 * Depending on the device you use to connect to Volumio, you'll see the desktop page or the mobile page.
