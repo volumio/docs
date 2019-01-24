@@ -45,6 +45,8 @@ Clicking this opens a menu containing all the settings for Volumio :
 
 #### 3 - Track info zone
 
+Metadata for the currently playing track:
+
 * __First line__ : Album name
 * __Second line__ : Track title
 * __Third line__ : Artist name
@@ -56,7 +58,7 @@ Clicking this opens a menu containing all the settings for Volumio :
 
 #### 5 - Timer zone
 
-Miscellaneous info about the played track
+Miscellaneous info about the currently playing track:
 
 * __First line__ : Sample rate / bit resolution
 * __Second line__ : Ellapsed time
