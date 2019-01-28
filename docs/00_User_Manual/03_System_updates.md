@@ -45,4 +45,4 @@ __Note__ You'll see no change when clicking, but it's ok!
 
 ### When not to use the OTA Updater
 
-* If you're an advanced user and make manual changes to the system (e.g. manual changes of config files via SSH, update the volumio backend via `git` etc) , we strongly suggest __not__ to use the OTA updater, since your manual changes may conflict with the changes brought by the automated updates
+If you're an advanced user and make manual changes to the system (e.g. manual changes of config files via SSH, update the volumio backend via `git` etc) , we strongly suggest __not__ to use the OTA updater, since your manual changes may conflict with the changes brought by the automated updates
