@@ -41,7 +41,7 @@ __Note__ You'll see no change when clicking, but it's ok!
 
 * To disable test mode, navigate to /dev page and click "FALSE" on "TEST MODE" section.
 * You will now receive only ordinary releases
-* In case you want to revert to old stable release, do a factory reset and then update to latest stable version (this will erase all your data)
+* If you want to revert from your current test version to a previous stable release, do a factory reset and then update to latest stable version (this will erase all your data)
 
 ### Considerations over OTA Updater
 
