@@ -33,9 +33,9 @@ Volumio features an OTA (Over The Air) updater, meant to enable seamless and rel
 * Once in the /dev page, click on  "TRUE" on "TEST MODE" Section. Your device is now in TEST MODE, and will receive test updates from now on
 * Follow the instructions above to update your system; the only difference is that you'll see the test releases instead of ordinary releases
 
-<img src="./img/test_mode_enable.png">
-
 __Note__ You'll see no change when clicking, but it's ok!
+
+<img src="./img/test_mode_enable.png">
 
 ### Disable TEST MODE
 
