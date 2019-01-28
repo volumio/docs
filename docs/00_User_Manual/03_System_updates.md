@@ -13,7 +13,7 @@ Volumio features an OTA (Over The Air) updater, meant to enable seamless and rel
 
 * Verify that your Volumio device is connected to the Internet
 * Click on the cog-wheel in the top right part of the UI
-* Select system
+* Select "System"
 * Click on "Check Updates"
 * If an update is available, you'll be presented with a description of the new features.
 * Click on "Update Now"
