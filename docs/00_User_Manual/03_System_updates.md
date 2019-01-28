@@ -43,6 +43,6 @@ __Note__ You'll see no change when clicking, but it's ok!
 * You will now receive only ordinary releases
 * If you want to revert from your current test version to a previous stable release, do a factory reset and then update to latest stable version (this will erase all your data)
 
-### Considerations over OTA Updater
+### When not to use the OTA Updater
 
 * If you're an advanced user and make manual changes to the system (e.g. manual changes of config files via SSH, update the volumio backend via `git` etc) , we strongly suggest __not__ to use the OTA updater, since your manual changes may conflict with the changes brought by the automated updates
