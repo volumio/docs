@@ -2,7 +2,7 @@
 
 Volumio features an OTA (Over The Air) updater, meant to enable seamless and reliable upgrades to new system versions. It has these features:
 
-* Volumio uses a cloud-based build mechanism for its images, which includes the updater control backbone
+* Cloud-based distribution: Volumio uses a cloud-based build mechanism for its images. It makes use of this for the updater control backbone as well
 * 1:1 verified updates of new versions, this ensures that new updates are deployed exactly as they are built
 * Differential download: instead of downloading the full firmware, Volumio will download just the differences between the current system and the new one. This can save up to 90% of download size, resulting also in faster downloads
 * User-data preservation: updating to a new version will keep user data (such as playlists, music files, settings) untouched
