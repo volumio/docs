@@ -6,8 +6,8 @@ Volumio features an OTA (Over The Air) updater, meant to enable seamless and rel
 * 1:1 verified updates of new versions, this ensures that new updates are deployed exactly as they are built
 * Differential download: instead of downloading the full firmware, Volumio will download just the differences between the current system and the new one. This can save up to 90% of download size, resulting also in faster downloads
 * User-data preservation: updating to a new version will keep user data (such as playlists, music files, settings) untouched
-* Ability to reset to factory settings: doing so will revert the system to the first version it was booted to. This will cancel both user data and newer system versions
 * Ability to wipe user-data: doing so will reset all settings to factory defaults, while keeping the last firmware version installed.
+* Ability to reset to factory settings: doing so will revert the system to the first version it was booted to. This will cancel both user data and newer system versions
 
 ### How to use the OTA updater
 
