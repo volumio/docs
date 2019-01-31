@@ -9,8 +9,8 @@ and degrades sound quality.
 the volume. In this mode, you can change the volume while keeping bit perfect and without any audio quality degradation.
 
 ### How to get the best sound and Volume Control
-Volumio can detect if your DAC supports Hardware mixer, and enable it automatically. If your DAC does not support it, Volumio will 
-allow you to enable software mixer. To change this behaviour you can go to Playback Options -> Volume Settings:
+Volumio can detect if your DAC has a Hardware Mixer, and enable it automatically. If your DAC does not support it, Volumio will 
+allow you to enable the software mixer. To change this behaviour you can go to Playback Options -> Volume Settings:
 
 Select the Mixer Type:
 
