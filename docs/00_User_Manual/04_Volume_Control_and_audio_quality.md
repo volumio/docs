@@ -11,7 +11,7 @@ There are two ways to get volume control:
 * Hardware Mixer: some DACs (not all) have an array of internal resistors they can use to change the volume.
   In this mode, you can change the volume while keeping the audio stream bit-perfect and avoid any audio quality degradation.
 
-### How to get the best sound and Volume Control
+### How to get the best sound _and_ Volume Control
 Volumio can detect if your DAC has a Hardware Mixer, and enable it automatically. If your DAC does not support it, Volumio will 
 allow you to enable the software mixer. To change this behaviour you can go to Playback Options -> Volume Settings:
 
