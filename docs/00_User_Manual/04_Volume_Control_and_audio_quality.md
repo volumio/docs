@@ -1,7 +1,10 @@
 ## Volume Controls and Audio Quality
 
 ### Introduction
-It's not true that enabling volume control ALWAYS tampers with bit perfect. 
+Volumio is designed to maximise audio quality - ideally, bit-perfect playback.
+Some say that allowing the listener to control the playback volume gives up
+that bit-perfect ideal, but that's not correct in all circumstances.
+
 There are two ways to get volume control:
 * Software mixer: the audio stream is manipulated to get the desired volume change.
   This makes the stream not bit-perfect and degrades sound quality.
