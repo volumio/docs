@@ -4,7 +4,7 @@
 It's not true that enabling volume control ALWAYS tampers with bit perfect. 
 There are two ways to get volume control:
 * Software mixer: the audio streaming is manipulated to get the desired volume change. This makes the stream not bit perfect, 
-and degrades sound quality
+and degrades sound quality.
 * Hardware Mixer: its not supported by every DAC, but if the DAC supports this, it will trigger its array of internal resistors to change
 the volume. In this mode, you can change the volume while keeping bit perfect and without any audio quality degradation.
 
