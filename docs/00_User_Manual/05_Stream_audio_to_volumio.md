@@ -5,13 +5,14 @@ It understands two protocols: [UPnP/DLNA](https://en.wikipedia.org/wiki/Digital_
 
 ### UPnP - DLNA
 * Volumio is a UPnP Media Renderer front-end for MPD (the Music Player Daemon used in Volumio), thanks to [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/)
-* This is implemented by default, and nothing needs to be configured on Volumio side
 
 
 ### Airplay
 * AirPlay is an equivalent protocol to DLNA, but proprietary and developed by Apple. It is used by default by iTunes, and on iPhone, iPad, ...
 * This protocol is now available on other non-Apple sources (see below)
-* This is implemented by default, and nothing needs to be configured on Volumio side
+
+Both protocols are implemented by default in your Volumio device and nothing needs to be configured there.
+However some setup may be needed on your other device to enable sending streams to Volumio.
 
 ### Stream from Windows
 * You have several solutions to stream from Windows (all the sound going to your usual speakers will be redirected to a DLNA or AirPlay stream):
