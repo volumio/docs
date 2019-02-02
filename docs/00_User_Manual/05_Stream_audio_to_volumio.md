@@ -1,6 +1,7 @@
 ## Stream audio to Volumio
 
-Volumio usually uses music it finds locally (internal memory, USB disk, ...) or on the network (Spotify, web radio, DLNA server, ...). But it is also able to receive an audio stream directly from devices connected on the local network, such as a smartphone or a computer: in this case, Volumio acts as a renderer, and uses 2 protocols: [UPnP/DLNA](https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance) or [AirPlay](https://en.wikipedia.org/wiki/AirPlay).
+Volumio usually uses music it finds locally (internal memory, USB disk, ...) or on the network (Spotify, web radio, DLNA server, ...). But it is also able to receive an audio stream directly from devices connected on the local network, such as a smartphone or a computer: in this case, Volumio acts as a _renderer_, and converts the stream to sound, played through the attached audio device.
+It understands two protocols: [UPnP/DLNA](https://en.wikipedia.org/wiki/Digital_Living_Network_Alliance) or [AirPlay](https://en.wikipedia.org/wiki/AirPlay).
 
 ### UPnP - DLNA
 * Volumio is a UPnP Media Renderer front-end for MPD (the Music Player Daemon used in Volumio), thanks to [upmpdcli](https://www.lesbonscomptes.com/upmpdcli/)
