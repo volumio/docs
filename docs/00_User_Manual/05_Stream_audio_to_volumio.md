@@ -23,7 +23,11 @@ However some setup may be needed on your other device to enable sending streams 
 ### From Android
 * In this case too, all the sound going to your usual speakers will be redirected to a DLNA or AirPlay stream
 * Usually, your device must be rooted in order to allow the app to capture the audio from the Android system
-* Several apps are compatible, including [AllConnect](https://play.google.com/store/apps/details?id=com.tuxera.streambels), [AirAudio](https://play.google.com/store/apps/details?id=eu.airaudio), [AllStream](https://play.google.com/store/apps/details?id=com.kineticgamestudios.airtunes.android) or [BubbleUPnP+Xposed](https://play.google.com/store/apps/details?id=com.bubblesoft.android.bubbleupnp).
+* Several apps are compatible, including
+  * [AllConnect](https://play.google.com/store/apps/details?id=com.tuxera.streambels)
+  * [AirAudio](https://play.google.com/store/apps/details?id=eu.airaudio)
+  * [AllStream](https://play.google.com/store/apps/details?id=com.kineticgamestudios.airtunes.android)
+  * [BubbleUPnP+Xposed](https://play.google.com/store/apps/details?id=com.bubblesoft.android.bubbleupnp).
 
 ## Trouble Shooting
 * Don't hesitate to restart your devices (Windows, Android, Volumio, Wifi router, ...) if you can't connect them
