@@ -21,7 +21,7 @@ Usually, what will happen is all the sound going to the speakers attached to the
   * [TuneBlade](http://tuneblade.com/), transforming your PC into an Airplay streamer
 * If you want to use this solution in order to stream the audio of a movie you're watching, consider that streaming necessitates a delay: in your video software (for example VLC), use the option to compensate this delay (J and K keys on VLC, usually around 2 seconds delay)
 
-### From Android
+### Stream From Android
 * Usually, your device must be rooted in order to allow the app to capture the audio from the Android system
 * Several apps are compatible, including
   * [AllConnect](https://play.google.com/store/apps/details?id=com.tuxera.streambels)
