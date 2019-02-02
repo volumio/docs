@@ -13,15 +13,15 @@ It understands two protocols: [UPnP/DLNA](https://en.wikipedia.org/wiki/Digital_
 
 Both protocols are implemented by default in your Volumio device and nothing needs to be configured there.
 However some setup may be needed on your other device to enable sending streams to Volumio.
+Usually, what will happen is all the sound going to the speakers attached to the sending device will be redirected to a DLNA or AirPlay stream, that you then send to Volumio.
 
 ### Stream from Windows
-* You have several solutions to stream from Windows (all the sound going to your usual speakers will be redirected to a DLNA or AirPlay stream):
+* You have several solutions to stream from Windows
   * [Stream What You Hear (SWYH)](http://www.streamwhatyouhear.com/), transforming your PC into a DLNA streamer. If it doesn't work, you can also use the "HTTP Live Streaming" function, and indicate the provided URL to Volumio, creating a new Web Radio.
   * [TuneBlade](http://tuneblade.com/), transforming your PC into an Airplay streamer
 * If you want to use this solution in order to stream the audio of a movie you're watching, consider that streaming necessitates a delay: in your video software (for example VLC), use the option to compensate this delay (J and K keys on VLC, usually around 2 seconds delay)
 
 ### From Android
-* In this case too, all the sound going to your usual speakers will be redirected to a DLNA or AirPlay stream
 * Usually, your device must be rooted in order to allow the app to capture the audio from the Android system
 * Several apps are compatible, including
   * [AllConnect](https://play.google.com/store/apps/details?id=com.tuxera.streambels)
