@@ -105,13 +105,13 @@ Where name is the name of the playlist to play
 ```
 volumio.local/api/v1/commands/?cmd=repeat&value=key
 ```
-Where key is _true_ or _false_
+Where key is _true_ or _false_; if value is absent it toggles.
 
 * Random Makes the order in which tracks are played random
 ```
 volumio.local/api/v1/commands/?cmd=random&value=key
 ```
-Where key is _true_ or _false_
+Where key is _true_ or _false_; if value is absent it toggles.
 
 ### Backup
 
