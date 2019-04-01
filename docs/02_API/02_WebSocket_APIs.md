@@ -360,7 +360,7 @@ pushQueue
 ### Remove Item from queue
 
 ```
-removeFromQueue N
+removeFromQueue {value: N}
 ```
 
 where `N` is the track number in the queue, 0 for the first, 9 for the tenth and so on
@@ -373,7 +373,7 @@ pushQueue
 ### Add Item to Queue
 
 ```
-addToQueue {'uri:uri'}
+addToQueue {uri:'uri'}
 ```
 
 where `uri` is the uri of the item we want to add
