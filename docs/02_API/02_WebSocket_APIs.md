@@ -323,7 +323,7 @@ This can be useful when creating a new plugin, to inject custom views in the bro
 ### Get Current Play Queue
 
 ```
-GetQueue
+getQueue
 ```
 
 Response:
