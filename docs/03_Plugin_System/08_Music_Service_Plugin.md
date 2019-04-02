@@ -60,6 +60,30 @@ Use the type property on the object you are returning the the required and optio
   ]
 }
 ```
+if the request was to add songs of a playlist to queue then use following format to return by wrapping in a promise resolve value:-
+
+```json
+[
+		{
+			"service": "googleplayservice",
+			"type": "song",
+			"title": "Space Song",
+			"artist": "Beach House",
+			"album": "Depression Cherry",
+			"albumart": "https://i.scdn.co/image/dac9ef993de0a5758cc6e655080306d40814edc9",
+			"uri": "googleplayservice:track:5cgSWdlxIelg5N9OjfkRow"
+		},
+		{
+			"service": "googleplayservice",
+			"type": "song",
+			"title": "40 Beers",
+			"artist": "Thom Sonny Green",
+			"album": "High Anxiety",
+			"albumart": "https://i.scdn.co/image/dac9ef993de0a5758cc6e655080306d40814edc9",
+			"uri": "googleplayservice:track:2r6oZ0GBqJaCnqqR72yiFc"
+		}
+]
+```
 
 ### Required Functions
 
