@@ -96,7 +96,7 @@ __or__
 * If you want to use automatic filter generation, export the impulse from rew using
 * export impulse response as wav with following parameters :
 
-<img src="./img/export_impulse.png">
+<img src="./img/export_impulse.jpg">
 
 
 * Repeat the same for the other channel
