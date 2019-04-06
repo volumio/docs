@@ -2,6 +2,8 @@
 
 Thanks to the plugin, you'll be able to apply __Digital Room Correction__ to your system.
 
+The plugin is able to generate filters in few clicks, using <a href="http://drc-fir.sourceforge.net/"> : DRC</a>
+
 ## What is DRC?
 
 The best thing is to read this <a href="https://en.wikipedia.org/wiki/Digital_room_correction"> : wikipedia DRC</a>
@@ -15,6 +17,8 @@ To do that, several requirements :
 ### Other softwares on your computer
 
 - REW to makes measurements <a href="https://www.roomeqwizard.com/"> : REW</a>
+
+If you want to make your filters "by hands" :
 - Rephase to generate filters <a href="https://rephase.org/"> : Rephase</a>
 
 ### Other Hardware

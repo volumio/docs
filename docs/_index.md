@@ -2,7 +2,7 @@
 
 &nbsp;
 ## Welcome to Volumio's documentation
-#### _(update Febuary 2nd 2019)_
+#### _(update April 6th 2019)_
 
 
 __Volumio__ is a free and Open Source Linux Distribution, designed and fine-tuned exclusively for music playback. It runs on a variety of devices, typically small and cheap computers like the Raspberry PI, but also on low power PCs, notebooks or thin clients.

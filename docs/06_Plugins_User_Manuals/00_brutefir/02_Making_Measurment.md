@@ -1,11 +1,19 @@
 ## Create your own filters
 
-There is 4 important steps to that :
+There is sevral steps to do that :
 
 * playing sweep file or pink noise using Tools in the plugin.
 * Recording signal while playing (with REW)
+
+
 * Modifing the result (with REPHASE) and generating filters.
-* Using this filter in Volumio trough the Brutefir plugin.
+
+__or__
+
+* Use filter creation in the plugin
+
+__And__
+* Using this filter in Volumio through the Brutefir plugin.
 
 
 ### Tools in Volumio
@@ -14,7 +22,7 @@ To help to generate your filter, the plugin can provide some tools.
 
 __Sweep files__
 
-These wav file contain a 20Hz to 20000kHz signal plus a time reference signal.
+These wav file contain a 20Hz to 20000kHz signal plus a time reference signal on the right channel.
 
 __Pink noise files__
 
@@ -82,6 +90,14 @@ Now, play the first sweep file for the channel you are measuring (Left or Right)
 
 
 -        choose File/Export/Export measurement as text (this file will be imported in rePhase)
+
+__or__
+
+* If you want to use automatic filter generation, export the impulse from rew using
+* export impulse response as wav with following parameters :
+
+<img src="./img/export_impulse.png">
+
 
 * Repeat the same for the other channel
 
