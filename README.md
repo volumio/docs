@@ -237,7 +237,7 @@ If your server does not have a default timezone set in php.ini, it may return er
 }
 ```
 
-###Inherit Index
+###Inherit  Index
 This feature will insruct the router to seek the first available file to use when a request to a folder is made and the index is not found.
 
 ```json
