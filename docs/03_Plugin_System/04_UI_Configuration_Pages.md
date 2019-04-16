@@ -66,7 +66,7 @@ It's the json file which describes visually and functionally the configuration p
           "value": true
         }
       ]
-   }
+    }
   ]
 }
 
@@ -80,7 +80,7 @@ Let's break it down and analyze in its sections:
   }
 ```
 
-This is the Page's tite.
+This is the Page's title.
 
 ```
 "sections": [
@@ -120,6 +120,7 @@ Those are the sections descriptors. A section is typically a block of options wh
     "label": "Username",
     "value": ""
   }
+]
 ```
 
 Content defines all the elements available in a section. It needs the following fields:
@@ -159,7 +160,7 @@ Content defines all the elements available in a section. It needs the following 
 
 #### select
 ```
-'id': 'kernel_profile',
+               'id': 'kernel_profile',
                'element': 'select',
                'label': 'Kernel profile',
                'value': {'value': 2 ,'label': 'Less Jitter'},
@@ -185,7 +186,7 @@ Content defines all the elements available in a section. It needs the following 
 
 #### button 1: Open a modal to ask for confirmation before emitting data and message
 ```
-'id': 'update',
+              'id': 'update',
               'element': 'button',
               'label': 'System updates',
               'description': 'You can check?...',
@@ -208,7 +209,7 @@ Content defines all the elements available in a section. It needs the following 
 
 #### button 3: Open a URL in a new page
 ```
-            'id':'volumiolink',
+              'id':'volumiolink',
               'element': 'button',
               'label': 'Go To Volumio Website',
               'description": 'Open Volumio Website',
@@ -274,7 +275,7 @@ Content defines all the elements available in a section. It needs the following 
  ```
  #### Equalizer Selector
  ```
- {
+            {
               'id': 'equalizerSelector',
               'element': 'equalizer',
               'label': 'Slider selector',
@@ -304,6 +305,7 @@ Content defines all the elements available in a section. It needs the following 
                     value: 4,
                     tooltip: 'show'      
                   }
+              }
  ```
 
 ### Translating text
