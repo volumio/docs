@@ -1,18 +1,21 @@
-## Create your own filters
+## Making measurements
 
-There is sevral steps to do that :
+One of the first step to make DRC, is to have  a good measurement of caractheristic of your system.
+
+There is several steps to do that :
 
 * playing sweep file or pink noise using Tools in the plugin.
 * Recording signal while playing (with REW)
 
-
+__And__
 * Modifing the result (with REPHASE) and generating filters.
 
-__or__
+__OR__
 
 * Use filter creation in the plugin
 
 __And__
+
 * Using this filter in Volumio through the Brutefir plugin.
 
 

@@ -10,20 +10,23 @@ Try to play a track, if the music is playing, go to the next step.
 
 If an error occurs go in plugin settings
 
-__Main Interface__
+
+and try to change __output format__ . It is a DAC dependant parameter.
+
+
+__Main Interface of the plugin__
 
 <img src="./img/general_plugin_settings.png">
 _plugin main interface_
 
-and try to change __output format__ . It is a DAC dependant parameter.
-
 When it's ok, try to play a track.
 
-You can now test with a filter, just select __Left Filter__ and __Right filter__ in plugin settings with one of the provided filter:
+You can now test with a filter, just select __demo-left.txt__ and __demo-right.txt__ in plugin settings:
 (few filters to test are installed by the plugin, they are placed in `/data/INTERNAL/brutefirfilter`)
-* `demo-left ` and `demo-right`
 
 <img src="./img/select_filter.png">
+
+Select ```text- 32/64 bits floats line``` as filter format with these filters.
 
 and press `Apply` (It can be done while playing)
 
