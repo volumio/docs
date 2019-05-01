@@ -21,11 +21,11 @@ At any place in your code you can then call the `commandRouter.pushToastMessage`
 self.commandRouter.pushToastMessage('success', "Account Login", "Login was successful");
 ```
 
-There are four kinds of toast messages: `info`, `success`, `alert` and `error`:
+There are four kinds of toast messages: `info`, `success`, `warning` and `error`:
 
 ```javascript
 self.commandRouter.pushToastMessage('info', "Account Login", "Login pending....");
 self.commandRouter.pushToastMessage('success', "Account Login", "Login was successful");
-self.commandRouter.pushToastMessage('alert', "Account Login", "Login not possible");
+self.commandRouter.pushToastMessage('warning', "Account Login", "Login not possible");
 self.commandRouter.pushToastMessage('error', "Account Login", "Login failed - invalid credentials");
 ```
