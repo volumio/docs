@@ -268,3 +268,148 @@ This is the generic command to restore configuration files:
 volumio.local/api/v1/restore/config
 ```
 You have to specify a POST field named *config*, that has to contain an array of JSON object with plugins and correspondent configurations, sorted by category.
+
+### Browse
+
+## Browsing
+
+The browsing api returns a list of folders and song, starting from the root folder. The folder to list is given through the query parameter path. If the root folder shall be listed provide the value / for the path parameter.
+```
+'/v1/listing/browse'
+```
+
+Example result:
+
+```
+{
+  "success": true,
+  "value": [
+    {
+      "title": "Preferiti",
+      "cover_url": "http://192.168.1.145/albumart?sourceicon=music_service/mpd/favouritesicon.png",
+      "track_name": "Preferiti",
+      "url": "favourites",
+      "isFolder": true
+    },
+    {
+      "title": "Playlist",
+      "cover_url": "http://192.168.1.145/albumart?sourceicon=music_service/mpd/playlisticon.png",
+      "track_name": "Playlist",
+      "url": "playlists",
+      "isFolder": true
+    },
+    {
+      "title": "Libreria Musicale",
+      "cover_url": "http://192.168.1.145/albumart?sourceicon=music_service/mpd/musiclibraryicon.png",
+      "track_name": "Libreria Musicale",
+      "url": "/music-library",
+      "isFolder": true
+    },
+    {
+      "title": "Artisti",
+      "cover_url": "http://192.168.1.145/albumart?sourceicon=music_service/mpd/artisticon.png",
+      "track_name": "Artisti",
+      "url": "/artists/",
+      "isFolder": true
+    },
+    {
+      "title": "Album",
+      "cover_url": "http://192.168.1.145/albumart?sourceicon=music_service/mpd/albumicon.png",
+      "track_name": "Album",
+      "url": "/albums/",
+      "isFolder": true
+    },
+    {
+      "title": "Generi",
+      "cover_url": "http://192.168.1.145/albumart?sourceicon=music_service/mpd/genreicon.png",
+      "track_name": "Generi",
+      "url": "/genres/",
+      "isFolder": true
+    },
+    {
+      "title": "Media Servers",
+      "cover_url": "http://192.168.1.145/albumart?sourceicon=music_service/upnp_browser/dlnaicon.png",
+      "track_name": "Media Servers",
+      "url": "upnp",
+      "isFolder": true
+    },
+    {
+      "title": "Ultimi 100",
+      "cover_url": "http://192.168.1.145/albumart?sourceicon=music_service/last_100/icon.png",
+      "track_name": "Ultimi 100",
+      "url": "Last_100",
+      "isFolder": true
+    },
+    {
+      "title": "Web Radio",
+      "cover_url": "http://192.168.1.145/albumart?sourceicon=music_service/webradio/icon.png",
+      "track_name": "Web Radio",
+      "url": "radio",
+      "isFolder": true
+    }
+  ]
+}
+```
+
+
+## Get collection stats
+
+This API returns an overall of the music collection currently handled by Volumio. The API is accessible through the following URI:
+
+```
+    api.get('/v1/listing/collectionstats', this.browse.getCollectionStats.bind(this.browse));
+```
+
+It returns the following data:
+
+* Artists
+* Albums
+* Songs
+* Global Play Time, expressed in a Human Readable format
+
+An example of the response message:
+
+
+```
+{
+  "success": true,
+  "value": {
+    "artists": 3,
+    "albums": 4,
+    "songs": 105,
+    "playtime": "7:11:15"
+  }
+}
+```
+
+## Get Multiroom devices
+
+This API returns a list of devices connected through the Multiroom function The API is accessible through the following URI:
+
+
+```
+    api.get('/v1/listing/getzones', this.browse.getZones.bind(this.browse));
+```
+
+The API returns a complete description of the device status and the information useful for identifying it over the network.
+An example of the response is the following:
+
+```
+{
+  "success": true,
+  "value": [
+    {
+      "name": "Volumio",
+      "uuid": "90c153d2-2559-442d-8bdb-92b96235506b",
+      "ip": "http://192.168.1.145",
+      "volume": 89,
+      "song": "Wheels",
+      "artist": "AC/DC",
+      "albumart": "/albumart?cacheid=742&web=AC%2FDC/Black%20Ice/extralarge&path=%2FUSB%2FDISK_IMG%2FACDC%2FBlack%20Ice&metadata=false",
+      "status": "pause",
+      "title": "Wheels",
+      "track": "Wheels"
+    }
+  ]
+}
+```
