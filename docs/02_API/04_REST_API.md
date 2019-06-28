@@ -422,6 +422,349 @@ Response
 }
 ```
 
+### ADDING ITEMS TO PLAYBACK
+
+Items can be added to playback in 3 ways:
+* Replacing the current content of the queue and playing Items (default and suggested)
+* Adding Items to queue and playing the items (so queue will not be cleared)
+* Adding items to queue
+
+
+* Replace the current content of the queue
+
+POST
+```
+volumio.local/api/v1/replaceAndPlay
+```
+
+Payload
+```json
+{
+  "item": {
+    "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/06 - Forget It.flac",
+    "service": "mpd",
+    "title": "Forget It",
+    "artist": "Rodriguez",
+    "album": "Cold Fact",
+    "type": "song",
+    "tracknumber": 0,
+    "duration": 110,
+    "trackType": "flac"
+  },
+  "list": [
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/01 - Sugar Man.flac",
+      "service": "mpd",
+      "title": "Sugar Man",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 229,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/02 - Only Good for Conversation.flac",
+      "service": "mpd",
+      "title": "Only Good for Conversation",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 144,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/03 - Crucify Your Mind.flac",
+      "service": "mpd",
+      "title": "Crucify Your Mind",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 152,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/04 - This Is Not a Song, It's an Outburst- Or, The Establishment Blues.flac",
+      "service": "mpd",
+      "title": "This Is Not a Song, It's an Outburst: Or, The Establishment Blues",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 127,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/05 - Hate Street Dialogue.flac",
+      "service": "mpd",
+      "title": "Hate Street Dialogue",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 154,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/06 - Forget It.flac",
+      "service": "mpd",
+      "title": "Forget It",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 110,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/07 - Inner City Blues.flac",
+      "service": "mpd",
+      "title": "Inner City Blues",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 207,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/08 - I Wonder.flac",
+      "service": "mpd",
+      "title": "I Wonder",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 154,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/09 - Like Janis.flac",
+      "service": "mpd",
+      "title": "Like Janis",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 156,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/10 - Gommorah (A Nursery Rhyme).flac",
+      "service": "mpd",
+      "title": "Gommorah (A Nursery Rhyme)",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 141,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/11 - Rich Folks Hoax.flac",
+      "service": "mpd",
+      "title": "Rich Folks Hoax",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 186,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/12 - Jane S. Piddy.flac",
+      "service": "mpd",
+      "title": "Jane S. Piddy",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 180,
+      "trackType": "flac"
+    }
+  ],
+  "index": 5
+}
+```
+
+Where:
+List: is the list of object we want to play
+Index: is the item we want to play first (in this example we are starting playback from track 6)
+Item: The selected item that will play first
+
+Alternatively, a single item can be provided (in this case, put directly the item in the payload, without using the values index, list and iteam)
+
+* Adding items to queue
+
+POST
+```
+volumio.local/api/v1/addToQueue
+```
+
+Payload
+```json
+[
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/01 - Sugar Man.flac",
+      "service": "mpd",
+      "title": "Sugar Man",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 229,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/02 - Only Good for Conversation.flac",
+      "service": "mpd",
+      "title": "Only Good for Conversation",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 144,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/03 - Crucify Your Mind.flac",
+      "service": "mpd",
+      "title": "Crucify Your Mind",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 152,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/04 - This Is Not a Song, It's an Outburst- Or, The Establishment Blues.flac",
+      "service": "mpd",
+      "title": "This Is Not a Song, It's an Outburst: Or, The Establishment Blues",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 127,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/05 - Hate Street Dialogue.flac",
+      "service": "mpd",
+      "title": "Hate Street Dialogue",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 154,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/06 - Forget It.flac",
+      "service": "mpd",
+      "title": "Forget It",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 110,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/07 - Inner City Blues.flac",
+      "service": "mpd",
+      "title": "Inner City Blues",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 207,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/08 - I Wonder.flac",
+      "service": "mpd",
+      "title": "I Wonder",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 154,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/09 - Like Janis.flac",
+      "service": "mpd",
+      "title": "Like Janis",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 156,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/10 - Gommorah (A Nursery Rhyme).flac",
+      "service": "mpd",
+      "title": "Gommorah (A Nursery Rhyme)",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 141,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/11 - Rich Folks Hoax.flac",
+      "service": "mpd",
+      "title": "Rich Folks Hoax",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 186,
+      "trackType": "flac"
+    },
+    {
+      "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/12 - Jane S. Piddy.flac",
+      "service": "mpd",
+      "title": "Jane S. Piddy",
+      "artist": "Rodriguez",
+      "album": "Cold Fact",
+      "type": "song",
+      "tracknumber": 0,
+      "duration": 180,
+      "trackType": "flac"
+    }
+  ]
+```
+Just send an array with all the items you want to be added to queue.
+
+
+* Adding items and playing them without clearing the queue
+POST
+```
+volumio.local/api/v1/addToQueue
+```
+
+Payload
+```json
+{
+  "uri": "music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/12 - Jane S. Piddy.flac",
+  "service": "mpd",
+  "title": "Jane S. Piddy",
+  "artist": "Rodriguez",
+  "album": "Cold Fact",
+  "type": "song",
+  "tracknumber": 0,
+  "duration": 180,
+  "trackType": "flac"
+}
+```
+Just send an item or an iteams array with all the items you want to be added to queue.
+
 * Collection Statistics
 
 ```
