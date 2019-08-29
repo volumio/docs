@@ -128,7 +128,8 @@ volumio.local/api/v1/getQueue
 
 Response
 ```json
-[
+{"queue":
+  [
     {
         "uri": "mnt/NAS/FLAC/Bob Dylan The Best Of Remastered 1997 [EAC-FLAC](oan)/03 - Don't Think Twice, It's All Right.flac",
         "service": "mpd",
@@ -174,7 +175,8 @@ Response
         "trackType": "flac",
         "channels": 2
     }
-]
+  ]
+}
 ```
 
 * Clear the queue
@@ -795,7 +797,9 @@ This API returns a list of all Volumio devices in a given network, complete with
 
 Response
 ```json
-[{
+{"zones":
+  [
+    {
         "id": "b1050de4-4702-4fb1-a495-8bc312854060",
         "host": "http://192.168.211.1",
         "name": "Volumio",
@@ -823,8 +827,8 @@ Response
             "albumart": "http://192.168.1.22/albumart"
         }
     }
-
   ]
+}
 ```
 
 IMPORTANT: If isSelf = true, it means that this is the device that hanled the REST call.
