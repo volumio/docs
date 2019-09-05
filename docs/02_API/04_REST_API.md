@@ -315,6 +315,62 @@ IMPORTANT: The value albumart is a relative path. So, it must be handled this wa
 * If albumart value starts with http, then no further operation is needed and the resulting url will show an albumart
 * Otherwise, prepend the string formed by: http:// + IP ADDRESS of Volumio device. Example: http://192.168.1.22/albumart?sourceicon=music_service/webradio/icon.png
 
+FILTERING
+
+Some filters can be applied, to improve navigation capabilities especially on clients with limited memory or computing powers. The available filter method are:
+* limit : limit the response to N elements
+* offset : start from N element in a list
+
+When filtering is applied, a new "count" field is populated with the total number of items availble and a new filter field is added, which shows active filters in the query.
+
+Example: To show only 2 elements, starting from the second element: 
+
+```
+volumio.local/api/v1/browse?uri=music-library/NAS/FLAC&limit=2&offset=2
+```
+
+Response
+```json
+{
+  "navigation": {
+    "prev": {
+      "uri": "music-library/NAS"
+    },
+    "lists": [
+      {
+        "availableListViews": [
+          "grid",
+          "list"
+        ],
+        "items": [
+          {
+            "service": "mpd",
+            "type": "song",
+            "title": "Tchaikovsky:Hopak from Mazeppa",
+            "artist": "The Minnesota Orchestra",
+            "album": "Exotic Dances From The Opera",
+            "uri": "music-library/NAS/FLAC/macrodinamica_Tchaikovsky Hopak.flac",
+            "albumart": "/albumart?cacheid=867&path=%2Fmnt%2FNAS%2FFLAC&icon=music&metadata=false"
+          },
+          {
+            "type": "folder",
+            "title": "[EAC FLAC CUE] Nomadi - Ma Noi No!",
+            "service": "mpd",
+            "albumart": "/albumart?cacheid=867&path=%2Fmnt%2FNAS%2FFLAC%2F%5BEAC%20FLAC%20CUE%5D%20Nomadi%20-%20Ma%20Noi%20No!&icon=folder-o&metadata=false",
+            "uri": "music-library/NAS/FLAC/[EAC FLAC CUE] Nomadi - Ma Noi No!"
+          }
+        ],
+        "count": 194,
+        "filters": {
+          "offset": 2,
+          "limit": 2
+        }
+      }
+    ]
+  }
+}
+```
+
 
 * Search
 
@@ -841,9 +897,15 @@ Volumio REST API can be used in a event driven fashion. Volumio can notify via P
 For example, we can ask Volumio to notify every status change to the URL http://192.168.1.33/volumiostatus (the URL is totally configurable, just make sure it is a valid http endpoint).
 To do so, we will simply make the POST request:
 
-
+### POST
 ```
 volumio.local/api/v1/pushNotificationUrls?url=http://192.168.1.33/volumiostatus
+```
+
+Body
+
+```
+{"url":"http://192.168.1.33/volumiostatus"}
 ```
 
 Response
