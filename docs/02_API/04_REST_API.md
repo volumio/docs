@@ -317,8 +317,8 @@ IMPORTANT: The value albumart is a relative path. So, it must be handled this wa
 
 FILTERING
 
-To improve navigation on clients with limited memory or computing power,
-filters can be applied to reduce the number of items returned by a query.
+To improve navigation, especially on clients with limited memory or computing power,
+_filters_ can be applied to reduce the number of items returned by a query.
 The available filter methods are:
 * limit : limit the response to N elements
 * offset : start from element N in a list
