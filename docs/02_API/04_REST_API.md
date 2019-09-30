@@ -317,9 +317,11 @@ IMPORTANT: The value albumart is a relative path. So, it must be handled this wa
 
 FILTERING
 
-Some filters can be applied, to improve navigation capabilities especially on clients with limited memory or computing powers. The available filter method are:
+To improve navigation, especially on clients with limited memory or computing power,
+_filters_ can be applied to reduce the number of items returned by a query.
+The available filter methods are:
 * limit : limit the response to N elements
-* offset : start from N element in a list
+* offset : start from element N in a list
 
 When filtering is applied, a new "count" field is populated with the total number of items availble and a new filter field is added, which shows active filters in the query.
 
