@@ -982,3 +982,27 @@ Response
 ```
 pong
 ```
+
+### TINY ALBUMART FACILITY
+
+Volumio provides an alternative facility to retrieve albumarts with shorter URLs. This is especially useful in situations where the client cannot handle large albumarts or
+the full length url with its url encoding of albumart.
+PLEASE NOTE: Tinyalbumart only fetches albumart for artists and albums from online datastores (no local albumart will be retrieved).
+
+* Artist Art
+
+```
+volumio.local/tinyart/the_beatles/large
+```
+
+* IMPORTANT: Replace all spaces in the artist name with _ .
+* Size is the last url parameter. For artist it can be only large (300x300px)
+
+* Album art
+
+```
+volumio.local/tinyart/the_beatles/abbey_road/large
+```
+
+* IMPORTANT: Replace all spaces in the artist name  and album name with _ .
+* Size is the last url parameter. For albums it can be: small (34x34px), medium (64x64px), large (174x174px), extralarge (300x300px) 
