@@ -325,7 +325,7 @@ The available filter methods are:
 
 When filtering is applied, a new "count" field is populated with the total number of items availble and a new filter field is added, which shows active filters in the query.
 
-Example: To show only 2 elements, starting from the second element: 
+Example: To show only 2 elements, starting from the second element:
 
 ```
 volumio.local/api/v1/browse?uri=music-library/NAS/FLAC&limit=2&offset=2
@@ -1073,4 +1073,10 @@ volumio.local/tinyart/the_beatles/abbey_road/large
 ```
 
 * IMPORTANT: Replace all spaces in the artist name  and album name with _ .
-* Size is the last url parameter. For albums it can be: small (34x34px), medium (64x64px), large (174x174px), extralarge (300x300px) 
+* Size is the last url parameter. For albums it can be: small (34x34px), medium (64x64px), large (174x174px), extralarge (300x300px)
+
+* Sourceicon
+
+```
+volumio.local/tinyart/?sourceicon=music_service/mpd/favouritesicon.png
+```
