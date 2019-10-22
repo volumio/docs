@@ -1036,6 +1036,7 @@ EXAMPLE:
             trackType: "flac" } ] }
 ```
 
+### SYSTEM UTILITIES
 
 * Ping
 
@@ -1049,6 +1050,22 @@ This API simply replies to the ping request, to signal activity.
 Response
 ```
 pong
+```
+
+* Get system version
+
+
+
+```
+volumio.local/api/v1/getSystemVersion
+```
+
+This API provides the software version, build date and hardware informtions.
+
+
+Response
+```
+{"systemversion":"2.632","builddate":"Thu Oct  3 21:47:57 CEST 2019","variant":"volumio","hardware":"pi"}
 ```
 
 ### TINY ALBUMART FACILITY
