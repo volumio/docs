@@ -23,3 +23,5 @@ This may not work on your system: modifications of this documentation are welcom
 On a Raspberry Pi system configuration parameters are set in a file called /boot/config.txt (https://www.raspberrypi.org/documentation/configuration/config-txt/).
 
 This file gets overwritten on each Volumio update so user made changes in /boot/config.txt are not preserved. To make them permanent custom settings need to be added to /boot/userconfig.txt instead.
+
+**Note:** A gpu_mem setting in /boot/userconfig.txt only takes effect if the gpu_mem setting in /boot/config.txt has been removed/commented. The same goes for gpu_mem_256, gpu_mem_512 and gpu_mem_1024.
