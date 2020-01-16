@@ -59,30 +59,45 @@ them can be a valuable contribution.
    If you think two issues are the same problem, add a comment to the newer one
     * reference the older issue e.g. `issue #123`
     * explain why you think they are the same
+ * Sometimes an issue has been fixed and just left open.
+   Adding a comment to ask the original reporter if they are still seeing the
+   issue is all that is needed.
  * Testing a fix.
    If someone proposes a fix in a pull request, you could try applying it and
    uploading it to your Volumio.
-    * Make sure you have a fork on github of the project the fix is for
-    * Clone that locally, e.g.
-    ```shell
-    $ git clone https://github.com/joeschmoe128/Volumio2.git
-    $ cd Volumio2
-    ```
-    * Add the repository where the fix is coming from as an extra remote
-    ```shell
-    $ git add remote proposer https://github.com/futh9iN8/Volumio2.git
-    $ git fetch proposer
-    ```
-    * Try to merge the branch from that remote that has the fix
-    ```shell
-    $ git checkout -t proposer/newcoolfix
-    $ git checkout master
-    $ git diff master upstream/master # make sure it's up to date
-    $ git merge newcoolfix
-      # if it fails to merge, you should add a comment on the PR
-    ```
-    * Upload the changed files to your Volumio device and test
-    * Add comments to the issue, maybe add a `Tested-by:` tag if you like
+    * Simple fixes can be done with manual edits of the affected file on your
+      Volumio device.
+    * After testing, add comments to the issue explaining what tests you made,
+      what worked and what did not. Maybe add a `Tested-by:` tag if you like!
+
+More complex requests can be handled as shown below
+ * Make sure you have a fork on github of the project the fix is for
+ * Clone that locally, e.g.
+ ```shell
+ $ git clone https://github.com/joeschmoe128/Volumio2.git
+ $ cd Volumio2
+ ```
+ * Add the repository where the fix is coming from as an extra remote
+ ```shell
+ $ git add remote proposer https://github.com/futh9iN8/Volumio2.git
+ $ git fetch proposer
+ ```
+ * Try to merge the branch from that remote that has the fix
+ ```shell
+ $ git checkout -t proposer/newcoolfix
+ $ git checkout master
+ $ git diff master upstream/master # make sure it's up to date
+ $ git checkout -b testmerge       # we don't want this in master just yet
+ $ git merge newcoolfix
+   # if it fails to merge, you should add a comment on the PR
+ ```
+ * Upload the changed files to your Volumio device and test
+ * Clean up
+ ```shell
+ $ git checkout master
+ $ git branch -D testmerge
+ $ git remote remove proposer
+ ```
 
 ### Translations
 
