@@ -21,7 +21,7 @@ Volumio features an OTA (Over The Air) updater, meant to enable seamless and rel
 * Once Update has finished, you'll be asked to reboot. Do it
 * The system will now restart, and boot into the new version
 
-<img src="./img/update_ota.png">
+<img src="./img/update_ota.jpg">
 
 
 ### Use the system updater to test Beta-Releases

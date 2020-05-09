@@ -1,9 +1,7 @@
  ## More first steps
 
-The Volumio main page provides 3 tabs:
- * Browse
- * Playback (main page)
- * Queue
+On the left hand side of Volumio you can browse your music.
+The list in configurable to hide or show entries. To do that, go in settings/sources and select what you want to see in the list.
 
 We already discovered the Playback tab in the previous <a href="First_steps_with_Volumio.html">page</a>.
 Now let's see the content of the __Browse__ tab and the __Queue__ tab.
@@ -33,19 +31,23 @@ Now let's see the content of the __Browse__ tab and the __Queue__ tab.
 
 * __Artists__ : Access your library by artist name
 
-<img src="./img/music_library_artists.png">
+<img src="./img/music_library_artists.jpg">
+
+If you have MyVolumio Superstar, then you'll get metadata for the artist !
+
+<img src="./img/music_library_artists_meta.jpg">
 
 #### 5 - Albums
 
 * __Albums__ : Access your library by album title
 
-<img src="./img/music_library_albums.png">
+<img src="./img/music_library_albums.jpg">
+
+If you have MyVolumio Superstar, then you'll get metadata for the album !
 
 #### 6 - Genres
 
 * __Genres__ : Access your library by genres
-
-<img src="./img/music_library_genres.png">
 
 #### 7 - Media server
 
@@ -57,15 +59,15 @@ Now let's see the content of the __Browse__ tab and the __Queue__ tab.
 
 #### 9 - Web Radio
 
-* __Web Radio__ : Access web radio. Volumio provides a large collection to select from,
+* __Web Radio__ : Access web radio. Volumio provides a large collection (several hundred) using TuneIn and Southcast, 
   but you may add your own as well.
 
-<img src="./img/music_library_radio.png">
+<img src="./img/music_library_radio.jpg">
 
 __Adding a radio__
 * To add your own radio, click as shown below :
 
-<img src="./img/music_library_add_radio.png">
+<img src="./img/music_library_add_radio.jpg">
 
 and fill in the fields :
 
@@ -79,10 +81,8 @@ Now your radio is available in My Web Radios
 
 ### Queue tab
 
-* Clicking on the Queue tab will display the queue of the tracks that are going to be played
+* Clicking on the Queue tab (number 12 in previous page) will display the queue of the tracks that are going to be played
   and some queue controls.
-
-<img src="./img/queue_tab.png">
 
 #### 1 - Random
 
