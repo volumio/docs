@@ -12,13 +12,13 @@ _Mobile Main page of Volumio :_
 
 _Desktop Main page of Volumio :_
 
-<img src="./img/desktop-main-page.png" width="624">
+<img src="./img/desktop-main-page.jpg" width="624">
 
 ### Main page description
 
 _Desktop version_
 
-<img src="./img/main-page-descr.png">
+<img src="./img/main-page-descr.jpg">
 
 #### 1 - Playback control buttons
 
@@ -26,7 +26,7 @@ _Desktop version_
 * __Previous__ : jump to previous track
 * __Next__ : jump to next track
 
-#### 2 - Settings (gear icon)
+#### 2 - Settings
 
 Clicking this opens a menu containing all the settings for Volumio :
 
@@ -69,7 +69,7 @@ Miscellaneous info about the currently playing track:
 
 * __Left__ : Add to favorite
 * __Middle__ : Add to playlist
-* __Right__ : Go to - Artist/Album - Tweeter
+* __Right__ : Go to - Artist/Album - Tweeter - Metadata for Credits with MyVolumio Superstar
 
 #### 7 - Album art display
 
@@ -90,8 +90,8 @@ This shows all the available Volumio devices on your network and what they are p
 Clicking here shows all music available on your system (NAS, USB disk, webradio, Spotify, Youtube etc depending on plugins/options installed).
 
 #### 11- Playback
-
-The current page
+ 
+ MyVolumio settings
 
 #### 12 - Queue
 

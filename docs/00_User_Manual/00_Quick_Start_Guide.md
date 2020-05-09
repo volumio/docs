@@ -94,13 +94,19 @@ The first time, a helper will assist you to configure Volumio. Don't worry if yo
 * The helper third screen : Configure your DAC
 <img src="./img/helper-third-screen.png" width="624">
 
-* The helper fourth screen : Configure your NETWORK
+* The helper fourth screen : Configure your level of settings
 <img src="./img/helper-fourth-screen.png" width="624">
 
-* The helper fifth screen with a configured NAS drive
+* The helper fourth screen : Configure your NETWORK
 <img src="./img/helper-fifth-screen.png" width="624">
 
-* The helper sixth screen : Don't forget to donate ! It will help Volumio to be improved !
+* The helper fifth screen with a configured NAS drive
 <img src="./img/helper-sixth-screen.png" width="624">
+
+* If you have an activation coupon, it's here!
+<img src="./img/helper-seventh-screen.png" width="624">
+
+* The helper seventh screen : Don't forget to donate ! It will help Volumio to be improved !
+<img src="./img/helper-seventh-screen.png" width="624">
 
 * Once it is done, you should have a working system, ready to play music! Let's discover it !
