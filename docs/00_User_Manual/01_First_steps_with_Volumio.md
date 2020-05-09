@@ -89,7 +89,7 @@ This shows all the available Volumio devices on your network and what they are p
 
 Clicking here shows all music available on your system (NAS, USB disk, webradio, Spotify, Youtube etc depending on plugins/options installed).
 
-#### 11- Playback
+#### 11- MyVolumio
  
  MyVolumio settings
 
