@@ -9,9 +9,8 @@ If you use DRC-FIR, they are already available in the selector.
 
 * Then, in the pluign settings, select left and right filter
 
-* Select the filter format.
 
-<img src="./img/using_filter_in_volumio.png">
+<img src="./img/select_filter.png">
 
 
 

@@ -9,6 +9,7 @@ There is several steps to do that :
 
 __And__
 * Modifing the result (with REPHASE) and generating filters.
+* Using an other software (acourate, REW, etc...)
 
 __OR__
 

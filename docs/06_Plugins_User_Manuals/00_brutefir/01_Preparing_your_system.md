@@ -17,34 +17,25 @@ and try to change __output format__ . It is a DAC dependant parameter.
 __Main Interface of the plugin__
 
 <img src="./img/general_plugin_settings.png">
-_plugin main interface_
+__plugin main interface__
 
 When it's ok, try to play a track.
 
-You can now test with a filter, just select __demo-left.txt__ and __demo-right.txt__ in plugin settings:
+You can now test with a filter, just select __demo-left.pcm__ and __demo-right.pcm__ in plugin settings:
 (few filters to test are installed by the plugin, they are placed in `/data/INTERNAL/brutefirfilter`)
 
 <img src="./img/select_filter.png">
 
-Select ```text- 32/64 bits floats line``` as filter format with these filters.
 
 and press `Apply` (It can be done while playing)
 
 You should hear the difference !
 
-__Room settings__
+__VoBAF settings__
 
-If your speakers are not at equal distance from the listening point (where you use to be to listen music), the stereo image is altered.
-Now you can set left and right distance and the plugin calculates the required delay to get a correct stereo image.
+<img src="./img/VoBAF-settings.png">
 
-__Note__ If you enter the same value for left and right, no delay is applied.
-You can give the distance for left and right, or just the difference.
-
-Value are in cm.
-
-<img src="./img/room-settings.png">
-
-<img src="./img/room_settings_values.png">
+I
 
 __Filter Creation__
 
