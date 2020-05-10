@@ -30,8 +30,10 @@ _Desktop version_
 
 Clicking this opens a menu containing all the settings for Volumio :
 
- * __My Volumio__ : Here you can access your MyVolumio account
- * __My Music__ : Music sources (NAS and USB devices) and album art management
+<img src="./img/settings-main.jpg">
+
+
+ * __Sources__ : Music sources (NAS and USB devices) and album art management
  * __Playback__ : Output device settings (dac, mixer, resampling)
  * __Appearance__ : To select your language, image background or color
  * __Network__ : Set your WiFi, ethernet, DNS and control the Hotspot
