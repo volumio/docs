@@ -29,5 +29,5 @@ Usually, what will happen is all the sound going to the speakers attached to the
   * [AllStream](https://play.google.com/store/apps/details?id=com.kineticgamestudios.airtunes.android)
   * [BubbleUPnP+Xposed](https://play.google.com/store/apps/details?id=com.bubblesoft.android.bubbleupnp).
 
-## Trouble Shooting
+## Troubleshooting
 * Don't hesitate to restart your devices (Windows, Android, Volumio, Wifi router, ...) if you can't connect them

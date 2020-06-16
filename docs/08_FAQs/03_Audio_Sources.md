@@ -8,6 +8,8 @@ NAS drive shares (CIFS & NFS) are easily mounted and scanned by Volumio for audi
 
 Navigate to 'Settings' ("cog" icon at the top right), 'My Music' and click on 'Add new drive.'  Volumio will attempt to automatically find any music shares, and settings can be added manually if this is not successful.  You will need to choose a name for the share, and decide between CIFS (default) or NFS protocols (see your NAS GUI for more information). If entering details manually, you will also need to know the IP address of the NAS, and the path to the share (again see NAS GUI).
 
+Credentials for the connection can be added in the advanced options. If using a domain account add the domain to the 'options' field in the format **dom=domainname**, e.g. _dom=CONTOSO.local_, and just enter the username in the username field.
+
 Please ensure that the permissions on the NAS files are set correctly for CIFS in order for Volumio to be able to access them.  In the case of NFS, file permissions are not so important, BUT you must allow access to the NAS from the IP address of your Volumio device (set in NAS GUI).
 
 #### I'm getting an error adding a CIFS network drive on my NAS
@@ -23,7 +25,7 @@ Yes, these are enabled by default, and Volumio will act as a renderer for such s
 
 #### Does Volumio support Bluetooth?
 
-No, Volumio does not natively support bluetooth, but there are considerable efforts being made by the Community to develop plugins that allow this functionaility.
+Bluetooth audio playback input is available as part of the MyVolumio Virtuoso and Superstar plans. Information is available at https://volumio.org/my-volumio-overview/
 
 #### Is there a maximum number of tracks allowed in the music library?
 
