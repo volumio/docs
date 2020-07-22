@@ -1068,6 +1068,22 @@ Response
 {"systemversion":"2.632","builddate":"Thu Oct  3 21:47:57 CEST 2019","variant":"volumio","hardware":"pi"}
 ```
 
+* Get system informations
+
+
+
+```
+volumio.local/api/v1/getSystemInfo
+```
+
+This API provides the a summary information on the device, the service name and playback status.
+
+
+Response
+```
+{"id":"6919eb99-e619-4747-bd55-63718ec8d5dc","host":"http://192.168.1.126","name":"VolumioStudio","type":"device","volumeAvailable":false,"state":{"status":"stop","volume":100,"mute":false,"artist":"Infected Mushroom","track":"Avratz","albumart":"http://192.168.1.126/albumart?cacheid=401&web=Infected%20Mushroom/Converting%20Vegetarians/extralarge&path=%2FNAS%2FHi_Res_Music%2F%5BFLAC%5D%20Infected%20Mushroom%2F(2003)%20Infected%20Mushroom%20-%20Converting%20Vegetarians%2F%5BCD2%5D%20Infected%20Mushroom%20-%20Converting%20Vegetarians%20(Other%20Side)&metadata=false"},"serviceName":"Volumio","systemversion":"2.799","builddate":"Thu Jul 16 18:40:05 CEST 2020","variant":"volumio","hardware":"pi"}
+```
+
 ### TINY ALBUMART FACILITY
 
 Volumio provides an alternative facility to retrieve albumarts with shorter URLs. This is especially useful in situations where the client cannot handle large albumarts or
