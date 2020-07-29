@@ -1081,7 +1081,25 @@ This API provides the a summary information on the device, the service name and 
 
 Response
 ```
-{"id":"6919eb99-e619-4747-bd55-63718ec8d5dc","host":"http://192.168.1.126","name":"VolumioStudio","type":"device","volumeAvailable":false,"state":{"status":"stop","volume":100,"mute":false,"artist":"Infected Mushroom","track":"Avratz","albumart":"http://192.168.1.126/albumart?cacheid=401&web=Infected%20Mushroom/Converting%20Vegetarians/extralarge&path=%2FNAS%2FHi_Res_Music%2F%5BFLAC%5D%20Infected%20Mushroom%2F(2003)%20Infected%20Mushroom%20-%20Converting%20Vegetarians%2F%5BCD2%5D%20Infected%20Mushroom%20-%20Converting%20Vegetarians%20(Other%20Side)&metadata=false"},"serviceName":"Volumio","systemversion":"2.799","builddate":"Thu Jul 16 18:40:05 CEST 2020","variant":"volumio","hardware":"pi"}
+{
+  "id": "b8507fe7-dc48-40df-8ef4-4d0fff88dc05",
+  "host": "http://192.168.1.126",
+  "name": "Volumio5",
+  "type": "device",
+  "serviceName": "Volumio",
+  "state": {
+    "status": "play",
+    "volume": 40,
+    "mute": false,
+    "artist": "Al Green",
+    "track": "Back Up Train",
+    "albumart": "http://192.168.1.126/albumart?cacheid=7&web=Al%20Green/Anthology%20(Disc%201)/extralarge&path=%2FNAS%2FHi_Res%2FAl%20Green%20-%20Anthology%20-%204CD-Set%20(1997)%20%5BFLAC%5D%20TG%2FAnthology%20(Disc%201)%20(1997)%20%5BFLAC%5D&metadata=false"
+  },
+  "systemversion": "2.803",
+  "builddate": "Tue Jul 28 21:28:37 CEST 2020",
+  "variant": "volumio",
+  "hardware": "pi"
+}
 ```
 
 ### TINY ALBUMART FACILITY
