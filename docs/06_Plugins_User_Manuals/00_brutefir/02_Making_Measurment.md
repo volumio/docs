@@ -61,8 +61,7 @@ Measurment points are defined like in the pictures below. This avoids having a s
 
 <img src="./img/preferences_micmeter.jpg">
 
-- Then, ajust parameters for input and output :
-   - Ensure the sampling rate selected matches the sampling rate of the file you will play in Tools (BruteFIR ships with 44kHz files)
+- Then, adjust parameters for input and output. Ensure the sampling rate selected matches the sampling rate of the file you will play in Tools (BruteFIR ships with 44kHz files)
 
 <img src="./img/rew_preferences.jpg">
 
