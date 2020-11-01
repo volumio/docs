@@ -7,14 +7,13 @@ After measurement(s) are exported, you have severals possibilities.
 
 ### General tips
 
-For best results with Volumio and BruteFIR I recommend sampling rate of __96000Hz__ and __65536__ filtersize/taps.
+For best results with Volumio and BruteFIR I recommend __65536__ filtersize/taps.
 
 When adjusting or making an EQ in rePhase try to follow these simple guidelines:
 
 - Avoid high Q corrections as much as you can.
 - Remember that dips are not as audible as rises, so aim to flatten the rises but avoid trying to flatten dips. If dips are deeper than app -8dB there may be a benefit but note that the result will often sound "muddy".
 - Avoid high gains as much as you can. Don't go over +18dB, even better if you can stay bellow +12dB.
-- There is an initial 6dB attenuation in BruteFIR. If your max filter is (for example) set to +16dB then set additional 10dB of attenuation in BruteFIR settings to avoid clipping.
 - Remember your correction will only be good as was your measurement. Repat measurements unless you have good correlation between MMM (RTA) and sweep measurements (make at least 5 of them and average them).
 - Remember that Room EQ is not an exact science, so may the Force be with you. ;)
 

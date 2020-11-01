@@ -1,4 +1,9 @@
-## DRC with Volumio and Brutefir
+### DRC with Volumio and Brutefir
+
+___Doc by b@lbuze___
+
+___Update November 1st 2020 by thegarbz___ thanks!
+
 
 With this plugin you'll be able to apply __Digital Room Correction (DRC)__ to your system.
 
