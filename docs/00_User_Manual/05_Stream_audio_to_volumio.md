@@ -18,6 +18,7 @@ Usually, what will happen is all the sound going to the speakers attached to the
 ### Stream from Windows
 * You have several solutions to stream from Windows
   * [Stream What You Hear (SWYH)](http://www.streamwhatyouhear.com/), transforming your PC into a DLNA streamer. If it doesn't work, you can also use the "HTTP Live Streaming" function, and indicate the provided URL to Volumio, creating a new Web Radio.
+  * [Stream What You Hear (swyh-rs)](https://github.com/dheijl/swyh-rs/), does basically the same as SWYH above, but is smaller, faster, uses less resources, is still actively maintained and is written in Rust. Originally written for Volumio, but works with other DLNA/Openhome streamers too.
   * [TuneBlade](http://tuneblade.com/), transforming your PC into an Airplay streamer
 * If you want to use this solution in order to stream the audio of a movie you're watching, consider that streaming necessitates a delay: in your video software (for example VLC), use the option to compensate this delay (J and K keys on VLC, usually around 2 seconds delay)
 
