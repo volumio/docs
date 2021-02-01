@@ -134,6 +134,12 @@ Plugin succesfully refreshed
 
 ```
 
+In order to have the refreshed files take effect restart the Volumio service.
+
+```
+volumio vrestart
+```
+
 ### volumio plugin package
 
 Call the utility with this command if you want to create a package with the
