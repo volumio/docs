@@ -48,10 +48,18 @@ IMPORTANT TIPS:
 
 Then we add all the required functions for a generic plugin:
 
+### Plugin Lifecycle
+
+With the release of Volumio 3, the lifecycle of Volumio plugins has been better defined. Plugins are expected to complete `onVolumioStart` and `onStart` asynchronously by returning a Promise which completes when they have finished starting. Volumio will wait for all plugins to finish `onVolumioStart` before calling `onStart` on any plugin. Only once `onStart` has completed for all plugins will Volumio have finished starting.
+
+Note that plugin startup speed does affect the overall Volumio startup time. Try to avoid having long-running tasks that block startup. If a plugin appears to be *stuck*, and doesn't resolve the promise that it returns from `onVolumioStart` or `onStart` then Volumio will regard this plugin as having failed to start.
+
+One key difference between `onVolumioStart` and `onStart` is that it is *not safe* to play audio during `onVolumioStart`. While `onVolumioStart` is running plugins may still be making changes or creating resources that are needed by the audio stack. It is also considered good manners not to rely on functions (other than reading the configuration) from other plugins in `onVolumioStart`. This limits the likelihood that a plugin that you write will call into another plugin before it is fully initialised.
+
 
 #### On Volumio Start
 
-This is the code that gets executed when Volumio starts and triggers the plugin start. Typically, what you do is load the plugin configuration.
+This is the code that gets executed when Volumio starts and triggers the plugin start. Typically, what you do is load the plugin configuration, set up data structures, and create any necessary resources
 
 ```javascript
 ControllerSpop.prototype.onVolumioStart = function()
@@ -60,8 +68,14 @@ ControllerSpop.prototype.onVolumioStart = function()
 	this.config = new (require('v-conf'))();
 	this.config.loadFile(configFile);
 
+        var promise = libQ.nfcall(fs.writeFile, '/tmp/message', 'Hello World', 'utf8');
+        
+        return promise;
 }
 ```
+**IMPORTANT:**
+
+* You'll notice that we use promises here. That's why Volumio needs to know when the plugin has actually started, or if it failed. So what we're doing is returning the promise on successful start, and rejecting it if it doesn't start properly.
 
 #### On Start
 
