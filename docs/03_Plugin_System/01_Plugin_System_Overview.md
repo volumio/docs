@@ -129,7 +129,7 @@ Those plugins are meant to allow external communication to Volumio. Developing a
 
 * MPD Client Protocol emulation
 * Squeeze Box emulation
-* Phisical button controller
+* Physical button controller
 
 ### What features can be added
 
