@@ -24,7 +24,7 @@ The concept of a plugin is to expand the functionality of Volumio in a particula
 
 For more details, have look here : [Plugins System Overview](https://volumio.github.io/docs/Plugin_System/Plugin_System_Overview.html)
 
-There is a list of the currently available plugins <a href="https://volumio.org/forum/volumio-plugins-collection-t6251.html">here.</a>
+There is a list of the currently available plugins <a href="https://community.volumio.org/t/volumio-plugins-collection/38741">here.</a>
 
 #### Is there an app for Volumio?
 
