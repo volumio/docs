@@ -1,6 +1,10 @@
 ## SSH access on volumio
 
-When SSH is activated on Volumio (see below how to) you can access your device using:
+Volumio supports command-line access via SSH. This can be helpful if you need
+full access to the device, for example if you are debugging a problem or
+want to test changes to the system.
+
+Most popular operating systems support making SSH connections in some way:
 
  * __Windows__ : Install [Putty](https://putty.org/), or use `ssh.exe` on [Windows 10](https://adamtheautomator.com/powershell-ssh/)
 
