@@ -15,11 +15,11 @@ Once it is ready, use to log in:
 
 * password: volumio
 
-Example (linux) : `ssh volumio@192.168.1.54`
+Example (linux) : `ssh volumio@192.168.1.35`
 
 Type `Enter`. It returns:
 
-`volumio@192.168.1.54's password:`
+`volumio@192.168.1.35's password:`
 
 Type `volumio` (password, case sensitive) and `Enter`
 
