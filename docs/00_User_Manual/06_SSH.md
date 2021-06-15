@@ -21,15 +21,33 @@ Once you have enabled SSH access (see below), you can log in with:
 
 Example (Linux) :
 <pre>
-laptop$ ssh volumio@192.168.1.35
-volumio@192.168.1.35's password:
+laptop$ ssh volumio@192.168.1.54
+volumio@192.168.1.54's password:
 </pre>
 Type in the password at the prompt and press the `<Enter>` key.
 (The password will not be shown on the screen)
 
 And here you are !
 
-<img src="./img/log_ssh.png">
+<pre>
+volumio@192.168.1.54's password:
+                       ___
+                      /\_ \                        __
+         __  __    ___\//\ \    __  __    ___ ___ /\_\    ___
+        /\ \/\ \  / __`\\ \ \  /\ \/\ \ /' __` __`\/\ \  / __`\
+        \ \ \_/ |/\ \L\ \\_\ \_\ \ \_\ \/\ \/\ \/\ \ \ \/\ \L\ \
+         \ \___/ \ \____//\____\\ \____/\ \_\ \_\ \_\ \_\ \____/
+          \/__/   \/___/ \/____/ \/___/  \/_/\/_/\/_/\/_/\/___/
+
+             Free Audiophile Linux Music Player - Version 2.0
+
+          C 2015 Michelangelo Guarise - Volumio Team - Volumio.org
+
+
+Volumio Debian GNU/Linux comes with ABSOLUTELY NO WARRANTY, to the extent
+permitted by applicable law.
+volumio@192.168.1.54:~$
+</pre>
 
 From here you can get full access to your device.
 
@@ -37,7 +55,7 @@ Sometimes you will want to run commands that require superuser (or 'root')
 privileges. To do that use the `sudo` command. For example:
 
 <pre>
-volumio@voluimio-pine64:~$ sudo nano /etc/samba/smb.conf
+volumio@192.168.1.54:~$ sudo nano /etc/samba/smb.conf
 [sudo] password for volumio:
 </pre>
 
