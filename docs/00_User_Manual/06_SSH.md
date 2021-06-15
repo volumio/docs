@@ -88,6 +88,10 @@ __Note__ : When clicking on the button, you will see no change in the browser wi
 
 ### Second method: file (more advanced)
 
-Mount your SD card on your computer.
+This involves adding a file with a special name to the SD card containing your __Volumio__.
 
-Create or copy a file called ssh in /boot . You can do it right after flashing Volumio, by creating it in the "Boot" partition of your SD Card.
+ * Flash __Volumio__ to the SD card, if you have not done so already
+ * Mount the SD card on your computer
+ * Create a file called `ssh` in the `/boot` partition on the card.<br>
+ The file does not need anything inside it, but the name must be `ssh`.
+
