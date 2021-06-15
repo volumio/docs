@@ -13,19 +13,19 @@ Most popular operating systems support making SSH connections in some way:
  * __macOS__ : ssh command from the Terminal app
  (You may need to install [openssh](https://www.macupdate.com/app/mac/5675/openssh#) first)
 
-Once it is ready, use to log in:
+Once you have enabled SSH access (see below), you can log in with:
 
 * user: volumio
 
 * password: volumio
 
-Example (linux) : `ssh volumio@192.168.1.35`
-
-Type `Enter`. It returns:
-
-`volumio@192.168.1.35's password:`
-
-Type `volumio` (password, case sensitive) and `Enter`
+Example (Linux) :
+<pre>
+laptop$ ssh volumio@192.168.1.35
+volumio@192.168.1.35's password:
+</pre>
+Type in the password at the prompt and press the `<Enter>` key.
+(The password will not be shown on the screen)
 
 And here you are !
 
