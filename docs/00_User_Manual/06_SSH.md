@@ -32,9 +32,15 @@ And here you are !
 <img src="./img/log_ssh.png">
 
 From here you can get full access to your device.
-Some commands require Root privileges. To do that use `sudo` with password `volumio`
 
-example `sudo nano /etc/samba/smb.conf`
+Sometimes you will want to run commands that require superuser (or 'root')
+privileges. To do that use the `sudo` command. For example:
+
+<pre>
+volumio@voluimio-pine64:~$ sudo nano /etc/samba/smb.conf
+</pre>
+
+This runs the command `nano /etc/samba/smb.conf` as the superuser.
 
 __WARNING!__  You can damage your __Volumio__ with `sudo`. Editing system files may prevent __Volumio__ to be updated over the air (integrity check will fail).
 
