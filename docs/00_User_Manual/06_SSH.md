@@ -42,7 +42,14 @@ volumio@voluimio-pine64:~$ sudo nano /etc/samba/smb.conf
 
 This runs the command `nano /etc/samba/smb.conf` as the superuser.
 
-__WARNING!__  You can damage your __Volumio__ with `sudo`. Editing system files may prevent __Volumio__ to be updated over the air (integrity check will fail).
+__WARNING!__  You can damage your __Volumio__ with `sudo`. If you delete
+the wrong file or use incorrect syntax when editing a file, the system may
+stop working correctly.
+
+Please be aware that editing system files may stop you being able to update
+__Volumio__ over the air. This is because the system does an integrity check
+(to make sure the update will apply correctly). If changes are detected, the
+integrity check will fail and the update will not proceed.
 
 ## How to enable SSH
 
