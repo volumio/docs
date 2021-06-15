@@ -83,7 +83,7 @@ Find the SSH section, and click 'enable'. From now on your SSH will be permanent
 <img src="./img/ssh_enable.png">
 
 
-__Note__ : When clicking on the button, you will see no change in the browser window, but the SSH server will be started.
+__Note__ : When clicking on the 'enable' (or 'disable') button, you will see no change in the browser window, but the SSH server will be started (or stopped).
 
 
 ### Second method: file (more advanced)
