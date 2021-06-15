@@ -6,7 +6,7 @@ From __Windows__ : [Putty](https://putty.org/)
 
 From __Linux__ : ssh command from a terminal
 
-From __MacOs__ : [openssh](https://www.macupdate.com/app/mac/5675/openssh#)
+From __macOS__ : [openssh](https://www.macupdate.com/app/mac/5675/openssh#)
 
 Once it is ready, use to log in:
 
