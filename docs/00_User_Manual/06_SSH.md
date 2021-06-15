@@ -38,9 +38,11 @@ privileges. To do that use the `sudo` command. For example:
 
 <pre>
 volumio@voluimio-pine64:~$ sudo nano /etc/samba/smb.conf
+[sudo] password for volumio:
 </pre>
 
 This runs the command `nano /etc/samba/smb.conf` as the superuser.
+When prompted for the password, use the same one you used to log in with.
 
 __WARNING!__  You can damage your __Volumio__ with `sudo`. If you delete
 the wrong file or use incorrect syntax when editing a file, the system may
