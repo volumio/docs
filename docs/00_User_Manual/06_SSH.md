@@ -2,12 +2,12 @@
 
 When SSH is activated on Volumio (see below how to) you can access your device using:
 
-From __Windows__ : [Putty](https://putty.org/)
+ * __Windows__ : Install [Putty](https://putty.org/), or use `ssh.exe` on [Windows 10](https://adamtheautomator.com/powershell-ssh/)
 
-From __Linux__ : ssh command from a terminal
+ * __Linux__ : ssh command from a terminal
 
-From __macOS__ : ssh command from the Terminal app
-(You may need to install [openssh](https://www.macupdate.com/app/mac/5675/openssh#) first)
+ * __macOS__ : ssh command from the Terminal app
+ (You may need to install [openssh](https://www.macupdate.com/app/mac/5675/openssh#) first)
 
 Once it is ready, use to log in:
 
