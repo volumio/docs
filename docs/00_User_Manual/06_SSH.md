@@ -4,7 +4,7 @@ When SSH is activated on Volumio (see below how to) you can access your device u
 
 From __Windows__ : [Putty](https://putty.org/)
 
-From __Linux__ : commande ssh from a terminal
+From __Linux__ : ssh command from a terminal
 
 From MacOs [openssh](https://www.macupdate.com/app/mac/5675/openssh#)
 
@@ -16,7 +16,7 @@ Once it is ready, use to log in:
 
 Example (linux) : `ssh volumio@192.168.1.54`
 
-Type `Enter`. It retruns:
+Type `Enter`. It returns:
 
 `volumio@192.168.1.54's password:`
 
@@ -26,8 +26,8 @@ And here you are !
 
 <img src="./img/log_ssh.png">
 
-From here you can get a full access to your device.
-Some command requires Root privilèges. To do that use `sudo` with password `volumio`
+From here you can get full access to your device.
+Some commands require Root privileges. To do that use `sudo` with password `volumio`
 
 example `sudo nano /etc/samba/smb.conf`
 
