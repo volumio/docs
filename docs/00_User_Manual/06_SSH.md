@@ -73,12 +73,12 @@ integrity check will fail and the update will not proceed.
 
 ## How to enable SSH
 
-For security reasons, SSH is disabled by default on all versions after 2.199 (except first boot). It can be however enabled very easily. See below!
+For security reasons, SSH is disabled by default on all versions after 2.199 (except first boot). It is easy to enable (and disable).
 
 ### First method: DEV UI (easy)
 
 Navigate to http://volumio.local/dev or http://yourvolumioip/dev, where 'yourvolumioip' is the actual IP addess of your device eg. 192.168.1.54.
-Find the SSH section, and click enable. From now on your SSH will be permanently enabled.
+Find the SSH section, and click 'enable'. From now on your SSH will be permanently enabled. To disable SSH again, click 'disable'.
 
 <img src="./img/ssh_enable.png">
 
