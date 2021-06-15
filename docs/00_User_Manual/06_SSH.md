@@ -59,12 +59,13 @@ For security reasons, SSH is disabled by default on all versions after 2.199 (ex
 
 ### First method: DEV UI (easy)
 
-Navigate to the DEV ui by pointing your browser to VOLUMIOIP/DEV or volumio.local/DEV . Find the SSH section, and click enable. From now on your SSH will be permanently enabled.
+Navigate to http://volumio.local/dev or http://yourvolumioip/dev, where 'yourvolumioip' is the actual IP addess of your device eg. 192.168.1.54.
+Find the SSH section, and click enable. From now on your SSH will be permanently enabled.
 
 <img src="./img/ssh_enable.png">
 
 
-__Note__ : You'll see no change when clicking on the button, but it will be ok.
+__Note__ : When clicking on the button, you will see no change in the browser window, but the SSH server will be started.
 
 
 ### Second method: file (more advanced)
