@@ -2,13 +2,13 @@
 
 ### Keyboard layout
 
-If you want to temporarlily change the keyboard layout, you can use the following command:
+If you want to temporarily change the keyboard layout, you can use the following command:
 ```
 sudo loadkeys fr
 ```
 ```fr``` should be replaced by the layout you want.
 
-If you want to definitively change the keyboard layout, you have to run:
+If you want to permanently change the keyboard layout, you have to run:
 ```
 sudo apt-get install keyboard-configuration
 ```
