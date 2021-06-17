@@ -35,6 +35,14 @@ There isn't a maximum number of tracks, but do be aware that indexing of very la
 
 Yes. Volumio has a folder called 'INTERNAL' set aside for this,
 which uses the free space on your SD card.
+Inside Volumio, the path inside to this share is currently `/mnt/INTERNAL`
+(this could change in later versions of Volumio).
+
 The folder is shared on your network as a Samba share called "Internal Storage".
 You can upload music files to that share and they will be shown in your
 Volumio music library, in a folder called 'INTERNAL'. Note that the folder does not appear in the music library if it is empty.
+
+To upload to the Samba share,
+ * connect to `\\volumio.local`, or the IP address `\\<volumioip>`.
+ * You should be able to connect as the Guest user.
+ If that fails, try connecting as the Volumio user.
