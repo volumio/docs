@@ -90,7 +90,7 @@ Available Commands:
 ## Differences compared to _Rotary Encoder Plugin_ 
 The initial rotary encoder plugin by _Saiyato_ is built based on npm OnOff library and a derived onoff-rotary to read the GPIO pins of the Linux system (e.g. Raspberry Pi) and the implementation of the Gray-Code is tailored to the use of the KY040 encoder.  
 With my custom made hardware using three _ALPS STEC11B03_ encoders, it worked but the response was not really satisfactory because the plugin would only respond on every second 'tick' of the encoder and would sometimes misinterpret the direction.  
-I tried to improve it with hardware debouncing (see [here](#tipps-for-debouncing-your-encoder) for tipps) and by optimizing the implementation but the result was not satisfactory.      
+I tried to improve it with hardware debouncing (see [here](./01_Debouncing.md#tipps-for-debouncing-your-encoder) for tipps) and by optimizing the implementation but the result was not satisfactory.      
 I finally wrote my own implementation based on DT overlay driven rotary encoders giving me perfect results. Since the hardware debouncing is in my hardware anyway now, I did not bother to try the plugin without the Schmitt-Trigger - I guess that it would work without it, too. Feel free to leave a note, if you can confirm this.    
 I first thought about implementing my solution into the existing plugin, but finally decided against it due to lack of time and because is rather an alternative than an extension.   
 If your system does not support DT overlays or you run into other issues, the other plugin may still be your first choice. 
