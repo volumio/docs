@@ -1,15 +1,6 @@
 # Rotary Encoder II Plugin<!-- omit in toc -->
 This is an alternative implementation of a rotary encoder driver for integration with Volumio. It dynamically loads device tree overlays to access the rotaries and is more responsive with the tested encoders than the existing plugin.   
 
-- [Configuring the Plugin](#configuring-the-plugin)
-- [Differences compared to _Rotary Encoder Plugin_](#differences-compared-to-rotary-encoder-plugin)
-- [Tipps for debouncing your Encoder](#tipps-for-debouncing-your-encoder)
-- [Linux Device Tree Overlay: Rotary Encoder](#linux-device-tree-overlay-rotary-encoder)
-- [List of compatible Rotary Encoders](#list-of-compatible-rotary-encoders)
-- [Potential future extensions](#potential-future-extensions)
-- [Known issues and limitations](#known-issues-and-limitations)
-- [References](#references)
-
 ## Configuring the Plugin
 The plugin currently supports up to three encoders. The code is implemented in such a way, that this can quite easily be expanded - feel free to create a branch and do it.  
 After installing the plugin, each encoder can be individually enabled in the settings.
