@@ -1,4 +1,4 @@
-## Tipps for debouncing your Encoder
+## tips for debouncing your Encoder
 Most encoders are very simple devices, that only consist of two mechanical switches, that are mechanically matched to toggle at different angular positions.   
 Like all mechanical switches, they are not digitally flipping between on and off, but tend to 'bounce' between both states. That is not a problem if you switch a slow bulb, but a fast microprocessor input will notice.
 

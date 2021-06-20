@@ -33,12 +33,10 @@ The GPIO pins that are connected to the A and B channels of your encoder.
 
 ### Dial Function
 Pick the functionality you would like for your encoder:
-<ul>
-<li>Volume down/up
-<li>Skip previous/next
-<li>Seek backwards/forward
-<li>Emit websocket message<br>
-</ul>
+- Volume down/up
+- Skip previous/next
+- Seek backwards/forward
+- Emit websocket message<br>
 
 The Emit function opens four additional text boxes for providing the websocket commands and data for clockwise (CW) and counter-clockwise (CCW) turns. It allows, to provide commands to a websock emitter and can be used to trigger other functions inside other plugins. For example, if you have a Plugin controlling a Dimmer with a function `dim` taking an argument `'up'` or `'down'` you would need to put 'dim' into both command fields and 'up' or 'down' into the respective data field.
 You could also send Volumio Volume or Skip functions via this option (just to give you an idea):   
@@ -71,26 +69,25 @@ By default the plugin assumes, that your GPIOs are pulled low and that the GPIO 
 Various functionalities that can be associated with the push button. For compatibility I have added most functions that the initial _Rotary Encoder Plugin_ supports. Additionally there is a an Emit Function equivalent to the one available for the rotation. You find more information there.    
 Long press action is executed if the button is pushed for longer than 1.5 seconds.   
 Available Commands:
-<ul>
-<li>Play
-<li>Pause
-<li>Play/Pause toggle
-<li>Stop
-<li>Repeat
-<li>Random
-<li>Clear Queue
-<li>Mute
-<li>Unmute
-<li>Toggle Mute
-<li>System Shutdown
-<li>System Reboot
-<li>Emit websocket message
-</ul>
+- Play
+- Pause
+- Play/Pause toggle
+- Stop
+- Repeat
+- Random
+- Clear Queue
+- Mute
+- Unmute
+- Toggle Mute
+- System Shutdown
+- System Reboot
+- Emit websocket message
+
 
 ## Differences compared to _Rotary Encoder Plugin_ 
 The initial rotary encoder plugin by _Saiyato_ is built based on npm OnOff library and a derived onoff-rotary to read the GPIO pins of the Linux system (e.g. Raspberry Pi) and the implementation of the Gray-Code is tailored to the use of the KY040 encoder.  
 With my custom made hardware using three _ALPS STEC11B03_ encoders, it worked but the response was not really satisfactory because the plugin would only respond on every second 'tick' of the encoder and would sometimes misinterpret the direction.  
-I tried to improve it with hardware debouncing (see [here](./01_Debouncing.md#tipps-for-debouncing-your-encoder) for tipps) and by optimizing the implementation but the result was not satisfactory.      
+I tried to improve it with hardware debouncing (see [here](./01_Debouncing.md#tips-for-debouncing-your-encoder) for tips) and by optimizing the implementation but the result was not satisfactory.      
 I finally wrote my own implementation based on DT overlay driven rotary encoders giving me perfect results. Since the hardware debouncing is in my hardware anyway now, I did not bother to try the plugin without the Schmitt-Trigger - I guess that it would work without it, too. Feel free to leave a note, if you can confirm this.    
 I first thought about implementing my solution into the existing plugin, but finally decided against it due to lack of time and because is rather an alternative than an extension.   
 If your system does not support DT overlays or you run into other issues, the other plugin may still be your first choice. 
