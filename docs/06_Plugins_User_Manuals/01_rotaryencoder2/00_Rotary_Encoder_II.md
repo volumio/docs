@@ -1,30 +1,32 @@
-# Rotary Encoder II Plugin<!-- omit in toc -->
+# Rotary Encoder II Plugin
+___by 7h0mas-R___
+
 This is an alternative implementation of a rotary encoder driver for integration with Volumio. It dynamically loads device tree overlays to access the rotaries and is more responsive with the tested encoders than the existing plugin.   
 
 ## Configuring the Plugin
 The plugin currently supports up to three encoders. The code is implemented in such a way, that this can quite easily be expanded - feel free to create a branch and do it.  
 After installing the plugin, each encoder can be individually enabled in the settings.
 
-<img src="./img/settings_en.jpg" width=450 alt="Plugin Settings for one Rotary Encoder">
-  
+![Plugin Settings for one Rotary Encoder](./img/settings_en.jpg)       
 **Img 1:** _Settings for one of the encoders_
 
 After enabling an encoder, the following parameters can be set:
 ### Periods per step
 There are different encoder types in the market. Many of them have a ratchet mechanism, so you can feel 'click' positions when you turn the knob.  
 There are three different implementations in the DT overlay driver:
-<ul>
-<li>1/1: Full period per step<br>
-From one tick to the next, both switches of the encoder perform a full cycle <i>on - off - on</i> (or vice versa)
-<li>1/2: Half period per step<br>
-From one tick to the next, both switches of the encoder perform half a cycle <i>on - off</i> (or vice versa)
-<li>1/4: Quarter period per step<br>
+
+***1/1: Full period per step***    
+From one tick to the next, both switches of the encoder perform a full cycle *on - off - on* (or vice versa).
+
+***1/2: Half period per step***    
+From one tick to the next, both switches of the encoder perform half a cycle *on - off* (or vice versa)
+
+***1/4: Quarter period per step***    
 From one tick to the next, only one of both switches of the encoder changes state. The other switch will change state with the next click in the same direction.
-</ul>
+
 If you are uncertain about your type, check the manufacturers datasheet or use a multimeter to measure the situation in your rotary.
 
-<img src="./img/rotary_types.jpg" width=650 alt="Supported rotary types">
-
+![Supported rotary types](./img/rotary_types.jpg)    
 **Img 2:** _Switching characteristic of different rotary types supported._
 
 
