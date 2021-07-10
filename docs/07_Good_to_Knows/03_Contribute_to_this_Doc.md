@@ -38,3 +38,13 @@ git commit -m "Hey I changed this and that"
 
 To see your changes live, just download and launch any  [XAMMP environment](https://www.apachefriends.org/en/index.html) to expose a php-capable local web server, and clone the docs
 under your htdocs folder. Docs will update in realtime and will be available under `http://localhost/docs`
+
+You don't even need XAMMP.
+ * make your modifications
+ * in the top level of the project run:
+ ```bash
+ $ php generate
+ ```
+ This will generate the documentation in the ```static/``` folder
+ * in your browser, navigate to ```file:///path/to/doc-clone/static```
+ * when you are satisfied, commit the changes
