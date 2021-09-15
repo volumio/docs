@@ -1,0 +1,1161 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>REST API - Volumio Documentation</title>
+    <meta name="description" content="The Audiophile Music Player" />
+    <meta name="author" content="Michelangelo Guarise">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/volumiodocs.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-static-top hidden-print">
+        <div class="container-fluid">
+            <a class="brand navbar-brand pull-left" href="../index.html">Volumio Documentation</a>
+
+    <div class="navbar-right navbar-form search">
+        <i class="glyphicon glyphicon-search search__icon">&nbsp;</i>
+        <input type="search" id="tipue_search_input" class="form-control search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+        </div>
+    </div>
+    <div class="row columns content">
+        <div class="left-column article-tree col-sm-3 hidden-print">
+            <!-- For Mobile -->
+            <div class="responsive-collapse">
+                <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="sub-nav-collapse" class="sub-nav-collapse">
+                <!-- Navigation -->
+                <ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>User Manual</a><ul class='nav nav-list'><li class=''><a href="../User_Manual/Quick_Start_Guide.html">Quick Start Guide</a></li><li class=''><a href="../User_Manual/First_steps_with_Volumio.html">First steps with Volumio</a></li><li class=''><a href="../User_Manual/More_first_steps.html">More first steps</a></li><li class=''><a href="../User_Manual/System_updates.html">System updates</a></li><li class=''><a href="../User_Manual/Volume_Control_and_audio_quality.html">Volume Control and audio quality</a></li><li class=''><a href="../User_Manual/Stream_audio_to_volumio.html">Stream audio to volumio</a></li><li class=''><a href="../User_Manual/SSH.html">SSH</a></li><li class=''><a href="../User_Manual/Configure_MPD_Clients_for_albumart.html">Configure MPD Clients for albumart</a></li><li class=''><a href="../User_Manual/Sending_logs_for_troubleshooting.html">Sending logs for troubleshooting</a></li><li class=''><a href="../User_Manual/Other_Customizations.html">Other Customizations</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Development How To</a><ul class='nav nav-list'><li class=''><a href="../Development_How_To/Overview.html">Overview</a></li><li class=''><a href="../Development_How_To/System_Architecture.html">System Architecture</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_introduction.html">Set up development environment introduction</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_backend.html">Set up development environment for backend</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_UI.html">Set up development environment for UI</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_Volumio_images.html">Set up development environment for Volumio images</a></li><li class=''><a href="../Development_How_To/Updating_source_files.html">Updating source files</a></li><li class=''><a href="../Development_How_To/Debugging.html">Debugging</a></li><li class=''><a href="../Development_How_To/Helping_the_project.html">Helping the project</a></li></ul></li><li class='open has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>API</a><ul class='nav nav-list'><li class=''><a href="../API/API_Overview.html">API Overview</a></li><li class=''><a href="../API/WebSocket_APIs.html">WebSocket APIs</a></li><li class=''><a href="../API/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class='active'><a href="../API/REST_API.html">REST API</a></li><li class=''><a href="../API/Command_Line_Client.html">Command Line Client</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugin System</a><ul class='nav nav-list'><li class=''><a href="../Plugin_System/Plugin_System_Overview.html">Plugin System Overview</a></li><li class=''><a href="../Plugin_System/Writing_A_Plugin.html">Writing A Plugin</a></li><li class=''><a href="../Plugin_System/Index.js.html">Index.js</a></li><li class=''><a href="../Plugin_System/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../Plugin_System/Toast_Messages.html">Toast Messages</a></li><li class=''><a href="../Plugin_System/Logging.html">Logging</a></li><li class=''><a href="../Plugin_System/User_Modal.html">User Modal</a></li><li class=''><a href="../Plugin_System/Music_Service_Plugin.html">Music Service Plugin</a></li><li class=''><a href="../Plugin_System/Custom_ALSA_Contributions.html">Custom ALSA Contributions</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>I2S DACs</a><ul class='nav nav-list'><li class=''><a href="../I2S_DACs/Adding_Compatibility_to_your_DAC.html">Adding Compatibility to your DAC</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Porting Guide</a><ul class='nav nav-list'><li class=''><a href="../Porting_Guide/Introduction.html">Introduction</a></li><li class=''><a href="../Porting_Guide/What_Is_Needed_To_Port_Successfully.html">What Is Needed To Port Successfully</a></li><li class=''><a href="../Porting_Guide/Preparing_The_Build_Environment.html">Preparing The Build Environment</a></li><li class=''><a href="../Porting_Guide/The_Process.html">The Process</a></li><li class=''><a href="../Porting_Guide/The_Platform_Folder.html">The Platform Folder</a></li><li class=''><a href="../Porting_Guide/Compiling_U-Boot.html">Compiling U-Boot</a></li><li class=''><a href="../Porting_Guide/Get_The_Kernel_Source.html">Get The Kernel Source</a></li><li class=''><a href="../Porting_Guide/Configure_Kernel_Options.html">Configure Kernel Options</a></li><li class=''><a href="../Porting_Guide/Compiling_The_Kernel.html">Compiling The Kernel</a></li><li class=''><a href="../Porting_Guide/Boot_Parameters.html">Boot Parameters</a></li><li class=''><a href="../Porting_Guide/Saving_Files_To_The_Platform_Folder.html">Saving Files To The Platform Folder</a></li><li class=''><a href="../Porting_Guide/A_Complete_Script.html">A Complete Script</a></li><li class=''><a href="../Porting_Guide/1_How_To_Build_A_Sparky.html">1 How To Build A Sparky</a></li><li class=''><a href="../Porting_Guide/Creating_the_image.html">Creating the image</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 1).html">Creating the image build scripts (Part 1)</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 2).html">Creating the image build scripts (Part 2)</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugins User Manuals</a><ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>brutefir</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/brutefir/Drc_with_Volumio.html">Drc with Volumio</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Preparing_your_system.html">Preparing your system</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_Measurment.html">Making Measurment</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_filters.html">Making filters</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Using_filters_in_Volumio.html">Using filters in Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>rotaryencoder2</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Rotary_Encoder_II.html">Rotary Encoder II</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Debouncing.html">Debouncing</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Device_Tree_Overlays.html">Device Tree Overlays</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Compatible_Encoders.html">Compatible Encoders</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Appendix.html">Appendix</a></li></ul></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Good to Knows</a><ul class='nav nav-list'><li class=''><a href="../Good_to_Knows/Markdown_Cheatsheet.html">Markdown Cheatsheet</a></li><li class=''><a href="../Good_to_Knows/Mounting_an_NFS_Share.html">Mounting an NFS Share</a></li><li class=''><a href="../Good_to_Knows/Contribute_to_this_Doc.html">Contribute to this Doc</a></li><li class=''><a href="../Good_to_Knows/Connection_Outside_LAN.html">Connection Outside LAN</a></li><li class=''><a href="../Good_to_Knows/Finding_Volumio.html">Finding Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>FAQs</a><ul class='nav nav-list'><li class=''><a href="../FAQs/General.html">General</a></li><li class=''><a href="../FAQs/Installation.html">Installation</a></li><li class=''><a href="../FAQs/Updating_and_Maintenance.html">Updating and Maintenance</a></li><li class=''><a href="../FAQs/Audio_Sources.html">Audio Sources</a></li><li class=''><a href="../FAQs/Audio_Output.html">Audio Output</a></li></ul></li></ul>
+
+                <div class="sidebar-links">
+                    
+                        <!-- Links -->
+                        <a href="https://volumio.org" target="_blank">Home</a><br><a href="https://volumio.org/get-started" target="_blank">Download</a><br><a href="https://volumio.org/forum" target="_blank">Forum</a><br><a href="https://github.com/volumio" target="_blank">GitHub Repo</a><br><a href="https://volumio.github.io/docs/Good_to_Knows/Contribute_to_this_Doc.html" target="_blank">Improve this documentation</a><br>
+                        <div id="toggleCodeBlock">
+                                                    <a id="toggleCodeBlockBtn" href="#" onclick="toggleCodeBlocks();">Show Code Blocks Inline</a><br>
+                                                </div>
+
+                        <!-- Twitter -->
+                                                    <div class="twitter">
+                                <hr/>
+                                <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:162px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=volumio&amp;show_count=false"></iframe>
+                            </div>
+                        
+                        <hr/>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-column  content-area col-sm-9">
+
+            <div class="content-page">
+                                    <div id="tipue_search_content" style="display:none"></div>
+                
+                <div class="doc_content">
+                    <article>
+            <div class="page-header">
+            <h1>REST API</h1>
+        </div>
+    
+    <h2 id="page_Rest_API">Rest API</h2>
+<p>Some commands may be invoked using Rest_api interface.</p>
+<p>From a device on the same network, you can use</p>
+<pre><code>curl volumio.local/api/v1/commands/mycommand
+
+</code></pre>
+<p>Where <em>volumio.local</em> is the device to be reached. You can also use the IP adress instead.</p>
+<p>From the device itself (via a keyboard plugged on it or through <a href="https://volumio.github.io/docs/User_Manual/SSH.html">SSH</a>), use :</p>
+<pre><code>curl localhost:3000/api/v1/commands/mycommand
+
+</code></pre>
+<p>REST APIs can be also invoked trough the network, for example (assuming Volumio's IP is 192.168.1.22):</p>
+<pre><code>curl http://192.168.1.22/api/v1/commands/mycommand
+
+</code></pre>
+<p>And of course, <em>mycommand</em> is to be replaced by the command to be used. (see below)</p>
+<h2 id="page_Available_commands">Available commands</h2>
+<h3 id="page_Playback_commands">Playback commands</h3>
+<p>All API calls will look like:</p>
+<pre><code>volumio.local/api/v1/commands/?cmd=
+</code></pre>
+<p>example:</p>
+<pre><code>volumio.local/api/v1/commands/?cmd=play
+</code></pre>
+<p>Available commands:</p>
+<h3 id="page_Playback">Playback</h3>
+<ul>
+<li>Play</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=play&amp;N=2
+</code></pre>
+<p>where N is optional and is the ordinal number of the track in the queue you wish to start to play from. The above call will play the third track in the queue.</p>
+<ul>
+<li>Toggle between play and pause</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=toggle
+</code></pre>
+<ul>
+<li>Stop</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=stop
+</code></pre>
+<ul>
+<li>Pause</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=pause
+</code></pre>
+<ul>
+<li>Previous</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=prev
+</code></pre>
+<ul>
+<li>Next</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=next
+</code></pre>
+<ul>
+<li>Volume</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=volume&amp;volume=80
+</code></pre>
+<p>where volume can be: mute, unmute, plus, minus (plus and minus will increase\decrease as per parameter one click volume steps)</p>
+<h3 id="page_Music_Library">Music Library</h3>
+<ul>
+<li>Get the current state of the player</li>
+</ul>
+<pre><code>volumio.local/api/v1/getState
+</code></pre>
+<p>Response</p>
+<pre><code class="language-json">{
+    &quot;status&quot;: &quot;play&quot;,
+    &quot;position&quot;: 2,
+    &quot;title&quot;: &quot;Shine On You Crazy Diamond (Part 1-5))&quot;,
+    &quot;artist&quot;: &quot;Pink Floyd&quot;,
+    &quot;album&quot;: &quot;Wish You Were Here (24Bit/96KHz)&quot;,
+    &quot;albumart&quot;: &quot;/albumart?cacheid=955&amp;web=Pink%20Floyd/Wish%20You%20Were%20Here%20(24Bit%2F96KHz)/extralarge&amp;path=%2FNAS%2FFLAC%2FPink%20Floyd%20-%20Wish%20You%20Were%20Here%20(24-96)&amp;metadata=false&quot;,
+    &quot;uri&quot;: &quot;mnt/NAS/FLAC/Pink Floyd - Wish You Were Here (24-96)/1 - Shine On You Crazy Diamond (Part 1).flac&quot;,
+    &quot;trackType&quot;: &quot;flac&quot;,
+    &quot;seek&quot;: 53057,
+    &quot;duration&quot;: 809,
+    &quot;samplerate&quot;: &quot;96 kHz&quot;,
+    &quot;bitdepth&quot;: &quot;24 bit&quot;,
+    &quot;channels&quot;: 2,
+    &quot;random&quot;: false,
+    &quot;repeat&quot;: false,
+    &quot;repeatSingle&quot;: false,
+    &quot;consume&quot;: false,
+    &quot;volume&quot;: 43,
+    &quot;disableVolumeControl&quot;: false,
+    &quot;mute&quot;: false,
+    &quot;stream&quot;: &quot;flac&quot;,
+    &quot;updatedb&quot;: false,
+    &quot;volatile&quot;: false,
+    &quot;service&quot;: &quot;mpd&quot;
+}
+</code></pre>
+<ul>
+<li>Get the playback queue</li>
+</ul>
+<pre><code>volumio.local/api/v1/getQueue
+</code></pre>
+<p>Response</p>
+<pre><code class="language-json">{&quot;queue&quot;:
+  [
+    {
+        &quot;uri&quot;: &quot;mnt/NAS/FLAC/Bob Dylan The Best Of Remastered 1997 [EAC-FLAC](oan)/03 - Don't Think Twice, It's All Right.flac&quot;,
+        &quot;service&quot;: &quot;mpd&quot;,
+        &quot;name&quot;: &quot;Don't Think Twice, It's All Right&quot;,
+        &quot;artist&quot;: &quot;Bob Dylan&quot;,
+        &quot;album&quot;: &quot;The Best Of&quot;,
+        &quot;type&quot;: &quot;track&quot;,
+        &quot;tracknumber&quot;: 0,
+        &quot;albumart&quot;: &quot;/albumart?cacheid=955&amp;web=Bob%20Dylan/The%20Best%20Of/extralarge&amp;path=%2FNAS%2FFLAC%2FBob%20Dylan%20The%20Best%20Of%20Remastered%201997%20%5BEAC-FLAC%5D(oan)&amp;metadata=false&quot;,
+        &quot;duration&quot;: 221,
+        &quot;samplerate&quot;: &quot;44.1 kHz&quot;,
+        &quot;bitdepth&quot;: &quot;16 bit&quot;,
+        &quot;trackType&quot;: &quot;flac&quot;,
+        &quot;channels&quot;: 2
+    },
+    {
+        &quot;uri&quot;: &quot;mnt/NAS/FLAC/DooBop - hdtracks/2-The DooBop Song.flac&quot;,
+        &quot;service&quot;: &quot;mpd&quot;,
+        &quot;name&quot;: &quot;The Doo-Bop Song&quot;,
+        &quot;artist&quot;: &quot;Miles Davis&quot;,
+        &quot;album&quot;: &quot;Doo-Bop&quot;,
+        &quot;type&quot;: &quot;track&quot;,
+        &quot;tracknumber&quot;: 0,
+        &quot;albumart&quot;: &quot;/albumart?cacheid=955&amp;web=Miles%20Davis/Doo-Bop/extralarge&amp;path=%2FNAS%2FFLAC%2FDooBop%20-%20hdtracks&amp;metadata=false&quot;,
+        &quot;duration&quot;: 307,
+        &quot;samplerate&quot;: &quot;192 kHz&quot;,
+        &quot;bitdepth&quot;: &quot;24 bit&quot;,
+        &quot;trackType&quot;: &quot;flac&quot;,
+        &quot;channels&quot;: 2
+    },
+    {
+        &quot;uri&quot;: &quot;mnt/NAS/FLAC/Pink Floyd - Wish You Were Here (24-96)/1 - Shine On You Crazy Diamond (Part 1).flac&quot;,
+        &quot;service&quot;: &quot;mpd&quot;,
+        &quot;name&quot;: &quot;Shine On You Crazy Diamond (Part 1-5))&quot;,
+        &quot;artist&quot;: &quot;Pink Floyd&quot;,
+        &quot;album&quot;: &quot;Wish You Were Here (24Bit/96KHz)&quot;,
+        &quot;type&quot;: &quot;track&quot;,
+        &quot;tracknumber&quot;: 0,
+        &quot;albumart&quot;: &quot;/albumart?cacheid=955&amp;web=Pink%20Floyd/Wish%20You%20Were%20Here%20(24Bit%2F96KHz)/extralarge&amp;path=%2FNAS%2FFLAC%2FPink%20Floyd%20-%20Wish%20You%20Were%20Here%20(24-96)&amp;metadata=false&quot;,
+        &quot;duration&quot;: 809,
+        &quot;samplerate&quot;: &quot;96 kHz&quot;,
+        &quot;bitdepth&quot;: &quot;24 bit&quot;,
+        &quot;trackType&quot;: &quot;flac&quot;,
+        &quot;channels&quot;: 2
+    }
+  ]
+}
+</code></pre>
+<ul>
+<li>Clear the queue</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=clearQueue
+</code></pre>
+<ul>
+<li>List Playlists</li>
+</ul>
+<pre><code>volumio.local/api/v1/listplaylists
+</code></pre>
+<ul>
+<li>Play a Playlist</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=playplaylist&amp;name=Rock
+</code></pre>
+<p>Where name is the name of the playlist to play</p>
+<ul>
+<li>Repeat a track</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=repeat&amp;value=key
+</code></pre>
+<p>Where key is <em>true</em> or <em>false</em>; if value is absent it toggles.</p>
+<ul>
+<li>Random Makes the order in which tracks are played random</li>
+</ul>
+<pre><code>volumio.local/api/v1/commands/?cmd=random&amp;value=key
+</code></pre>
+<p>Where key is <em>true</em> or <em>false</em>; if value is absent it toggles.</p>
+<h3 id="page_Browsing">Browsing</h3>
+<ul>
+<li>Browse</li>
+</ul>
+<pre><code>volumio.local/api/v1/browse?uri=uri
+</code></pre>
+<p>Where uri is the uri we want to browse. If not specified, it will start from root (/)</p>
+<p>Response</p>
+<pre><code class="language-json">{
+    &quot;navigation&quot;: {
+        &quot;lists&quot;: [
+            {
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/mpd/favouritesicon.png&quot;,
+                &quot;name&quot;: &quot;Favorites&quot;,
+                &quot;uri&quot;: &quot;favourites&quot;,
+                &quot;plugin_type&quot;: &quot;&quot;,
+                &quot;plugin_name&quot;: &quot;&quot;
+            },
+            {
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/mpd/playlisticon.png&quot;,
+                &quot;name&quot;: &quot;Playlists&quot;,
+                &quot;uri&quot;: &quot;playlists&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;mpd&quot;
+            },
+            {
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/mpd/musiclibraryicon.png&quot;,
+                &quot;name&quot;: &quot;Music Library&quot;,
+                &quot;uri&quot;: &quot;music-library&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;mpd&quot;
+            },
+            {
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/mpd/artisticon.png&quot;,
+                &quot;name&quot;: &quot;Artists&quot;,
+                &quot;uri&quot;: &quot;artists://&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;mpd&quot;
+            },
+            {
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/mpd/albumicon.png&quot;,
+                &quot;name&quot;: &quot;Albums&quot;,
+                &quot;uri&quot;: &quot;albums://&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;mpd&quot;
+            },
+            {
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/mpd/genreicon.png&quot;,
+                &quot;name&quot;: &quot;Genres&quot;,
+                &quot;uri&quot;: &quot;genres://&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;mpd&quot;
+            },
+            {
+                &quot;name&quot;: &quot;Media Servers&quot;,
+                &quot;uri&quot;: &quot;upnp&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;upnp_browser&quot;,
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/upnp_browser/dlnaicon.png&quot;
+            },
+            {
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/last_100/icon.png&quot;,
+                &quot;name&quot;: &quot;last 100&quot;,
+                &quot;uri&quot;: &quot;Last_100&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;last_100&quot;
+            },
+            {
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/webradio/icon.png&quot;,
+                &quot;icon&quot;: &quot;fa fa-microphone&quot;,
+                &quot;name&quot;: &quot;Web Radio&quot;,
+                &quot;uri&quot;: &quot;radio&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;webradio&quot;
+            },
+            {
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/tunein_radio/tunein.svg &quot;,
+                &quot;icon&quot;: &quot;fa fa-microphone&quot;,
+                &quot;name&quot;: &quot;TuneIn Radio&quot;,
+                &quot;uri&quot;: &quot;tunein&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;tunein_radio&quot;
+            },
+            {
+                &quot;name&quot;: &quot;TIDAL&quot;,
+                &quot;uri&quot;: &quot;tidal://&quot;,
+                &quot;plugin_type&quot;: &quot;music_service&quot;,
+                &quot;plugin_name&quot;: &quot;streaming_services&quot;,
+                &quot;albumart&quot;: &quot;/albumart?sourceicon=music_service/streaming_services/icons/tidal/tidal-icon.png&quot;
+            }
+        ]
+    }
+}
+</code></pre>
+<p>If for example we now want to browse &quot;Web Radio&quot;, uri will be &quot;radio&quot;, and our query will be:</p>
+<pre><code>volumio.local/api/v1/browse?uri=radio
+</code></pre>
+<p>IMPORTANT: The value albumart is a relative path. So, it must be handled this way:</p>
+<ul>
+<li>If albumart value starts with http, then no further operation is needed and the resulting url will show an albumart</li>
+<li>Otherwise, prepend the string formed by: http:// + IP ADDRESS of Volumio device. Example: http://192.168.1.22/albumart?sourceicon=music_service/webradio/icon.png</li>
+</ul>
+<p>FILTERING</p>
+<p>To improve navigation, especially on clients with limited memory or computing power,
+<em>filters</em> can be applied to reduce the number of items returned by a query.
+The available filter methods are:</p>
+<ul>
+<li>limit : limit the response to N elements</li>
+<li>offset : start from element N in a list</li>
+</ul>
+<p>When filtering is applied, a new &quot;count&quot; field is populated with the total number of items availble and a new filter field is added, which shows active filters in the query.</p>
+<p>Example: To show only 2 elements, starting from the second element:</p>
+<pre><code>volumio.local/api/v1/browse?uri=music-library/NAS/FLAC&amp;limit=2&amp;offset=2
+</code></pre>
+<p>Response</p>
+<pre><code class="language-json">{
+  &quot;navigation&quot;: {
+    &quot;prev&quot;: {
+      &quot;uri&quot;: &quot;music-library/NAS&quot;
+    },
+    &quot;lists&quot;: [
+      {
+        &quot;availableListViews&quot;: [
+          &quot;grid&quot;,
+          &quot;list&quot;
+        ],
+        &quot;items&quot;: [
+          {
+            &quot;service&quot;: &quot;mpd&quot;,
+            &quot;type&quot;: &quot;song&quot;,
+            &quot;title&quot;: &quot;Tchaikovsky:Hopak from Mazeppa&quot;,
+            &quot;artist&quot;: &quot;The Minnesota Orchestra&quot;,
+            &quot;album&quot;: &quot;Exotic Dances From The Opera&quot;,
+            &quot;uri&quot;: &quot;music-library/NAS/FLAC/macrodinamica_Tchaikovsky Hopak.flac&quot;,
+            &quot;albumart&quot;: &quot;/albumart?cacheid=867&amp;path=%2Fmnt%2FNAS%2FFLAC&amp;icon=music&amp;metadata=false&quot;
+          },
+          {
+            &quot;type&quot;: &quot;folder&quot;,
+            &quot;title&quot;: &quot;[EAC FLAC CUE] Nomadi - Ma Noi No!&quot;,
+            &quot;service&quot;: &quot;mpd&quot;,
+            &quot;albumart&quot;: &quot;/albumart?cacheid=867&amp;path=%2Fmnt%2FNAS%2FFLAC%2F%5BEAC%20FLAC%20CUE%5D%20Nomadi%20-%20Ma%20Noi%20No!&amp;icon=folder-o&amp;metadata=false&quot;,
+            &quot;uri&quot;: &quot;music-library/NAS/FLAC/[EAC FLAC CUE] Nomadi - Ma Noi No!&quot;
+          }
+        ],
+        &quot;count&quot;: 194,
+        &quot;filters&quot;: {
+          &quot;offset&quot;: 2,
+          &quot;limit&quot;: 2
+        }
+      }
+    ]
+  }
+}
+</code></pre>
+<ul>
+<li>Search</li>
+</ul>
+<pre><code>volumio.local/api/v1/search?query=searchquery
+</code></pre>
+<p>Where searchquery is the search query we want to perform (it is suggested to send it urlencoded)</p>
+<p>Response</p>
+<pre><code class="language-json">{
+    &quot;navigation&quot;: {
+        &quot;isSearchResult&quot;: true,
+        &quot;lists&quot;: [
+            {
+                &quot;title&quot;: &quot;Found 1 Artist 'paolo'&quot;,
+                &quot;availableListViews&quot;: [
+                    &quot;list&quot;,
+                    &quot;grid&quot;
+                ],
+                &quot;items&quot;: [
+                    {
+                        &quot;service&quot;: &quot;mpd&quot;,
+                        &quot;type&quot;: &quot;folder&quot;,
+                        &quot;title&quot;: &quot;Paolo Conte&quot;,
+                        &quot;uri&quot;: &quot;artists://Paolo%20Conte&quot;,
+                        &quot;albumart&quot;: &quot;/albumart?cacheid=955&amp;web=Paolo%20Conte//extralarge&amp;icon=users&quot;
+                    }
+                ]
+            },
+            {
+                &quot;title&quot;: &quot;Found 1 Album 'paolo'&quot;,
+                &quot;availableListViews&quot;: [
+                    &quot;list&quot;,
+                    &quot;grid&quot;
+                ],
+                &quot;items&quot;: [
+                    {
+                        &quot;service&quot;: &quot;mpd&quot;,
+                        &quot;type&quot;: &quot;folder&quot;,
+                        &quot;title&quot;: &quot;Paolo Conte&quot;,
+                        &quot;artist&quot;: &quot;&quot;,
+                        &quot;album&quot;: &quot;&quot;,
+                        &quot;uri&quot;: &quot;albums:///Paolo%20Conte&quot;,
+                        &quot;albumart&quot;: &quot;/albumart?cacheid=955&amp;web=/Paolo%20Conte/extralarge&amp;path=%2Fmnt%2FNAS%2FFLAC%2FPaolo%20Conte%20-%201984%20-%20Paolo%20Conte%20%5B1995%20Reissue%5D&amp;icon=fa-tags&amp;metadata=false&quot;
+                    }
+                ]
+            },
+            {
+                &quot;title&quot;: &quot;Web Radio&quot;,
+                &quot;icon&quot;: &quot;fa icon&quot;,
+                &quot;availableListViews&quot;: [
+                    &quot;list&quot;
+                ],
+                &quot;items&quot;: [
+                    {
+                        &quot;service&quot;: &quot;webradio&quot;,
+                        &quot;type&quot;: &quot;webradio&quot;,
+                        &quot;title&quot;: &quot;RADIO.DISCOunt&quot;,
+                        &quot;artist&quot;: &quot;&quot;,
+                        &quot;album&quot;: &quot;&quot;,
+                        &quot;uri&quot;: &quot;http://yp.shoutcast.com/sbin/tunein-station.m3u?id=99242899&quot;,
+                        &quot;albumart&quot;: &quot;http://i.radionomy.com/document/radios/b/b398/b398d972-1ca0-426e-a6af-c23f86033bb7.jpg&quot;
+                    },
+                    {
+                        &quot;service&quot;: &quot;webradio&quot;,
+                        &quot;type&quot;: &quot;webradio&quot;,
+                        &quot;title&quot;: &quot;Whippet Radio&quot;,
+                        &quot;artist&quot;: &quot;&quot;,
+                        &quot;album&quot;: &quot;&quot;,
+                        &quot;uri&quot;: &quot;http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1629210&quot;,
+                        &quot;icon&quot;: &quot;fa fa-microphone&quot;
+                    },
+                    {
+                        &quot;service&quot;: &quot;webradio&quot;,
+                        &quot;type&quot;: &quot;webradio&quot;,
+                        &quot;title&quot;: &quot;Radio FlyWeb&quot;,
+                        &quot;artist&quot;: &quot;&quot;,
+                        &quot;album&quot;: &quot;&quot;,
+                        &quot;uri&quot;: &quot;http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1613271&quot;,
+                        &quot;albumart&quot;: &quot;http://i.radionomy.com/document/radios/9/9721/9721b1a4-b10e-43b7-98cf-087245fda05e.jpg&quot;
+                    },
+                    {
+                        &quot;service&quot;: &quot;webradio&quot;,
+                        &quot;type&quot;: &quot;webradio&quot;,
+                        &quot;title&quot;: &quot;musicfactorystudio1&quot;,
+                        &quot;artist&quot;: &quot;&quot;,
+                        &quot;album&quot;: &quot;&quot;,
+                        &quot;uri&quot;: &quot;http://yp.shoutcast.com/sbin/tunein-station.m3u?id=1817423&quot;,
+                        &quot;albumart&quot;: &quot;http://i.radionomy.com/documents/radio/15362339-b029-4abd-a5b0-e8e898f8a22e.s165.png&quot;
+                    },
+                    {
+                        &quot;service&quot;: &quot;webradio&quot;,
+                        &quot;type&quot;: &quot;webradio&quot;,
+                        &quot;title&quot;: &quot;Radio San Paolo by DeSaLeo&quot;,
+                        &quot;artist&quot;: &quot;&quot;,
+                        &quot;album&quot;: &quot;&quot;,
+                        &quot;uri&quot;: &quot;http://yp.shoutcast.com/sbin/tunein-station.m3u?id=920919&quot;,
+                        &quot;albumart&quot;: &quot;http://i.radionomy.com/documents/radio/9a4389b5-7a6d-4094-8b7e-9d559b343839.s165.png&quot;
+                    }
+                ]
+            }
+        ]
+    }
+}
+</code></pre>
+<h3 id="page_ADDING_ITEMS_TO_PLAYBACK">ADDING ITEMS TO PLAYBACK</h3>
+<p>Items can be added to playback in 3 ways:</p>
+<ul>
+<li>Replacing the current content of the queue and playing Items (default and suggested)</li>
+<li>Adding Items to queue and playing the items (so queue will not be cleared)</li>
+<li>Adding items to queue</li>
+</ul>
+<ul>
+<li>Replace the current content of the queue</li>
+</ul>
+<p>POST</p>
+<pre><code>volumio.local/api/v1/replaceAndPlay
+</code></pre>
+<p>Payload</p>
+<pre><code class="language-json">{
+  &quot;item&quot;: {
+    &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/06 - Forget It.flac&quot;,
+    &quot;service&quot;: &quot;mpd&quot;,
+    &quot;title&quot;: &quot;Forget It&quot;,
+    &quot;artist&quot;: &quot;Rodriguez&quot;,
+    &quot;album&quot;: &quot;Cold Fact&quot;,
+    &quot;type&quot;: &quot;song&quot;,
+    &quot;tracknumber&quot;: 0,
+    &quot;duration&quot;: 110,
+    &quot;trackType&quot;: &quot;flac&quot;
+  },
+  &quot;list&quot;: [
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/01 - Sugar Man.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Sugar Man&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 229,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/02 - Only Good for Conversation.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Only Good for Conversation&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 144,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/03 - Crucify Your Mind.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Crucify Your Mind&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 152,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/04 - This Is Not a Song, It's an Outburst- Or, The Establishment Blues.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;This Is Not a Song, It's an Outburst: Or, The Establishment Blues&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 127,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/05 - Hate Street Dialogue.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Hate Street Dialogue&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 154,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/06 - Forget It.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Forget It&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 110,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/07 - Inner City Blues.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Inner City Blues&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 207,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/08 - I Wonder.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;I Wonder&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 154,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/09 - Like Janis.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Like Janis&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 156,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/10 - Gommorah (A Nursery Rhyme).flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Gommorah (A Nursery Rhyme)&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 141,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/11 - Rich Folks Hoax.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Rich Folks Hoax&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 186,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/12 - Jane S. Piddy.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Jane S. Piddy&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 180,
+      &quot;trackType&quot;: &quot;flac&quot;
+    }
+  ],
+  &quot;index&quot;: 5
+}
+</code></pre>
+<p>Where:
+List: is the list of object we want to play
+Index: is the item we want to play first (in this example we are starting playback from track 6)
+Item: The selected item that will play first</p>
+<p>Alternatively, a single item can be provided (in this case, put directly the item in the payload, without using the values index, list and iteam)</p>
+<ul>
+<li>Adding items to queue</li>
+</ul>
+<p>POST</p>
+<pre><code>volumio.local/api/v1/addToQueue
+</code></pre>
+<p>Payload</p>
+<pre><code class="language-json">[
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/01 - Sugar Man.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Sugar Man&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 229,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/02 - Only Good for Conversation.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Only Good for Conversation&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 144,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/03 - Crucify Your Mind.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Crucify Your Mind&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 152,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/04 - This Is Not a Song, It's an Outburst- Or, The Establishment Blues.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;This Is Not a Song, It's an Outburst: Or, The Establishment Blues&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 127,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/05 - Hate Street Dialogue.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Hate Street Dialogue&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 154,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/06 - Forget It.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Forget It&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 110,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/07 - Inner City Blues.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Inner City Blues&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 207,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/08 - I Wonder.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;I Wonder&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 154,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/09 - Like Janis.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Like Janis&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 156,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/10 - Gommorah (A Nursery Rhyme).flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Gommorah (A Nursery Rhyme)&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 141,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/11 - Rich Folks Hoax.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Rich Folks Hoax&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 186,
+      &quot;trackType&quot;: &quot;flac&quot;
+    },
+    {
+      &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/12 - Jane S. Piddy.flac&quot;,
+      &quot;service&quot;: &quot;mpd&quot;,
+      &quot;title&quot;: &quot;Jane S. Piddy&quot;,
+      &quot;artist&quot;: &quot;Rodriguez&quot;,
+      &quot;album&quot;: &quot;Cold Fact&quot;,
+      &quot;type&quot;: &quot;song&quot;,
+      &quot;tracknumber&quot;: 0,
+      &quot;duration&quot;: 180,
+      &quot;trackType&quot;: &quot;flac&quot;
+    }
+  ]
+</code></pre>
+<p>Just send an array with all the items you want to be added to queue.</p>
+<ul>
+<li>Adding items and playing them without clearing the queue
+POST</li>
+</ul>
+<pre><code>volumio.local/api/v1/addToQueue
+</code></pre>
+<p>Payload</p>
+<pre><code class="language-json">{
+  &quot;uri&quot;: &quot;music-library/NAS/HI_Res_Music/Rodriguez - 1970 - Cold Fact [Light in the Attic, LITA036]/12 - Jane S. Piddy.flac&quot;,
+  &quot;service&quot;: &quot;mpd&quot;,
+  &quot;title&quot;: &quot;Jane S. Piddy&quot;,
+  &quot;artist&quot;: &quot;Rodriguez&quot;,
+  &quot;album&quot;: &quot;Cold Fact&quot;,
+  &quot;type&quot;: &quot;song&quot;,
+  &quot;tracknumber&quot;: 0,
+  &quot;duration&quot;: 180,
+  &quot;trackType&quot;: &quot;flac&quot;
+}
+</code></pre>
+<p>Just send an item or an iteams array with all the items you want to be added to queue.</p>
+<ul>
+<li>Collection Statistics</li>
+</ul>
+<pre><code>volumio.local/api/v1/collectionstats
+</code></pre>
+<p>This API returns an overall of the music collection currently handled by Volumio</p>
+<p>Response</p>
+<pre><code class="language-json">{
+    &quot;artists&quot;: 3,
+    &quot;albums&quot;: 4,
+    &quot;songs&quot;: 105,
+    &quot;playtime&quot;: &quot;7:11:15&quot;
+}
+</code></pre>
+<ul>
+<li>Zones</li>
+</ul>
+<pre><code>volumio.local/api/v1/getzones
+</code></pre>
+<p>This API returns a list of all Volumio devices in a given network, complete with now playing data.</p>
+<p>Response</p>
+<pre><code class="language-json">{&quot;zones&quot;:
+  [
+    {
+        &quot;id&quot;: &quot;b1050de4-4702-4fb1-a495-8bc312854060&quot;,
+        &quot;host&quot;: &quot;http://192.168.211.1&quot;,
+        &quot;name&quot;: &quot;Volumio&quot;,
+        &quot;isSelf&quot;: true,
+        &quot;state&quot;: {
+            &quot;status&quot;: &quot;stop&quot;,
+            &quot;volume&quot;: 43,
+            &quot;mute&quot;: false,
+            &quot;artist&quot;: &quot;&quot;,
+            &quot;track&quot;: &quot;&quot;,
+            &quot;albumart&quot;: &quot;http://192.168.211.1/albumart&quot;
+        }
+    },
+    {
+        &quot;id&quot;: &quot;b1050de4-4702-4fb1-a495-8asds4060&quot;,
+        &quot;host&quot;: &quot;http://192.168.1.22&quot;,
+        &quot;name&quot;: &quot;Volumio Studio&quot;,
+        &quot;isSelf&quot;: false,
+        &quot;state&quot;: {
+            &quot;status&quot;: &quot;stop&quot;,
+            &quot;volume&quot;: 43,
+            &quot;mute&quot;: false,
+            &quot;artist&quot;: &quot;&quot;,
+            &quot;track&quot;: &quot;&quot;,
+            &quot;albumart&quot;: &quot;http://192.168.1.22/albumart&quot;
+        }
+    }
+  ]
+}
+</code></pre>
+<p>IMPORTANT: If isSelf = true, it means that this is the device that hanled the REST call.</p>
+<h3 id="page_Notifications">Notifications</h3>
+<p>Volumio REST API can be used in a event driven fashion. Volumio can notify via POST calls when state changes. This is a much more efficient and elegant way to retrieve informations, instead of continuously polling the relevant endpoints.</p>
+<p>For example, we can ask Volumio to notify every status change to the URL http://192.168.1.33/volumiostatus (the URL is totally configurable, just make sure it is a valid http endpoint).
+To do so, we will simply make the POST request:</p>
+<h3 id="page_POST">POST</h3>
+<pre><code>volumio.local/api/v1/pushNotificationUrls?url=http://192.168.1.33/volumiostatus
+</code></pre>
+<p>Body</p>
+<pre><code>{&quot;url&quot;:&quot;http://192.168.1.33/volumiostatus&quot;}
+</code></pre>
+<p>Response</p>
+<pre><code class="language-json">{
+    &quot;success&quot;: true
+}
+</code></pre>
+<p>NOTE: Multiple endpoints can be added.</p>
+<p>We can now check if our URL has been added properly, by issuing this GET request:</p>
+<pre><code>volumio.local/api/v1/pushNotificationUrls
+</code></pre>
+<p>Response</p>
+<pre><code class="language-json">[&quot;http://192.168.1.33/volumiostatus&quot;]
+</code></pre>
+<p>If we want, we can issue a DELETE request to remove our endpoint:</p>
+<pre><code>volumio.local/api/v1/pushNotificationUrls?url=http://192.168.1.33/volumiostatus
+</code></pre>
+<p>When we've added our notification url, we will receive notifications everytime something in Volumio playback system changes.
+There are multiple events that trigger a notification:</p>
+<ul>
+<li>state : when playback status changes</li>
+<li>queue: when playback status changes</li>
+<li>zones: when zone status changes</li>
+</ul>
+<p>EXAMPLE:</p>
+<pre><code>{ item: &quot;state&quot;,
+    data:
+    { status: &quot;play&quot;,
+        position: 3,
+        title: &quot;WIsh You Were Here&quot;,
+        artist: &quot;Pink Floyd&quot;,
+        album: &quot;Wish You Were Here (24Bit/96KHz)&quot;,
+        albumart: &quot;/albumart?cacheid=955&amp;web=Pink%20Floyd/Wish%20You%20Were%20Here%20(24Bit%2F96KHz)/extralarge&amp;path=%2FNAS%2FFLAC%2FPink%20Floyd%20-%20Wish%20You%20Were%20Here%20(24-96)&amp;metadata=false&quot;,
+        uri: &quot;mnt/NAS/FLAC/Pink Floyd - Wish You Were Here (24-96)/4 - Wish You Were Here.flac&quot;,
+        trackType: &quot;flac&quot;,
+        seek: 336,
+        duration: 336,
+        samplerate: &quot;96 kHz&quot;,
+        bitdepth: &quot;24 bit&quot;,
+        channels: 2,
+        random: false,
+        repeat: false,
+        repeatSingle: false,
+        consume: false,
+        volume: 42,
+        disableVolumeControl: false,
+        mute: false,
+        stream: &quot;flac&quot;,
+        updatedb: false,
+        volatile: false,
+        service: &quot;mpd&quot; } }
+</code></pre>
+<pre><code>{ item: &quot;queue&quot;,
+    data:
+    [ { uri: &quot;mnt/NAS/FLAC/Bob Dylan The Best Of Remastered 1997 [EAC-FLAC](oan)/03 - Don\&quot;t Think Twice, It\&quot;s All Right.flac&quot;,
+        service: &quot;mpd&quot;,
+        name: &quot;Don\&quot;t Think Twice, It\&quot;s All Right&quot;,
+        artist: &quot;Bob Dylan&quot;,
+        album: &quot;The Best Of&quot;,
+        type: &quot;track&quot;,
+        tracknumber: 0,
+        albumart: &quot;/albumart?cacheid=955&amp;web=Bob%20Dylan/The%20Best%20Of/extralarge&amp;path=%2FNAS%2FFLAC%2FBob%20Dylan%20The%20Best%20Of%20Remastered%201997%20%5BEAC-FLAC%5D(oan)&amp;metadata=false&quot;,
+        duration: 221,
+        samplerate: &quot;44.1 kHz&quot;,
+        bitdepth: &quot;16 bit&quot;,
+        trackType: &quot;flac&quot;,
+        channels: 2 },
+        { uri: &quot;mnt/NAS/FLAC/DooBop - hdtracks/2-The DooBop Song.flac&quot;,
+            service: &quot;mpd&quot;,
+            name: &quot;The Doo-Bop Song&quot;,
+            artist: &quot;Miles Davis&quot;,
+            album: &quot;Doo-Bop&quot;,
+            type: &quot;track&quot;,
+            tracknumber: 0,
+            albumart: &quot;/albumart?cacheid=955&amp;web=Miles%20Davis/Doo-Bop/extralarge&amp;path=%2FNAS%2FFLAC%2FDooBop%20-%20hdtracks&amp;metadata=false&quot;,
+            duration: 307,
+            samplerate: &quot;192 kHz&quot;,
+            bitdepth: &quot;24 bit&quot;,
+            trackType: &quot;flac&quot;,
+            channels: 2 },
+        { uri: &quot;mnt/NAS/FLAC/Pink Floyd - Wish You Were Here (24-96)/1 - Shine On You Crazy Diamond (Part 1).flac&quot;,
+            service: &quot;mpd&quot;,
+            name: &quot;Shine On You Crazy Diamond (Part 1-5))&quot;,
+            artist: &quot;Pink Floyd&quot;,
+            album: &quot;Wish You Were Here (24Bit/96KHz)&quot;,
+            type: &quot;track&quot;,
+            tracknumber: 0,
+            albumart: &quot;/albumart?cacheid=955&amp;web=Pink%20Floyd/Wish%20You%20Were%20Here%20(24Bit%2F96KHz)/extralarge&amp;path=%2FNAS%2FFLAC%2FPink%20Floyd%20-%20Wish%20You%20Were%20Here%20(24-96)&amp;metadata=false&quot;,
+            duration: 809,
+            trackType: &quot;flac&quot; },
+        { uri: &quot;mnt/NAS/FLAC/Pink Floyd - Wish You Were Here (24-96)/4 - Wish You Were Here.flac&quot;,
+            service: &quot;mpd&quot;,
+            name: &quot;WIsh You Were Here&quot;,
+            artist: &quot;Pink Floyd&quot;,
+            album: &quot;Wish You Were Here (24Bit/96KHz)&quot;,
+            type: &quot;track&quot;,
+            tracknumber: 0,
+            albumart: &quot;/albumart?cacheid=955&amp;web=Pink%20Floyd/Wish%20You%20Were%20Here%20(24Bit%2F96KHz)/extralarge&amp;path=%2FNAS%2FFLAC%2FPink%20Floyd%20-%20Wish%20You%20Were%20Here%20(24-96)&amp;metadata=false&quot;,
+            duration: 336,
+            samplerate: &quot;96 kHz&quot;,
+            bitdepth: &quot;24 bit&quot;,
+            trackType: &quot;flac&quot;,
+            channels: 2 },
+        { uri: &quot;mnt/NAS/FLAC/Red Hot Chili Peppers - Blood Sugar Sex Magik [FLAC]/04 - Funky Monks.flac&quot;,
+            service: &quot;mpd&quot;,
+            name: &quot;Funky Monks&quot;,
+            artist: &quot;Red Hot Chili Peppers&quot;,
+            album: &quot;Blood Sugar Sex Magik&quot;,
+            type: &quot;track&quot;,
+            tracknumber: 0,
+            albumart: &quot;/albumart?cacheid=955&amp;web=Red%20Hot%20Chili%20Peppers/Blood%20Sugar%20Sex%20Magik/extralarge&amp;path=%2FNAS%2FFLAC%2FRed%20Hot%20Chili%20Peppers%20-%20Blood%20Sugar%20Sex%20Magik%20%5BFLAC%5D&amp;metadata=false&quot;,
+            duration: 323,
+            trackType: &quot;flac&quot; } ] }
+</code></pre>
+<h3 id="page_SYSTEM_UTILITIES">SYSTEM UTILITIES</h3>
+<ul>
+<li>Ping</li>
+</ul>
+<pre><code>volumio.local/api/v1/ping
+</code></pre>
+<p>This API simply replies to the ping request, to signal activity.</p>
+<p>Response</p>
+<pre><code>pong
+</code></pre>
+<ul>
+<li>Get system version</li>
+</ul>
+<pre><code>volumio.local/api/v1/getSystemVersion
+</code></pre>
+<p>This API provides the software version, build date and hardware informtions.</p>
+<p>Response</p>
+<pre><code>{&quot;systemversion&quot;:&quot;2.632&quot;,&quot;builddate&quot;:&quot;Thu Oct  3 21:47:57 CEST 2019&quot;,&quot;variant&quot;:&quot;volumio&quot;,&quot;hardware&quot;:&quot;pi&quot;}
+</code></pre>
+<ul>
+<li>Get system informations</li>
+</ul>
+<pre><code>volumio.local/api/v1/getSystemInfo
+</code></pre>
+<p>This API provides the a summary information on the device, the service name and playback status.</p>
+<p>Response</p>
+<pre><code>{
+  &quot;id&quot;: &quot;b8507fe7-dc48-40df-8ef4-4d0fff88dc05&quot;,
+  &quot;host&quot;: &quot;http://192.168.1.126&quot;,
+  &quot;name&quot;: &quot;Volumio5&quot;,
+  &quot;type&quot;: &quot;device&quot;,
+  &quot;serviceName&quot;: &quot;Volumio&quot;,
+  &quot;state&quot;: {
+    &quot;status&quot;: &quot;play&quot;,
+    &quot;volume&quot;: 40,
+    &quot;mute&quot;: false,
+    &quot;artist&quot;: &quot;Al Green&quot;,
+    &quot;track&quot;: &quot;Back Up Train&quot;,
+    &quot;albumart&quot;: &quot;http://192.168.1.126/albumart?cacheid=7&amp;web=Al%20Green/Anthology%20(Disc%201)/extralarge&amp;path=%2FNAS%2FHi_Res%2FAl%20Green%20-%20Anthology%20-%204CD-Set%20(1997)%20%5BFLAC%5D%20TG%2FAnthology%20(Disc%201)%20(1997)%20%5BFLAC%5D&amp;metadata=false&quot;
+  },
+  &quot;systemversion&quot;: &quot;2.803&quot;,
+  &quot;builddate&quot;: &quot;Tue Jul 28 21:28:37 CEST 2020&quot;,
+  &quot;variant&quot;: &quot;volumio&quot;,
+  &quot;hardware&quot;: &quot;pi&quot;
+}
+</code></pre>
+<h3 id="page_TINY_ALBUMART_FACILITY">TINY ALBUMART FACILITY</h3>
+<p>Volumio provides an alternative facility to retrieve albumarts with shorter URLs. This is especially useful in situations where the client cannot handle large albumarts or
+the full length url with its url encoding of albumart.
+PLEASE NOTE: Tinyalbumart only fetches albumart for artists and albums from online datastores (no local albumart will be retrieved).</p>
+<ul>
+<li>Artist Art</li>
+</ul>
+<pre><code>volumio.local/tinyart/the_beatles/large
+</code></pre>
+<ul>
+<li>
+<p>IMPORTANT: Replace all spaces in the artist name with _ .</p>
+</li>
+<li>
+<p>Size is the last url parameter. For artist it can be only large (300x300px)</p>
+</li>
+<li>
+<p>Album art</p>
+</li>
+</ul>
+<pre><code>volumio.local/tinyart/the_beatles/abbey_road/large
+</code></pre>
+<ul>
+<li>
+<p>IMPORTANT: Replace all spaces in the artist name  and album name with _ .</p>
+</li>
+<li>
+<p>Size is the last url parameter. For albums it can be: small (34x34px), medium (64x64px), large (174x174px), extralarge (300x300px)</p>
+</li>
+<li>
+<p>Sourceicon</p>
+</li>
+</ul>
+<pre><code>volumio.local/tinyart/?sourceicon=music_service/mpd/favouritesicon.png
+</code></pre>
+
+        <nav>
+        <ul class="pager">
+            <li><a href="../API/UI_Configuration_Pages.html">Previous</a></li>            <li><a href="../API/Command_Line_Client.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46374275-1', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.min.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(document).ready(function() {
+                $('#tipue_search_input').tipuesearch({
+                    'show': 10,
+                    'mode': 'json',
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

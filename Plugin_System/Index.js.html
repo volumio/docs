@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Index.js - Volumio Documentation</title>
+    <meta name="description" content="The Audiophile Music Player" />
+    <meta name="author" content="Michelangelo Guarise">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/volumiodocs.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-static-top hidden-print">
+        <div class="container-fluid">
+            <a class="brand navbar-brand pull-left" href="../index.html">Volumio Documentation</a>
+
+    <div class="navbar-right navbar-form search">
+        <i class="glyphicon glyphicon-search search__icon">&nbsp;</i>
+        <input type="search" id="tipue_search_input" class="form-control search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+        </div>
+    </div>
+    <div class="row columns content">
+        <div class="left-column article-tree col-sm-3 hidden-print">
+            <!-- For Mobile -->
+            <div class="responsive-collapse">
+                <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="sub-nav-collapse" class="sub-nav-collapse">
+                <!-- Navigation -->
+                <ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>User Manual</a><ul class='nav nav-list'><li class=''><a href="../User_Manual/Quick_Start_Guide.html">Quick Start Guide</a></li><li class=''><a href="../User_Manual/First_steps_with_Volumio.html">First steps with Volumio</a></li><li class=''><a href="../User_Manual/More_first_steps.html">More first steps</a></li><li class=''><a href="../User_Manual/System_updates.html">System updates</a></li><li class=''><a href="../User_Manual/Volume_Control_and_audio_quality.html">Volume Control and audio quality</a></li><li class=''><a href="../User_Manual/Stream_audio_to_volumio.html">Stream audio to volumio</a></li><li class=''><a href="../User_Manual/SSH.html">SSH</a></li><li class=''><a href="../User_Manual/Configure_MPD_Clients_for_albumart.html">Configure MPD Clients for albumart</a></li><li class=''><a href="../User_Manual/Sending_logs_for_troubleshooting.html">Sending logs for troubleshooting</a></li><li class=''><a href="../User_Manual/Other_Customizations.html">Other Customizations</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Development How To</a><ul class='nav nav-list'><li class=''><a href="../Development_How_To/Overview.html">Overview</a></li><li class=''><a href="../Development_How_To/System_Architecture.html">System Architecture</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_introduction.html">Set up development environment introduction</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_backend.html">Set up development environment for backend</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_UI.html">Set up development environment for UI</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_Volumio_images.html">Set up development environment for Volumio images</a></li><li class=''><a href="../Development_How_To/Updating_source_files.html">Updating source files</a></li><li class=''><a href="../Development_How_To/Debugging.html">Debugging</a></li><li class=''><a href="../Development_How_To/Helping_the_project.html">Helping the project</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>API</a><ul class='nav nav-list'><li class=''><a href="../API/API_Overview.html">API Overview</a></li><li class=''><a href="../API/WebSocket_APIs.html">WebSocket APIs</a></li><li class=''><a href="../API/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../API/REST_API.html">REST API</a></li><li class=''><a href="../API/Command_Line_Client.html">Command Line Client</a></li></ul></li><li class='open has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugin System</a><ul class='nav nav-list'><li class=''><a href="../Plugin_System/Plugin_System_Overview.html">Plugin System Overview</a></li><li class=''><a href="../Plugin_System/Writing_A_Plugin.html">Writing A Plugin</a></li><li class='active'><a href="../Plugin_System/Index.js.html">Index.js</a></li><li class=''><a href="../Plugin_System/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../Plugin_System/Toast_Messages.html">Toast Messages</a></li><li class=''><a href="../Plugin_System/Logging.html">Logging</a></li><li class=''><a href="../Plugin_System/User_Modal.html">User Modal</a></li><li class=''><a href="../Plugin_System/Music_Service_Plugin.html">Music Service Plugin</a></li><li class=''><a href="../Plugin_System/Custom_ALSA_Contributions.html">Custom ALSA Contributions</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>I2S DACs</a><ul class='nav nav-list'><li class=''><a href="../I2S_DACs/Adding_Compatibility_to_your_DAC.html">Adding Compatibility to your DAC</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Porting Guide</a><ul class='nav nav-list'><li class=''><a href="../Porting_Guide/Introduction.html">Introduction</a></li><li class=''><a href="../Porting_Guide/What_Is_Needed_To_Port_Successfully.html">What Is Needed To Port Successfully</a></li><li class=''><a href="../Porting_Guide/Preparing_The_Build_Environment.html">Preparing The Build Environment</a></li><li class=''><a href="../Porting_Guide/The_Process.html">The Process</a></li><li class=''><a href="../Porting_Guide/The_Platform_Folder.html">The Platform Folder</a></li><li class=''><a href="../Porting_Guide/Compiling_U-Boot.html">Compiling U-Boot</a></li><li class=''><a href="../Porting_Guide/Get_The_Kernel_Source.html">Get The Kernel Source</a></li><li class=''><a href="../Porting_Guide/Configure_Kernel_Options.html">Configure Kernel Options</a></li><li class=''><a href="../Porting_Guide/Compiling_The_Kernel.html">Compiling The Kernel</a></li><li class=''><a href="../Porting_Guide/Boot_Parameters.html">Boot Parameters</a></li><li class=''><a href="../Porting_Guide/Saving_Files_To_The_Platform_Folder.html">Saving Files To The Platform Folder</a></li><li class=''><a href="../Porting_Guide/A_Complete_Script.html">A Complete Script</a></li><li class=''><a href="../Porting_Guide/1_How_To_Build_A_Sparky.html">1 How To Build A Sparky</a></li><li class=''><a href="../Porting_Guide/Creating_the_image.html">Creating the image</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 1).html">Creating the image build scripts (Part 1)</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 2).html">Creating the image build scripts (Part 2)</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugins User Manuals</a><ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>brutefir</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/brutefir/Drc_with_Volumio.html">Drc with Volumio</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Preparing_your_system.html">Preparing your system</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_Measurment.html">Making Measurment</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_filters.html">Making filters</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Using_filters_in_Volumio.html">Using filters in Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>rotaryencoder2</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Rotary_Encoder_II.html">Rotary Encoder II</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Debouncing.html">Debouncing</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Device_Tree_Overlays.html">Device Tree Overlays</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Compatible_Encoders.html">Compatible Encoders</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Appendix.html">Appendix</a></li></ul></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Good to Knows</a><ul class='nav nav-list'><li class=''><a href="../Good_to_Knows/Markdown_Cheatsheet.html">Markdown Cheatsheet</a></li><li class=''><a href="../Good_to_Knows/Mounting_an_NFS_Share.html">Mounting an NFS Share</a></li><li class=''><a href="../Good_to_Knows/Contribute_to_this_Doc.html">Contribute to this Doc</a></li><li class=''><a href="../Good_to_Knows/Connection_Outside_LAN.html">Connection Outside LAN</a></li><li class=''><a href="../Good_to_Knows/Finding_Volumio.html">Finding Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>FAQs</a><ul class='nav nav-list'><li class=''><a href="../FAQs/General.html">General</a></li><li class=''><a href="../FAQs/Installation.html">Installation</a></li><li class=''><a href="../FAQs/Updating_and_Maintenance.html">Updating and Maintenance</a></li><li class=''><a href="../FAQs/Audio_Sources.html">Audio Sources</a></li><li class=''><a href="../FAQs/Audio_Output.html">Audio Output</a></li></ul></li></ul>
+
+                <div class="sidebar-links">
+                    
+                        <!-- Links -->
+                        <a href="https://volumio.org" target="_blank">Home</a><br><a href="https://volumio.org/get-started" target="_blank">Download</a><br><a href="https://volumio.org/forum" target="_blank">Forum</a><br><a href="https://github.com/volumio" target="_blank">GitHub Repo</a><br><a href="https://volumio.github.io/docs/Good_to_Knows/Contribute_to_this_Doc.html" target="_blank">Improve this documentation</a><br>
+                        <div id="toggleCodeBlock">
+                                                    <a id="toggleCodeBlockBtn" href="#" onclick="toggleCodeBlocks();">Show Code Blocks Inline</a><br>
+                                                </div>
+
+                        <!-- Twitter -->
+                                                    <div class="twitter">
+                                <hr/>
+                                <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:162px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=volumio&amp;show_count=false"></iframe>
+                            </div>
+                        
+                        <hr/>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-column  content-area col-sm-9">
+
+            <div class="content-page">
+                                    <div id="tipue_search_content" style="display:none"></div>
+                
+                <div class="doc_content">
+                    <article>
+            <div class="page-header">
+            <h1>Index.js</h1>
+        </div>
+    
+    <h2 id="page_The_indexjs_file_of_a_plugin">The index.js file of a plugin</h2>
+<h3 id="page_Indexjs_aka_the_plugins_core">Index.js aka the plugin's core</h3>
+<p>The index.js file of every plugin is where the magic goes on. It has some predefined and mandatory functions and a standardized layout. Depending on you'r plugin's category, this structure needs to change accordingly. We'll start by detailing a generic plugin structure.</p>
+<h3 id="page_Generic_structure">Generic structure</h3>
+<p>The first part is about module dependencies, we'll need to list all the node modules our plugin depends on (example taken from Spotify plugin).</p>
+<pre><code class="language-javascript">'use strict';
+
+var libQ = require('kew');
+var libNet = require('net');
+var libFast = require('fast.js');
+var fs=require('fs-extra');
+var config = new (require('v-conf'))();
+var exec = require('child_process').exec;
+var SpotifyWebApi = require('spotify-web-api-node');
+var nodetools = require('nodetools');
+</code></pre>
+<p>IMPORTANT TIPS:</p>
+<ul>
+<li>Node modules allow you to develop faster, by relaying on already-written code to overcome the majority of tasks, to look for them <a href="https://www.npmjs.com/package/package">search here</a>
+</li>
+<li>The <code>'use strict';</code> declaration at the beginning will ensure no obvious coding mispractices will happen, <a href="http://www.w3schools.com/js/js_strict.asp">more info on the matter</a>
+</li>
+<li>Use the minimum amount of modules needed, and try to avoid modules that needs compilation (you will spot those because they'll take longer on npm install), so you will avoid to mantain two separate versions for x86 and arm architectures.</li>
+</ul>
+<p>Then we will define the plugin class and reference to other core Volumio's internals:</p>
+<pre><code class="language-javascript">module.exports = ControllerSpop;
+function ControllerSpop(context) {
+	// This fixed variable will let us refer to 'this' object at deeper scopes
+	var self = this;
+
+	this.context = context;
+	this.commandRouter = this.context.coreCommand;
+	this.logger = this.context.logger;
+	this.configManager = this.context.configManager;
+
+}
+</code></pre>
+<p>IMPORTANT TIPS:</p>
+<ul>
+<li>Substitute <code>ControllerSpop</code> with something that resembles your plugin name. For example <code>ControllerGPIO</code> or <code>ControllerSoundcloud</code>
+</li>
+<li>We'll start every prototype (see later) with this Controller naming</li>
+</ul>
+<p>Then we add all the required functions for a generic plugin:</p>
+<h3 id="page_Plugin_Lifecycle">Plugin Lifecycle</h3>
+<p>With the release of Volumio 3, the lifecycle of Volumio plugins has been better defined. Plugins are expected to complete <code>onVolumioStart</code> and <code>onStart</code> asynchronously by returning a Promise which completes when they have finished starting. Volumio will wait for all plugins to finish <code>onVolumioStart</code> before calling <code>onStart</code> on any plugin. Only once <code>onStart</code> has completed for all plugins will Volumio have finished starting.</p>
+<p>Note that plugin startup speed does affect the overall Volumio startup time. Try to avoid having long-running tasks that block startup. If a plugin appears to be <em>stuck</em>, and doesn't resolve the promise that it returns from <code>onVolumioStart</code> or <code>onStart</code> then Volumio will regard this plugin as having failed to start.</p>
+<p>One key difference between <code>onVolumioStart</code> and <code>onStart</code> is that it is <em>not safe</em> to play audio during <code>onVolumioStart</code>. While <code>onVolumioStart</code> is running plugins may still be making changes or creating resources that are needed by the audio stack. It is also considered good manners not to rely on functions (other than reading the configuration) from other plugins in <code>onVolumioStart</code>. This limits the likelihood that a plugin that you write will call into another plugin before it is fully initialised.</p>
+<h4 id="page_On_Volumio_Start">On Volumio Start</h4>
+<p>This is the code that gets executed when Volumio starts and triggers the plugin start. Typically, what you do is load the plugin configuration, set up data structures, and create any necessary resources</p>
+<pre><code class="language-javascript">ControllerSpop.prototype.onVolumioStart = function()
+{
+	var configFile=this.commandRouter.pluginManager.getConfigurationFile(this.context,'config.json');
+	this.config = new (require('v-conf'))();
+	this.config.loadFile(configFile);
+
+        var promise = libQ.nfcall(fs.writeFile, '/tmp/message', 'Hello World', 'utf8');
+        
+        return promise;
+}
+</code></pre>
+<p><strong>IMPORTANT:</strong></p>
+<ul>
+<li>You'll notice that we use promises here. That's why Volumio needs to know when the plugin has actually started, or if it failed. So what we're doing is returning the promise on successful start, and rejecting it if it doesn't start properly.</li>
+</ul>
+<h4 id="page_On_Start">On Start</h4>
+<p>This instead is what happens when the Plugin starts. It's different from On Volumio Start since this function is triggered only if the plugin is enabled. In this case we're starting the spop daemon (responsible for Spotify Playback).</p>
+<pre><code class="language-javascript">ControllerSpop.prototype.onStart = function() {
+	var self = this;
+
+	var defer=libQ.defer();
+
+	self.startSpopDaemon()
+		.then(function(e)
+		{
+			setTimeout(function () {
+				self.logger.info(&quot;Connecting to daemon&quot;);
+				self.spopDaemonConnect(defer);
+			}, 5000);
+		})
+		.fail(function(e)
+		{
+			defer.reject(new Error());
+		});
+	this.commandRouter.sharedVars.registerCallback('alsa.outputdevice', this.rebuildSPOPDAndRestartDaemon.bind(this));
+
+	return defer.promise;
+};
+</code></pre>
+<p><strong>IMPORTANT:</strong></p>
+<ul>
+<li>You'll notice that we use promises here. That's why Volumio needs to know when the plugin has actually started, or if it failed. So what we're doing is returning the promise on successful start, and rejecting it if it doesn't start properly.</li>
+<li>The strange function  <code>this.commandRouter.sharedVars.registerCallback('alsa.outputdevice', this.rebuildSPOPDAndRestartDaemon.bind(this));</code> does one important thing. It binds to a shared system value (alsa.outputdevice, which is the output device) and when it changes it triggers the function <code>rebuildSPOPDAndRestartDaemon</code> that rewrites spop config file and restarts it.</li>
+</ul>
+<h4 id="page_On_stop">On stop</h4>
+<p>When a plugin is stopped, this function gets executed. What we're doing here is killing the spop daemon. We must resolve the promise to signal everything was ok</p>
+<pre><code class="language-javascript">ControllerSpop.prototype.onStop = function() {
+	var self = this;
+
+	self.logger.info(&quot;Killing SpopD daemon&quot;);
+	exec(&quot;/usr/bin/sudo /usr/bin/killall spopd&quot;, function (error, stdout, stderr) {
+		if(error){
+			self.logger.info('Cannot kill spop Daemon')
+		}
+	});
+
+	return libQ.resolve();
+};
+</code></pre>
+<h4 id="page_Get_Configuration_files">Get Configuration files</h4>
+<p>Very straightforwarding, we load the .json configuration file for this plugin.</p>
+<pre><code class="language-javascript">ControllerSpop.prototype.getConfigurationFiles = function()
+{
+	return ['config.json'];
+}
+</code></pre>
+<h4 id="page_Get_UI_configuration">Get UI configuration</h4>
+<p>This function is triggered when we want to access the plugin configuration. For a better understanding of the configuration pages see <a href="../Plugin_System/UI_Configuration_Pages">Configuration Pages </a></p>
+<pre><code class="language-javascript">ControllerSpop.prototype.getUIConfig = function() {
+	var defer = libQ.defer();
+	var self = this;
+
+	var lang_code = this.commandRouter.sharedVars.get('language_code');
+
+	self.commandRouter.i18nJson(__dirname+'/i18n/strings_'+lang_code+'.json',
+		__dirname+'/i18n/strings_en.json',
+		__dirname + '/UIConfig.json')
+		.then(function(uiconf)
+		{
+
+			uiconf.sections[0].content[0].value = self.config.get('username');
+			uiconf.sections[0].content[1].value = self.config.get('password');
+			uiconf.sections[0].content[2].value = self.config.get('bitrate');
+
+			defer.resolve(uiconf);
+		})
+		.fail(function()
+		{
+			defer.reject(new Error());
+		});
+
+	return defer.promise;
+};
+
+</code></pre>
+<p>IMPORTANT:</p>
+<ul>
+<li>With <code>var lang_code = this.commandRouter.sharedVars.get('language_code');</code> we retrieve the current language code. If translation is provided under the <code>/i18n/</code> folder, we'll translate the configuration page, if not we'll default to english.</li>
+<li>We use promises here as well, since it will take some time to parse the UIConfig.json and translate it. Not using promises will result in configuration not working.</li>
+<li>With <code>uiconf.sections[0].content[0].value = self.config.get('username');</code> we're simply subsituting the first element's value of the first section with the <code>username</code> value taken from the plugins configuration.  That's how we can populate the UI Configuration Page with actual values.</li>
+</ul>
+<h3 id="page_Optional_functions_for_generic_plugins">Optional functions for generic plugins</h3>
+<h4 id="page_Get_configuration_from_other_plugins">Get configuration from other plugins</h4>
+<p>There are cases where we want to get configuration parameters from other plugins, for example to know if an i2s DAC has been enabled or not. We will then use the <code>executeOnPlugin</code> method which will allow us to execute any method on any plugin. For code clarity we wrapped it into the <code>getAdditionalConf</code> function, accepting 3 parameters which are mandatory for the aforementioned <code>executeOnPlugin</code>:</p>
+<ul>
+<li>TYPE (plugin category)</li>
+<li>CONTROLLER (plugin name)</li>
+<li>DATA (the configuration parameter we want to get)</li>
+</ul>
+<p>Please note that the function to get config parameters is not always <code>getConfigParam</code> but could be also just <code>getConf</code>. Check the individual plugin to see which is the correct function.</p>
+<pre><code class="language-javascript">ControllerAlsa.prototype.getAdditionalConf = function (type, controller, data) {
+	var self = this;
+	return self.commandRouter.executeOnPlugin(type, controller, 'getConfigParam', data);
+};
+</code></pre>
+<h4 id="page_Set_configuration_from_other_plugins">Set configuration from other plugins</h4>
+<p>Same as above, also here <code>setConfigParam</code>could be also <code>setConf</code> or <code>setUiConfig</code>. Check the individual plugin to see which is the correct function.</p>
+<pre><code class="language-javascript">UpnpInterface.prototype.setAdditionalConf = function () {
+	var self = this;
+
+	return self.commandRouter.executeOnPlugin(type, controller, 'setConfigParam', data);
+};
+</code></pre>
+<h4 id="page_Restart">Restart</h4>
+<p>Sometimes it might be useful to have a function to restart the plugin. Here's an example for upnp interface in Volumio.</p>
+<pre><code class="language-javascript">UpnpInterface.prototype.onRestart = function () {
+	var self = this;
+
+	exec('/usr/bin/sudo /usr/bin/killall upmpdcli', function (error, stdout, stderr) {
+		if (error) {
+			self.logger.error('Cannot kill upmpdcli '+error);
+		} self.startUpmpdcli();
+	});
+};
+</code></pre>
+
+        <nav>
+        <ul class="pager">
+            <li><a href="../Plugin_System/Writing_A_Plugin.html">Previous</a></li>            <li><a href="../Plugin_System/UI_Configuration_Pages.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46374275-1', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.min.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(document).ready(function() {
+                $('#tipue_search_input').tipuesearch({
+                    'show': 10,
+                    'mode': 'json',
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

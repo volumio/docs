@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Adding Compatibility to your DAC - Volumio Documentation</title>
+    <meta name="description" content="The Audiophile Music Player" />
+    <meta name="author" content="Michelangelo Guarise">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/volumiodocs.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-static-top hidden-print">
+        <div class="container-fluid">
+            <a class="brand navbar-brand pull-left" href="../index.html">Volumio Documentation</a>
+
+    <div class="navbar-right navbar-form search">
+        <i class="glyphicon glyphicon-search search__icon">&nbsp;</i>
+        <input type="search" id="tipue_search_input" class="form-control search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+        </div>
+    </div>
+    <div class="row columns content">
+        <div class="left-column article-tree col-sm-3 hidden-print">
+            <!-- For Mobile -->
+            <div class="responsive-collapse">
+                <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="sub-nav-collapse" class="sub-nav-collapse">
+                <!-- Navigation -->
+                <ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>User Manual</a><ul class='nav nav-list'><li class=''><a href="../User_Manual/Quick_Start_Guide.html">Quick Start Guide</a></li><li class=''><a href="../User_Manual/First_steps_with_Volumio.html">First steps with Volumio</a></li><li class=''><a href="../User_Manual/More_first_steps.html">More first steps</a></li><li class=''><a href="../User_Manual/System_updates.html">System updates</a></li><li class=''><a href="../User_Manual/Volume_Control_and_audio_quality.html">Volume Control and audio quality</a></li><li class=''><a href="../User_Manual/Stream_audio_to_volumio.html">Stream audio to volumio</a></li><li class=''><a href="../User_Manual/SSH.html">SSH</a></li><li class=''><a href="../User_Manual/Configure_MPD_Clients_for_albumart.html">Configure MPD Clients for albumart</a></li><li class=''><a href="../User_Manual/Sending_logs_for_troubleshooting.html">Sending logs for troubleshooting</a></li><li class=''><a href="../User_Manual/Other_Customizations.html">Other Customizations</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Development How To</a><ul class='nav nav-list'><li class=''><a href="../Development_How_To/Overview.html">Overview</a></li><li class=''><a href="../Development_How_To/System_Architecture.html">System Architecture</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_introduction.html">Set up development environment introduction</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_backend.html">Set up development environment for backend</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_UI.html">Set up development environment for UI</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_Volumio_images.html">Set up development environment for Volumio images</a></li><li class=''><a href="../Development_How_To/Updating_source_files.html">Updating source files</a></li><li class=''><a href="../Development_How_To/Debugging.html">Debugging</a></li><li class=''><a href="../Development_How_To/Helping_the_project.html">Helping the project</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>API</a><ul class='nav nav-list'><li class=''><a href="../API/API_Overview.html">API Overview</a></li><li class=''><a href="../API/WebSocket_APIs.html">WebSocket APIs</a></li><li class=''><a href="../API/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../API/REST_API.html">REST API</a></li><li class=''><a href="../API/Command_Line_Client.html">Command Line Client</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugin System</a><ul class='nav nav-list'><li class=''><a href="../Plugin_System/Plugin_System_Overview.html">Plugin System Overview</a></li><li class=''><a href="../Plugin_System/Writing_A_Plugin.html">Writing A Plugin</a></li><li class=''><a href="../Plugin_System/Index.js.html">Index.js</a></li><li class=''><a href="../Plugin_System/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../Plugin_System/Toast_Messages.html">Toast Messages</a></li><li class=''><a href="../Plugin_System/Logging.html">Logging</a></li><li class=''><a href="../Plugin_System/User_Modal.html">User Modal</a></li><li class=''><a href="../Plugin_System/Music_Service_Plugin.html">Music Service Plugin</a></li><li class=''><a href="../Plugin_System/Custom_ALSA_Contributions.html">Custom ALSA Contributions</a></li></ul></li><li class='open has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>I2S DACs</a><ul class='nav nav-list'><li class='active'><a href="../I2S_DACs/Adding_Compatibility_to_your_DAC.html">Adding Compatibility to your DAC</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Porting Guide</a><ul class='nav nav-list'><li class=''><a href="../Porting_Guide/Introduction.html">Introduction</a></li><li class=''><a href="../Porting_Guide/What_Is_Needed_To_Port_Successfully.html">What Is Needed To Port Successfully</a></li><li class=''><a href="../Porting_Guide/Preparing_The_Build_Environment.html">Preparing The Build Environment</a></li><li class=''><a href="../Porting_Guide/The_Process.html">The Process</a></li><li class=''><a href="../Porting_Guide/The_Platform_Folder.html">The Platform Folder</a></li><li class=''><a href="../Porting_Guide/Compiling_U-Boot.html">Compiling U-Boot</a></li><li class=''><a href="../Porting_Guide/Get_The_Kernel_Source.html">Get The Kernel Source</a></li><li class=''><a href="../Porting_Guide/Configure_Kernel_Options.html">Configure Kernel Options</a></li><li class=''><a href="../Porting_Guide/Compiling_The_Kernel.html">Compiling The Kernel</a></li><li class=''><a href="../Porting_Guide/Boot_Parameters.html">Boot Parameters</a></li><li class=''><a href="../Porting_Guide/Saving_Files_To_The_Platform_Folder.html">Saving Files To The Platform Folder</a></li><li class=''><a href="../Porting_Guide/A_Complete_Script.html">A Complete Script</a></li><li class=''><a href="../Porting_Guide/1_How_To_Build_A_Sparky.html">1 How To Build A Sparky</a></li><li class=''><a href="../Porting_Guide/Creating_the_image.html">Creating the image</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 1).html">Creating the image build scripts (Part 1)</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 2).html">Creating the image build scripts (Part 2)</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugins User Manuals</a><ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>brutefir</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/brutefir/Drc_with_Volumio.html">Drc with Volumio</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Preparing_your_system.html">Preparing your system</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_Measurment.html">Making Measurment</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_filters.html">Making filters</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Using_filters_in_Volumio.html">Using filters in Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>rotaryencoder2</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Rotary_Encoder_II.html">Rotary Encoder II</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Debouncing.html">Debouncing</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Device_Tree_Overlays.html">Device Tree Overlays</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Compatible_Encoders.html">Compatible Encoders</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Appendix.html">Appendix</a></li></ul></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Good to Knows</a><ul class='nav nav-list'><li class=''><a href="../Good_to_Knows/Markdown_Cheatsheet.html">Markdown Cheatsheet</a></li><li class=''><a href="../Good_to_Knows/Mounting_an_NFS_Share.html">Mounting an NFS Share</a></li><li class=''><a href="../Good_to_Knows/Contribute_to_this_Doc.html">Contribute to this Doc</a></li><li class=''><a href="../Good_to_Knows/Connection_Outside_LAN.html">Connection Outside LAN</a></li><li class=''><a href="../Good_to_Knows/Finding_Volumio.html">Finding Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>FAQs</a><ul class='nav nav-list'><li class=''><a href="../FAQs/General.html">General</a></li><li class=''><a href="../FAQs/Installation.html">Installation</a></li><li class=''><a href="../FAQs/Updating_and_Maintenance.html">Updating and Maintenance</a></li><li class=''><a href="../FAQs/Audio_Sources.html">Audio Sources</a></li><li class=''><a href="../FAQs/Audio_Output.html">Audio Output</a></li></ul></li></ul>
+
+                <div class="sidebar-links">
+                    
+                        <!-- Links -->
+                        <a href="https://volumio.org" target="_blank">Home</a><br><a href="https://volumio.org/get-started" target="_blank">Download</a><br><a href="https://volumio.org/forum" target="_blank">Forum</a><br><a href="https://github.com/volumio" target="_blank">GitHub Repo</a><br><a href="https://volumio.github.io/docs/Good_to_Knows/Contribute_to_this_Doc.html" target="_blank">Improve this documentation</a><br>
+                        <div id="toggleCodeBlock">
+                                                    <a id="toggleCodeBlockBtn" href="#" onclick="toggleCodeBlocks();">Show Code Blocks Inline</a><br>
+                                                </div>
+
+                        <!-- Twitter -->
+                                                    <div class="twitter">
+                                <hr/>
+                                <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:162px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=volumio&amp;show_count=false"></iframe>
+                            </div>
+                        
+                        <hr/>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-column  content-area col-sm-9">
+
+            <div class="content-page">
+                                    <div id="tipue_search_content" style="display:none"></div>
+                
+                <div class="doc_content">
+                    <article>
+            <div class="page-header">
+            <h1>Adding Compatibility to your DAC</h1>
+        </div>
+    
+    <h2 id="page_Adding_Compatibility_to_your_DAC">Adding Compatibility to your DAC</h2>
+<p>If you're an hardware Audio manufacturer and you've developed a brand new i2s DAC, making it compatible with  Volumio is very easy.</p>
+<h3 id="page_Prerequisites">Prerequisites</h3>
+<ul>
+<li>The kernel driver must be already present in the Kernel that Volumio uses. If that's not true, please <a href="https://volumio.org/contact/">contact us</a>
+</li>
+</ul>
+<h3 id="page_The_dacsjson_file">The dacs.json file</h3>
+<p>Volumio stores all compatibility data for i2s dac in a single file: the  <a href="https://github.com/volumio/Volumio2/blob/master/app/plugins/system_controller/i2s_dacs/dacs.json">dacs.json file</a>,
+here's a brief extract of it (November 13th 2020):</p>
+<pre><code>{ &quot;devices&quot;:[
+  {&quot;name&quot;:&quot;Raspberry PI&quot;,&quot;data&quot;:[
+    {&quot;id&quot;:&quot;adafruit-max98357&quot;,&quot;name&quot;:&quot;Adafruit MAX98357&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;adafruit-uda1334a&quot;,&quot;name&quot;:&quot;Adafruit UDA1334A&quot;,&quot;overlay&quot;:&quot;hifiberry-dac,i2s-mmap&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;allo-boss-dac&quot;,&quot;name&quot;:&quot;Allo BOSS&quot;,&quot;overlay&quot;:&quot;allo-boss-dac-pcm512x-audio&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;allo-digione&quot;,&quot;name&quot;:&quot;Allo DigiOne&quot;,&quot;overlay&quot;:&quot;allo-digione&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;allo-katana-dac&quot;,&quot;name&quot;:&quot;Allo Katana&quot;,&quot;overlay&quot;:&quot;allo-katana-dac-audio&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Master&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;audio-injector-isolated&quot;,&quot;name&quot;:&quot;AudioInjector Isolated&quot;,&quot;overlay&quot;:&quot;audioinjector-isolated-soundcard&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Master&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;audio-injector-ultra&quot;,&quot;name&quot;:&quot;AudioInjector Ultra 2&quot;,&quot;overlay&quot;:&quot;audioinjector-ultra&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;DAC&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;piano-dac&quot;,&quot;name&quot;:&quot;Allo Piano&quot;,&quot;overlay&quot;:&quot;allo-piano-dac-pcm512x-audio&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;piano-dac-plus&quot;,&quot;name&quot;:&quot;Allo Piano 2.1&quot;,&quot;overlay&quot;:&quot;allo-piano-dac-plus-pcm512x-audio&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;applepi-dac&quot;,&quot;name&quot;:&quot;ApplePi DAC&quot;,&quot;overlay&quot;:&quot;applepi-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;audiophonics-es9028q2m-dac&quot;,&quot;name&quot;:&quot;Audiophonics I-Sabre ES9028Q2M&quot;,&quot;overlay&quot;:&quot;i-sabre-q2m&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;bassfly&quot;,&quot;name&quot;:&quot;BassFly-uHAT&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;bassfly-init.sh&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;bassfly-mic&quot;,&quot;name&quot;:&quot;BassFly-uHAT with I2S Mic&quot;,&quot;overlay&quot;:&quot;googlevoicehat-soundcard&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;bassfly-init.sh&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;bassowl&quot;,&quot;name&quot;:&quot;BassOwl-HAT&quot;,&quot;overlay&quot;:&quot;bassowl&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Master&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;fe-pi-audio&quot;,&quot;name&quot;:&quot;Fe-Pi Audio&quot;,&quot;overlay&quot;:&quot;fe-pi-audio&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;PCM&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;generic-dac&quot;,&quot;name&quot;:&quot;Generic I2S DAC&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;hifiberry-amp&quot;,&quot;name&quot;:&quot;HiFiBerry Amp&quot;,&quot;overlay&quot;:&quot;hifiberry-amp&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Master&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;hifiberry-amp2&quot;,&quot;name&quot;:&quot;HiFiBerry Amp2&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;eeprom_name&quot;:&quot;HiFiBerry DAC+&quot;,&quot;i2c_address&quot;:&quot;4d&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;hifiberry-dac&quot;,&quot;name&quot;:&quot;HiFiBerry DAC&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;hifiberry-dacplus&quot;,&quot;name&quot;:&quot;HiFiBerry DAC Plus&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;eeprom_name&quot;:&quot;HiFiBerry DAC+&quot;,&quot;i2c_address&quot;:&quot;4d&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;hifiberry-dacplusadc&quot;,&quot;name&quot;:&quot;HiFiBerry DAC Plus ADC&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplusadc&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;i2c_address&quot;:&quot;4d&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;hifiberry-dacpluspro&quot;,&quot;name&quot;:&quot;HiFiBerry DAC+ Pro&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;i2c_address&quot;:&quot;4d&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;hifiberry-dacplusadcpro&quot;,&quot;name&quot;:&quot;HiFiBerry DAC Plus ADC PRO&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplusadcpro&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;i2c_address&quot;:&quot;4d&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;hifiberry-dacplusdsp&quot;,&quot;name&quot;:&quot;HiFiBerry DAC Plus DSP&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplusdsp&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;i2c_address&quot;:&quot;4d&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;hifiberry-dac2hd&quot;,&quot;name&quot;:&quot;HiFiBerry DAC2 HD&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplushd&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;DAC&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;eeprom_name&quot;:&quot;DAC 2 HD&quot;,&quot;i2c_adress&quot;:&quot;4d&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;hifiberry-digi&quot;,&quot;name&quot;:&quot;HiFiBerry Digi&quot;,&quot;overlay&quot;:&quot;hifiberry-digi&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;hifiberry-digi-pro&quot;,&quot;name&quot;:&quot;HiFiBerry Digi+ Pro&quot;,&quot;overlay&quot;:&quot;hifiberry-digi-pro&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;hifibox-dac&quot;,&quot;name&quot;:&quot;HiFiBox DAC&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;eeprom_name&quot;:[&quot;HiFiBox DAC HAT&quot;,&quot;HiFiBox DAC HAT V1&quot;,&quot;HiFiBox DAC HAT V 10&quot;],&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;iqaudio-dacplus&quot;,&quot;name&quot;:&quot;IQaudIO DAC Plus&quot;,&quot;overlay&quot;:&quot;iqaudio-dacplus,unmute_amp &quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;iqamp-unmute.sh&quot;,&quot;i2c_address&quot;:&quot;4c&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;iqaudio-digiplus&quot;,&quot;name&quot;:&quot;IQaudIO Pi-Digi+&quot;,&quot;overlay&quot;:&quot;iqaudio-digi-wm8804-audio&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;iqaudio-amp&quot;,&quot;name&quot;:&quot;IQaudIO Pi-DigiAMP+&quot;,&quot;overlay&quot;:&quot;iqaudio-dacplus,unmute_amp &quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;iqamp-unmute.sh&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;justboom-amp&quot;,&quot;name&quot;:&quot;JustBoom Amp Boards&quot;,&quot;overlay&quot;:&quot;justboom-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;eeprom_name&quot;:[&quot;JustBoom DAC HAT&quot;,&quot;JustBoom DAC HAT v1.1&quot;],&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;justboom-dac&quot;,&quot;name&quot;:&quot;JustBoom DAC Boards&quot;,&quot;overlay&quot;:&quot;justboom-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;eeprom_name&quot;:[&quot;JustBoom DAC HAT&quot;,&quot;JustBoom DAC HAT v1.1&quot;],&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;justboom-digi&quot;,&quot;name&quot;:&quot;JustBoom Digi Boards&quot;,&quot;overlay&quot;:&quot;justboom-digi&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;eeprom_name&quot;:[&quot;JustBoom Digi HAT&quot;,&quot;JustBoom Digi HAT v1.1&quot;],&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;mamboberry-dac&quot;,&quot;name&quot;:&quot;Mamboberry LS DAC+&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;merus-amp&quot;,&quot;name&quot;:&quot;MERUS™ Amp piHAT ZW&quot;,&quot;overlay&quot;:&quot;merus-amp&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;nanosound-dac&quot;,&quot;name&quot;:&quot;NanoSound DAC&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;osa-dacberry-one-plus&quot;,&quot;name&quot;:&quot;OSA DACBerry ONE+&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;osa-dacberry-pro&quot;,&quot;name&quot;:&quot;OSA DACBerry PRO&quot;,&quot;overlay&quot;:&quot;iqaudio-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;502-dac&quot;,&quot;name&quot;:&quot;PI 2 Design 502DAC&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;502-dac-pro&quot;,&quot;name&quot;:&quot;PI 2 Design 502DAC Pro&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;503hta-hybrid&quot;,&quot;name&quot;:&quot;PI 2 Design 503HTA Hybrid Tube Amp&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;phat-beat&quot;,&quot;name&quot;:&quot;pHAT BEAT&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;phat-dac&quot;,&quot;name&quot;:&quot;pHAT DAC&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;picade-hat&quot;,&quot;name&quot;:&quot;Picade HAT&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;,&quot;eeprom_name&quot;:[&quot;Picade HAT&quot;]},
+    {&quot;id&quot;:&quot;pisound&quot;,&quot;name&quot;:&quot;pisound&quot;,&quot;overlay&quot;:&quot;pisound&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;no&quot;},
+    {&quot;id&quot;:&quot;raspiaudio&quot;,&quot;name&quot;:&quot;raspiaudio&quot;,&quot;overlay&quot;:&quot;googlevoicehat-soundcard&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;} ,
+    {&quot;id&quot;:&quot;raspidacv3&quot;,&quot;name&quot;:&quot;RaspiDACv3&quot;,&quot;overlay&quot;:&quot;raspidac3&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;rpi-dac&quot;,&quot;name&quot;:&quot;R-PI DAC&quot;,&quot;overlay&quot;:&quot;rpi-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;soekris-dac&quot;,&quot;name&quot;:&quot;Soekris dam 1021&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;speaker-phat&quot;,&quot;name&quot;:&quot;Speaker pHAT&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;st400-dac-amp&quot;,&quot;name&quot;:&quot;ST400 Dac (PCM5122) - Amp&quot;,&quot;overlay&quot;:&quot;iqaudio-dacplus&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;taudac&quot;,&quot;name&quot;:&quot;TauDAC - DM101&quot;,&quot;overlay&quot;:&quot;taudac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;eeprom_name&quot;:&quot;TauDAC-DM101&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;terraberry-dac2&quot;,&quot;name&quot;:&quot;Terra-Berry DAC 2/3&quot;,&quot;overlay&quot;:&quot;i-sabre-q2m&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;es90x8q2m-dac&quot;,&quot;name&quot;:&quot;Volumio ESS 9028QM&quot;,&quot;overlay&quot;:&quot;es90x8q2m-dac&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;i2c_address&quot;:&quot;48&quot;,&quot;needsreboot&quot;:&quot;no&quot;}
+  ]},
+  {&quot;name&quot;:&quot;Odroid C1+&quot;,&quot;data&quot;:[
+    {&quot;id&quot;:&quot;odroid-hifi-shield&quot;,&quot;name&quot;:&quot;HiFi Shield&quot;,&quot;overlay&quot;:&quot;&quot;,&quot;alsanum&quot;:&quot;2&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;}
+  ]},
+  {&quot;name&quot;:&quot;Sparky&quot;,&quot;data&quot;:[
+    {&quot;id&quot;:&quot;piano-dac&quot;,&quot;name&quot;:&quot;Allo Piano&quot;,&quot;overlay&quot;:&quot;&quot;,&quot;alsanum&quot;:&quot;1&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:[&quot;snd-soc-allo-piano-dac&quot;],&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;piano-dac-plus&quot;,&quot;name&quot;:&quot;Allo Piano 2.1&quot;,&quot;overlay&quot;:&quot;&quot;,&quot;alsanum&quot;:&quot;1&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:[&quot;snd-soc-allo-piano-dac-plus&quot;],&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;}
+  ]},
+  {&quot;name&quot;:&quot;Tinkerboard&quot;,&quot;data&quot;:[
+    {&quot;id&quot;:&quot;hifiberry-amp&quot;,&quot;name&quot;:&quot;HiFiBerry Amp&quot;,&quot;overlay&quot;:&quot;hifiberry-amp&quot;,&quot;alsanum&quot;:&quot;0&quot;,&quot;mixer&quot;:&quot;Master&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;hifiberry-dac&quot;,&quot;name&quot;:&quot;HiFiBerry DAC&quot;,&quot;overlay&quot;:&quot;hifiberry-dac&quot;,&quot;alsanum&quot;:&quot;0&quot;,&quot;mixer&quot;:&quot;&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;hifiberry-dacplus&quot;,&quot;name&quot;:&quot;HiFiBerry DAC Plus&quot;,&quot;overlay&quot;:&quot;hifiberry-dacplus&quot;,&quot;alsanum&quot;:&quot;0&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;iqaudio-dacplus&quot;,&quot;name&quot;:&quot;IQaudIO DAC Plus&quot;,&quot;overlay&quot;:&quot;iqaudio-dacplus&quot;,&quot;alsanum&quot;:&quot;0&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;iqamp-unmute.sh&quot;,&quot;needsreboot&quot;:&quot;yes&quot;},
+    {&quot;id&quot;:&quot;rpi-dac&quot;,&quot;name&quot;:&quot;R-PI DAC&quot;,&quot;overlay&quot;:&quot;rpi-dac&quot;,&quot;alsanum&quot;:&quot;0&quot;,&quot;mixer&quot;:&quot;Digital&quot;,&quot;modules&quot;:&quot;&quot;,&quot;script&quot;:&quot;&quot;,&quot;needsreboot&quot;:&quot;yes&quot;}
+  ]}
+]}
+
+</code></pre>
+<h3 id="page_What_you_need_to_do">What you need to do</h3>
+<p>Basically edit the dac.json appropriately and send us a pull request. Here's what you need to change:</p>
+<ul>
+<li>Add your DAC under the specific device it's for, like Raspberry PI or Odroid</li>
+<li>id: An unique identifier. Lowercase and without spaces, possibly use the dt-overlay as id.</li>
+<li>name: the name that will represent your DAC</li>
+<li>overlay: mandatory for raspberry PI. The <a href="https://www.raspberrypi.org/documentation/configuration/device-tree.md">DTOverlay parameter</a>,  used to enable the DAC. If more than one, comma separate them.</li>
+<li>alsaname: if you know how your DAC is named by alsa, its a plus to have it declared here</li>
+<li>alsanum: leave it to 2 for RPI and Odroid, 1 for Sparky, 0 for Thinkerboard</li>
+<li>mixer: if your DAC has an hardware mixer, indicate it here, so it will be automatically configured</li>
+<li>script: if you need a script to be launched on start, write here the name and place the script inside the  <a href="https://github.com/volumio/Volumio2/tree/master/app/plugins/system_controller/i2s_dacs/scripts">scripts folder</a>
+</li>
+<li>eeprom_name:for Raspberry PI only. Volumio can automatically detect your DAC and configure it without user intervention. The auto-detection method works best by reading the eeprom that every HAT should have. Specifically, we look for the content of <code>/proc/device-tree/hat/product</code> . So indicate here such content. Arrays are also accepted, in case this varies over time. This will look like <code>&quot;eeprom_name&quot;:[&quot;JustBoom DAC HAT&quot;,&quot;JustBoom DAC HAT V1&quot;,&quot;JustBoom DAC HAT V 10&quot;]</code>
+</li>
+<li>i2c_address: for Raspberry PI only. As a fallback, we can detect also a specific DAC via its i2c address. Indicate it here. This is a fallback mechanism in case eeprom reading won't work. IMPORTANT: Many dacs can have the same i2c address so use it only if there isn't  already another dac with the same address.</li>
+<li>needs_reboot: on Raspberry PI we can enable some DACs without rebooting, by appying the DTPARAM in userspace. This doesn't work with all dacs. So please try first with this set to no. If that works and you can hear sound, fine. If that does not happen it means that your DAC is not capable of being activated without rebooting, and set this to yes.</li>
+</ul>
+
+        <nav>
+        <ul class="pager">
+            <li><a href="../Plugin_System/Custom_ALSA_Contributions.html">Previous</a></li>            <li><a href="../Porting_Guide/Introduction.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46374275-1', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.min.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(document).ready(function() {
+                $('#tipue_search_input').tipuesearch({
+                    'show': 10,
+                    'mode': 'json',
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

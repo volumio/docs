@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Quick Start Guide - Volumio Documentation</title>
+    <meta name="description" content="The Audiophile Music Player" />
+    <meta name="author" content="Michelangelo Guarise">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/volumiodocs.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-static-top hidden-print">
+        <div class="container-fluid">
+            <a class="brand navbar-brand pull-left" href="../index.html">Volumio Documentation</a>
+
+    <div class="navbar-right navbar-form search">
+        <i class="glyphicon glyphicon-search search__icon">&nbsp;</i>
+        <input type="search" id="tipue_search_input" class="form-control search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+        </div>
+    </div>
+    <div class="row columns content">
+        <div class="left-column article-tree col-sm-3 hidden-print">
+            <!-- For Mobile -->
+            <div class="responsive-collapse">
+                <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="sub-nav-collapse" class="sub-nav-collapse">
+                <!-- Navigation -->
+                <ul class='nav nav-list'><li class='open has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>User Manual</a><ul class='nav nav-list'><li class='active'><a href="../User_Manual/Quick_Start_Guide.html">Quick Start Guide</a></li><li class=''><a href="../User_Manual/First_steps_with_Volumio.html">First steps with Volumio</a></li><li class=''><a href="../User_Manual/More_first_steps.html">More first steps</a></li><li class=''><a href="../User_Manual/System_updates.html">System updates</a></li><li class=''><a href="../User_Manual/Volume_Control_and_audio_quality.html">Volume Control and audio quality</a></li><li class=''><a href="../User_Manual/Stream_audio_to_volumio.html">Stream audio to volumio</a></li><li class=''><a href="../User_Manual/SSH.html">SSH</a></li><li class=''><a href="../User_Manual/Configure_MPD_Clients_for_albumart.html">Configure MPD Clients for albumart</a></li><li class=''><a href="../User_Manual/Sending_logs_for_troubleshooting.html">Sending logs for troubleshooting</a></li><li class=''><a href="../User_Manual/Other_Customizations.html">Other Customizations</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Development How To</a><ul class='nav nav-list'><li class=''><a href="../Development_How_To/Overview.html">Overview</a></li><li class=''><a href="../Development_How_To/System_Architecture.html">System Architecture</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_introduction.html">Set up development environment introduction</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_backend.html">Set up development environment for backend</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_UI.html">Set up development environment for UI</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_Volumio_images.html">Set up development environment for Volumio images</a></li><li class=''><a href="../Development_How_To/Updating_source_files.html">Updating source files</a></li><li class=''><a href="../Development_How_To/Debugging.html">Debugging</a></li><li class=''><a href="../Development_How_To/Helping_the_project.html">Helping the project</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>API</a><ul class='nav nav-list'><li class=''><a href="../API/API_Overview.html">API Overview</a></li><li class=''><a href="../API/WebSocket_APIs.html">WebSocket APIs</a></li><li class=''><a href="../API/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../API/REST_API.html">REST API</a></li><li class=''><a href="../API/Command_Line_Client.html">Command Line Client</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugin System</a><ul class='nav nav-list'><li class=''><a href="../Plugin_System/Plugin_System_Overview.html">Plugin System Overview</a></li><li class=''><a href="../Plugin_System/Writing_A_Plugin.html">Writing A Plugin</a></li><li class=''><a href="../Plugin_System/Index.js.html">Index.js</a></li><li class=''><a href="../Plugin_System/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../Plugin_System/Toast_Messages.html">Toast Messages</a></li><li class=''><a href="../Plugin_System/Logging.html">Logging</a></li><li class=''><a href="../Plugin_System/User_Modal.html">User Modal</a></li><li class=''><a href="../Plugin_System/Music_Service_Plugin.html">Music Service Plugin</a></li><li class=''><a href="../Plugin_System/Custom_ALSA_Contributions.html">Custom ALSA Contributions</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>I2S DACs</a><ul class='nav nav-list'><li class=''><a href="../I2S_DACs/Adding_Compatibility_to_your_DAC.html">Adding Compatibility to your DAC</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Porting Guide</a><ul class='nav nav-list'><li class=''><a href="../Porting_Guide/Introduction.html">Introduction</a></li><li class=''><a href="../Porting_Guide/What_Is_Needed_To_Port_Successfully.html">What Is Needed To Port Successfully</a></li><li class=''><a href="../Porting_Guide/Preparing_The_Build_Environment.html">Preparing The Build Environment</a></li><li class=''><a href="../Porting_Guide/The_Process.html">The Process</a></li><li class=''><a href="../Porting_Guide/The_Platform_Folder.html">The Platform Folder</a></li><li class=''><a href="../Porting_Guide/Compiling_U-Boot.html">Compiling U-Boot</a></li><li class=''><a href="../Porting_Guide/Get_The_Kernel_Source.html">Get The Kernel Source</a></li><li class=''><a href="../Porting_Guide/Configure_Kernel_Options.html">Configure Kernel Options</a></li><li class=''><a href="../Porting_Guide/Compiling_The_Kernel.html">Compiling The Kernel</a></li><li class=''><a href="../Porting_Guide/Boot_Parameters.html">Boot Parameters</a></li><li class=''><a href="../Porting_Guide/Saving_Files_To_The_Platform_Folder.html">Saving Files To The Platform Folder</a></li><li class=''><a href="../Porting_Guide/A_Complete_Script.html">A Complete Script</a></li><li class=''><a href="../Porting_Guide/1_How_To_Build_A_Sparky.html">1 How To Build A Sparky</a></li><li class=''><a href="../Porting_Guide/Creating_the_image.html">Creating the image</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 1).html">Creating the image build scripts (Part 1)</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 2).html">Creating the image build scripts (Part 2)</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugins User Manuals</a><ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>brutefir</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/brutefir/Drc_with_Volumio.html">Drc with Volumio</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Preparing_your_system.html">Preparing your system</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_Measurment.html">Making Measurment</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_filters.html">Making filters</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Using_filters_in_Volumio.html">Using filters in Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>rotaryencoder2</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Rotary_Encoder_II.html">Rotary Encoder II</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Debouncing.html">Debouncing</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Device_Tree_Overlays.html">Device Tree Overlays</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Compatible_Encoders.html">Compatible Encoders</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Appendix.html">Appendix</a></li></ul></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Good to Knows</a><ul class='nav nav-list'><li class=''><a href="../Good_to_Knows/Markdown_Cheatsheet.html">Markdown Cheatsheet</a></li><li class=''><a href="../Good_to_Knows/Mounting_an_NFS_Share.html">Mounting an NFS Share</a></li><li class=''><a href="../Good_to_Knows/Contribute_to_this_Doc.html">Contribute to this Doc</a></li><li class=''><a href="../Good_to_Knows/Connection_Outside_LAN.html">Connection Outside LAN</a></li><li class=''><a href="../Good_to_Knows/Finding_Volumio.html">Finding Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>FAQs</a><ul class='nav nav-list'><li class=''><a href="../FAQs/General.html">General</a></li><li class=''><a href="../FAQs/Installation.html">Installation</a></li><li class=''><a href="../FAQs/Updating_and_Maintenance.html">Updating and Maintenance</a></li><li class=''><a href="../FAQs/Audio_Sources.html">Audio Sources</a></li><li class=''><a href="../FAQs/Audio_Output.html">Audio Output</a></li></ul></li></ul>
+
+                <div class="sidebar-links">
+                    
+                        <!-- Links -->
+                        <a href="https://volumio.org" target="_blank">Home</a><br><a href="https://volumio.org/get-started" target="_blank">Download</a><br><a href="https://volumio.org/forum" target="_blank">Forum</a><br><a href="https://github.com/volumio" target="_blank">GitHub Repo</a><br><a href="https://volumio.github.io/docs/Good_to_Knows/Contribute_to_this_Doc.html" target="_blank">Improve this documentation</a><br>
+                        <div id="toggleCodeBlock">
+                                                    <a id="toggleCodeBlockBtn" href="#" onclick="toggleCodeBlocks();">Show Code Blocks Inline</a><br>
+                                                </div>
+
+                        <!-- Twitter -->
+                                                    <div class="twitter">
+                                <hr/>
+                                <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:162px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=volumio&amp;show_count=false"></iframe>
+                            </div>
+                        
+                        <hr/>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-column  content-area col-sm-9">
+
+            <div class="content-page">
+                                    <div id="tipue_search_content" style="display:none"></div>
+                
+                <div class="doc_content">
+                    <article>
+            <div class="page-header">
+            <h1>Quick Start Guide</h1>
+        </div>
+    
+    <h2 id="page_Quick_start_guide">Quick start guide</h2>
+<h3 id="page_DOWNLOAD_AND_INSTALLATION">DOWNLOAD AND INSTALLATION</h3>
+<ul>
+<li>Please have look here to download a version for your device and instructions to flash it : <a href="https://volumio.org/get-started/">DOWNLOAD AND FLASH</a>
+</li>
+</ul>
+<h3 id="page_FIRST_BOOT">FIRST BOOT</h3>
+<p>Volumio's first boot will take usually longer than normal, up to 6 minutes if you're on a Raspberry PI 1. Therefore, be patient on the first boot and wait about 5 minutes before starting to use Volumio.</p>
+<p>The first boot takes longer because it is performing these setup steps:</p>
+<ul>
+<li>Extend the filesystem so it completely fills your SD Card / Hard drive</li>
+<li>Regenerate SSH keys, to make them unique to your device</li>
+<li>Install some packages and configure the system</li>
+<li>Generate new thumbnails for the default backgrounds</li>
+</ul>
+<p style="background-color: rgba(255, 170, 50, 0.3);padding: 20px;border-left: 5px solid orange; border-radius: 4px;color:rgb(255, 170, 50);">
+For security reasons, SSH is disabled by default on all versions after 2.199. It can be however enabled very easily. <a href="https://volumio.github.io/docs/User_Manual/SSH.html">INSTRUCTION HERE</a>
+</p>
+<h3 id="page_NETWORK_CONNECTION">NETWORK CONNECTION</h3>
+<ul>
+<li>Volumio works best when it is connected to your network, since it is meant to be used as a headless device: no monitor connected, and controlled via another device (PC, smartphone, tablet etc)</li>
+<li>To connect Volumio to your network, simply attach an ethernet cable to it before starting it up</li>
+<li>If no ethernet is available, you can connect to its Hotspot (see below) and connect to your Wireless network. To do so, go to Settings -&gt; Network and connect it from there</li>
+<li>
+<em>IMPORTANT</em> Do not configure your network manually via SSH, this can lead to issues and malfunctions</li>
+</ul>
+<h3 id="page_VOLUMIO_HOTSPOT">VOLUMIO HOTSPOT</h3>
+<ul>
+<li>If your device has wireless capabilities (and a supported Wireless card) Volumio will create a Wireless network called <strong>Volumio</strong>, the default password is <strong>volumio2</strong>
+</li>
+<li>The Hotspot mode will allow you to connect to your Wireless network without the need for a wired connection, just connect to Volumio Hotspot and configure your network in the Network options page</li>
+<li>Once your Wireless network has been configured, Volumio will automatically disable the Hotspot</li>
+<li>If, for whatever reason, your configured Wireless network is not available (e.g. password change), Volumio will automatically re-enable the Hotspot; in case of a connection lost a reboot is needed in order to reactivate the hotspot, since the feature is triggered only at startup. This feature is disabled by default and can be activated by enabling the option <strong>Hotspot fallback</strong> located in Settings -&gt; Network</li>
+<li>You can change the Hotspot options in the Network options, such as its name, password and channel (useful if you experience poor Hotspot performance)</li>
+<li>Once in Hotspot Mode, Volumio can be reached with IP <strong>192.168.211.1</strong> or via <strong>http://volumio.local</strong> as usual</li>
+</ul>
+<h3 id="page_CONTROL_VOLUMIO_WITH_THE_OFFICIAL_APPS">CONTROL VOLUMIO WITH THE OFFICIAL APPS</h3>
+<ul>
+<li>The most convenient way to control your Volumio system is through the official apps. The advantage is that they will automatically find your Volumio device on your network.
+Not to mention that by getting the apps, you will help the project with a little contribution.</li>
+</ul>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <a href='https://play.google.com/store/apps/details?id=volumio.browser.Volumio' target="_blank"><img alt='Get it on Google Play' src='https://cdn.volumio.org/wp-content/uploads/2017/08/android-app-store-get.png' style="max-height:100px;padding:20px;"/></a>
+    </div>
+    <div class="col-sm-4">
+      <a href='https://itunes.apple.com/app/volumio/id1268256519?mt=8' target="_blank" ><img alt='Get it on App Store' src='https://cdn.volumio.org/wp-content/uploads/2017/08/ios-app-store-get.png' style="max-height:100px;padding:20px;"/></a>
+    </div>
+    <div class="col-sm-4">
+      <a href='https://www.amazon.com/INTUITU-di-Michelangelo-Guarise-Volumio/dp/B074CRD3LP/' target="_blank"><img alt='Get it on Amazon' src='https://cdn.volumio.org/wp-content/uploads/2017/08/amazon-app-store-get.png' style="max-height:100px;padding:20px;"/></a>
+    </div>
+  </div>
+</div>
+<h3 id="page_WEB_UI_CONNECTION">WEB-UI CONNECTION</h3>
+<ul>
+<li>The UI can be accessed from any device with a browser: Tablets, PC, Mac, Android Phones, iPhones, Smart TVs, Ebook readers etc. Make sure you have the latest versions of their respective browsers. For an optimal experience, Google Chrome is suggested.</li>
+<li>The UI can be accessed by typing Volumio's IP address in your browser. To find the IP address you can use:</li>
+</ul>
+<ul>
+<li>
+<strong>ANDROID</strong> <a href="https://play.google.com/store/apps/details?id=com.overlook.android.fing&amp;hl=it">FING</a>
+</li>
+<li>
+<strong>iOS</strong> <a href="https://play.google.com/store/apps/details?id=net.techet.netanalyzerlite.an&amp;hl=it">Net Analyzer</a>
+</li>
+<li>
+<strong>Chrome</strong> <a href="https://chrome.google.com/webstore/detail/mdns-browser/kipighjpklofchgbdgclfaoccdlghidp">mDNS Browser</a>
+</li>
+</ul>
+<ul>
+<li>Volumio UI can also be accessed by typing <a href="http://volumio.local">http://volumio.local</a>, or if you renamed your Volumio device http://VOLUMIONAME.local .
+<ul>
+<li>Please note that this function is not available on Android devices, but should work on Mac and iOs or in Windows. For more details, see <a href="https://volumio.github.io/docs/Good_to_Knows/Finding_Volumio.html">Finding_Volumio</a>.</li>
+</ul>
+</li>
+</ul>
+<h3 id="page_WEB_UI_ON_HDMI_DISPLAY_OR_RASPBERRY_PI_OFFICIAL_TOUCH_DISPLAY">WEB-UI ON HDMI DISPLAY OR RASPBERRY PI OFFICIAL TOUCH DISPLAY</h3>
+<p>Volumio can display its UI on any attached HDMI display.</p>
+<ul>
+<li>There is native support on the X86 Platform, just plug in a screen.</li>
+<li>On other platforms (Raspberry PI, UDOO, Odroid, Pine64 etc) the feature is disabled by default, for performance reasons.</li>
+<li>However you can enable it on these platforms by installing the &quot;Touch Display&quot; plugin
+<ul>
+<li>Please make sure there are no keyboards or mice connected to your Volumio device before installing the plugin. You can reattach them after installation.</li>
+<li>To install the plugin, navigate to Settings -&gt; Plugins, click on the &quot;Miscellanea&quot; category and install the &quot;Touch Display&quot; plugin. On some devices this might take up to 10 minutes.</li>
+<li>After the plugin has successfully installed, enable it and you will see the UI on the HDMI connected display (or the official Rasperry PI display, if present)</li>
+<li>After the plugin is installed, the web-UI will continue to work as normal</li>
+</ul>
+</li>
+<li>If you choose not to install the plugin, once Volumio has finished booting you will see a login prompt, which is absolutely fine.</li>
+</ul>
+<h3 id="page_FIRST_CONNECTION_TO_THE_WEB_UI">FIRST CONNECTION TO THE WEB-UI</h3>
+<ul>
+<li>
+<p>Once the system is on and you have connected to it through your network or via the hotspot, you will reach Volumio's web-UI.
+The first time, a helper will assist you to configure Volumio. Don't worry if you missed it, you can still configure it later !</p>
+</li>
+<li>
+<p>The helper first screen : Choose your LANGUAGE</p>
+</li>
+</ul>
+<img src="./img/helper-first-screen.png" width="624">
+<ul>
+<li>The helper second screen : Choose the NAME for your device</li>
+</ul>
+<img src="./img/helper-second-screen.png" width="624">
+<ul>
+<li>The helper third screen : Configure your DAC</li>
+</ul>
+<img src="./img/helper-third-screen.png" width="624">
+<ul>
+<li>The helper fourth screen : Configure your level of settings</li>
+</ul>
+<img src="./img/helper-fourth-screen.png" width="624">
+<ul>
+<li>The helper fourth screen : Configure your NETWORK</li>
+</ul>
+<img src="./img/helper-fifth-screen.png" width="624">
+<ul>
+<li>The helper fifth screen with a configured NAS drive</li>
+</ul>
+<img src="./img/helper-sixth-screen.png" width="624">
+<ul>
+<li>If you have an activation coupon, it's here!</li>
+</ul>
+<img src="./img/helper-seventh-screen.png" width="624">
+<ul>
+<li>The helper seventh screen : Don't forget to donate ! It will help Volumio to be improved !</li>
+</ul>
+<img src="./img/helper-seventh-screen.png" width="624">
+<ul>
+<li>Once it is done, you should have a working system, ready to play music! Let's discover it !</li>
+</ul>
+
+        <nav>
+        <ul class="pager">
+            <li><a href="../index.html">Previous</a></li>            <li><a href="../User_Manual/First_steps_with_Volumio.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46374275-1', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.min.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(document).ready(function() {
+                $('#tipue_search_input').tipuesearch({
+                    'show': 10,
+                    'mode': 'json',
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

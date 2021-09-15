@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Making filters - Volumio Documentation</title>
+    <meta name="description" content="The Audiophile Music Player" />
+    <meta name="author" content="Michelangelo Guarise">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../../themes/daux/img/favicon.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../../themes/daux/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../../themes/daux/css/volumiodocs.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-static-top hidden-print">
+        <div class="container-fluid">
+            <a class="brand navbar-brand pull-left" href="../../index.html">Volumio Documentation</a>
+
+    <div class="navbar-right navbar-form search">
+        <i class="glyphicon glyphicon-search search__icon">&nbsp;</i>
+        <input type="search" id="tipue_search_input" class="form-control search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+        </div>
+    </div>
+    <div class="row columns content">
+        <div class="left-column article-tree col-sm-3 hidden-print">
+            <!-- For Mobile -->
+            <div class="responsive-collapse">
+                <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="sub-nav-collapse" class="sub-nav-collapse">
+                <!-- Navigation -->
+                <ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>User Manual</a><ul class='nav nav-list'><li class=''><a href="../../User_Manual/Quick_Start_Guide.html">Quick Start Guide</a></li><li class=''><a href="../../User_Manual/First_steps_with_Volumio.html">First steps with Volumio</a></li><li class=''><a href="../../User_Manual/More_first_steps.html">More first steps</a></li><li class=''><a href="../../User_Manual/System_updates.html">System updates</a></li><li class=''><a href="../../User_Manual/Volume_Control_and_audio_quality.html">Volume Control and audio quality</a></li><li class=''><a href="../../User_Manual/Stream_audio_to_volumio.html">Stream audio to volumio</a></li><li class=''><a href="../../User_Manual/SSH.html">SSH</a></li><li class=''><a href="../../User_Manual/Configure_MPD_Clients_for_albumart.html">Configure MPD Clients for albumart</a></li><li class=''><a href="../../User_Manual/Sending_logs_for_troubleshooting.html">Sending logs for troubleshooting</a></li><li class=''><a href="../../User_Manual/Other_Customizations.html">Other Customizations</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Development How To</a><ul class='nav nav-list'><li class=''><a href="../../Development_How_To/Overview.html">Overview</a></li><li class=''><a href="../../Development_How_To/System_Architecture.html">System Architecture</a></li><li class=''><a href="../../Development_How_To/Set_up_development_environment_introduction.html">Set up development environment introduction</a></li><li class=''><a href="../../Development_How_To/Set_up_development_environment_for_backend.html">Set up development environment for backend</a></li><li class=''><a href="../../Development_How_To/Set_up_development_environment_for_UI.html">Set up development environment for UI</a></li><li class=''><a href="../../Development_How_To/Set_up_development_environment_for_Volumio_images.html">Set up development environment for Volumio images</a></li><li class=''><a href="../../Development_How_To/Updating_source_files.html">Updating source files</a></li><li class=''><a href="../../Development_How_To/Debugging.html">Debugging</a></li><li class=''><a href="../../Development_How_To/Helping_the_project.html">Helping the project</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>API</a><ul class='nav nav-list'><li class=''><a href="../../API/API_Overview.html">API Overview</a></li><li class=''><a href="../../API/WebSocket_APIs.html">WebSocket APIs</a></li><li class=''><a href="../../API/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../../API/REST_API.html">REST API</a></li><li class=''><a href="../../API/Command_Line_Client.html">Command Line Client</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugin System</a><ul class='nav nav-list'><li class=''><a href="../../Plugin_System/Plugin_System_Overview.html">Plugin System Overview</a></li><li class=''><a href="../../Plugin_System/Writing_A_Plugin.html">Writing A Plugin</a></li><li class=''><a href="../../Plugin_System/Index.js.html">Index.js</a></li><li class=''><a href="../../Plugin_System/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../../Plugin_System/Toast_Messages.html">Toast Messages</a></li><li class=''><a href="../../Plugin_System/Logging.html">Logging</a></li><li class=''><a href="../../Plugin_System/User_Modal.html">User Modal</a></li><li class=''><a href="../../Plugin_System/Music_Service_Plugin.html">Music Service Plugin</a></li><li class=''><a href="../../Plugin_System/Custom_ALSA_Contributions.html">Custom ALSA Contributions</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>I2S DACs</a><ul class='nav nav-list'><li class=''><a href="../../I2S_DACs/Adding_Compatibility_to_your_DAC.html">Adding Compatibility to your DAC</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Porting Guide</a><ul class='nav nav-list'><li class=''><a href="../../Porting_Guide/Introduction.html">Introduction</a></li><li class=''><a href="../../Porting_Guide/What_Is_Needed_To_Port_Successfully.html">What Is Needed To Port Successfully</a></li><li class=''><a href="../../Porting_Guide/Preparing_The_Build_Environment.html">Preparing The Build Environment</a></li><li class=''><a href="../../Porting_Guide/The_Process.html">The Process</a></li><li class=''><a href="../../Porting_Guide/The_Platform_Folder.html">The Platform Folder</a></li><li class=''><a href="../../Porting_Guide/Compiling_U-Boot.html">Compiling U-Boot</a></li><li class=''><a href="../../Porting_Guide/Get_The_Kernel_Source.html">Get The Kernel Source</a></li><li class=''><a href="../../Porting_Guide/Configure_Kernel_Options.html">Configure Kernel Options</a></li><li class=''><a href="../../Porting_Guide/Compiling_The_Kernel.html">Compiling The Kernel</a></li><li class=''><a href="../../Porting_Guide/Boot_Parameters.html">Boot Parameters</a></li><li class=''><a href="../../Porting_Guide/Saving_Files_To_The_Platform_Folder.html">Saving Files To The Platform Folder</a></li><li class=''><a href="../../Porting_Guide/A_Complete_Script.html">A Complete Script</a></li><li class=''><a href="../../Porting_Guide/1_How_To_Build_A_Sparky.html">1 How To Build A Sparky</a></li><li class=''><a href="../../Porting_Guide/Creating_the_image.html">Creating the image</a></li><li class=''><a href="../../Porting_Guide/Creating_the_image_build_scripts (Part 1).html">Creating the image build scripts (Part 1)</a></li><li class=''><a href="../../Porting_Guide/Creating_the_image_build_scripts (Part 2).html">Creating the image build scripts (Part 2)</a></li></ul></li><li class='open has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugins User Manuals</a><ul class='nav nav-list'><li class='open has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>brutefir</a><ul class='nav nav-list'><li class=''><a href="../../Plugins_User_Manuals/brutefir/Drc_with_Volumio.html">Drc with Volumio</a></li><li class=''><a href="../../Plugins_User_Manuals/brutefir/Preparing_your_system.html">Preparing your system</a></li><li class=''><a href="../../Plugins_User_Manuals/brutefir/Making_Measurment.html">Making Measurment</a></li><li class='active'><a href="../../Plugins_User_Manuals/brutefir/Making_filters.html">Making filters</a></li><li class=''><a href="../../Plugins_User_Manuals/brutefir/Using_filters_in_Volumio.html">Using filters in Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>rotaryencoder2</a><ul class='nav nav-list'><li class=''><a href="../../Plugins_User_Manuals/rotaryencoder2/Rotary_Encoder_II.html">Rotary Encoder II</a></li><li class=''><a href="../../Plugins_User_Manuals/rotaryencoder2/Debouncing.html">Debouncing</a></li><li class=''><a href="../../Plugins_User_Manuals/rotaryencoder2/Device_Tree_Overlays.html">Device Tree Overlays</a></li><li class=''><a href="../../Plugins_User_Manuals/rotaryencoder2/Compatible_Encoders.html">Compatible Encoders</a></li><li class=''><a href="../../Plugins_User_Manuals/rotaryencoder2/Appendix.html">Appendix</a></li></ul></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Good to Knows</a><ul class='nav nav-list'><li class=''><a href="../../Good_to_Knows/Markdown_Cheatsheet.html">Markdown Cheatsheet</a></li><li class=''><a href="../../Good_to_Knows/Mounting_an_NFS_Share.html">Mounting an NFS Share</a></li><li class=''><a href="../../Good_to_Knows/Contribute_to_this_Doc.html">Contribute to this Doc</a></li><li class=''><a href="../../Good_to_Knows/Connection_Outside_LAN.html">Connection Outside LAN</a></li><li class=''><a href="../../Good_to_Knows/Finding_Volumio.html">Finding Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>FAQs</a><ul class='nav nav-list'><li class=''><a href="../../FAQs/General.html">General</a></li><li class=''><a href="../../FAQs/Installation.html">Installation</a></li><li class=''><a href="../../FAQs/Updating_and_Maintenance.html">Updating and Maintenance</a></li><li class=''><a href="../../FAQs/Audio_Sources.html">Audio Sources</a></li><li class=''><a href="../../FAQs/Audio_Output.html">Audio Output</a></li></ul></li></ul>
+
+                <div class="sidebar-links">
+                    
+                        <!-- Links -->
+                        <a href="https://volumio.org" target="_blank">Home</a><br><a href="https://volumio.org/get-started" target="_blank">Download</a><br><a href="https://volumio.org/forum" target="_blank">Forum</a><br><a href="https://github.com/volumio" target="_blank">GitHub Repo</a><br><a href="https://volumio.github.io/docs/Good_to_Knows/Contribute_to_this_Doc.html" target="_blank">Improve this documentation</a><br>
+                        <div id="toggleCodeBlock">
+                                                    <a id="toggleCodeBlockBtn" href="#" onclick="toggleCodeBlocks();">Show Code Blocks Inline</a><br>
+                                                </div>
+
+                        <!-- Twitter -->
+                                                    <div class="twitter">
+                                <hr/>
+                                <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:162px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=volumio&amp;show_count=false"></iframe>
+                            </div>
+                        
+                        <hr/>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-column  content-area col-sm-9">
+
+            <div class="content-page">
+                                    <div id="tipue_search_content" style="display:none"></div>
+                
+                <div class="doc_content">
+                    <article>
+            <div class="page-header">
+            <h1>Making filters</h1>
+        </div>
+    
+    <h2 id="page_Making_Filters">Making Filters</h2>
+<p>After measurement(s) are exported, you have severals possibilities.</p>
+<ul>
+<li>
+<strong>Variant 1</strong> Create initial EQ filter in REW and import it into rePhase as a starting point.</li>
+<li>
+<strong>Variant 2</strong> Jump into rePhase and start creating filter from scratch.</li>
+<li>
+<strong>Variant 3</strong> Use DRC-FIR filter creation tool from the plugin to create the filter (Note that this only works for single point measurements).</li>
+</ul>
+<h3 id="page_General_tips">General tips</h3>
+<p>For best results with Volumio and BruteFIR I recommend <strong>65536</strong> filtersize/taps.</p>
+<p>When adjusting or making an EQ in rePhase try to follow these simple guidelines:</p>
+<ul>
+<li>Avoid high Q corrections as much as you can.</li>
+<li>Remember that dips are not as audible as rises, so aim to flatten the rises but avoid trying to flatten dips. If dips are deeper than app -8dB there may be a benefit but note that the result will often sound &quot;muddy&quot;.</li>
+<li>Avoid high gains as much as you can. Don't go over +18dB, even better if you can stay bellow +12dB.</li>
+<li>Remember your correction will only be good as was your measurement. Repat measurements unless you have good correlation between MMM (RTA) and sweep measurements (make at least 5 of them and average them).</li>
+<li>Remember that Room EQ is not an exact science, so may the Force be with you. ;)</li>
+</ul>
+<h3 id="page_Target_Curves">Target Curves</h3>
+<p>Speakers in a room typically have non-flat response. The room typically provides a bass boost and a treble dip, even for speakers that are manufacturered to be &quot;flat&quot;. Typically when applying correction filters the goal is not to make the speakers sound flat but rather to apply a target curve (often called &quot;House Curve&quot;)</p>
+<p>Several example target curves are provided with this plugin and are in the <code>Dsp\target-curves</code> folder of the Internal Storage of Volumio. These can be loaded into REW or customised when using DRC-FIR. House curves are simple text files in the format of <code>&quot;Frequency Gain&quot;</code>. An example may look like:</p>
+<pre><code>0       -30
+20      6
+50      6
+400     0
+3000    0
+16000   -3
+20000   -3
+22050   -30
+</code></pre>
+<p>Target curves used with DRC-FIR need to start at 0 and end at the Nyquist frequency (half the sample rate) and should have a significant drop in volume (-30dB is a good target). Additionally the filename must <strong>not</strong> contain spaces.</p>
+<p>To use these curves in REW open the preferences and select the desired text file in the <code>House Curve</code> tab.</p>
+<h3 id="page_Variant_1_Creating_initial_EQ_filter_in_REW">Variant 1 : Creating initial EQ filter in REW</h3>
+<ol>
+<li>With the desired Sweep Response / Average / Pink Noise measurement selected in REW open the <code>EQ</code> Window.</li>
+<li>On the right side of EQ window under Equaliser choose <code>rePhase</code>
+</li>
+<li>Under Target settings configure settings for your speakers.
+<ul>
+<li>This setting allows you to adjust for a target curve.</li>
+<li>In the graph of the EQ window the target curve is shown as a blue line.</li>
+<li>If you have imported a House Curve as described above select &quot;Full Range Speakers&quot; and don't apply any additional cut-offs or slopes.</li>
+</ul>
+</li>
+<li>Under Target settings press<code>Set target level</code> to have REW attempt to set the target level automatically or configure it manually.
+<ul>
+<li>This process will attempt to reduce rises above the target while leaving dips below it largely unchanged.</li>
+<li>The lower target is under your measurement the more overall volume you lose when applying your filter.</li>
+</ul>
+</li>
+<li>Under Filter Tasks tweak some of the target settings
+<ul>
+<li>You may wish to only correct low frequencies, especially when using MMM or Pink Noise measurements as your source.</li>
+<li>Overall Max Boost will determine how dips in your response are handled. It is recommended to leave this low (e.g. 1dB)</li>
+</ul>
+</li>
+<li>Click <code>Match response to target</code>
+</li>
+<li>(Optional) Click <code>EQ filters</code> button to get dialog for additional manual filter adjustment, but this can be done in rePhase</li>
+<li>Click <code>Save filter settings to file</code> to save REW EQ filter which will be imported into rePhase.</li>
+<li>Save your work under File/Save All Measurement (EQs are saved with each individual measurement so you can come back to them later)</li>
+<li>Proceed to Variant 2</li>
+</ol>
+<h3 id="page_Variant_2_Using_rePhase_from_scratch_or_from_REW">Variant 2 : Using rePhase (from scratch or from REW)</h3>
+<ol>
+<li>On the right under the <code>Measurement</code> tab click <code>Import From File</code> to import REW text measurement we exported on the previous page.</li>
+</ol>
+<img src="./img/rePhase_import.jpg">
+<ol start="2">
+<li>Click <code>hide phase</code>.</li>
+<li>Under the <code>Ranges</code> tab adjust Amplitude so you can see your measurement. REW ranges are typically between 0 dB to 80 dB (you should now have the same measurement graph as in REW).</li>
+<li>(Skip this step if making a filter from scratch) Under the <code>Paragraphic Gain EQ</code> tab click the arrow next to <code>Tools</code> and click <code>import REW filter settings</code> and import REW parametric EQ filter exported above. The response should change to look more like your target curve.</li>
+</ol>
+<img src="./img/rephase_import_REW_filter_settings.jpg">
+<ol start="5">
+<li>Tweak. This is your chance to adjust the filter, check the tips at the top of the page and tune your filters to suit.</li>
+<li>Configure following rePhase parameters under `Impulse Settings:
+<ul>
+<li>Set taps to 65536 samples</li>
+<li>Set rate to the desired sample rate (Recommended 96000Hz, and do not exceed 96000Hz)</li>
+<li>Set your desired filter name under filename and choose directory in which rephase will create filter. (Note: The filename must <strong>not</strong> contain spaces.)</li>
+</ul>
+</li>
+<li>Hit <code>generate</code> to generate and save FIR filter</li>
+<li>Save your work under <code>File/Save settings</code>
+</li>
+</ol>
+<h3 id="page_Variant_3_Using_DRC_FIR_tools_from_the_plugin">Variant 3 : Using DRC-FIR tools from the plugin</h3>
+<p>Creating filter with automatic tools in the plugin is easy. Simply put the exported impluse from the single REW measurement in the shared folder of Volumio, select a few preset options and click Create.</p>
+<ol>
+<li>From Windows explorer, access your volumio network share by typing <code>\\volumio.local\</code>
+<ul>
+<li>This may be substituted with your volumio IP address.</li>
+<li>The default login and password is <code>volumio:volumio</code>
+</li>
+</ul>
+</li>
+<li>Then, copy your impulse response WAV file to <code>Dsp/filter-sources</code>.</li>
+<li>Go to the plugin setting page and under <code>DRC-FIR Filter Creation</code> turn on the <code>DRC-FIR Settings</code>
+</li>
+<li>Choose the Impulse response from step 2 as file to convert.</li>
+<li>Choose a target curve. Some samples are provided with the plugin. Custom curves can be made as above and saved in <code>Dsp\target-curves</code>
+</li>
+<li>Choose a config.
+<ul>
+<li>We advise to start with <strong>'soft'</strong> and see how it behaves. Information about these configs can be found on the DRC-FIR Github Documentation <a href="http://drc-fir.sourceforge.net/"> : DRC-FIR</a>
+</li>
+</ul>
+</li>
+<li>You can give a name to your filter or leave it empty to use the measurement impulse file name.
+<ul>
+<li>The plugin will add <code>samplerate+config+target-curves+.pcm</code> to the name.</li>
+<li>So, if name is <strong>left</strong> the generated filter may be <strong>left-44.1kHz-soft-hk5.pcm</strong>
+</li>
+</ul>
+</li>
+<li>Press <code>Create filter</code> and wait until the page is refreshed.</li>
+<li>If creating separate L and R filters then repeat Steps 1-8 for the other channel.</li>
+</ol>
+<img src="./img/filter-creation-menu.png">
+<h3 id="page_Now_get_ready_to_test_your_filter">Now, get ready to test your filter!</h3>
+
+        <nav>
+        <ul class="pager">
+            <li><a href="../../Plugins_User_Manuals/brutefir/Making_Measurment.html">Previous</a></li>            <li><a href="../../Plugins_User_Manuals/brutefir/Using_filters_in_Volumio.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46374275-1', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- jQuery -->
+    <script src="../../themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="../../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../../tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="../../tipuesearch/tipuesearch.min.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(document).ready(function() {
+                $('#tipue_search_input').tipuesearch({
+                    'show': 10,
+                    'mode': 'json',
+                    'base_url': '../../'
+                });
+            });
+        </script>
+    
+</body>
+</html>

@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>UI Configuration Pages - Volumio Documentation</title>
+    <meta name="description" content="The Audiophile Music Player" />
+    <meta name="author" content="Michelangelo Guarise">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/volumiodocs.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-static-top hidden-print">
+        <div class="container-fluid">
+            <a class="brand navbar-brand pull-left" href="../index.html">Volumio Documentation</a>
+
+    <div class="navbar-right navbar-form search">
+        <i class="glyphicon glyphicon-search search__icon">&nbsp;</i>
+        <input type="search" id="tipue_search_input" class="form-control search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+        </div>
+    </div>
+    <div class="row columns content">
+        <div class="left-column article-tree col-sm-3 hidden-print">
+            <!-- For Mobile -->
+            <div class="responsive-collapse">
+                <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="sub-nav-collapse" class="sub-nav-collapse">
+                <!-- Navigation -->
+                <ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>User Manual</a><ul class='nav nav-list'><li class=''><a href="../User_Manual/Quick_Start_Guide.html">Quick Start Guide</a></li><li class=''><a href="../User_Manual/First_steps_with_Volumio.html">First steps with Volumio</a></li><li class=''><a href="../User_Manual/More_first_steps.html">More first steps</a></li><li class=''><a href="../User_Manual/System_updates.html">System updates</a></li><li class=''><a href="../User_Manual/Volume_Control_and_audio_quality.html">Volume Control and audio quality</a></li><li class=''><a href="../User_Manual/Stream_audio_to_volumio.html">Stream audio to volumio</a></li><li class=''><a href="../User_Manual/SSH.html">SSH</a></li><li class=''><a href="../User_Manual/Configure_MPD_Clients_for_albumart.html">Configure MPD Clients for albumart</a></li><li class=''><a href="../User_Manual/Sending_logs_for_troubleshooting.html">Sending logs for troubleshooting</a></li><li class=''><a href="../User_Manual/Other_Customizations.html">Other Customizations</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Development How To</a><ul class='nav nav-list'><li class=''><a href="../Development_How_To/Overview.html">Overview</a></li><li class=''><a href="../Development_How_To/System_Architecture.html">System Architecture</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_introduction.html">Set up development environment introduction</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_backend.html">Set up development environment for backend</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_UI.html">Set up development environment for UI</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_Volumio_images.html">Set up development environment for Volumio images</a></li><li class=''><a href="../Development_How_To/Updating_source_files.html">Updating source files</a></li><li class=''><a href="../Development_How_To/Debugging.html">Debugging</a></li><li class=''><a href="../Development_How_To/Helping_the_project.html">Helping the project</a></li></ul></li><li class='open has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>API</a><ul class='nav nav-list'><li class=''><a href="../API/API_Overview.html">API Overview</a></li><li class=''><a href="../API/WebSocket_APIs.html">WebSocket APIs</a></li><li class='active'><a href="../API/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../API/REST_API.html">REST API</a></li><li class=''><a href="../API/Command_Line_Client.html">Command Line Client</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugin System</a><ul class='nav nav-list'><li class=''><a href="../Plugin_System/Plugin_System_Overview.html">Plugin System Overview</a></li><li class=''><a href="../Plugin_System/Writing_A_Plugin.html">Writing A Plugin</a></li><li class=''><a href="../Plugin_System/Index.js.html">Index.js</a></li><li class=''><a href="../Plugin_System/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../Plugin_System/Toast_Messages.html">Toast Messages</a></li><li class=''><a href="../Plugin_System/Logging.html">Logging</a></li><li class=''><a href="../Plugin_System/User_Modal.html">User Modal</a></li><li class=''><a href="../Plugin_System/Music_Service_Plugin.html">Music Service Plugin</a></li><li class=''><a href="../Plugin_System/Custom_ALSA_Contributions.html">Custom ALSA Contributions</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>I2S DACs</a><ul class='nav nav-list'><li class=''><a href="../I2S_DACs/Adding_Compatibility_to_your_DAC.html">Adding Compatibility to your DAC</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Porting Guide</a><ul class='nav nav-list'><li class=''><a href="../Porting_Guide/Introduction.html">Introduction</a></li><li class=''><a href="../Porting_Guide/What_Is_Needed_To_Port_Successfully.html">What Is Needed To Port Successfully</a></li><li class=''><a href="../Porting_Guide/Preparing_The_Build_Environment.html">Preparing The Build Environment</a></li><li class=''><a href="../Porting_Guide/The_Process.html">The Process</a></li><li class=''><a href="../Porting_Guide/The_Platform_Folder.html">The Platform Folder</a></li><li class=''><a href="../Porting_Guide/Compiling_U-Boot.html">Compiling U-Boot</a></li><li class=''><a href="../Porting_Guide/Get_The_Kernel_Source.html">Get The Kernel Source</a></li><li class=''><a href="../Porting_Guide/Configure_Kernel_Options.html">Configure Kernel Options</a></li><li class=''><a href="../Porting_Guide/Compiling_The_Kernel.html">Compiling The Kernel</a></li><li class=''><a href="../Porting_Guide/Boot_Parameters.html">Boot Parameters</a></li><li class=''><a href="../Porting_Guide/Saving_Files_To_The_Platform_Folder.html">Saving Files To The Platform Folder</a></li><li class=''><a href="../Porting_Guide/A_Complete_Script.html">A Complete Script</a></li><li class=''><a href="../Porting_Guide/1_How_To_Build_A_Sparky.html">1 How To Build A Sparky</a></li><li class=''><a href="../Porting_Guide/Creating_the_image.html">Creating the image</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 1).html">Creating the image build scripts (Part 1)</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 2).html">Creating the image build scripts (Part 2)</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugins User Manuals</a><ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>brutefir</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/brutefir/Drc_with_Volumio.html">Drc with Volumio</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Preparing_your_system.html">Preparing your system</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_Measurment.html">Making Measurment</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_filters.html">Making filters</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Using_filters_in_Volumio.html">Using filters in Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>rotaryencoder2</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Rotary_Encoder_II.html">Rotary Encoder II</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Debouncing.html">Debouncing</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Device_Tree_Overlays.html">Device Tree Overlays</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Compatible_Encoders.html">Compatible Encoders</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Appendix.html">Appendix</a></li></ul></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Good to Knows</a><ul class='nav nav-list'><li class=''><a href="../Good_to_Knows/Markdown_Cheatsheet.html">Markdown Cheatsheet</a></li><li class=''><a href="../Good_to_Knows/Mounting_an_NFS_Share.html">Mounting an NFS Share</a></li><li class=''><a href="../Good_to_Knows/Contribute_to_this_Doc.html">Contribute to this Doc</a></li><li class=''><a href="../Good_to_Knows/Connection_Outside_LAN.html">Connection Outside LAN</a></li><li class=''><a href="../Good_to_Knows/Finding_Volumio.html">Finding Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>FAQs</a><ul class='nav nav-list'><li class=''><a href="../FAQs/General.html">General</a></li><li class=''><a href="../FAQs/Installation.html">Installation</a></li><li class=''><a href="../FAQs/Updating_and_Maintenance.html">Updating and Maintenance</a></li><li class=''><a href="../FAQs/Audio_Sources.html">Audio Sources</a></li><li class=''><a href="../FAQs/Audio_Output.html">Audio Output</a></li></ul></li></ul>
+
+                <div class="sidebar-links">
+                    
+                        <!-- Links -->
+                        <a href="https://volumio.org" target="_blank">Home</a><br><a href="https://volumio.org/get-started" target="_blank">Download</a><br><a href="https://volumio.org/forum" target="_blank">Forum</a><br><a href="https://github.com/volumio" target="_blank">GitHub Repo</a><br><a href="https://volumio.github.io/docs/Good_to_Knows/Contribute_to_this_Doc.html" target="_blank">Improve this documentation</a><br>
+                        <div id="toggleCodeBlock">
+                                                    <a id="toggleCodeBlockBtn" href="#" onclick="toggleCodeBlocks();">Show Code Blocks Inline</a><br>
+                                                </div>
+
+                        <!-- Twitter -->
+                                                    <div class="twitter">
+                                <hr/>
+                                <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:162px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=volumio&amp;show_count=false"></iframe>
+                            </div>
+                        
+                        <hr/>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-column  content-area col-sm-9">
+
+            <div class="content-page">
+                                    <div id="tipue_search_content" style="display:none"></div>
+                
+                <div class="doc_content">
+                    <article>
+            <div class="page-header">
+            <h1>UI Configuration Pages</h1>
+        </div>
+    
+    <h2 id="page_UI_configuration_Pages">UI configuration Pages</h2>
+<h2 id="page_Design_Principles">Design Principles</h2>
+<p>The main idea is to provide a mechanism to describe the configuration section of the UI and the configuration of plugins that is flexible and not bound to code.
+To reach this the whole hs to be described with an higher level language.
+Plugin\Core component Configuration is composed of different parts:</p>
+<h2 id="page_Configuration_File">Configuration File</h2>
+<p>Configurations reside on single .json files, pertaining to a core component or a specific plugin.
+Every core component that needs a configuration file (example: network controller, Network Mount Controller, Playback Settings) will have their json specific file into /app/config .
+If a controller has its own folder, the json config file will be placed in the same controller folder, along with the index.js file. The configuration will be handled by <a href="https://github.com/mozilla/node-convict">Convict </a> and it will look this way:</p>
+<p>Each item is described as follows:</p>
+<pre><code>  &quot;KEY&quot;:{
+      &quot;value&quot;:&quot;VALUE&quot;,
+      &quot;type&quot;:&quot;[boolean|int|string|password|ipaddress|page|section|select]&quot;,
+      &quot;label&quot;:&quot;Blah blah&quot;
+      }
+</code></pre>
+<p>where:</p>
+<ul>
+<li>
+<p>KEY [MANDATORY] identifies the item.</p>
+</li>
+<li>
+<p>VALUE [OPTINAL] this attribute contains the current item value. Its format depends on the type. For example a boolean
+type will contains true or false while a string type can contain any string.</p>
+</li>
+<li>
+<p>TYPE [MANDATORY] this attribute describes the data type. As of now the above values
+are supported. More can (and will) come in the future.</p>
+</li>
+<li>
+<p>DOC [MANDATORY] This attribute contains the label associated to the item, in the locale specified by the caller</p>
+</li>
+</ul>
+<p>(Example for Wired Network Config File)</p>
+<pre><code> var wirednetworkconf = convict({
+  dhcp: {
+    doc: &quot;DHCP Configuration&quot;,
+    format: [&quot;dhcp&quot;, &quot;static&quot;],
+   default: &quot;dhcp&quot;,
+    value: &quot;dhcp&quot;
+   },
+   ip: {
+    doc: &quot;Static IP Address &quot;,
+    format: &quot;ipaddress&quot;,
+    default: &quot;null&quot;,
+     value: &quot;IP_ADDRESS&quot;,
+  },
+    netmask: {
+     doc: &quot;Netmask&quot;,
+     format: &quot;ipaddress&quot;,
+     default: 255.255.255.0,
+     value: &quot;255.255.255.0&quot;
+   },
+   gateway: {
+    doc: &quot;Gateway&quot;,
+    format: &quot;ipaddress&quot;,
+    default: &quot;null&quot;,
+    value: &quot; &quot;
+    }
+  });
+</code></pre>
+<p>Another example is SPOP's config file , the spotify daemon:</p>
+<pre><code>    var spopconf = convict({
+    spotify_username: {
+     doc: &quot;Spotify Username&quot;,
+     format: [&quot;*&quot;],
+    default: &quot;null&quot;,
+     env: &quot; &quot;
+   },
+    spotify_username: {
+    doc: &quot;Spotify Username&quot;,
+     format: &quot;*&quot;,
+    default: &quot;null&quot;,
+    env: &quot; &quot;,
+  },
+   high_bitrate: {
+    doc: &quot;Prefer High Bitrate Streams&quot;,
+    format: [&quot;true&quot;, &quot;false&quot;],
+    default: &quot;true&quot;,
+    env: &quot;true&quot;
+   },
+   enabled: {
+     doc: &quot;Enable Spotify Service&quot;,
+     format: &quot;*&quot;,
+     default: &quot;false&quot;,
+     env: &quot;false&quot;
+   },
+ });
+</code></pre>
+<h2 id="page_Index_File">Index File</h2>
+<p>Each configuration will have in its parent index.js (the actual core component\plugin file), among the others,  methods that describes:</p>
+<h3 id="page_Required_Start">Required Start</h3>
+<p>If the Component\ plugin needs a daemon or service to be up and running, it's invoke function must be present.</p>
+<p>start</p>
+<h3 id="page_Required_Re_Start">Required Re-Start</h3>
+<p>If the Component\ plugin needs a daemon or service to be restarted when its configuration changes, it's restart function must be present.</p>
+<p>restart</p>
+<h3 id="page_Install">Install</h3>
+<p>A function that installs the required (if any) external packages. This can be a shell script, an apt package. It must perform the installation and report a Success message or an error message, with indication of what happened.</p>
+<h3 id="page_A_method_for_specific_component_function">A method for  specific component function</h3>
+<p>Example: if this is a sources plugin, which services are exposed and how to retrieve them.
+TO BE FURTHER DISCUSSED</p>
+<h3 id="page_Display_Section">Display Section</h3>
+<p>This will be invoked by the front end when the pertaining configuration page is to be shown. This function will appropriately parse and serve via the Socket Interface a &quot;layout&quot; of the pertaining configuration page. We'll use a standardized way to provide the UI with predefined layout elements and DOMs, that will be consistent across the whole Volumio frontend system.</p>
+<p>DOM COMPONENTS</p>
+<p>Initially we'll have only 2 DOM:</p>
+<ul>
+<li>Section: This will be used as containers for specific configurations inclusion.</li>
+<li>Page Title: speaks for itself
+Example: Network Configuration Page (name),  will contain 2 sections: Wired And Wireless.</li>
+</ul>
+<p>ELEMENTS</p>
+<p>The elements are used just to manipulate the configuration in the most appropriate way. And their number will be finite. We're taking standard bootstrap naming and examples as reference, even if look and feel will be customized .</p>
+<ul>
+<li>Select</li>
+<li>Input (text or string)</li>
+<li>Save\Discard Bar</li>
+<li>Progress Bar Selector</li>
+<li>Checkbox Radio Button</li>
+</ul>
+<p>Those configurations fields can be nested, and with DOM style element included, will represent a &quot;skeleton&quot; for the UI frontend to wrap and build accordingly.
+As a mere example, let's see how Wireless Configuration Page will look like (this is the emitted object via socket.io to the backend) :</p>
+<pre><code>&quot;networkpage&quot;:{
+    &quot;title&quot;:&quot;Network Settings&quot;
+      &quot;section&quot;:{
+            &quot;title&quot;:&quot;Wired Networking&quot;,
+            &quot;label&quot;:&quot;Network configuration&quot;,
+            &quot;children&quot;:{
+                    &quot;wifi&quot;:{
+                        &quot;value&quot;:&quot;true&quot;,
+                        &quot;type&quot;:&quot;boolean&quot;,
+                        &quot;label&quot;:&quot;Enable Wifi&quot;
+                        }
+                }
+            },
+        &quot;sub_page_b&quot;:{
+                    &quot;type&quot;:&quot;page&quot;,
+                    &quot;label&quot;:&quot;System configuration&quot;
+                    &quot;children&quot;:{}
+                    },
+                }
+            }
+</code></pre>
+<p>##Linking items in a hierarchy
+Items can be linked in a tree hierarchy. To do this the attribute children is specified. Its value is an object containig subitems. Below an example:</p>
+<pre><code>&quot;main&quot;:{
+    &quot;type&quot;:&quot;page&quot;,
+    &quot;label&quot;:&quot;Network Configuration&quot;
+    &quot;children&quot;:{
+            &quot;type&quot;:&quot;section&quot;,
+            &quot;label&quot;:&quot;Wired Network&quot;,
+            &quot;children&quot;:{
+                    &quot;dhcp&quot;:{
+                        &quot;type&quot;:&quot;select&quot;,
+                        &quot;label&quot;:&quot;DHCP Network Settings&quot;,
+                        &quot;current_value&quot;:&quot;true&quot;,
+                        &quot;options&quot;:[{true: Automatic (DHCP)},{false:Static}],
+                        },
+                           &quot;children&quot;:{
+                               &quot;type&quot;:&quot;section&quot;,
+                               &quot;label&quot;:&quot;Static IP Configuration&quot;,
+                               &quot;visibleif&quot; &quot;dhcp:false&quot; //show if dhcp is set to false :{
+                                   &quot;IP&quot;:{
+                                   &quot;type&quot;:&quot;text_box&quot;,
+                                   &quot;value&quot;:&quot; &quot;,
+                                   &quot;format&quot;:ipaddress,
+                                   &quot;label&quot;:&quot;IP&quot;
+                                  },
+                                   &quot;netmask&quot;:{
+                                   &quot;type&quot;:&quot;text_box&quot;,
+                                   &quot;value&quot;:&quot; &quot;,
+                                   &quot;format&quot;:ipaddress,
+                                   &quot;label&quot;:&quot;Netmask&quot;
+                                  },
+                                   &quot;gateway&quot;:{
+                                   &quot;type&quot;:&quot;text_box&quot;,
+                                   &quot;value&quot;:&quot; &quot;,
+                                   &quot;format&quot;:ipaddress,
+                                   &quot;label&quot;:&quot;Gateway&quot;
+                                  },
+                          }
+                }
+            },
+        &quot;wireless_section&quot;:{
+            &quot;type&quot;:&quot;section&quot;,
+            &quot;label&quot;:&quot;Wireless Network&quot;,
+
+                    },
+                }
+                }
+</code></pre>
+
+        <nav>
+        <ul class="pager">
+            <li><a href="../API/WebSocket_APIs.html">Previous</a></li>            <li><a href="../API/REST_API.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46374275-1', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.min.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(document).ready(function() {
+                $('#tipue_search_input').tipuesearch({
+                    'show': 10,
+                    'mode': 'json',
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>
