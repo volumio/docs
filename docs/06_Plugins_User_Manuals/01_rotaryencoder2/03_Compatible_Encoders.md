@@ -4,6 +4,7 @@ The list currently lists only the ALPS Encoder I used for my project. I am convi
 
 |Manufacturer|Model       |Periods/Position|HW-Debounce used     |Tested by          |
 |------------|------------|----------------|---------------------|-------------------|
-|ALPS        |STEC11B03   | 1/2            |RC + Schmitt-Trigger |[7h0mas-R](https://github.com/7h0mas-R)           |
+|ALPS        |STEC11B03   | 1/2            |RC + Schmitt-Trigger |[T0MR0](https://community.volumio.org/u/t0mr0/summary)|
+|BOURNS      |PEC12R-4217F-S0024|1/1       |RC                   |[Darmur](https://community.volumio.org/u/darmur/summary)|
 
 
