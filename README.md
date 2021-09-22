@@ -353,7 +353,3 @@ The `web.config` needs a new `<mimeMap>` entry, under `<staticContent>` in `<sys
 You will only need the mime map entry if you are using a custom theme and receive 404s for `.less` files.
 
 If you have a global mime map entry for `.less` files set for the server, you will receive an internal server (500) error for having duplicate mime map entries.
-
-## Support
-
-If you need help using Daux.io, or have found a bug, please create an issue on the <a href="https://github.com/justinwalsh/daux.io/issues" target="_blank">GitHub repo</a>.

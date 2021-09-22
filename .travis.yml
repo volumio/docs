@@ -1,5 +1,6 @@
 dist: trusty
 language: php
+if: "branch = master"
 script: bash ./deploy.sh
 env:
   global:
