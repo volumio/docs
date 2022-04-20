@@ -12,7 +12,7 @@ In the community portings page of the forum, you'll find image for other devices
 
 #### What are the device RAM (memory) requirements for Volumio?
 
-Volumio will work much more smoothly and quickly in devices with more RAM.  The recommended mimimum is 1GB, but people are running devices with less.
+Volumio will work much more smoothly and quickly in devices with more RAM.  The recommended minimum is 1GB, but people are running devices with less.
 
 #### How do I enable ssh?
 
