@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>Volumio Documentation </title>
+    <meta name="description" content="The Audiophile Music Player" />
+    <meta name="author" content="Michelangelo Guarise">
+    <meta charset="UTF-8">
+    <link rel="icon" href="themes/daux/img/favicon.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='themes/daux/css/theme.min.css' rel='stylesheet' type='text/css'><link href='themes/daux/css/volumiodocs.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-static-top hidden-print">
+        <div class="container-fluid">
+            <a class="brand navbar-brand pull-left" href="index.html">Volumio Documentation</a>
+
+    <div class="navbar-right navbar-form search">
+        <i class="glyphicon glyphicon-search search__icon">&nbsp;</i>
+        <input type="search" id="tipue_search_input" class="form-control search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+        </div>
+    </div>
+    <div class="row columns content">
+        <div class="left-column article-tree col-sm-3 hidden-print">
+            <!-- For Mobile -->
+            <div class="responsive-collapse">
+                <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="sub-nav-collapse" class="sub-nav-collapse">
+                <!-- Navigation -->
+                <ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>User Manual</a><ul class='nav nav-list'><li class=''><a href="User_Manual/Quick_Start_Guide.html">Quick Start Guide</a></li><li class=''><a href="User_Manual/First_steps_with_Volumio.html">First steps with Volumio</a></li><li class=''><a href="User_Manual/More_first_steps.html">More first steps</a></li><li class=''><a href="User_Manual/System_updates.html">System updates</a></li><li class=''><a href="User_Manual/Volume_Control_and_audio_quality.html">Volume Control and audio quality</a></li><li class=''><a href="User_Manual/Stream_audio_to_volumio.html">Stream audio to volumio</a></li><li class=''><a href="User_Manual/SSH.html">SSH</a></li><li class=''><a href="User_Manual/Configure_MPD_Clients_for_albumart.html">Configure MPD Clients for albumart</a></li><li class=''><a href="User_Manual/Sending_logs_for_troubleshooting.html">Sending logs for troubleshooting</a></li><li class=''><a href="User_Manual/Other_Customizations.html">Other Customizations</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Development How To</a><ul class='nav nav-list'><li class=''><a href="Development_How_To/Overview.html">Overview</a></li><li class=''><a href="Development_How_To/System_Architecture.html">System Architecture</a></li><li class=''><a href="Development_How_To/Set_up_development_environment_introduction.html">Set up development environment introduction</a></li><li class=''><a href="Development_How_To/Set_up_development_environment_for_backend.html">Set up development environment for backend</a></li><li class=''><a href="Development_How_To/Set_up_development_environment_for_UI.html">Set up development environment for UI</a></li><li class=''><a href="Development_How_To/Set_up_development_environment_for_Volumio_images.html">Set up development environment for Volumio images</a></li><li class=''><a href="Development_How_To/Updating_source_files.html">Updating source files</a></li><li class=''><a href="Development_How_To/Debugging.html">Debugging</a></li><li class=''><a href="Development_How_To/Helping_the_project.html">Helping the project</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>API</a><ul class='nav nav-list'><li class=''><a href="API/API_Overview.html">API Overview</a></li><li class=''><a href="API/WebSocket_APIs.html">WebSocket APIs</a></li><li class=''><a href="API/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="API/REST_API.html">REST API</a></li><li class=''><a href="API/Command_Line_Client.html">Command Line Client</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugin System</a><ul class='nav nav-list'><li class=''><a href="Plugin_System/Plugin_System_Overview.html">Plugin System Overview</a></li><li class=''><a href="Plugin_System/Writing_A_Plugin.html">Writing A Plugin</a></li><li class=''><a href="Plugin_System/Index.js.html">Index.js</a></li><li class=''><a href="Plugin_System/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="Plugin_System/Toast_Messages.html">Toast Messages</a></li><li class=''><a href="Plugin_System/Logging.html">Logging</a></li><li class=''><a href="Plugin_System/User_Modal.html">User Modal</a></li><li class=''><a href="Plugin_System/Music_Service_Plugin.html">Music Service Plugin</a></li><li class=''><a href="Plugin_System/Custom_ALSA_Contributions.html">Custom ALSA Contributions</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>I2S DACs</a><ul class='nav nav-list'><li class=''><a href="I2S_DACs/Adding_Compatibility_to_your_DAC.html">Adding Compatibility to your DAC</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Porting Guide</a><ul class='nav nav-list'><li class=''><a href="Porting_Guide/Introduction.html">Introduction</a></li><li class=''><a href="Porting_Guide/What_Is_Needed_To_Port_Successfully.html">What Is Needed To Port Successfully</a></li><li class=''><a href="Porting_Guide/Preparing_The_Build_Environment.html">Preparing The Build Environment</a></li><li class=''><a href="Porting_Guide/The_Process.html">The Process</a></li><li class=''><a href="Porting_Guide/The_Platform_Folder.html">The Platform Folder</a></li><li class=''><a href="Porting_Guide/Compiling_U-Boot.html">Compiling U-Boot</a></li><li class=''><a href="Porting_Guide/Get_The_Kernel_Source.html">Get The Kernel Source</a></li><li class=''><a href="Porting_Guide/Configure_Kernel_Options.html">Configure Kernel Options</a></li><li class=''><a href="Porting_Guide/Compiling_The_Kernel.html">Compiling The Kernel</a></li><li class=''><a href="Porting_Guide/Boot_Parameters.html">Boot Parameters</a></li><li class=''><a href="Porting_Guide/Saving_Files_To_The_Platform_Folder.html">Saving Files To The Platform Folder</a></li><li class=''><a href="Porting_Guide/A_Complete_Script.html">A Complete Script</a></li><li class=''><a href="Porting_Guide/1_How_To_Build_A_Sparky.html">1 How To Build A Sparky</a></li><li class=''><a href="Porting_Guide/Creating_the_image.html">Creating the image</a></li><li class=''><a href="Porting_Guide/Creating_the_image_build_scripts (Part 1).html">Creating the image build scripts (Part 1)</a></li><li class=''><a href="Porting_Guide/Creating_the_image_build_scripts (Part 2).html">Creating the image build scripts (Part 2)</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugins User Manuals</a><ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>brutefir</a><ul class='nav nav-list'><li class=''><a href="Plugins_User_Manuals/brutefir/Drc_with_Volumio.html">Drc with Volumio</a></li><li class=''><a href="Plugins_User_Manuals/brutefir/Preparing_your_system.html">Preparing your system</a></li><li class=''><a href="Plugins_User_Manuals/brutefir/Making_Measurment.html">Making Measurment</a></li><li class=''><a href="Plugins_User_Manuals/brutefir/Making_filters.html">Making filters</a></li><li class=''><a href="Plugins_User_Manuals/brutefir/Using_filters_in_Volumio.html">Using filters in Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>rotaryencoder2</a><ul class='nav nav-list'><li class=''><a href="Plugins_User_Manuals/rotaryencoder2/Rotary_Encoder_II.html">Rotary Encoder II</a></li><li class=''><a href="Plugins_User_Manuals/rotaryencoder2/Debouncing.html">Debouncing</a></li><li class=''><a href="Plugins_User_Manuals/rotaryencoder2/Device_Tree_Overlays.html">Device Tree Overlays</a></li><li class=''><a href="Plugins_User_Manuals/rotaryencoder2/Compatible_Encoders.html">Compatible Encoders</a></li><li class=''><a href="Plugins_User_Manuals/rotaryencoder2/Appendix.html">Appendix</a></li></ul></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Good to Knows</a><ul class='nav nav-list'><li class=''><a href="Good_to_Knows/Markdown_Cheatsheet.html">Markdown Cheatsheet</a></li><li class=''><a href="Good_to_Knows/Mounting_an_NFS_Share.html">Mounting an NFS Share</a></li><li class=''><a href="Good_to_Knows/Contribute_to_this_Doc.html">Contribute to this Doc</a></li><li class=''><a href="Good_to_Knows/Connection_Outside_LAN.html">Connection Outside LAN</a></li><li class=''><a href="Good_to_Knows/Finding_Volumio.html">Finding Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>FAQs</a><ul class='nav nav-list'><li class=''><a href="FAQs/General.html">General</a></li><li class=''><a href="FAQs/Installation.html">Installation</a></li><li class=''><a href="FAQs/Updating_and_Maintenance.html">Updating and Maintenance</a></li><li class=''><a href="FAQs/Audio_Sources.html">Audio Sources</a></li><li class=''><a href="FAQs/Audio_Output.html">Audio Output</a></li></ul></li></ul>
+
+                <div class="sidebar-links">
+                    
+                        <!-- Links -->
+                        <a href="https://volumio.org" target="_blank">Home</a><br><a href="https://volumio.org/get-started" target="_blank">Download</a><br><a href="https://volumio.org/forum" target="_blank">Forum</a><br><a href="https://github.com/volumio" target="_blank">GitHub Repo</a><br><a href="https://volumio.github.io/docs/Good_to_Knows/Contribute_to_this_Doc.html" target="_blank">Improve this documentation</a><br>
+                        <div id="toggleCodeBlock">
+                                                    <a id="toggleCodeBlockBtn" href="#" onclick="toggleCodeBlocks();">Show Code Blocks Inline</a><br>
+                                                </div>
+
+                        <!-- Twitter -->
+                                                    <div class="twitter">
+                                <hr/>
+                                <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:162px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=volumio&amp;show_count=false"></iframe>
+                            </div>
+                        
+                        <hr/>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-column  content-area col-sm-9">
+
+            <div class="content-page">
+                                    <div id="tipue_search_content" style="display:none"></div>
+                
+                <div class="doc_content">
+                    <article>
+            <div class="page-header">
+            <h1>Volumio Documentation</h1>
+        </div>
+    
+    <div class="homelogo" style="display: block;margin: 0 auto;max-width:44%;"><img src ="https://cdn.volumio.org/wp-content/uploads/2016/09/volumio-header.png" /></div>
+<p> </p>
+<h2 id="page_Welcome_to_Volumios_documentation">Welcome to Volumio's documentation</h2>
+<h4 id="page_update_September_6th_2021"><em>(update September 6th 2021)</em></h4>
+<p><strong>Volumio</strong> is a free and Open Source Linux Distribution, designed and fine-tuned exclusively for music playback. It runs on a variety of devices, typically small and cheap computers like the Raspberry PI, but also on low power PCs, notebooks or thin clients.
+By flashing (installing) Volumio on any of these platforms, it will become a headless Audiophile Music Player. Headless means that the only  way to control it will be with another device - a mobile phone, computer or tablet.</p>
+<p>This is made possible by Volumio’s UI: a web application that runs on any device with a web browser, that allows an easy and intuitive control of your playback sessions. All communications between the webapp and Volumio will happen through your home network.
+To learn more about Volumio, see the <a href="https://volumio.org/discover/" target="_blank">Discover Page</a> or  <a href="https://volumio.org/technical-overview/" target="_blank">Technical Overview Page</a> on the Volumio website
+and the <a href="http://docs.volumio.org/" target="_blank">documentation site</a>.</p>
+<p>This documentation is aimed to help both users and developers, <a href="/docs/Good_to_Knows/Contribute_to_this_Doc">any contribution is welcome</a> to make it better.</p>
+<h3 id="page_QUICK_LINKS">QUICK LINKS</h3>
+<p> </p>
+<h4 id="page_USERS_TIPS">USER'S TIPS</h4>
+<ul>
+<li>New to Volumio? Here's our <a href="/docs/User_Manual/Quick_Start_Guide">Quick Start Guide</a>
+</li>
+<li>See how our <a href="/docs/User_Manual/System_updates">OTA (Over the Air) Updater</a> works</li>
+<li>Volumio can accept Audio stream in multiple ways, see How to <a href="/docs/User_Manual/Stream_audio_to_volumio">Stream Audio to Volumio</a>
+</li>
+<li>Volumio features a plugin system to expand its functionalities, see all of them in the <a href="https://volumio.org/forum/volumio-plugins-collection-t6251.html" target="_blank">Volumio plugins collection forum thread</a>
+</li>
+<li>What is an I2S DAC and why its a great solution with Raspberry PI? See it <a href="https://volumio.org/raspberry-pi-i2s-dac-sounds-so-good/" target="_blank">here</a>
+</li>
+<li>Looking for changelog? <a href="https://volumio.org/forum/changelog-t1575.html" target="_blank">Here it is</a>
+</li>
+</ul>
+<h4 id="page_TROUBLESHOOTING">TROUBLESHOOTING</h4>
+<ul>
+<li>See our <a href="https://volumio.github.io/docs/FAQs/General.html" target="_blank">FAQ Docs</a> for the most typical issues and their solution</li>
+<li>Want to get help? <a href="https://volumio.org/forum/tipps-guidlines-get-faster-help-t1569.html" target="_blank">This is how you do it</a>
+</li>
+<li>Troubles mounting an NFS Share? See how to <a href="/docs/Good_to_Knows/Mounting_an_NFS_Share">Mount a NFS Share</a>
+</li>
+</ul>
+<h4 id="page_DEVELOPERS">DEVELOPERS</h4>
+<ul>
+<li>
+<a href="https://github.com/volumio/Volumio2" target="_blank">Volumio Backend Github Repository</a>
+</li>
+<li>
+<a href="https://github.com/volumio/Volumio2-UI" target="_blank">Volumio UI Github Repository</a>
+</li>
+<li>
+<a href="https://github.com/volumio/Build" target="_blank">Volumio Image Builder Github Repository</a>
+</li>
+<li>Volumio uses Websockets to receive commands, see how it works in the <a href="/docs/API/WebSocket_APIs">WebSocket API Section</a>
+</li>
+<li>Learn how to write plugins to add new functionalities to Volumio in the <a href="/docs/Plugin_System/Plugin_System_Overview">Plugin Section</a>
+</li>
+<li>Want to contribute to this guide? See the <a href="/docs/Good_to_Knows/Contribute_to_this_Doc">Contribute to this doc Section</a>
+</li>
+<li>Did you know that Volumio has a command line client? Here's how to use the  <a href="/docs/Good_to_Knows/Command_Line_Client">Command Line Client</a>
+</li>
+<li>
+<a href="https://volumio.org/forum/contribute-translating-volumio-your-language-t4289.html" target="_blank">Help by translating Volumio to your language</a>
+</li>
+</ul>
+<h4 id="page_CREDITS">CREDITS</h4>
+<p>This documentation is the result of a commun work from (alphabetical sorting):</p>
+<!-- Contributors START
+7h0mas-R 7h0mas-R https://github.com/7h0mas-R doc
+balbuze balbuze https://github.com/balbuze doc
+biva biva https://github.com/biva doc
+crisp00 crisp00 https://github.com/crisp00 doc
+Gé_Koerkamp gkkpch https://github.com/gkkpch doc
+Ghembs Ghembs https://github.com/Ghembs doc
+Gianpaolo_Macario gmacario https://github.com/gmacario doc
+Ian_Sutherland chsims1 https://github.com/chsims1 doc
+JoelTakvorian jotak https://github.com/jotak doc
+luckynrslevin luckynrslevin https://github.com/luckynrslevin doc
+macmpi macmpi https://github.com/macmpi doc
+Marcus_Götling Götling https://github.com/Götling doc
+Michelangelo_Guarise mikelangeloz https://github.com/mikelangeloz doc
+Michiel_Fokke foxey https://github.com/foxey doc
+Rachid_Groeneveld saiyato https://github.com/saiyato doc
+Ray rayrrr https://github.com/rayrrr doc
+Rob_Campbell robcee https://github.com/robcee doc
+sla89 sla89 https://github.com/sla89 doc
+Volumio Volumio https://github.com/Volumio doc code
+Xipmix Xipmix https://github.com/Xipmix doc
+xlisec xlisec https://github.com/xlisec doc
+
+Contributors END -->
+<!-- Contributors table START -->
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://avatars.githubusercontent.com/7h0mas-R?s=100" width="100" alt="7homas-R" /><br /><sub>7h0mas-R</sub> (https://github.com/7h0mas-R)<br /><a href="https://github.com/volumio/docs/commits?author=7h0mas-R">📖</a></th>
+<th align="center"></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/balbuze?s=100" width="100" alt="balbuze" /><br /><sub>balbuze</sub> (https://github.com/balbuze)<br /><a href="https://github.com/volumio/docs/commits?author=balbuze">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/biva?s=100" width="100" alt="biva" /><br /><sub>biva</sub> (https://github.com/biva)<br /><a href="https://github.com/volumio/docs/commits?author=biva">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/crisp00?s=100" width="100" alt="crisp00" /><br /><sub>crisp00</sub> (https://github.com/crisp00)<br /><a href="https://github.com/volumio/docs/commits?author=crisp00">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/gkkpch?s=100" width="100" alt="Gé Koerkamp" /><br /><sub>Gé Koerkamp</sub> (https://github.com/gkkpch)<br /><a href="https://github.com/volumio/docs/commits?author=gkkpch">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/Ghembs?s=100" width="100" alt="Ghembs" /><br /><sub>Ghembs</sub> (https://github.com/Ghembs)<br /><a href="https://github.com/volumio/docs/commits?author=Ghembs">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/gmacario?s=100" width="100" alt="Gianpaolo Macario" /><br /><sub>Gianpaolo Macario</sub> (https://github.com/gmacario)<br /><a href="https://github.com/volumio/docs/commits?author=gmacario">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/chsims1?s=100" width="100" alt="Ian Sutherland" /><br /><sub>Ian Sutherland</sub> (https://github.com/chsims1)<br /><a href="https://github.com/volumio/docs/commits?author=chsims1">📖</a></th>
+</tr>
+</thead>
+
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://avatars.githubusercontent.com/jotak?s=100" width="100" alt="JoelTakvorian" /><br /><sub>JoelTakvorian</sub> (https://github.com/jotak)<br /><a href="https://github.com/volumio/docs/commits?author=jotak">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/luckynrslevin?s=100" width="100" alt="luckynrslevin" /><br /><sub>luckynrslevin</sub> (https://github.com/luckynrslevin)<br /><a href="https://github.com/volumio/docs/commits?author=luckynrslevin">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/macmpi?s=100" width="100" alt="macmpi" /><br /><sub>macmpi</sub> (https://github.com/macmpi)<br /><a href="https://github.com/volumio/docs/commits?author=macmpi">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/Götling?s=100" width="100" alt="Marcus Götling" /><br /><sub>Marcus Götling</sub> (https://github.com/Götling)<br /><a href="https://github.com/volumio/docs/commits?author=G%C3%B6tling">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/mikelangeloz?s=100" width="100" alt="Michelangelo Guarise" /><br /><sub>Michelangelo Guarise</sub> (https://github.com/mikelangeloz)<br /><a href="https://github.com/volumio/docs/commits?author=mikelangeloz">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/foxey?s=100" width="100" alt="Michiel Fokke" /><br /><sub>Michiel Fokke</sub> (https://github.com/foxey)<br /><a href="https://github.com/volumio/docs/commits?author=foxey">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/saiyato?s=100" width="100" alt="Rachid Groeneveld" /><br /><sub>Rachid Groeneveld</sub> (https://github.com/saiyato)<br /><a href="https://github.com/volumio/docs/commits?author=saiyato">📖</a></th>
+</tr>
+</thead>
+
+</table>
+<table>
+<thead>
+<tr>
+<th align="center"><img src="https://avatars.githubusercontent.com/rayrrr?s=100" width="100" alt="Ray" /><br /><sub>Ray</sub> (https://github.com/rayrrr)<br /><a href="https://github.com/volumio/docs/commits?author=rayrrr">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/robcee?s=100" width="100" alt="Rob Campbell" /><br /><sub>Rob Campbell</sub> (https://github.com/robcee)<br /><a href="https://github.com/volumio/docs/commits?author=robcee">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/sla89?s=100" width="100" alt="sla89" /><br /><sub>sla89</sub> (https://github.com/sla89)<br /><a href="https://github.com/volumio/docs/commits?author=sla89">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/Volumio?s=100" width="100" alt="Volumio" /><br /><sub>Volumio</sub> (https://github.com/Volumio)<br /><a href="https://github.com/volumio/docs/commits?author=Volumio">📖</a> <a href="https://github.com/volumio/docs/commits?author=Volumio">💻</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/Xipmix?s=100" width="100" alt="Xipmix" /><br /><sub>Xipmix</sub> (https://github.com/Xipmix)<br /><a href="https://github.com/volumio/docs/commits?author=Xipmix">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/xlisec?s=100" width="100" alt="xlisec" /><br /><sub>xlisec</sub> (https://github.com/xlisec)<br /><a href="https://github.com/volumio/docs/commits?author=xlisec">📖</a></th>
+<th align="center"><img src="https://avatars.githubusercontent.com/u/3882104?s=400&u=dc6e80cce0bd5304b6fb6540ab75d4e637987a9b&v=4?s=100" width="100" alt="timothyjward" /><br /><sub>timothyjward</sub>(https://github.com/timothyjward)<br /> <a href="https://github.com/volumio/docs/commits?author=timothyjward">📖</a></th>
+</tr>
+</thead>
+
+</table>
+<!-- Contributors table END -->
+
+        <nav>
+        <ul class="pager">
+                        <li><a href="User_Manual/Quick_Start_Guide.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46374275-1', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- jQuery -->
+    <script src="themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="tipuesearch/tipuesearch.min.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(document).ready(function() {
+                $('#tipue_search_input').tipuesearch({
+                    'show': 10,
+                    'mode': 'json',
+                    'base_url': ''
+                });
+            });
+        </script>
+    
+</body>
+</html>

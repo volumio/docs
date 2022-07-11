@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>       <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>          <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>          <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+    <title>WebSocket APIs - Volumio Documentation</title>
+    <meta name="description" content="The Audiophile Music Player" />
+    <meta name="author" content="Michelangelo Guarise">
+    <meta charset="UTF-8">
+    <link rel="icon" href="../themes/daux/img/favicon.png" type="image/x-icon">
+    <!-- Mobile -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    <link href='//fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700&subset=latin,cyrillic-ext,cyrillic' rel='stylesheet' type='text/css'>
+    <!-- CSS -->
+    <link href='../themes/daux/css/theme.min.css' rel='stylesheet' type='text/css'><link href='../themes/daux/css/volumiodocs.min.css' rel='stylesheet' type='text/css'>
+            <!-- Tipue Search -->
+        <link href="../tipuesearch/tipuesearch.css" rel="stylesheet">
+    
+    <!--[if lt IE 9]>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body class="">
+    
+<div class="container-fluid fluid-height wrapper">
+    <div class="navbar navbar-static-top hidden-print">
+        <div class="container-fluid">
+            <a class="brand navbar-brand pull-left" href="../index.html">Volumio Documentation</a>
+
+    <div class="navbar-right navbar-form search">
+        <i class="glyphicon glyphicon-search search__icon">&nbsp;</i>
+        <input type="search" id="tipue_search_input" class="form-control search__field" placeholder="Search..." autocomplete="on" results=25 autosave=text_search>
+    </div>
+        </div>
+    </div>
+    <div class="row columns content">
+        <div class="left-column article-tree col-sm-3 hidden-print">
+            <!-- For Mobile -->
+            <div class="responsive-collapse">
+                <button type="button" class="btn btn-sidebar" id="menu-spinner-button">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="sub-nav-collapse" class="sub-nav-collapse">
+                <!-- Navigation -->
+                <ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>User Manual</a><ul class='nav nav-list'><li class=''><a href="../User_Manual/Quick_Start_Guide.html">Quick Start Guide</a></li><li class=''><a href="../User_Manual/First_steps_with_Volumio.html">First steps with Volumio</a></li><li class=''><a href="../User_Manual/More_first_steps.html">More first steps</a></li><li class=''><a href="../User_Manual/System_updates.html">System updates</a></li><li class=''><a href="../User_Manual/Volume_Control_and_audio_quality.html">Volume Control and audio quality</a></li><li class=''><a href="../User_Manual/Stream_audio_to_volumio.html">Stream audio to volumio</a></li><li class=''><a href="../User_Manual/SSH.html">SSH</a></li><li class=''><a href="../User_Manual/Configure_MPD_Clients_for_albumart.html">Configure MPD Clients for albumart</a></li><li class=''><a href="../User_Manual/Sending_logs_for_troubleshooting.html">Sending logs for troubleshooting</a></li><li class=''><a href="../User_Manual/Other_Customizations.html">Other Customizations</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Development How To</a><ul class='nav nav-list'><li class=''><a href="../Development_How_To/Overview.html">Overview</a></li><li class=''><a href="../Development_How_To/System_Architecture.html">System Architecture</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_introduction.html">Set up development environment introduction</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_backend.html">Set up development environment for backend</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_UI.html">Set up development environment for UI</a></li><li class=''><a href="../Development_How_To/Set_up_development_environment_for_Volumio_images.html">Set up development environment for Volumio images</a></li><li class=''><a href="../Development_How_To/Updating_source_files.html">Updating source files</a></li><li class=''><a href="../Development_How_To/Debugging.html">Debugging</a></li><li class=''><a href="../Development_How_To/Helping_the_project.html">Helping the project</a></li></ul></li><li class='open has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>API</a><ul class='nav nav-list'><li class=''><a href="../API/API_Overview.html">API Overview</a></li><li class='active'><a href="../API/WebSocket_APIs.html">WebSocket APIs</a></li><li class=''><a href="../API/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../API/REST_API.html">REST API</a></li><li class=''><a href="../API/Command_Line_Client.html">Command Line Client</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugin System</a><ul class='nav nav-list'><li class=''><a href="../Plugin_System/Plugin_System_Overview.html">Plugin System Overview</a></li><li class=''><a href="../Plugin_System/Writing_A_Plugin.html">Writing A Plugin</a></li><li class=''><a href="../Plugin_System/Index.js.html">Index.js</a></li><li class=''><a href="../Plugin_System/UI_Configuration_Pages.html">UI Configuration Pages</a></li><li class=''><a href="../Plugin_System/Toast_Messages.html">Toast Messages</a></li><li class=''><a href="../Plugin_System/Logging.html">Logging</a></li><li class=''><a href="../Plugin_System/User_Modal.html">User Modal</a></li><li class=''><a href="../Plugin_System/Music_Service_Plugin.html">Music Service Plugin</a></li><li class=''><a href="../Plugin_System/Custom_ALSA_Contributions.html">Custom ALSA Contributions</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>I2S DACs</a><ul class='nav nav-list'><li class=''><a href="../I2S_DACs/Adding_Compatibility_to_your_DAC.html">Adding Compatibility to your DAC</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Porting Guide</a><ul class='nav nav-list'><li class=''><a href="../Porting_Guide/Introduction.html">Introduction</a></li><li class=''><a href="../Porting_Guide/What_Is_Needed_To_Port_Successfully.html">What Is Needed To Port Successfully</a></li><li class=''><a href="../Porting_Guide/Preparing_The_Build_Environment.html">Preparing The Build Environment</a></li><li class=''><a href="../Porting_Guide/The_Process.html">The Process</a></li><li class=''><a href="../Porting_Guide/The_Platform_Folder.html">The Platform Folder</a></li><li class=''><a href="../Porting_Guide/Compiling_U-Boot.html">Compiling U-Boot</a></li><li class=''><a href="../Porting_Guide/Get_The_Kernel_Source.html">Get The Kernel Source</a></li><li class=''><a href="../Porting_Guide/Configure_Kernel_Options.html">Configure Kernel Options</a></li><li class=''><a href="../Porting_Guide/Compiling_The_Kernel.html">Compiling The Kernel</a></li><li class=''><a href="../Porting_Guide/Boot_Parameters.html">Boot Parameters</a></li><li class=''><a href="../Porting_Guide/Saving_Files_To_The_Platform_Folder.html">Saving Files To The Platform Folder</a></li><li class=''><a href="../Porting_Guide/A_Complete_Script.html">A Complete Script</a></li><li class=''><a href="../Porting_Guide/1_How_To_Build_A_Sparky.html">1 How To Build A Sparky</a></li><li class=''><a href="../Porting_Guide/Creating_the_image.html">Creating the image</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 1).html">Creating the image build scripts (Part 1)</a></li><li class=''><a href="../Porting_Guide/Creating_the_image_build_scripts (Part 2).html">Creating the image build scripts (Part 2)</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Plugins User Manuals</a><ul class='nav nav-list'><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>brutefir</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/brutefir/Drc_with_Volumio.html">Drc with Volumio</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Preparing_your_system.html">Preparing your system</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_Measurment.html">Making Measurment</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Making_filters.html">Making filters</a></li><li class=''><a href="../Plugins_User_Manuals/brutefir/Using_filters_in_Volumio.html">Using filters in Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>rotaryencoder2</a><ul class='nav nav-list'><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Rotary_Encoder_II.html">Rotary Encoder II</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Debouncing.html">Debouncing</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Device_Tree_Overlays.html">Device Tree Overlays</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Compatible_Encoders.html">Compatible Encoders</a></li><li class=''><a href="../Plugins_User_Manuals/rotaryencoder2/Appendix.html">Appendix</a></li></ul></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>Good to Knows</a><ul class='nav nav-list'><li class=''><a href="../Good_to_Knows/Markdown_Cheatsheet.html">Markdown Cheatsheet</a></li><li class=''><a href="../Good_to_Knows/Mounting_an_NFS_Share.html">Mounting an NFS Share</a></li><li class=''><a href="../Good_to_Knows/Contribute_to_this_Doc.html">Contribute to this Doc</a></li><li class=''><a href="../Good_to_Knows/Connection_Outside_LAN.html">Connection Outside LAN</a></li><li class=''><a href="../Good_to_Knows/Finding_Volumio.html">Finding Volumio</a></li></ul></li><li class=' has-children'><a href="#" class="aj-nav folder"><i class="arrow">&nbsp;</i>FAQs</a><ul class='nav nav-list'><li class=''><a href="../FAQs/General.html">General</a></li><li class=''><a href="../FAQs/Installation.html">Installation</a></li><li class=''><a href="../FAQs/Updating_and_Maintenance.html">Updating and Maintenance</a></li><li class=''><a href="../FAQs/Audio_Sources.html">Audio Sources</a></li><li class=''><a href="../FAQs/Audio_Output.html">Audio Output</a></li></ul></li></ul>
+
+                <div class="sidebar-links">
+                    
+                        <!-- Links -->
+                        <a href="https://volumio.org" target="_blank">Home</a><br><a href="https://volumio.org/get-started" target="_blank">Download</a><br><a href="https://volumio.org/forum" target="_blank">Forum</a><br><a href="https://github.com/volumio" target="_blank">GitHub Repo</a><br><a href="https://volumio.github.io/docs/Good_to_Knows/Contribute_to_this_Doc.html" target="_blank">Improve this documentation</a><br>
+                        <div id="toggleCodeBlock">
+                                                    <a id="toggleCodeBlockBtn" href="#" onclick="toggleCodeBlocks();">Show Code Blocks Inline</a><br>
+                                                </div>
+
+                        <!-- Twitter -->
+                                                    <div class="twitter">
+                                <hr/>
+                                <iframe allowtransparency="true" frameborder="0" scrolling="no" style="width:162px; height:20px;" src="https://platform.twitter.com/widgets/follow_button.html?screen_name=volumio&amp;show_count=false"></iframe>
+                            </div>
+                        
+                        <hr/>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="right-column  content-area col-sm-9">
+
+            <div class="content-page">
+                                    <div id="tipue_search_content" style="display:none"></div>
+                
+                <div class="doc_content">
+                    <article>
+            <div class="page-header">
+            <h1>WebSocket APIs</h1>
+        </div>
+    
+    <h2 id="page_WebSocket_APIs">WebSocket APIs</h2>
+<h3 id="page_Introduction">Introduction</h3>
+<p>The most used API transport in Volumio2 is its Websockets API as it allows almost real time communication with multiple clients. Volumio's WebUI gets and sends data (almost) exclusively via WS. Volumio's WS layer is powered by <a href="http://socket.io/">Socket.io</a>.
+The WebSocket API interface is located at: https://github.com/volumio/Volumio2/blob/master/app/plugins/user_interface/websocket/index.js</p>
+<h3 id="page_Scenarios">Scenarios</h3>
+<p>Websocket communication in Volumio is identifiable in the most basic server/client architecture. The Server is Volumio itself (aka the host where Volumio is running), the client can be one or more WebUIs or other consumers (Apps and so on). In some cases, Volumio hosts can also act as client, to communicate with other hosts on the same network.</p>
+<h3 id="page_Events">Events</h3>
+<p>Socket.io allows to invoke events triggered by other events, emit and receive communications (on its most basic implementation). As an example, defining which event should be invoked on a client connection  looks like:</p>
+<pre><code class="language-js">self.libSocketIO.on('connection', function (connWebSocket) {
+  // use connWebSocket here
+});
+</code></pre>
+<p>This way, we can define what event should be triggered when a particular message is received:</p>
+<pre><code class="language-js">connWebSocket.on('bringmepizza', function () {
+  givehimpizza();
+});
+</code></pre>
+<p>Typically, every message we send or receive to Volumio's Backend will have this structure:</p>
+<pre><code class="language-js">io.emit('message','data');
+</code></pre>
+<p>Where message can be for example &quot;play&quot; and data can be the song number.
+A good policy for sending data on emits is to configure them as objects: they're easier to parse and easily extendable.
+So our message can be:</p>
+<pre><code class="language-js">io.emit('addToPlaylist', {&quot;name&quot;: &quot;Music&quot;, &quot;service&quot;: &quot;mpd&quot;, &quot;uri&quot;: &quot;music-library/...&quot;});
+</code></pre>
+<h3 id="page_Events_Documentation">Events Documentation</h3>
+<h3 id="page_Basic_Playback_Commands">Basic Playback Commands</h3>
+<pre><code>**Play:** play
+**Pause:** pause
+**Stop:** stop
+**Previous:** prev
+**Next:** next
+**Seek** seek N (N is the time in seconds that the playback will keep)
+**Random** setRandom({&quot;value&quot;:true|false})
+**repeat** setRepeat({&quot;value&quot;:true|false})
+</code></pre>
+<h3 id="page_Get_Player_State">Get Player State</h3>
+<pre><code>getState
+</code></pre>
+<p>Reply:</p>
+<pre><code>pushState
+</code></pre>
+<pre><code class="language-json">{
+  &quot;status&quot;: &quot;stop&quot;,
+  &quot;position&quot;: 0,
+  &quot;title&quot;: &quot;Matilda Mother&quot;,
+  &quot;artist&quot;: &quot;Pink Floyd&quot;,
+  &quot;album&quot;: &quot;The Piper At The Gates Of Dawn&quot;,
+  &quot;albumart&quot;: &quot;/albumart?web=Pink%20Floyd/The%20Piper%20At%20The%20Gates%20Of%20Dawn/extralarge&amp;path=%2FNAS%2FHi_Res_Music%2FPINK%20FLOYD%20Discovery%20Studio%20Album%20Box%20Set%20(2011)%20FLAC%2F1967%20The%20Piper%20At%20The%20Gates%20Of%20Dawn&quot;,
+  &quot;uri&quot;: &quot;mnt/NAS/Hi_Res_Music/PINK FLOYD Discovery Studio Album Box Set (2011) FLAC/1967 The Piper At The Gates Of Dawn/03 - Matilda Mother.flac&quot;,
+  &quot;trackType&quot;: &quot;flac&quot;,
+  &quot;seek&quot;: 0,
+  &quot;duration&quot;: 189,
+  &quot;random&quot;: false,
+  &quot;repeat&quot;: false,
+  &quot;repeatSingle&quot;: false,
+  &quot;volume&quot;: 39,
+  &quot;mute&quot;: false,
+  &quot;stream&quot;: false,
+  &quot;updatedb&quot;: false,
+  &quot;volatile&quot;: false,
+  &quot;service&quot;: &quot;mpd&quot;
+}
+
+</code></pre>
+<p>Where</p>
+<ul>
+<li>
+<strong>status</strong> is the status of the player</li>
+<li>
+<strong>position</strong> is the position in the play queue of current playing track (if any)</li>
+<li>
+<strong>title</strong> is the item's title</li>
+<li>
+<strong>artist</strong> is the item's artist</li>
+<li>
+<strong>album</strong> is the item's album</li>
+<li>
+<strong>albumart</strong> the URL of AlbumArt (via last.fm APIs)</li>
+<li>
+<strong>uri</strong> it's the track's unique uri</li>
+<li>
+<strong>trackType</strong> The track's type: e.g. mp3, flac, spotify etc</li>
+<li>
+<strong>seek</strong> is the item's current elapsed time</li>
+<li>
+<strong>duration</strong> is the item's duration, if any</li>
+<li>
+<strong>random</strong> if true, random mode is enabled</li>
+<li>
+<strong>repeat</strong> if true, repeat mode is enabled</li>
+<li>
+<strong>repeatSingle</strong> if true, repeat single mode is enabled (song is replayed in a cycle)</li>
+<li>
+<strong>volume</strong> current Volume</li>
+<li>
+<strong>mute</strong> if true, Volumio is muted</li>
+<li>
+<strong>stream</strong> if true, Volumio is playing a stream (webradio)</li>
+<li>
+<strong>updatedb</strong> if true, Volumio is updating its internal music database</li>
+<li>
+<strong>volatile</strong> if true, Volumio is in Volatile mode (analog input)</li>
+<li>
+<strong>samplerate</strong> current samplerate</li>
+<li>
+<strong>bitdepth</strong> bitdepth</li>
+<li>
+<strong>channels</strong> mono or stereo</li>
+<li>
+<strong>service</strong> current playback service (mpd, spop...)</li>
+</ul>
+<h3 id="page_Search">Search</h3>
+<pre><code>search {value:'query'}
+</code></pre>
+<p>Where query is my search query. (note that for using live search, DO NOT send queries with less than 3 characters, they will dramatically slow search operations).</p>
+<h3 id="page_Volume">Volume</h3>
+<p>Set to percentage, raise or lower, mute or unmute.</p>
+<p>Message: <em>volume</em></p>
+<p>Data:</p>
+<ul>
+<li>numeric value between 0 and 100</li>
+<li>
+<em>mute</em>
+</li>
+<li>
+<em>umute</em>
+</li>
+<li>
+<em>+</em>
+</li>
+<li>
+<em>-</em>
+</li>
+</ul>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">io.emit('volume', 90);
+io.emit('volume', '+');
+</code></pre>
+<h3 id="page_Mute">Mute</h3>
+<p>Message: <em>mute</em></p>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">io.emit('mute', '');
+</code></pre>
+<h3 id="page_Unmute">Unmute</h3>
+<p>Message: <em>unmute</em></p>
+<p><strong>Example</strong></p>
+<pre><code class="language-js">io.emit('unmute', '');
+</code></pre>
+<h3 id="page_Multiroom">Multiroom</h3>
+<pre><code>getMultiRoomDevices
+</code></pre>
+<p>Retrieves all devices connected to the same network.
+Input: None</p>
+<p>Output (through pushMultiRoomDevices socket.io event):</p>
+<pre><code class="language-json">   {
+      &quot;misc&quot;: {&quot;debug&quot;: true},
+      &quot;list&quot;: [
+         {
+				&quot;id&quot;:&quot;uuid&quot;,
+				&quot;host&quot;:&quot;&quot;,
+				&quot;name&quot;:&quot;&quot;,
+				&quot;isSelf&quot;:true|false,
+				&quot;state&quot;: {
+					&quot;status&quot;: &quot;&quot;,
+					&quot;volume&quot;: 0,
+					&quot;mute&quot;: true|false,
+					&quot;artist&quot;: &quot;&quot;,
+					&quot;track&quot;: &quot;&quot;
+				},
+                                {
+				&quot;id&quot;:&quot;uuid&quot;,
+				&quot;host&quot;:&quot;&quot;,
+				&quot;name&quot;:&quot;&quot;,
+				&quot;isSelf&quot;:true|false,
+				&quot;state&quot;: {
+					&quot;status&quot;: &quot;&quot;,
+					&quot;volume&quot;: 0,
+					&quot;mute&quot;: true|false,
+					&quot;artist&quot;: &quot;&quot;,
+					&quot;track&quot;: &quot;&quot;
+				}
+      ]
+   }
+</code></pre>
+<h3 id="page_Browse_Music_Library">Browse Music Library</h3>
+<pre><code>browseLibrary objBrowseParameters
+</code></pre>
+<p>Where <code>objBrowseParameters</code> are the parameters we want to dig into. This returns the desired level in the music library along with navigation and pagination informations.</p>
+<pre><code class="language-js">{
+  navigation: {
+    prev: {
+      uri: ''
+    },
+    list: [
+      {service: 'mpd', type: 'song',  title: 'track a', artist: 'artist a', album: 'album', icon: 'music' uri: 'uri'},
+      {type: 'folder',  title: 'folder a', icon: 'folder-open-o' uri: 'uri'},
+      {type: 'folder',  title: 'folder b', albumart: '//ip/image' uri: 'uri2'},
+      {type: 'playlist',  title: 'playlist', icon: 'bars' uri: 'uri4'}
+    ]
+  }
+}
+</code></pre>
+<p>The browsable items can be;</p>
+<ul>
+<li>Track</li>
+<li>Folder (can also be a category)</li>
+<li>Playlist</li>
+</ul>
+<p>Their parameters are:</p>
+<ul>
+<li>Type: track, folder, category</li>
+<li>Title: If this is a song: title, if folder or category is their name.</li>
+<li>Artist and Album: used only if the type is song</li>
+<li>Icon or image: Select the icon to display (naming of <a href="https://fortawesome.github.io/Font-Awesome/icons/">Font-Awesome</a> ) , or image (URL served by Volumio Backend or external service)</li>
+<li>Uri: Uri</li>
+</ul>
+<h3 id="page_Get_Music_Library_Available_filters">Get Music Library Available filters</h3>
+<pre><code>getBrowseFilters
+</code></pre>
+<p>This returns available filters (browse by)</p>
+<pre><code class="language-js">{name:'Genres by Name', index: 'index:Genres by Name'},
+{name:'Artists by Name', index: 'index:Artists by Name'},
+{name:'Albums by Name', index: 'index:Albums by Name'},
+{name:'Albums by Artist', index: 'index:Albums by Artist'},
+{name:'Tracks by Name', index: 'index:Tracks by Name'}
+</code></pre>
+<h3 id="page_Get_Music_Sources">Get Music Sources</h3>
+<pre><code>getBrowseSources
+</code></pre>
+<p>This returns a list of available Music Sources</p>
+<pre><code class="language-js">{name:'USB', uri: 'usb'},
+{name:'NAS', uri: 'nas'},
+{name:'Web Radio', uri: 'web-radio'},
+{name:'Spotify', uri: 'spotify'}
+</code></pre>
+<h3 id="page_Custom_Browse_Source">Custom Browse Source</h3>
+<p>This can be useful when creating a new plugin, to inject custom views in the browse sources panel, along with top-level custom actions.</p>
+<pre><code class="language-js">{
+  &quot;name&quot;: &quot;Custom Source&quot;,
+  &quot;pluginName&quot;: &quot;streaming_controller&quot;,
+  &quot;pluginType&quot;: &quot;music_service&quot;,
+  &quot;uri&quot;: &quot;stream&quot;,
+  &quot;info&quot;: &quot;Additional info&quot;,
+  &quot;menuItems&quot;: [
+    {
+      &quot;name&quot;: &quot;play&quot;,
+      &quot;socketCall&quot;: {
+        &quot;emit&quot;: &quot;callMethod&quot;,
+        &quot;payload&quot;: {
+          &quot;endpoint&quot;: &quot;music_service/streaming_controller&quot;,
+          &quot;method&quot;: &quot;launchStream&quot;,
+          &quot;data&quot;: &quot;&quot;
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;rip&quot;,
+      &quot;socketCall&quot;: {
+        &quot;emit&quot;: &quot;callMethod&quot;,
+        &quot;payload&quot;: {
+          &quot;endpoint&quot;: &quot;music_service/streaming_controller&quot;,
+          &quot;method&quot;: &quot;updateStream&quot;,
+          &quot;data&quot;: &quot;&quot;
+        }
+      }
+    },
+    {
+      &quot;name&quot;: &quot;eject&quot;,
+      &quot;socketCall&quot;: {
+        &quot;emit&quot;: &quot;callMethod&quot;,
+        &quot;payload&quot;: {
+          &quot;endpoint&quot;: &quot;music_service/streaming_controller&quot;,
+          &quot;method&quot;: &quot;refreshStream&quot;,
+          &quot;data&quot;: &quot;&quot;
+        }
+      }
+    }
+  ]}
+</code></pre>
+<h2 id="page_Play_Queue_Controls">Play Queue Controls</h2>
+<h3 id="page_Get_Current_Play_Queue">Get Current Play Queue</h3>
+<pre><code>getQueue
+</code></pre>
+<p>Response:</p>
+<pre><code>pushQueue
+</code></pre>
+<pre><code class="language-js">[ { uri: 'http://yp.shoutcast.com/sbin/tunein-station.m3u?id=830692',
+    title: 'ANTENA1 - 94 7 FM',
+    service: 'webradio',
+    name: 'ANTENA1 - 94 7 FM',
+    albumart: '/albumart',
+    samplerate: '',
+    bitdepth: '',
+    channels: 0,
+    trackType: 'webradio' },
+  { uri: 'mnt/NAS/FLAC/Muse - Black Holes And Revelations - FLAC - HellraiserRG/02 - Starlight.flac',
+    service: 'mpd',
+    name: 'Starlight',
+    artist: 'Muse',
+    album: 'Black Holes And Revelations',
+    type: 'track',
+    tracknumber: 0,
+    albumart: '/albumart?web=Muse/Black%20Holes%20And%20Revelations/extralarge&amp;path=%2FNAS%2FFLAC%2FMuse%20-%20Black%20Holes%20And%20Revelations%20-%20FLAC%20-%20HellraiserRG',
+    duration: 240,
+    samplerate: '44.1 KHz',
+    bitdepth: '16 bit',
+    trackType: 'flac',
+    channels: 2 }]
+</code></pre>
+<h3 id="page_Remove_Item_from_queue">Remove Item from queue</h3>
+<pre><code>removeFromQueue {value: N}
+</code></pre>
+<p>where <code>N</code> is the track number in the queue, 0 for the first, 9 for the tenth and so on</p>
+<p>Response:</p>
+<pre><code>pushQueue
+</code></pre>
+<h3 id="page_Add_Item_to_Queue">Add Item to Queue</h3>
+<pre><code>addToQueue {uri:'uri'}
+</code></pre>
+<p>where <code>uri</code> is the uri of the item we want to add</p>
+<h3 id="page_Move_a_queue_item">Move a queue item</h3>
+<pre><code>moveQueue {from:N,to:N2}
+</code></pre>
+<p>Where N is the track number we want to move, and N2 is its new position</p>
+<p>If we want to add an individual track from a .cue file:</p>
+<pre><code>addPlayCue {uri:'uriofsong',number:3}
+</code></pre>
+<h3 id="page_Favourites_handling">Favourites handling</h3>
+<p>Available functionality:</p>
+<ul>
+<li>addToFavourites</li>
+<li>removeFromFavourites</li>
+</ul>
+<h4 id="page_addToFavourites">addToFavourites</h4>
+<p>This method adds a song to the favourites</p>
+<p>Input:</p>
+<pre><code class="language-json">   {
+    &quot;uri&quot;:&quot;my_uri/...&quot;,
+    &quot;title&quot;:&quot;my song&quot;,
+    &quot;service&quot;:&quot;my_service&quot;
+   }
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-json">   {
+    &quot;success&quot;:true|false
+    &quot;reason&quot;:&quot;failure details&quot;
+   }
+</code></pre>
+<p>The reason field is set only if success is false</p>
+<h4 id="page_removeFromFavourites">removeFromFavourites</h4>
+<p>This method removes all occurrences of a song from the favourites</p>
+<p>Input:</p>
+<pre><code class="language-json">   {
+    &quot;uri&quot;:&quot;my_uri/...&quot;,
+    &quot;service&quot;:&quot;my_service&quot;
+   }
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-json">   {
+    &quot;success&quot;:true|false
+    &quot;reason&quot;:&quot;failure details&quot;
+   }
+</code></pre>
+<p>The reason field is set only if success is false</p>
+<h3 id="page_Playlist_handling">Playlist handling</h3>
+<p>Available functionality:</p>
+<ul>
+<li>createPlaylist</li>
+<li>deletePlaylist</li>
+<li>listPlaylist</li>
+<li>addToPlaylist</li>
+<li>removeFromPlaylist</li>
+<li>playPlaylist</li>
+<li>enqueue</li>
+</ul>
+<h4 id="page_createPlaylist">createPlaylist</h4>
+<p>This method creates a new playlist</p>
+<p>Input:</p>
+<pre><code class="language-json">   {
+    &quot;name&quot;:&quot;myplaylist&quot;
+   }
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-json">   {
+    &quot;success&quot;:true|false
+    &quot;reason&quot;:&quot;failure details&quot;
+   }
+</code></pre>
+<p>The reason field is set only if success is false</p>
+<h4 id="page_deletePlaylist">deletePlaylist</h4>
+<p>This method deletes a playlist</p>
+<p>Input:</p>
+<pre><code class="language-json">   {
+    &quot;name&quot;:&quot;myplaylist&quot;
+   }
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-json">   {
+    &quot;success&quot;:true|false
+    &quot;reason&quot;:&quot;failure details&quot;
+   }
+</code></pre>
+<p>The reason field is set only if success is false</p>
+<h4 id="page_listPlaylist">listPlaylist</h4>
+<p>This method lists all playlists in the system</p>
+<p>Input: None</p>
+<p>Output (through event pushListPlaylist):</p>
+<pre><code class="language-json">   [
+     &quot;playlistA&quot;,
+     &quot;playlistB&quot;,
+     ...
+   ]
+</code></pre>
+<p>The reason field is set only if success is false</p>
+<h4 id="page_addToPlaylist">addToPlaylist</h4>
+<p>This method adds a song to an existing playlist</p>
+<p>Input:</p>
+<pre><code class="language-json">   {
+    &quot;name&quot;:&quot;my playlist&quot;,
+    &quot;service&quot;:&quot;mpd&quot;,
+    &quot;uri&quot;:&quot;USB/...&quot;
+   }
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-json">   {
+    &quot;success&quot;:true|false
+    &quot;reason&quot;:&quot;failure details&quot;
+   }
+</code></pre>
+<p>The reason field is set only if success is false</p>
+<h4 id="page_removeFromPlaylist">removeFromPlaylist</h4>
+<p>This method removes all occurrences of a song from an existing playlist</p>
+<p>Input:</p>
+<pre><code class="language-json">   {
+    &quot;name&quot;:&quot;my playlist&quot;,
+    &quot;uri&quot;:&quot;USB/...&quot;
+   }
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-json">   {
+    &quot;success&quot;:true|false
+    &quot;reason&quot;:&quot;failure details&quot;
+   }
+</code></pre>
+<p>The reason field is set only if success is false</p>
+<h4 id="page_playPlaylist">playPlaylist</h4>
+<p>This method clears the queue, adds the playlist and play</p>
+<p>Input:</p>
+<pre><code class="language-json">   {
+    &quot;name&quot;:&quot;my playlist&quot;
+   }
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-json">   {
+    &quot;success&quot;:true|false
+    &quot;reason&quot;:&quot;failure details&quot;
+   }
+</code></pre>
+<p>The reason field is set only if success is false</p>
+<h4 id="page_enqueue">enqueue</h4>
+<p>This method enqueue all songs of a playlist</p>
+<p>Input:</p>
+<pre><code class="language-json">   {
+    &quot;name&quot;:&quot;my playlist&quot;
+   }
+</code></pre>
+<p>Output:</p>
+<pre><code class="language-json">   {
+    &quot;success&quot;:true|false
+    &quot;reason&quot;:&quot;failure details&quot;
+   }
+</code></pre>
+<p>The reason field is set only if success is false</p>
+<h3 id="page_CallMethod_on_Plugin">CallMethod on Plugin</h3>
+<p>Each method of a plugin can be execute through a websocket call. As of now there's no ACL or any security feature but thi s will change in the future. To execute a method the following socket.io command shall be issued:</p>
+<pre><code>callMethod
+</code></pre>
+<p>The payload shall be a json with the following structure:</p>
+<pre><code class="language-json">   {
+    &quot;endpoint&quot;:&quot;category/name&quot;,
+    &quot;method&quot;:&quot;methodName&quot;,
+    &quot;data&quot;: {}
+   }
+</code></pre>
+<p>where:</p>
+<ul>
+<li>
+<strong>endpoint</strong> is a string used to target the plugin. Its structure is a linux path like string containing the plugin category, a slash and the plugin name. An example: endpoint:'music_service/spop'.</li>
+<li>
+<strong>method</strong> is a string containing the name of the method to be executed.</li>
+<li>
+<strong>data</strong> is a complex value (can be a string or a  Json) and is passed as is to the method.</li>
+</ul>
+<p><strong>IMPORTANT:</strong> There should be no &quot;-&quot; in this call, due to FE parsing method (it converts / to -). So plugins and functions should not contain &quot;-&quot;.</p>
+<p>Once the method returns, the result is pushed back to the client with the event 'pushMethod'.</p>
+<h2 id="page_Miscellaneous">Miscellaneous</h2>
+<h3 id="page_Sleep_Alarm_Clock">Sleep &amp; Alarm Clock</h3>
+<pre><code>getSleep
+</code></pre>
+<p>Triggers :</p>
+<pre><code>pushSleep {enabled:true|false, time:hh:mm:}
+</code></pre>
+<p>To set sleep mode:</p>
+<pre><code>setSleep {enabled:true|false, time:hh:mm:}
+</code></pre>
+<pre><code>getAlarms
+</code></pre>
+<p>Triggers:</p>
+<pre><code>pushAlarms {[{id:1,enabled:true, time:hh:mm, playlist:uriplaylist},{id:2,enabled:true, time:hh:mm, playlist:uriplaylist}]}
+</code></pre>
+<p>To add a new alarm:</p>
+<pre><code>addAlarm {time:hh:mm, playlist:uriplaylist}
+</code></pre>
+<p>When a new Playlist gets added, the Values enabled:true and id (as progressive numbering) are added by default by the Backend.</p>
+<p>To edit an alarm:</p>
+<pre><code>setAlarm {id:1,enabled:true, time:hh:mm, playlist:uriplaylist}
+</code></pre>
+<p>Those values will replace the values of the correspondent playlist id.</p>
+<p>To remove an alarm:</p>
+<pre><code>removeAlarm {id:3}
+</code></pre>
+
+        <nav>
+        <ul class="pager">
+            <li><a href="../API/API_Overview.html">Previous</a></li>            <li><a href="../API/UI_Configuration_Pages.html">Next</a></li>        </ul>
+    </nav>
+    </article>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-46374275-1', '');
+    ga('send', 'pageview');
+</script>
+
+    <!-- jQuery -->
+    <script src="../themes/daux/js/jquery-1.11.3.min.js"></script>
+
+    <!-- hightlight.js -->
+    <script src="../themes/daux/js/highlight.pack.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    <!-- JS -->
+    
+    <script src="../themes/daux/js/daux.js"></script>
+
+            <!-- Tipue Search -->
+        <script type="text/javascript" src="../tipuesearch/tipuesearch_set.js"></script>
+        <script type="text/javascript" src="../tipuesearch/tipuesearch.min.js"></script>
+
+        <script>
+            window.onunload = function(){}; // force $(document).ready to be called on back/forward navigation in firefox
+            $(document).ready(function() {
+                $('#tipue_search_input').tipuesearch({
+                    'show': 10,
+                    'mode': 'json',
+                    'base_url': '../'
+                });
+            });
+        </script>
+    
+</body>
+</html>
