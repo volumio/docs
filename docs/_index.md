@@ -1,4 +1,4 @@
-<div class="homelogo" style="display: block;margin: 0 auto;max-width:44%;"><img src ="https://cdn.volumio.org/wp-content/uploads/2016/09/volumio-header.png" /></div>
+<div class="homelogo" style="display: block;margin: 0 auto;max-width:44%;"><img src ="https://cdn.volumio.com/wp-content/uploads/2016/09/volumio-header.png" /></div>
 
 &nbsp;
 ## Welcome to Volumio's documentation
